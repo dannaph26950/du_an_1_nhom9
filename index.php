@@ -1,7 +1,7 @@
 <?php 
-echo "<script>window.location.href='/test/index.php'</script>";
+// echo "<script>window.location.href='/test/index.php'</script>";
 
 
 
-echo 2;
+// echo 2;
 ?>
