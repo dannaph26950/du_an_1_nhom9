@@ -25,7 +25,7 @@
                 <a href="/du_an_1_nhom9/admin/index.php?khoa-hoc">Khóa học</a>
             </li>
             <li class="mx-10">
-                <a href="/du_an_1_nhom9/admin/index.php?khach-hang">Khách hàng</a>
+                <a href="/du_an_1_nhom9/admin/index.php?khach-hang">Học viên</a>
             </li>
             <li class="mx-10">
                 <a href="/du_an_1_nhom9/admin/index.php?binh-luan">Bình luận</a>

@@ -6,7 +6,7 @@ if(isset($_GET['loai-khoa-hoc'])){
 elseif(isset($_GET['khoa-hoc'])){
     $VIEW_NAME='khoahoc.php';
 }
-elseif(isset($_GET['khac-hang'])){
+elseif(isset($_GET['khach-hang'])){
     $VIEW_NAME='khachhang.php';
 }
 elseif(isset($_GET['binh-luan'])){
