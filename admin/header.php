@@ -41,89 +41,7 @@
 <body>
 
 <div class="as-menu-wrapper">
-    <!-- <div class="as-menu-area text-center"><button class="as-menu-toggle"><i class="fal fa-times"></i></button>
-        <div class="mobile-logo"><a href="index.html"><img src="../user/assets/img/logo.svg" alt="Acadu"></a></div>
-        <div class="as-mobile-menu">
-            <ul>
-                <li class="menu-item-has-children"><a href="index.html">Home</a>
-                    <ul class="sub-menu">
-                        <li><a href="index.html">Home One <span class="new-label">New</span></a></li>
-                        <li><a href="index-2.html">Home Two <span class="new-label">New</span></a></li>
-                        <li><a href="index-3.html">Home Three <span class="new-label">New</span></a></li>
-                        <li><a href="index-4.html">Home Four <span class="new-label">New</span></a></li>
-                        <li><a href="index-5.html">Home Five</a></li>
-                        <li><a href="index-6.html">Home Six</a></li>
-                        <li><a href="index-7.html">Home Seven</a></li>
-                        <li><a href="index-8.html">Home Eight</a></li>
-                    </ul>
-                </li>
-                <li class="menu-item-has-children"><a href="#">Courses</a>
-                    <ul class="sub-menu">
-                        <li><a href="course.html">Courses</a></li>
-                        <li><a href="video-course.html">Video Courses</a></li>
-                        <li><a href="course-details.html">Course Details</a></li>
-                    </ul>
-                </li>
-                <li class="menu-item-has-children"><a href="#">Teachers</a>
-                    <ul class="sub-menu">
-                        <li><a href="team.html">Teachers</a></li>
-                        <li><a href="team-details.html">Teacher Details</a></li>
-                    </ul>
-                </li>
-                <li class="menu-item-has-children mega-menu-wrap"><a href="#">Pages</a>
-                    <ul class="mega-menu">
-                        <li><a href="shop.html">Pagelist 1</a>
-                            <ul>
-                                <li><a href="index.html">Home One</a></li>
-                                <li><a href="index-2.html">Home Two</a></li>
-                                <li><a href="index-3.html">Home Three</a></li>
-                                <li><a href="index-4.html">Home Four</a></li>
-                                <li><a href="index-5.html">Home Five</a></li>
-                                <li><a href="index-6.html">Home Six</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">Pagelist 2</a>
-                            <ul>
-                                <li><a href="index-7.html">Home Seven</a></li>
-                                <li><a href="index-8.html">Home Eight</a></li>
-                                <li><a href="about.html">About Us</a></li>
-                                <li><a href="about-2.html">About Us Two</a></li>
-                                <li><a href="team.html">Teachers</a></li>
-                                <li><a href="team-details.html">Teachers Details</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">Pagelist 3</a>
-                            <ul>
-                                <li><a href="blog.html">Blog</a></li>
-                                <li><a href="blog-details.html">Blog Details</a></li>
-                                <li><a href="course.html">Courses</a></li>
-                                <li><a href="video-course.html">Video Courses</a></li>
-                                <li><a href="course-details.html">Course Details</a></li>
-                                <li><a href="event.html">Event</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">Pagelist 4</a>
-                            <ul>
-                                <li><a href="event-details.html">Event Details</a></li>
-                                <li><a href="gallery.html">Gallery</a></li>
-                                <li><a href="contact.html">Contact Us</a></li>
-                                <li><a href="cart.html">Shopping Cart</a></li>
-                                <li><a href="wishlist.html">Wishlist</a></li>
-                                <li><a href="error.html">Error Page</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
-                <li class="menu-item-has-children"><a href="#">Blog</a>
-                    <ul class="sub-menu">
-                        <li><a href="blog.html">Blog</a></li>
-                        <li><a href="blog-details.html">Blog Details</a></li>
-                    </ul>
-                </li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </div>
-    </div> -->
+   
 </div>
 <div class="popup-search-box d-none d-lg-block"><button class="searchClose"><i class="fal fa-times"></i></button>
     <form action="#"><input type="text" placeholder="What are you looking for?"> <button type="submit"><i
@@ -155,7 +73,7 @@
                 <div class="container">
                     <div class="row align-items-center justify-content-between">
                         <div class="col-auto">
-                            <div class="header-logo"><a href="index.html"><img src="../user/assets/img/logo.svg"
+                            <div class="header-logo"><a href="index.php"><img src="../user/assets/img/logo.svg"
                                                                                alt="Acadu"></a></div>
                         </div>
                         <div class="col-auto">
@@ -163,34 +81,24 @@
                                 <div class="col-auto">
                                     <nav class="main-menu d-none d-lg-inline-block">
                                         <ul>
-                                            <li class="menu-item-has-children"><a href="index.html">Trang chủ</a>
+                                            <li class=" "><a href="index.php">Trang chủ</a>
 
                                             </li>
-                                            <li class="menu-item-has-children"><a href="index.php?act=add_khoahoc">Khóa học</a>
-<!--                                                <ul class="sub-menu">-->
-                                                    <!-- <li><a href="course.html">Khóa học</a></li> -->
-                                                    <!-- <li><a href="video-course.html">Video khóa học</a></li>
-                                                    <li><a href="course-details.html">Thông tin khóa học</a></li> -->
-<!--                                                </ul>-->
+                                            <li class=" "><a href="index.php?act=add_khoahoc">Khóa học</a>
+                                              
                                             </li>
-                                            <li class="menu-item-has-children"><a href="index.php?act=add_giaovien">Giáo viên</a>
-<!--                                                <ul class="sub-menu">-->
-                                                    <!-- <li><a href="team.html">Giáo viên</a></li>
-                                                    <li><a href="team-details.html">Thông tin giáo viên</a></li> -->
-<!--                                                </ul>-->
+                                            <li class=" "><a href="index.php?act=giaovien">Giáo viên</a>
+                                                
                                             </li>
 
-                                            <li class="menu-item-has-children"><a href="index.php?act=add_dm">Lop</a>
-<!--                                                <ul class="sub-menu">-->
-                                                    <!-- <li><a href="blog.html">Bài viết</a></li>
-                                                    <li><a href="blog-details.html">Thông tin bài viết</a></li> -->
-<!--                                                </ul>-->
+                                            <li class=" "><a href="index.php?act=lop">Lớp</a>
+                                                
                                             </li>
-                                            <li><a href="index.php?act=add_hocvien">Hoc Vien</a></li>
+                                            <li><a href="index.php?act=hocvien">Học viên</a></li>
                                         </ul>
                                     </nav>
-<!--                                    <button type="button" class="as-menu-toggle d-inline-block d-lg-none"><i-->
-<!--                                                class="far fa-bars"></i></button>-->
+                                    <button type="button" class="as-menu-toggle d-inline-block d-lg-none"><i-->
+                                               class="far fa-bars"></i></button>-->
                                 </div>
                                 
                             </div>

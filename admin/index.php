@@ -21,6 +21,16 @@ session_start();
                 }
                 include '../admin/view/sanpham/addsanpham.php';
                 break;
+
+                case 'giaovien':
+                    include "view/giaovien/giaovien.php";
+                    break;
+                    case 'lop':
+                        include "view/lop/lop.php";
+                        break;
+                        case 'hocvien':
+                            include "view/hocvien/hocvien.php";
+                            break;
             default:
                 include '../admin/home.php';
         }
