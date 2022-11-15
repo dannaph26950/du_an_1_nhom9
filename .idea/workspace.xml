@@ -5,30 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cc6cba04-603a-4918-b721-0684c76f7a58" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/admin/footer.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/header.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/home.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/model/khoahoc.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/model/loaikhoahoc.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/model/pdo.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/view/danhmuc/adddanhmuc.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/view/danhmuc/editdanhmuc.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/view/danhmuc/listdanhmuc.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/view/sanpham/addsanpham.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/view/sanpham/editsanpham.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/view/sanpham/listsanpham.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/connect.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/footer.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/header.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/home.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/dang_nhap.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/user/assets/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/event.html" beforeDir="false" afterPath="$PROJECT_DIR$/user/event.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/gallery.html" beforeDir="false" afterPath="$PROJECT_DIR$/user/gallery.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/index-3.html" beforeDir="false" afterPath="$PROJECT_DIR$/user/index-3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/team.html" beforeDir="false" afterPath="$PROJECT_DIR$/user/team.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/home.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,6 +77,8 @@
       <workItem from="1668488991362" duration="5727000" />
       <workItem from="1668500338443" duration="778000" />
       <workItem from="1668501380190" duration="981000" />
+      <workItem from="1668521267876" duration="376000" />
+      <workItem from="1668530346162" duration="1854000" />
     </task>
     <servers />
   </component>

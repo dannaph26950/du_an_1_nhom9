@@ -141,7 +141,7 @@
                     <div class="col-auto d-none d-md-block">
                         <div class="header-links">
                             <ul>
-                                <li><i class="far fa-user"></i><a href="contact.html">Đăng nhập</a></li>
+                                <li><i class="far fa-user"></i><a href="index.php?act=dang_nhap">Đăng nhập</a></li>
                             </ul>
                         </div>
                     </div>
@@ -163,30 +163,17 @@
                                 <div class="col-auto">
                                     <nav class="main-menu d-none d-lg-inline-block">
                                         <ul>
-                                            <li class="menu-item-has-children"><a href="index.html">Trang chủ</a>
-
+                                            <li class=""><a href="index.php">Trang chủ</a>
                                             </li>
-                                            <li class="menu-item-has-children"><a href="index.php?act=add_khoahoc">Khóa học</a>
-<!--                                                <ul class="sub-menu">-->
-                                                    <!-- <li><a href="course.html">Khóa học</a></li> -->
-                                                    <!-- <li><a href="video-course.html">Video khóa học</a></li>
-                                                    <li><a href="course-details.html">Thông tin khóa học</a></li> -->
-<!--                                                </ul>-->
-                                            </li>
-                                            <li class="menu-item-has-children"><a href="index.php?act=add_giaovien">Giáo viên</a>
-<!--                                                <ul class="sub-menu">-->
-                                                    <!-- <li><a href="team.html">Giáo viên</a></li>
-                                                    <li><a href="team-details.html">Thông tin giáo viên</a></li> -->
-<!--                                                </ul>-->
+                                            <li class=""><a href="index.php?act=add_khoahoc">Khóa học</a>
                                             </li>
 
-                                            <li class="menu-item-has-children"><a href="index.php?act=add_dm">Lop</a>
-<!--                                                <ul class="sub-menu">-->
-                                                    <!-- <li><a href="blog.html">Bài viết</a></li>
-                                                    <li><a href="blog-details.html">Thông tin bài viết</a></li> -->
-<!--                                                </ul>-->
-                                            </li>
-                                            <li><a href="index.php?act=add_hocvien">Hoc Vien</a></li>
+                                            <li><a href="index.php?act=add_danhmuc">Danh Mục</a></li>
+                                            <li><a href="index.php?act=add_danhmuc">Giảng Viên</a></li>
+                                            <li><a href="index.php?act=add_hocvien">Học Viên</a></li>
+                                            <li><a href="index.php?act=add_hocvien">Lớp</a>
+                                            <li><a href="index.php?act=add_hocvien">Đơn hàng</a></li>
+                                            <li><a href="index.php?act=add_hocvien">Bình Luận</a></li>
                                         </ul>
                                     </nav>
 <!--                                    <button type="button" class="as-menu-toggle d-inline-block d-lg-none"><i-->

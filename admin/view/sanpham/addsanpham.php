@@ -1,5 +1,5 @@
-<center><h1>Thêm mới Khóa học</h1></center>
-<form method="post" action="index.php?act=add_khoahoc">
+<center><h1 style="margin-top: 20px;">Thêm mới Khóa học</h1></center>
+<form method="post" action="index.php?act=add_khoahoc" style="margin: 0px 300px;">
     <div class="mb-3">
         <label for="exampleInputEmail1" class="form-label">Tên Khóa Học</label>
         <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="ten_khoa_hoc">
