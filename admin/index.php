@@ -8,6 +8,12 @@ session_start();
     if(isset($_GET['act'])){
         $act = $_GET['act'];
         switch ($act){
+            case 'add_danhmuc':
+                if(isset($_POST['add_danhmuc']) && ($_POST['add_danhmuc'])){
+                    $ten_danh_muc = $_POST['ten_danh_muc'];
+                    $id_danh_muc = $_POST['id_danh_muc'];
+
+                }
             case 'add_khoahoc':
                 if(isset($_POST['add_khoahoc']) && ($_POST['add_khoahoc'])){
                     $ten_khoa_hoc = $_POST['ten_khoa_hoc'];

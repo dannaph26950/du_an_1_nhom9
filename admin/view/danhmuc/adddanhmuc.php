@@ -3,7 +3,7 @@
         <h3>THÊM MỚI DANH MỤC</h3>
     </div>
     <div class="import-dm">
-        <form action="index.php?act=add_dm" method="post">
+        <form action="index.php?act=add_danhmuc" method="post">
             <div class="maloai">
                 <h5>Mã Danh Mục</h5>
                 <input type="text" name="id_danh_muc" disabled>

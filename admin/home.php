@@ -9,7 +9,7 @@
                     <div class="event-card_content">
                         
                         <h3 class="event-card_title"><a href="index.php">Danh Mục
-                                Design</a></h3>
+                                </a></h3>
                         <div class="event-card_bottom"><a href="index.php" class="as-btn">Truy Cập</a>
                             <div class="event-author">
                                 <div class="avater"><img src="../user/assets/img/event/avater.jpg" alt="avater"></div><span

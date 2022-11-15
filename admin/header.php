@@ -169,11 +169,11 @@
                                             </li>
 
                                             <li><a href="index.php?act=add_danhmuc">Danh Mục</a></li>
-                                            <li><a href="index.php?act=add_danhmuc">Giảng Viên</a></li>
+                                            <li><a href="index.php?act=add_giangvien">Giảng Viên</a></li>
                                             <li><a href="index.php?act=add_hocvien">Học Viên</a></li>
-                                            <li><a href="index.php?act=add_hocvien">Lớp</a>
-                                            <li><a href="index.php?act=add_hocvien">Đơn hàng</a></li>
-                                            <li><a href="index.php?act=add_hocvien">Bình Luận</a></li>
+                                            <li><a href="index.php?act=add_lop">Lớp</a>
+                                            <li><a href="index.php?act=add_donhang">Đơn hàng</a></li>
+                                            <li><a href="index.php?act=add_binhluan">Bình Luận</a></li>
                                         </ul>
                                     </nav>
 <!--                                    <button type="button" class="as-menu-toggle d-inline-block d-lg-none"><i-->
