@@ -21,6 +21,9 @@ session_start();
                 }
                 include '../admin/view/sanpham/addsanpham.php';
                 break;
+            case 'dang_nhap':
+                include '../admin/dang_nhap.php';
+                break;
             default:
                 include '../admin/home.php';
         }
