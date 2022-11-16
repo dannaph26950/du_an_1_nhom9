@@ -5,17 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cc6cba04-603a-4918-b721-0684c76f7a58" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/admin/view/binhluan/listbinhluan.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/view/giangvien/addgiangvien.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/view/giangvien/editgiangvien.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/view/giangvien/listgiangvien.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/view/lop/addlop.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/home.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/model/loaikhoahoc.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/model/loaikhoahoc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/view/danhmuc/adddanhmuc.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/danhmuc/adddanhmuc.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +74,8 @@
       <workItem from="1668500338443" duration="778000" />
       <workItem from="1668501380190" duration="981000" />
       <workItem from="1668521267876" duration="376000" />
-      <workItem from="1668530346162" duration="5171000" />
+      <workItem from="1668530346162" duration="5882000" />
+      <workItem from="1668605284184" duration="930000" />
     </task>
     <servers />
   </component>
