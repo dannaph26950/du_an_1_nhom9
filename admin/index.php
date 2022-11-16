@@ -3,7 +3,6 @@ session_start();
     include '../admin/model/pdo.php';
     include  '../admin/model/khoahoc.php';
 
-
     include '../admin/header.php';
     if(isset($_GET['act'])){
         $act = $_GET['act'];
