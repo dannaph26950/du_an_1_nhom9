@@ -21,22 +21,24 @@
             <input type="text" class="form-control" id="exampleFormControlTextarea1" name="trang_thai" >
         </div>
 
+
+    </div>
+
+
+</form>
         <center>
             <div style="text-align: center">
-                <a href="index.php?act=add_giangvien"><input type="submit" value="THÊM MỚI" name="add_giangvien" class="btn btn-primary" style="width: 200px; margin: 0px 20px" ></a>
-                <a href="index.php?act=list_giangvien" ><input class="btn btn-primary" type="button" value="DANH SÁCH" style="width: 200px;margin: 0px 20px" ></a>
+                <a href="index.php?act=list_giangvien"><input type="submit" value="THÊM MỚI" name="add_giangvien" class="btn btn-primary" style="width: 200px; margin: 0px 20px" ></a>
                 <input type="reset" value="CẬP NHẬT LẠI" name=""  class="btn btn-primary" style="width: 200px" >
             </div>
         </center>
 
         <span style="color: red">
-            <?php
-            if (isset($thongbao) && ($thongbao != '')){
-                echo $thongbao;
-            }
-            ?>
-        </span>
-    </div>
-    <div style="margin-top: 100px; background-color: white"></div>
+                    <?php
+                    if (isset($thongbao) && ($thongbao != '')){
+                        echo $thongbao;
+                    }
+                    ?>
+                </span>
 
-</form>
+<div style="margin-top: 100px; background-color: white"></div>
