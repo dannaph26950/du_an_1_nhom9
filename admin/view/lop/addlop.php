@@ -18,22 +18,22 @@
         </div>
 
     </div>
-</form>
-<center>
-    <div style="text-align: center">
-        <a href="index.php?act=list_lop"><input type="submit" value="THÊM MỚI" name="add_lop" class="btn btn-primary" style="width: 200px; margin: 0px 20px" onclick="return  kiemTraDuLieu()" ></a>
-        <input type="reset" value="CẬP NHẬT LẠI" name=""  class="btn btn-primary" style="width: 200px" >
-    </div>
-</center>
+    <center>
+        <div style="text-align: center">
+            <input type="reset" value="CẬP NHẬT LẠI" name=""  class="btn btn-primary" style="width: 200px" >
+            <a href="index.php?act=list_lop"><input type="submit" value="THÊM MỚI" name="add_lop" class="btn btn-primary" style="width: 200px; margin: 0px 20px" onclick="return  kiemTraDuLieu()" ></a>
 
-<!--<span style="color: red">-->
-<!--            --><?php
-//            if (isset($thongbao) && ($thongbao != '')){
-//                echo '<script type ="text/JavaScript">';
-//                echo 'alert("Thêm thành công")';
-//                echo '</script>';
-//            }
-//            ?>
-<!--        </span>-->
+        </div>
+    </center>
+
+    <span style="color: red">
+            <?php
+            if (isset($thongbao) && ($thongbao != '')){
+                echo $thongbao;
+            }
+            ?>
+        </span>
+</form>
+
 
 <div style="margin-top: 100px; background-color: white"></div>
