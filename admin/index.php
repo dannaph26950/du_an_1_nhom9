@@ -12,6 +12,8 @@ session_start();
                 if(isset($_POST['add_danhmuc']) && ($_POST['add_danhmuc'])){
                     $ten_danh_muc = $_POST['ten_danh_muc'];
                     $id_danh_muc = $_POST['id_danh_muc'];
+                    insert_danhmuc($id_danh_muc,$ten_danh_muc);
+                    $thongbao = 'Đã thêm vào danh mục';
                 }
                 include '../admin/view/danhmuc/adddanhmuc.php';
                 break;
