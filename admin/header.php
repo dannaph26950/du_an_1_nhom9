@@ -165,13 +165,13 @@
                                         <ul>
                                             <li class=""><a href="index.php">Trang chủ</a>
                                             </li>
-                                            <li class=""><a href="index.php?act=add_khoahoc">Khóa học</a>
+                                            <li class=""><a href="index.php?act=list_khoahoc">Khóa học</a>
                                             </li>
 
-                                            <li><a href="index.php?act=add_danhmuc">Danh Mục</a></li>
-                                            <li><a href="index.php?act=add_giangvien">Giảng Viên</a></li>
+                                            <li><a href="index.php?act=list_danhmuc">Danh Mục</a></li>
+                                            <li><a href="index.php?act=list_giangvien">Giảng Viên</a></li>
                                             <li><a href="index.php?act=list_hocvien">Học Viên</a></li>
-                                            <li><a href="index.php?act=add_lop">Lớp</a>
+                                            <li><a href="index.php?act=list_lop">Lớp</a>
                                             <li><a href="index.php?act=list_donhang">Đơn hàng</a></li>
                                             <li><a href="index.php?act=list_binhluan">Bình Luận</a></li>
                                         </ul>
