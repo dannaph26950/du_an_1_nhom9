@@ -5,12 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cc6cba04-603a-4918-b721-0684c76f7a58" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/user/assets/js/kiemTra.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/header.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/model/khoahoc.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/model/khoahoc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/model/loaikhoahoc.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/model/loaikhoahoc.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/view/danhmuc/adddanhmuc.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/danhmuc/adddanhmuc.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/view/giangvien/addgiangvien.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/giangvien/addgiangvien.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/view/lop/addlop.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/lop/addlop.php" afterDir="false" />
@@ -85,7 +81,8 @@
       <workItem from="1668521267876" duration="376000" />
       <workItem from="1668530346162" duration="5882000" />
       <workItem from="1668605284184" duration="13107000" />
-      <workItem from="1668680733861" duration="1068000" />
+      <workItem from="1668680733861" duration="2725000" />
+      <workItem from="1668684430282" duration="3503000" />
     </task>
     <servers />
   </component>

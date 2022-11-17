@@ -15,20 +15,20 @@
                 </div>
 
             </div>
-
-
-        </form>
-        <div style="display: grid;grid-template-columns: 1fr 1fr 1fr ">
-            <a href="index.php?act=list_danhmuc"></a><input type="submit" value="THÊM MỚI" name="add_danhmuc" class="btn btn-primary" style="width: 200px" >
-             <input type="reset" value="CẬP NHẬT LẠI" name=""  class="btn btn-primary" style="width: 200px" >
-        </div>
-        <span style="color: red">
+            <div style="display: grid;grid-template-columns: 1fr 1fr 1fr ">
+                <a href="index.php?act=list_danhmuc"></a><input type="submit" value="THÊM MỚI" name="add_loai_khoa_hoc" class="btn btn-primary" style="width: 200px" >
+                <input type="reset" value="CẬP NHẬT LẠI" name=""  class="btn btn-primary" style="width: 200px" >
+            </div>
+            <span style="color: red">
                     <?php
                     if (isset($thongbao) && ($thongbao != '')){
                         echo $thongbao;
                     }
                     ?>
         </span>
+
+        </form>
+
         <div style="margin-top: 200px; background-color: white"></div>
     </div>
 </main>

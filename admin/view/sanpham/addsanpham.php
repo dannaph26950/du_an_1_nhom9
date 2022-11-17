@@ -32,23 +32,24 @@
             <label for="exampleInputEmail1"class="form-label" style="font-weight: bold" >MÃ LỚP</label>
             <input type="text"  class="form-control kiemtra" id="exampleInputEmail1" aria-describedby="emailHelp" name="id_lop">
         </div>
-    </div>
-</form>
-<center>
-    <div style="text-align: center">
-        <a href="index.php?act=list_khoahoc"><input type="submit" value="THÊM MỚI" name="add_khoahoc" class="btn btn-primary" style="width: 200px; margin: 0px 20px" onclick="return  kiemTraDuLieu()" ></a>
-        <input type="reset" value="CẬP NHẬT LẠI" name=""  class="btn btn-primary" style="width: 200px" >
-    </div>
-</center>
+        <center>
+            <div style="text-align: center">
+                <a href="index.php?act=add_khoahoc"><input type="submit" value="THÊM MỚI" name="add_khoahoc" class="btn btn-primary" style="width: 200px; margin: 0px 20px" onclick="return  kiemTraDuLieu()" ></a>
+                <input type="reset" value="CẬP NHẬT LẠI" name=""  class="btn btn-primary" style="width: 200px" >
+            </div>
 
-<!--<span style="color: red">-->
-<!--            --><?php
-//            if (isset($thongbao) && ($thongbao != '')){
-//                echo '<script type ="text/JavaScript">';
-//                echo 'alert("Thêm thành công")';
-//                echo '</script>';
-//            }
-//            ?>
-<!--        </span>-->
+        </center>
+        <span style="color: red; margin: 30px 0px">
+            <?php
+            if (isset($thongbao) && ($thongbao != '')){
+                echo $thongbao;
+            }
+            ?>
+        </span>
+    </div>
+
+
+</form>
+
 
 <div style="margin-top: 100px; background-color: white"></div>
