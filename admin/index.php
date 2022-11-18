@@ -11,8 +11,7 @@ session_start();
             case 'add_danhmuc':
                 if(isset($_POST['add_loai_khoa_hoc']) && ($_POST['add_loai_khoa_hoc'])){
                     $ten_danh_muc = $_POST['ten_danh_muc'];
-                    $id_danh_muc = $_POST['id_danh_muc'];
-                    insert_danhmuc($id_danh_muc,$ten_danh_muc);
+                    insert_danhmuc($ten_danh_muc);
                     $thongbao = 'Đã thêm vào danh mục';
                 }
                 include '../admin/view/danhmuc/adddanhmuc.php';

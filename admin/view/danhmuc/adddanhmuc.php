@@ -6,7 +6,7 @@
             <div style="margin: 0px 300px ;">
                 <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label" style="font-weight: bold">ID DANH MỤC: </label>
-                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="id_danh_muc">
+                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="id_danh_muc" placeholder="auto number">
                 </div>
 
                 <div class="mb-3">
