@@ -86,6 +86,9 @@ th {
   font-weight: 700;
   color: var(--title-color);
 }
+.datetime_td{
+  width: max-content;
+}
 td,
 th {
   border: 1px solid var(--border-color);
