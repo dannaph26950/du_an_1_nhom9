@@ -29,11 +29,7 @@
                         <td class="">
                         <input value="Sửa " type="button" class="btn btn-primary start-50" onclick="location.href='index.php?act=edit_danhmuc&id=<?php echo $value['id_danh_muc'] ?>'" ><br><br>
 
-                            <input value="XÓA" type="submit" class="btn btn-primary start-50" onclick="confirm('Bạn có muốn xóa danh mục \( <?php echo $value['ten_danh_muc']?> \) hay không!') == true ? location.href='index.php?act=delete_danhmuc&id=<?php echo $value['id_danh_muc']?>' : '' "><br><br>
-
-
-
-
+                            <input value="XÓA" type="button" class="btn btn-primary start-50" onclick="confirm('Bạn có muốn xóa danh mục \( <?php echo $value['ten_danh_muc']?> \) hay không!') == true ? location.href='index.php?act=delete_danhmuc&id=<?php echo $value['id_danh_muc']?>' : '' "><br><br>
 <!--                            Sửa sàn kiểu input thì nó nhận dữ liệu-->
                         </td>
                     </tr>

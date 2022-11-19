@@ -7,13 +7,10 @@
     <list default="true" id="cc6cba04-603a-4918-b721-0684c76f7a58" name="Changes" comment="update files add">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/model/khoahoc.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/model/khoahoc.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/model/loaikhoahoc.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/model/loaikhoahoc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/view/danhmuc/adddanhmuc.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/danhmuc/adddanhmuc.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/view/danhmuc/editdanhmuc.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/danhmuc/editdanhmuc.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/view/danhmuc/listdanhmuc.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/danhmuc/listdanhmuc.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/view/sanpham/addsanpham.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/sanpham/addsanpham.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/view/sanpham/listsanpham.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/sanpham/listsanpham.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/user/assets/css/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,7 +91,11 @@
       <workItem from="1668700504251" duration="1218000" />
       <workItem from="1668782416023" duration="4705000" />
       <workItem from="1668791643411" duration="5150000" />
-      <workItem from="1668831006748" duration="3414000" />
+      <workItem from="1668831006748" duration="3835000" />
+      <workItem from="1668838821238" duration="314000" />
+      <workItem from="1668853212421" duration="1233000" />
+      <workItem from="1668854469074" duration="575000" />
+      <workItem from="1668869799069" duration="6040000" />
     </task>
     <task id="LOCAL-00001" summary="update files add">
       <created>1668688059236</created>
