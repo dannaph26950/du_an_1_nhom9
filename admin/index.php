@@ -18,7 +18,9 @@ session_start();
                      $ten_danh_muc = $_POST['ten_danh_muc'];
                     insert_danhmuc($ten_danh_muc);
                     $thongbao = 'Đã thêm vào danh mục';
+
                 }
+                
                 include '../admin/view/danhmuc/adddanhmuc.php';
                 break;
             case 'list_danhmuc':
@@ -35,7 +37,7 @@ session_start();
             case 'edit_danhmuc':
                 if(isset($_GET['id']) && ($_GET['id']>0)){
                     $id = $_GET['id'];
-                    $listone_danhmuc = listone_danhmuc($id);
+                    $list_danhmuc = listone_danhmuc($id);
                 }
 
                 include '../admin/view/danhmuc/editdanhmuc.php';
@@ -45,7 +47,7 @@ session_start();
                     $id_danh_muc = $_POST['id_danh_muc'];
                     $ten_danh_muc = $_POST['ten_danh_muc'];
                     edit_danhmuc($ten_danh_muc,$id_danh_muc);
-                    $thongbao =  'Cập nhật thành công';
+                    $thongbao =  '<scipt>thongbao();</scipt>';
                 }
                 $listall_danhmuc=listall_danhmuc();
                 include '../admin/view/danhmuc/listdanhmuc.php';
