@@ -1,22 +1,35 @@
 <?php
 session_start();
+//Phải thêm các file từ model vào
     include '../admin/model/pdo.php';
     include  '../admin/model/khoahoc.php';
+    include '../admin/model/loaikhoahoc.php';
+    include '../admin/model/giangvien.php';
 
+// file trang dao diện và các chức năng khác nằm ở đây
     include '../admin/header.php';
     if(isset($_GET['act'])){
         $act = $_GET['act'];
         switch ($act){
         //danhmuc
             case 'add_danhmuc':
-                if(isset($_POST['add_loai_khoa_hoc']) && ($_POST['add_loai_khoa_hoc'])){
-                    $ten_danh_muc = $_POST['ten_danh_muc'];
+                if(isset($_POST['add_loaikhoahoc']) && ($_POST['add_loaikhoahoc'])){
+//                    $id_danh_muc = $_POST['id_danh_muc'];
+                     $ten_danh_muc = $_POST['ten_danh_muc'];
                     insert_danhmuc($ten_danh_muc);
                     $thongbao = 'Đã thêm vào danh mục';
                 }
                 include '../admin/view/danhmuc/adddanhmuc.php';
                 break;
             case 'list_danhmuc':
+                $listall_danhmuc = listall_danhmuc();
+                include '../admin/view/danhmuc/listdanhmuc.php';
+                break;
+            case 'delete_danhmuc':
+                if(isset($_GET['id']) && ($_GET['id']>0)){
+                    delete_danhmuc($_GET['id']);
+                }
+                $listall_danhmuc = listall_danhmuc();
                 include '../admin/view/danhmuc/listdanhmuc.php';
                 break;
         //khoahoc-thao
@@ -36,6 +49,14 @@ session_start();
                 break;
 
             case 'list_khoahoc':
+                $listall_khoahoc = listall_khoahoc();
+                include '../admin/view/sanpham/listsanpham.php';
+                break;
+            case 'delete_khoahoc':
+                if(isset($_GET['id']) && ($_GET['id']>0)){
+                    delete_khoahoc($_GET['id']);
+                }
+                $listall_khoahoc = listall_khoahoc();
                 include '../admin/view/sanpham/listsanpham.php';
                 break;
         //giangvien

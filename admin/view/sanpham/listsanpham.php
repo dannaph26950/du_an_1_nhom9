@@ -1,14 +1,10 @@
 
 <center><h1 style="margin: 60px 0px">DANH SÁCH KHÓA HỌC</h1></center>
 <div style="text-align: center; margin: 60px 0px">
-    <a href="index.php?act=add_khoahoc"><input type="submit" value="THEM MOI" name="add_khoahoc" class="btn btn-primary" style="width: 200px" ></a>
+    <a href="index.php?act=add_khoahoc"><input type="submit" value="THÊM MỚI" name="add_khoahoc" class="btn btn-primary" style="width: 200px" ></a>
 
 </div>
-<?php
-include "connect.php";
-$query="SELECT * FROM khoa_hoc";
-$result=$conn->query($query)->fetchAll();
-?>
+
 <div class="container">
     <table class="table table-bordered">
         <thead>
@@ -24,7 +20,7 @@ $result=$conn->query($query)->fetchAll();
         </tr>
         </thead>
         <tbody>
-        <?php foreach ($result as $key=>$value) {?>
+        <?php foreach ($listall_khoahoc as $key=>$value) {?>
             <tr>
                 <td><?php echo $value['id_khoa_hoc'] ?></td>
                 <td><?php echo $value['ten_khoa_hoc'] ?></td>
@@ -33,8 +29,8 @@ $result=$conn->query($query)->fetchAll();
                 <td><?php echo $value['mo_ta'] ?></td>
                 <td><?php echo $value['id_danh_muc'] ?></td>
                 <td><?php echo $value['id_lop'] ?></td>
-                <td class=""><button type="button" class="btn btn-primary start-50" >Sửa</button><br><br>
-                    <button type="button" class="btn btn-primary start-50"><a href="javascript:comfirmDeletez('delete.php?id=<?php echo $value["id_khoa_hoc"]; ?>')">XÓA</a></button><br><br>
+                <td class=""><input value="Sửa " type="button" class="btn btn-primary start-50" onclick="location.href='index.php?act=edit_khoahoc&id=<?php echo $value['id_khoa_hoc'] ?>'" ><br><br>
+                    <input type="submit" class="btn btn-primary start-50" onclick="confirm('Bạn có muốn xóa khóa học \( <?php echo $value['ten_khoa_hoc']?> \) hay không!') == true ? location.href='index.php?act=delete_khoahoc&id=<?php echo $value['id_khoa_hoc']?>' : ''" value="Xóa"><br><br>
                 </td>
 
             </tr>
@@ -44,10 +40,3 @@ $result=$conn->query($query)->fetchAll();
 
 </div>
 
-<script>
-    function comfirmDeletez(deleteUrl){
-        if(confirm("Bạn chắc chắn muốn xóa mục này?")){
-            document.location=deleteUrl;
-        }
-    }
-</script>
