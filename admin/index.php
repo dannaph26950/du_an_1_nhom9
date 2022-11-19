@@ -32,8 +32,26 @@ session_start();
                 $listall_danhmuc = listall_danhmuc();
                 include '../admin/view/danhmuc/listdanhmuc.php';
                 break;
+            case 'edit_danhmuc':
+                if(isset($_GET['id']) && ($_GET['id']>0)){
+                    $id = $_GET['id'];
+                    $listone_danhmuc = listone_danhmuc($id);
+                }
+
+                include '../admin/view/danhmuc/editdanhmuc.php';
+                break;
+            case 'update_danhmuc':
+                if (isset($_POST['edit_loaikhoahoc'])&&($_POST['edit_loaikhoahoc'])){
+                    $id_danh_muc = $_POST['id_danh_muc'];
+                    $ten_danh_muc = $_POST['ten_danh_muc'];
+                    edit_danhmuc($ten_danh_muc,$id_danh_muc);
+                    $thongbao =  'Cập nhật thành công';
+                }
+                $listall_danhmuc=listall_danhmuc();
+                include '../admin/view/danhmuc/listdanhmuc.php';
+                break;
         //khoahoc-thao
-            case 'add_khoahoc':
+                case 'add_khoahoc':
                 if(isset($_POST['add_khoahoc']) && ($_POST['add_khoahoc'])){
                     $ten_khoa_hoc = $_POST['ten_khoa_hoc'];
                     $id_danh_muc = $_POST['id_danh_muc'];
