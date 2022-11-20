@@ -15,6 +15,7 @@ $result=$conn->query($query)->fetchAll();
         <tr>
             <th>ID khóa học</th>
             <th>Tên khóa học</th>
+            <th>Ảnh khóa học</th>
             <th>Giá</th>
             <th>Thời gian học</th>
             <th>Mô tả</th>
@@ -28,13 +29,14 @@ $result=$conn->query($query)->fetchAll();
             <tr>
                 <td><?php echo $value['id_khoa_hoc'] ?></td>
                 <td><?php echo $value['ten_khoa_hoc'] ?></td>
+                <td><img src="../admin/assets/img/course/<?php echo $value['anh_khoa_hoc'] ?>" alt=""></td>
                 <td><?php echo $value['gia'] ?></td>
                 <td><?php echo $value['thoi_gian_hoc'] ?></td>
                 <td><?php echo $value['mo_ta'] ?></td>
                 <td><?php echo $value['id_danh_muc'] ?></td>
                 <td><?php echo $value['id_lop'] ?></td>
-                <td class=""><button type="button" class="btn btn-primary start-50" >Sửa</button><br><br>
-                    <button type="button" class="btn btn-primary start-50"><a href="javascript:comfirmDeletez('delete.php?id=<?php echo $value["id_khoa_hoc"]; ?>')">XÓA</a></button><br><br>
+                <td class=""><button type="button" class="btn btn-primary start-50" ><a style="color: white;text-decoration: none" href="index.php?act=sua_khoahoc&id_KH=<?php echo $value['id_khoa_hoc'] ?>">Sửa</a></button><br><br>
+                    <button type="button" class="btn btn-primary start-50"><a style="color: white;text-decoration: none" href="javascript:comfirmDeletez('delete.php?id=<?php echo $value["id_khoa_hoc"]; ?>')">Xóa</a></button><br><br>
                 </td>
 
             </tr>
