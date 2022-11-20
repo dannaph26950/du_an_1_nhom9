@@ -4,16 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cc6cba04-603a-4918-b721-0684c76f7a58" name="Changes" comment="update files add">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_18_11_2022_21_59_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_18_11_2022_21_59_PM__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/view/danhmuc/adddanhmuc.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/danhmuc/adddanhmuc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/view/danhmuc/editdanhmuc.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/danhmuc/editdanhmuc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/view/danhmuc/listdanhmuc.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/danhmuc/listdanhmuc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/view/giangvien/addgiangvien.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/giangvien/addgiangvien.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/view/giangvien/listgiangvien.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/giangvien/listgiangvien.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/view/sanpham/addsanpham.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/sanpham/addsanpham.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/view/sanpham/listsanpham.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/sanpham/listsanpham.php" afterDir="false" />
+    <list default="true" id="cc6cba04-603a-4918-b721-0684c76f7a58" name="Changes" comment="Upload">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/dang_nhap.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/dang_nhap.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +84,7 @@
       <workItem from="1668605284184" duration="13107000" />
       <workItem from="1668680733861" duration="2725000" />
       <workItem from="1668684430282" duration="4487000" />
-      <workItem from="1668963316963" duration="320000" />
+      <workItem from="1668963316963" duration="2440000" />
     </task>
     <task id="LOCAL-00001" summary="update files add">
       <created>1668688059236</created>
@@ -100,7 +93,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668688059236</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Upload">
+      <created>1668963833151</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1668963833152</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -119,7 +119,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="update files add" />
-    <option name="LAST_COMMIT_MESSAGE" value="update files add" />
+    <MESSAGE value="Upload" />
+    <option name="LAST_COMMIT_MESSAGE" value="Upload" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
