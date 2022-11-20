@@ -6,7 +6,7 @@
 </div>
 
 <form action="index.php?act=list_giangvien" method="post">
-        <h1>DANH SÁCH GIẢNG VIÊN ĐÂY </h1>
+    <h1>DANH SÁCH GIẢNG VIÊN ĐÂY </h1>
 
 
 
