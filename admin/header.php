@@ -41,7 +41,7 @@
 <body>
 
 <div class="as-menu-wrapper">
-
+   
 </div>
 <div class="popup-search-box d-none d-lg-block"><button class="searchClose"><i class="fal fa-times"></i></button>
     <form action="#"><input type="text" placeholder="What are you looking for?"> <button type="submit"><i
@@ -59,7 +59,7 @@
                     <div class="col-auto d-none d-md-block">
                         <div class="header-links">
                             <ul>
-                                <li><i class="far fa-user"></i><a href="index.php?act=dang_nhap">Đăng nhập</a></li>
+                                <li><i class="far fa-user"></i><a href="contact.html">Đăng nhập</a></li>
                             </ul>
                         </div>
                     </div>
@@ -81,21 +81,24 @@
                                 <div class="col-auto">
                                     <nav class="main-menu d-none d-lg-inline-block">
                                         <ul>
-                                            <li class=""><a href="index.php">Trang chủ</a>
+                                            <li class=" "><a href="index.php">Trang chủ</a>
+
                                             </li>
-                                            <li class=""><a href="index.php?act=list_khoahoc">Khóa học</a>
+                                            <li class=" "><a href="index.php?act=add_khoahoc">Khóa học</a>
+                                              
+                                            </li>
+                                            <li class=" "><a href="index.php?act=giaovien">Giáo viên</a>
+                                                
                                             </li>
 
-                                            <li><a href="index.php?act=list_danhmuc">Danh Mục</a></li>
-                                            <li><a href="index.php?act=list_giangvien">Giảng Viên</a></li>
-                                            <li><a href="index.php?act=list_hocvien">Học Viên</a></li>
-                                            <li><a href="index.php?act=list_lop">Lớp</a>
-                                            <li><a href="index.php?act=list_donhang">Đơn hàng</a></li>
-                                            <li><a href="index.php?act=list_binhluan">Bình Luận</a></li>
+                                            <li class=" "><a href="index.php?act=lop">Lớp</a>
+                                                
+                                            </li>
+                                            <li><a href="index.php?act=hocvien">Học viên</a></li>
                                         </ul>
                                     </nav>
-<!--                                    <button type="button" class="as-menu-toggle d-inline-block d-lg-none"><i-->
-<!--                                                class="far fa-bars"></i></button>-->
+                                    <button type="button" class="as-menu-toggle d-inline-block d-lg-none"><i-->
+                                               class="far fa-bars"></i></button>-->
                                 </div>
                                 
                             </div>
