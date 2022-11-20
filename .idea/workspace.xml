@@ -6,10 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="cc6cba04-603a-4918-b721-0684c76f7a58" name="Changes" comment="update files add">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/view/sanpham/addsanpham.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/sanpham/addsanpham.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/view/sanpham/listsanpham.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/sanpham/listsanpham.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/assets/js/thongbao.js" beforeDir="false" afterPath="$PROJECT_DIR$/user/assets/js/upload_lai_trang.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,20 +15,8 @@
   <component name="ComposerSettings">
     <execution />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="JavaScript File" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="JsbtTreeLayoutManager">
-    <layout place="tools.popupGrunt">
-      <scroll-view-position x="0" y="0" />
-    </layout>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -93,17 +77,7 @@
       <workItem from="1668530346162" duration="5882000" />
       <workItem from="1668605284184" duration="13107000" />
       <workItem from="1668680733861" duration="2725000" />
-      <workItem from="1668684430282" duration="4499000" />
-      <workItem from="1668700504251" duration="1218000" />
-      <workItem from="1668782416023" duration="4705000" />
-      <workItem from="1668791643411" duration="5150000" />
-      <workItem from="1668831006748" duration="3835000" />
-      <workItem from="1668838821238" duration="314000" />
-      <workItem from="1668853212421" duration="1233000" />
-      <workItem from="1668854469074" duration="575000" />
-      <workItem from="1668869799069" duration="6040000" />
-      <workItem from="1668878617813" duration="2561000" />
-      <workItem from="1668912138785" duration="3879000" />
+      <workItem from="1668684430282" duration="4487000" />
     </task>
     <task id="LOCAL-00001" summary="update files add">
       <created>1668688059236</created>
