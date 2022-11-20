@@ -14,16 +14,16 @@
         </div>
         <div class="mb-3">
             <label for="exampleInputEmail1"class="form-label" style="font-weight: bold" >LOẠI KHÓA HỌC </label>
-            <select class="text-input small-input kiemtra" data-error="Nhập mã loại cha" id="ma_loai_cha" name="ma_loai_cha"   >
+            <select class="text-input small-input kiemtra" data-error="Nhập mã loại cha" id="ma_loai_cha" name="id_danhmuc"   >
                 <option value="0">Chọn danh mục</option>
                 <?php foreach ($listall_danhmuc as $key => $value) {
                     ?>
-                    <option value="<?php echo $value['id_danh_muc'];?>"><?php echo $value['ten_danh_muc'];?></option>
+                    <option value="<?php echo $value['id_danh_muc'];?>" ><?php echo $value['ten_danh_muc'];?></option>
                     <?php
                 }
                 ?>
             </select>
-            <input type="number"  class="form-control kiemtra" id="exampleInputEmail1" aria-describedby="emailHelp" name="id_danh_muc">
+
         </div>
         <div class="mb-3">
             <label for="exampleInputEmail1"class="form-label" style="font-weight: bold" >ẢNH KHÓA HỌC</label>
@@ -47,7 +47,7 @@
         </div>
         <center>
             <div style="text-align: center">
-                <a href="index.php?act=add_khoahoc"><input type="submit" value="THÊM MỚI" name="add_khoahoc" class="btn btn-primary" style="width: 200px; margin: 0px 20px" onclick="return  kiemTraDuLieu()" ></a>
+                <a href="index.php?act=add_khoahoc"><input type="submit" value="THÊM MỚI" name="add_khoahoc" class="btn btn-primary" style="width: 200px; margin: 0px 20px" onclick="tai_lai_trang()" ></a>
                 <input type="reset" value="CẬP NHẬT LẠI" name=""  class="btn btn-primary" style="width: 200px" >
             </div>
         </center>
