@@ -10,7 +10,7 @@
         </div>
         <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label" style="font-weight: bold">HÌNH GIẢNG VIÊN</label>
-            <input type="file" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="hinh_gv">
+            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="hinh_gv">
         </div>
         <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label" style="font-weight: bold">THÔNG TIN GIẢNG VIÊN</label>
@@ -22,8 +22,9 @@
         </div>
         <center>
             <div style="text-align: center">
-                <a href="index.php?act=list_giangvien"><input type="submit" value="THÊM MỚI" name="add_giangvien" class="btn btn-primary" style="width: 200px; margin: 0px 20px" ></a>
+                <a href="index.php?act=add_giangvien"><input type="submit" value="THÊM MỚI" name="add_giangvien" class="btn btn-primary" style="width: 200px; margin: 0px 20px" ></a>
                 <input type="reset" value="CẬP NHẬT LẠI" name=""  class="btn btn-primary" style="width: 200px" >
+
             </div>
         </center>
 
