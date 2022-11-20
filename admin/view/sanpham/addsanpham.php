@@ -11,6 +11,7 @@
         <div class="mb-3">
             <label for="exampleInputEmail1"class="form-label" style="font-weight: bold" >TÊN KHÓA HỌC</label>
             <input type="text"  class="form-control kiemtra" id="exampleInputEmail1" aria-describedby="emailHelp" name="ten_khoa_hoc">
+            <p style="color: red"><?php echo isset($error_add_khoahoc["name_KH"]) ? $error_add_khoahoc["name_KH"] : ""; ?></p>
         </div>
         <div class="mb-3">
             <label for="exampleInputEmail1"class="form-label" style="font-weight: bold" >LOẠI KHÓA HỌC </label>
@@ -28,22 +29,35 @@
         <div class="mb-3">
             <label for="exampleInputEmail1"class="form-label" style="font-weight: bold" >ẢNH KHÓA HỌC</label>
             <input type="file"  class="form-control kiemtra" id="exampleInputEmail1" aria-describedby="emailHelp" name="anh">
+            <p style="color: red"><?php
+                if (isset($error_add_khoahoc["imgSize"])){
+                    echo $error_add_khoahoc["imgSize"];
+                } elseif (isset($error_add_khoahoc["imgType"])){
+                    echo $error_add_khoahoc["imgType"];
+                } else {
+                    echo "";
+                }
+                ?></p>
         </div>
         <div class="mb-3">
             <label for="exampleFormControlTextarea1"class="form-label" style="font-weight: bold" >MÔ TẢ</label>
             <textarea  class="form-control kiemtra" id="exampleFormControlTextarea1" rows="3" name="mo_ta"></textarea>
+            <p style="color: red"><?php echo isset($error_add_khoahoc["mota"]) ? $error_add_khoahoc["mota"] : ""; ?></p>
         </div>
         <div class="mb-3">
             <label for="exampleInputEmail1"class="form-label" style="font-weight: bold" >GIÁ TIỀN</label>
             <input type="number"  class="form-control kiemtra" id="exampleInputEmail1" aria-describedby="emailHelp" name="gia">
+            <p style="color: red"><?php echo isset($error_add_khoahoc["gia"]) ? $error_add_khoahoc["gia"] : ""; ?></p>
         </div>
         <div class="mb-3">
             <label for="exampleInputEmail1"class="form-label" style="font-weight: bold" >THỜI GIAN HỌC</label>
             <input type="date"  class="form-control kiemtra" id="exampleInputEmail1" aria-describedby="emailHelp" name="thoi_gian_hoc">
+            <p style="color: red"><?php echo isset($error_add_khoahoc["time"]) ? $error_add_khoahoc["time"] : ""; ?></p>
         </div>
         <div class="mb-3">
             <label for="exampleInputEmail1"class="form-label" style="font-weight: bold" >MÃ LỚP</label>
             <input type="text"  class="form-control kiemtra" id="exampleInputEmail1" aria-describedby="emailHelp" name="id_lop">
+            <p style="color: red"><?php echo isset($error_add_khoahoc["id_lop"]) ? $error_add_khoahoc["id_lop"] : ""; ?></p>
         </div>
         <center>
             <div style="text-align: center">

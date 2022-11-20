@@ -31,7 +31,7 @@
                 <td><?php echo $value['mo_ta'] ?></td>
                 <td><?php echo $value['id_danh_muc'] ?></td>
                 <td><?php echo $value['id_lop'] ?></td>
-                <td class=""><input value="Sửa " type="button" class="btn btn-primary start-50" onclick="location.href='index.php?act=edit_khoahoc&id=<?php echo $value['id_khoa_hoc'] ?>'" ><br><br>
+                <td class=""><input value="Sửa " type="button" class="btn btn-primary start-50" onclick="location.href='index.php?act=sua_khoahoc&id=<?php echo $value['id_khoa_hoc'] ?>'" ><br><br>
                     <input type="submit" class="btn btn-primary start-50" onclick="confirm('Bạn có muốn xóa khóa học \( <?php echo $value['ten_khoa_hoc']?> \) hay không!') == true ? location.href='index.php?act=delete_khoahoc&id=<?php echo $value['id_khoa_hoc']?>' : ''" value="Xóa"><br><br>
                 </td>
 

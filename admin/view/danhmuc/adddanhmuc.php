@@ -11,12 +11,13 @@
 
                 <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label" style="font-weight: bold">ID DANH MỤC: </label>
-                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="id_danh_muc" placeholder="auto number">
+                    <input type="text" disabled class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="id_danh_muc" placeholder="auto number">
                 </div>
 
                 <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label" style="font-weight: bold">TÊN DANH MỤC:</label>
                     <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="ten_danh_muc">
+                    <p style="color: red"><?php echo isset($error_add_danhmuc["name"]) ? $error_add_danhmuc["name"] : ""; ?></p>
                 </div>
                 <center>
                     <div style= "">
