@@ -312,26 +312,7 @@ session_start();
                 include '../admin/view/giangvien/listgiangvien.php';
                 break;
 
-//                học viên
-//            case 'list_danhmuc':
-//                $listall_danhmuc = listall_danhmuc();
-//                include '../admin/view/danhmuc/listdanhmuc.php';
-//                break;
-//            case 'delete_danhmuc':
-//                if(isset($_GET['id']) && ($_GET['id']>0)){
-//                    delete_danhmuc($_GET['id']);
-//                }
-//                $listall_danhmuc = listall_danhmuc();
-//                include '../admin/view/danhmuc/listdanhmuc.php';
-//                break;
-//            case 'edit_danhmuc':
-//                if(isset($_GET['id']) && ($_GET['id']>0)){
-//                    $id = $_GET['id'];
-//                    $list_danhmuc = listone_danhmuc($id);
-//                }
-//
-//                include '../admin/view/danhmuc/editdanhmuc.php';
-//                break;
+//HỌC VIÊN
             case 'list_hocvien':
                 $listall_hocvien = listall_hocvien();
                 include '../admin/view/hocvien/listhocvien.php';
@@ -354,7 +335,7 @@ session_start();
                 include '../admin/view/hocvien/listhocvien.php';
                 break;
             case 'edit_hocvien':
-
+                include '../admin/view/hocvien/edithocvien.php';
                 if(isset($_POST['edit_hocvien']) && ($_POST['edit_hocvien'])) {
 
                     $ten_hv = $_POST['ten_hv'];
