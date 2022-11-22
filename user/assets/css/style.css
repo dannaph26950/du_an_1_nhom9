@@ -17,7 +17,7 @@
   --success-color: #28a745;
   --error-color: #dc3545;
   --border-color: #ecf1f9;
-  --title-font: "Jost", sans-serif;
+
   --body-font: "Roboto", sans-serif;
   --icon-font: "Font Awesome 6 Pro";
   --main-container: 1380px;
@@ -85,6 +85,9 @@ table {
 th {
   font-weight: 700;
   color: var(--title-color);
+}
+.datetime_td{
+  width: max-content;
 }
 td,
 th {
