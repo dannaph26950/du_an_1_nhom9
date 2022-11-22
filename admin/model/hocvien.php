@@ -16,5 +16,15 @@
         $sql = "delete from hoc_vien where id_hoc_vien=".$id_hoc_vien;
         pdo_execute($sql);
     }
+    function listone_hocvien($id){
+        $sql = "select * from hoc_vien where id_hoc_vien=".$id;
+        $listone_hocvien = pdo_query($sql);
+        return $listone_hocvien ;
+
+        function update_hocvien($id_hoc_vien,$ten_hv,$email,$sdt,$dia_chi){
+            $sql = "UPDATE `hoc_vien` SET `ten_hv`='$ten_hv',email='$email',sdt='$sdt',dia_chi='$dia_chi' WHERE id_hoc_vien = '$id_hoc_vien'";
+            pdo_execute($sql);
+        }
+    }
 
 ?>

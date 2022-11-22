@@ -3,7 +3,7 @@
 <!--        tôi lấy ở cái file wishlist.html-->
         <div class="tinv-wishlist woocommerce tinv-wishlist-clear">
             <div class="tinv-header">
-                <center><h1 style="margin: 60px 0px">DANH SÁCH DANH MỤC</h1></center>
+                <center><h1 style="margin: 60px 0px">QUẢN LÝ LOẠI KHÓA HỌC</h1></center>
             </div>
             <div style="text-align: center; margin: 60px 0px">
                 <a href="index.php?act=add_danhmuc"><input type="submit" value="THÊM MỚI" name="add_khoahoc" class="btn btn-primary" style="width: 200px" ></a>

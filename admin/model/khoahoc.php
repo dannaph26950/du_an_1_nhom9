@@ -12,12 +12,12 @@ function listall_khoahoc(){
 }
 //xoa sanpham
 function delete_khoahoc($id_khoa_hoc){
-    $sql = "delete from khoa_hoc where id_danh_muc=$id_khoa_hoc";
+    $sql = "delete from khoa_hoc where id_danh_muc='$id_khoa_hoc'";
     pdo_execute($sql);
 }
-    function listone_khoahoc($id){
-        $sql = "SELECT * FROM khoa_hoc WHERE id_khoa_hoc =$id";
+function listone_khoahoc($id){
+        $sql = "SELECT * FROM khoa_hoc WHERE id_khoa_hoc ='$id'";
         $listone_khoahoc = pdo_query($sql);
         return $listone_khoahoc;
-    }
+}
 ?>

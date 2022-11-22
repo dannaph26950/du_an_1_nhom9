@@ -43,7 +43,8 @@ session_start();
 
                 include '../admin/view/danhmuc/editdanhmuc.php';
                 break;
-            case 'update_danhmuc':
+            case 'upd_danhmuc':
+
                 if (isset($_POST['edit_loaikhoahoc'])&&($_POST['edit_loaikhoahoc'])){
                     $id_danh_muc = $_POST['id_danh_muc'];
                     $ten_danh_muc = $_POST['ten_danh_muc'];
@@ -52,6 +53,7 @@ session_start();
 
                 }
                 $listall_danhmuc=listall_danhmuc();
+
                 include '../admin/view/danhmuc/listdanhmuc.php';
                 break;
         //khoahoc-thao
@@ -103,7 +105,8 @@ session_start();
 
 //                SỬA THÔNG TIN KHÓA HỌC
             case 'upd_khoahoc':
-
+                    include '../admin/view/sanpham/editsanpham.php';
+                    $listone_khoahoc=listone_khoahoc();
                 $error_update_khoahoc = [];
                 if(isset($_POST['update_KH']) && ($_POST['update_KH'])){
                     $id_khoa_hoc = $_POST['id'];
@@ -182,6 +185,7 @@ session_start();
 //                XÓA KHÓA HỌC
 //        ====================================
             case 'delete_khoahoc':
+
                 if(isset($_GET['id']) && ($_GET['id']>0)){
                     delete_khoahoc($_GET['id']);
                 }
@@ -284,7 +288,7 @@ session_start();
                     $thong_tin_gv = $_POST['thong_tin_gv'];
                     $trang_thai = $_POST['trang_thai'];
                     if (!$error_update_giangvien) {
-                        update_khoahoc($ten_gv,$name_image, $thong_tin_gv,  $trang_thai);
+                        update_giangvien($ten_gv,$name_image, $thong_tin_gv, $trang_thai);
                         $thongbao= 'Cập nhật thành công';
 
                     }
@@ -298,8 +302,8 @@ session_start();
 //                XÓA THÔNG TIN GIẢNG VIÊN
 //        =====================================================
             case 'delete_giangvien':
-                if(isset($_GET['magv']) && ($_GET['magv']>0)){
-                    delete_giangvien($_GET['magv']);
+                if(isset($_GET['id']) && ($_GET['id']>0)){
+                    delete_giangvien($_GET['id']);
                 }
                 $listall_giangvien = listall_giangvien();
                 include '../admin/view/giangvien/listgiangvien.php';
@@ -312,43 +316,57 @@ session_start();
                 include '../admin/view/giangvien/listgiangvien.php';
                 break;
 
-//                học viên
-//            case 'list_danhmuc':
-//                $listall_danhmuc = listall_danhmuc();
-//                include '../admin/view/danhmuc/listdanhmuc.php';
-//                break;
-//            case 'delete_danhmuc':
-//                if(isset($_GET['id']) && ($_GET['id']>0)){
-//                    delete_danhmuc($_GET['id']);
-//                }
-//                $listall_danhmuc = listall_danhmuc();
-//                include '../admin/view/danhmuc/listdanhmuc.php';
-//                break;
-//            case 'edit_danhmuc':
-//                if(isset($_GET['id']) && ($_GET['id']>0)){
-//                    $id = $_GET['id'];
-//                    $list_danhmuc = listone_danhmuc($id);
-//                }
-//
-//                include '../admin/view/danhmuc/editdanhmuc.php';
-//                break;
+
+
+//XÓA HỌC VIÊN
+            case 'delete_hocvien':
+                if(isset($_GET['id']) && ($_GET['id']>0)){
+                    delete_hocvien($_GET['id']);
+                }
+                $listall_hocvien = listall_hocvien();
+
+                include '../admin/view/hocvien/listhocvien.php';
+                break;
+
+                //                ĐỔ THÔNG TIN HỌC VIÊN
+//                ======================================================
             case 'list_hocvien':
                 $listall_hocvien = listall_hocvien();
                 include '../admin/view/hocvien/listhocvien.php';
                 break;
             case 'add_hocvien':
-                include '../admin/view/hocvien/addhocvien.php';
+
+                if(isset($_POST['add_hocvien']) && ($_POST['add_hocvien'])) {
+                    $ten_hv=$_POST['ten_hv'];
+                    $email=$_POST['email'];
+                    $sdt=$_POST['sdt'];
+                    $dia_chi=$_POST['dia_chi'];
+
+                    insert_hocvien ($ten_hv,$email,$sdt,$dia_chi);
+                    $thongbao="Thêm học viên thành công";
 
 
 
-                    $thongbao = 'Thêm thành công';
+                }
                 $listall_hocvien=listall_hocvien();
-
-
+                include '../admin/view/hocvien/addhocvien.php';
                 break;
             case 'edit_hocvien':
+                include "../admin/view/hocvien/edithocvien.php";
+                if(isset($_GET['id']) && ($_GET['id']>0)){
+                    $id=$_GET['id'];
+                    $listone_hocvien = listone_hocvien($id);
+                    $ten_hv=$_POST['ten_hv'];
+                    $email=$_POST['email'];
 
-                include '../admin/view/hocvien/listhocvien.php';
+                    $sdt=$_POST['sdt'];
+
+                    $dia_chi=$_POST['dia_chi'];
+                    update_hocvien($ten_hv,$email,$sdt,$dia_chi);
+                    $thongbao="Cập nhật học viên thành công";
+                }
+                include '../admin/view/hocvien/edithocvien.php';
+
                 break;
         //dangnhap-admin
             case 'dang_nhap':
