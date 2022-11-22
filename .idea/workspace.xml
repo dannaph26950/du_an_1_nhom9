@@ -4,15 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cc6cba04-603a-4918-b721-0684c76f7a58" name="Changes" comment="update file trang admin từ danna">
+    <list default="true" id="cc6cba04-603a-4918-b721-0684c76f7a58" name="Changes" comment="them sua xoa lop">
+      <change afterPath="$PROJECT_DIR$/admin/model/binhluan.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/model/giohang.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/view/binhluan/editbinhluan.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/view/giohang/addgiohang.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/view/giohang/editgiohang.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/view/giohang/listgiohang.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/model/giangvien.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/model/giangvien.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/model/hocvien.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/model/hocvien.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/model/khoahoc.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/model/khoahoc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/view/danhmuc/listdanhmuc.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/danhmuc/listdanhmuc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/view/hocvien/edithocvien.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/hocvien/edithocvien.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/view/hocvien/listhocvien.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/hocvien/listhocvien.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/view/binhluan/listbinhluan.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/binhluan/listbinhluan.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,13 +23,6 @@
   <component name="ComposerSettings">
     <execution />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="JavaScript File" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
@@ -37,16 +31,11 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="JsbtTreeLayoutManager">
-    <layout place="tools.popupGrunt">
-      <scroll-view-position x="0" y="0" />
-    </layout>
-  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2HWiIKCMktT96Ywea3uNj3g9DyO" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+  <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
@@ -60,7 +49,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/xampp/htdocs/du_an_1_nhom9/user&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/xampp/htdocs/du_an_1_nhom9&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -72,7 +61,6 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\du_an_1_nhom9\user" />
       <recent name="C:\xampp\htdocs\duan1_nhom9\model" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -102,22 +90,11 @@
       <workItem from="1668530346162" duration="5882000" />
       <workItem from="1668605284184" duration="13107000" />
       <workItem from="1668680733861" duration="2725000" />
-      <workItem from="1668684430282" duration="4499000" />
-      <workItem from="1668700504251" duration="1218000" />
-      <workItem from="1668782416023" duration="4705000" />
-      <workItem from="1668791643411" duration="5150000" />
-      <workItem from="1668831006748" duration="3835000" />
-      <workItem from="1668838821238" duration="314000" />
-      <workItem from="1668853212421" duration="1233000" />
-      <workItem from="1668854469074" duration="575000" />
-      <workItem from="1668869799069" duration="6040000" />
-      <workItem from="1668878617813" duration="2561000" />
-      <workItem from="1668912138785" duration="3879000" />
-      <workItem from="1668953234029" duration="5952000" />
-      <workItem from="1669077413656" duration="23000" />
-      <workItem from="1669085702194" duration="10257000" />
-      <workItem from="1669110342045" duration="792000" />
-      <workItem from="1669115678008" duration="1400000" />
+      <workItem from="1668684430282" duration="4487000" />
+      <workItem from="1668963316963" duration="2440000" />
+      <workItem from="1669044500366" duration="18289000" />
+      <workItem from="1669115611394" duration="5000" />
+      <workItem from="1669117004266" duration="1348000" />
     </task>
     <task id="LOCAL-00001" summary="update files add">
       <created>1668688059236</created>
@@ -126,21 +103,42 @@
       <option name="project" value="LOCAL" />
       <updated>1668688059236</updated>
     </task>
-    <task id="LOCAL-00002" summary="update giao diện user">
-      <created>1669081009747</created>
+    <task id="LOCAL-00002" summary="Upload">
+      <created>1668963833151</created>
       <option name="number" value="00002" />
       <option name="presentableId" value="LOCAL-00002" />
       <option name="project" value="LOCAL" />
-      <updated>1669081009747</updated>
+      <updated>1668963833152</updated>
     </task>
-    <task id="LOCAL-00003" summary="hoàn thiện trang admin: giảng viên và học viên">
-      <created>1669111317034</created>
+    <task id="LOCAL-00003" summary="validate add danh muc, validate add khoa hoc">
+      <created>1668977308197</created>
       <option name="number" value="00003" />
       <option name="presentableId" value="LOCAL-00003" />
       <option name="project" value="LOCAL" />
-      <updated>1669111317034</updated>
+      <updated>1668977308197</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="validate add danh muc, validate add khoa hoc">
+      <created>1668977340094</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1668977340094</updated>
+    </task>
+    <task id="LOCAL-00005" summary="validate edit san pham nhung dang bi loi =)))">
+      <created>1668977393290</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1668977393290</updated>
+    </task>
+    <task id="LOCAL-00006" summary="them sua xoa lop">
+      <created>1669062945248</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1669062945248</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -159,9 +157,11 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="update files add" />
-    <MESSAGE value="update giao diện user" />
-    <MESSAGE value="hoàn thiện trang admin: giảng viên và học viên" />
-    <option name="LAST_COMMIT_MESSAGE" value="hoàn thiện trang admin: giảng viên và học viên" />
+    <MESSAGE value="Upload" />
+    <MESSAGE value="validate add danh muc, validate add khoa hoc" />
+    <MESSAGE value="validate edit san pham nhung dang bi loi =)))" />
+    <MESSAGE value="them sua xoa lop" />
+    <option name="LAST_COMMIT_MESSAGE" value="them sua xoa lop" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
