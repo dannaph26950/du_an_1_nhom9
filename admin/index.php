@@ -298,8 +298,8 @@ session_start();
 //                XÓA THÔNG TIN GIẢNG VIÊN
 //        =====================================================
             case 'delete_giangvien':
-                if(isset($_GET['magv']) && ($_GET['magv']>0)){
-                    delete_giangvien($_GET['magv']);
+                if(isset($_GET['id']) && ($_GET['id']>0)){
+                    delete_giangvien($_GET['id']);
                 }
                 $listall_giangvien = listall_giangvien();
                 include '../admin/view/giangvien/listgiangvien.php';
@@ -346,7 +346,33 @@ session_start();
 
 
                 break;
+            case 'delete_hocvien':
+                if(isset($_GET['id']) && ($_GET['id']>0)){
+                    delete_hocvien($_GET['id']);
+                }
+                $listall_hocvien = listall_hocvien();
+                include '../admin/view/hocvien/listhocvien.php';
+                break;
             case 'edit_hocvien':
+
+                if(isset($_POST['edit_hocvien']) && ($_POST['edit_hocvien'])) {
+
+                    $ten_hv = $_POST['ten_hv'];
+
+
+                    $email = $_POST['sdt'];
+                    $sdt = $_POST['sdt'];
+                    $dia_chi = $_POST['dia_chi'];
+                    $listall_hocvien=listall_hocvien ();
+                    insert_hocvien ($ten_hv,$email,$sdt,$dia_chi);
+                    $thongbao="Thêm học viên thành công";
+
+
+                    $thongbao = 'Thêm thành công';
+
+                }
+                $listall_hocvien=listall_hocvien();
+
 
                 include '../admin/view/hocvien/listhocvien.php';
                 break;

@@ -27,7 +27,7 @@
                 <td><?php echo $value['sdt'] ?></td>
                 <td><?php echo $value['dia_chi'] ?></td>
                 <td class=""><input value="Sửa " type="button" class="btn btn-primary start-50" onclick="location.href='index.php?act=edit_giangvien&id=<?php echo $value['magv'] ?>'" ><br><br>
-                    <input type="submit" class="btn btn-primary start-50" onclick="confirm('Bạn có muốn xóa giảng viên \( <?php echo $value['ten_gv']?> \) hay không!') == true ? location.href='index.php?act=delete_giangvien&id=<?php echo $value['magv']?>' : ''" value="Xóa"><br><br>
+                    <input type="submit" class="btn btn-primary start-50" onclick="confirm('Bạn có muốn xóa học  viên \( <?php echo $value['ten_hv']?> \) hay không!') == true ? location.href='index.php?act=delete_hocvien&id=<?php echo $value['id_hoc_vien']?>' : ''" value="Xóa"><br><br>
                 </td>
 
             </tr>
