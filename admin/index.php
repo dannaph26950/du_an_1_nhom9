@@ -210,7 +210,13 @@ if(isset($_GET['act'])){
         case 'list_giangvien':
             include '../admin/view/giangvien/listgiangvien.php';
             break;
-
+        //binhluan
+        case 'list_binhluan':
+            include '../admin/view/binhluan/listbinhluan.php';
+            break;
+        case 'edit_binhluan':
+            include '../admin/view/binhluan/editbinhluan.php';
+            break;
         //dangnhap-admin
         case 'dang_nhap':
 
