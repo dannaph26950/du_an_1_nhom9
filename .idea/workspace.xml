@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cc6cba04-603a-4918-b721-0684c76f7a58" name="Changes" comment="">
+    <list default="true" id="cc6cba04-603a-4918-b721-0684c76f7a58" name="Changes" comment="update giao diện user">
       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_22_11_2022_18_47_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_22_11_2022_18_47_PM__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/index.php" afterDir="false" />
@@ -13,6 +13,7 @@
       <change beforePath="$PROJECT_DIR$/user/cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/user/cart.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user/course.html" beforeDir="false" afterPath="$PROJECT_DIR$/user/course.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/user/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/wishlist.html" beforeDir="false" afterPath="$PROJECT_DIR$/user/wishlist.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,7 +118,7 @@
       <workItem from="1669077413656" duration="23000" />
       <workItem from="1669085702194" duration="10257000" />
       <workItem from="1669110342045" duration="792000" />
-      <workItem from="1669128044156" duration="5178000" />
+      <workItem from="1669128044156" duration="6071000" />
     </task>
     <task id="LOCAL-00001" summary="update files add">
       <created>1668688059236</created>
@@ -133,7 +134,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669081009747</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="update giao diện user">
+      <created>1669135449625</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1669135449625</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
