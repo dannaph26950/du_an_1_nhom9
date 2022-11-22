@@ -99,10 +99,88 @@ session_start();
                 include '../admin/view/sanpham/addsanpham.php';
                 break;
 
+
+
+//                SỬA THÔNG TIN KHÓA HỌC
+            case 'upd_khoahoc':
+
+                $error_update_khoahoc = [];
+                if(isset($_POST['update_KH']) && ($_POST['update_KH'])){
+                    $id_khoa_hoc = $_POST['id'];
+                    $ten_khoa_hoc = $_POST['ten_KH'];
+                    if (isset($_FILES['anh'])){
+                        $tagert_dir = "../admin/view/upfileanh/";
+                        $name_image = $_FILES['anh']['name'];
+                        $tagert_file = $tagert_dir.$name_image;
+                        $maxfilesize = 800000;
+                        $allowtypes = ['jpg', 'png', 'gif', 'jpeg'];
+                        $allowupload = true;
+                        $imageFileType = pathinfo($tagert_file,PATHINFO_EXTENSION);
+                        if ($_FILES['anh']['size'] > $maxfilesize){
+                            $error_update_khoahoc['imgSize'] = " Không được upload ảnh lớn hơn ".$maxfilesize."Byte";
+                            $allowupload = false;
+                        }
+
+                        if (!in_array($imageFileType,$allowtypes)){
+                            $error_update_khoahoc['imgType'] = "Chỉ được upload các định dạng JPG , PNG , GIF , JPEG<br>";
+                            $allowupload = false;
+                        }
+                        if ($allowupload == true){
+                            // Xử lý di chuyển ảnh từ máy tính sang server
+                            // dung ham move_upload_file
+                            if (move_uploaded_file($_FILES['anh']['tmp_name'],$tagert_file)){
+//                                echo " Upload thành công ".$_FILES['anh']['tmp_name']."<br>";
+                            }else{
+                                echo "Lỗi khi đang thực hiện upload<br>";
+                            }
+                        }
+                    }
+                    $gia = $_POST['gia_KH'];
+                    $thoi_gian_hoc = $_POST['thoiGian_KH'];
+                    $mo_ta = $_POST['mota_KH'];
+                    $id_danh_muc = $_POST['id_danhmuc'];
+                    $id_lop= $_POST['id_Lop'];
+                    if(empty($ten_khoa_hoc)){
+                        $error_update_khoahoc["name"] = "Vui lòng nhập tên khóa học";
+                    }
+                    if(empty($gia)){
+                        $error_update_khoahoc["gia"] = "Vui lòng nhập giá tiền";
+                    }
+                    if(empty($mo_ta)){
+                        $error_update_khoahoc["mota"] = "Vui lòng nhập mô tả";
+                    }
+                    if(empty($id_danh_muc)){
+                        $error_update_khoahoc["id_DM"] = "Vui lòng nhập mã danh mục";
+                    }
+                    if(empty($id_lop)){
+                        $error_update_khoahoc["id_lop"] = "Vui lòng nhập mã lớp";
+                    }
+                    if(empty($thoi_gian_hoc)){
+                        $error_update_khoahoc["time"] = "Vui lòng nhập thời gian học";
+                    }
+                    if (!$error_update_khoahoc) {
+                        update_khoahoc($ten_khoa_hoc,$name_image, $gia, $thoi_gian_hoc, $mo_ta, $id_danh_muc,$id_lop,$id_khoa_hoc);
+                        $thongbao= 'Cập nhật thành công';
+
+                    }
+                      include '../admin/view/sanpham/editsanpham.php';
+                }
+                $listall_khoahoc = listall_khoahoc();
+                include '../admin/view/sanpham/listsanpham.php';
+                break;
+
+
+
+//                IN KHÓA HỌC
+//        ==============================
             case 'list_khoahoc':
                 $listall_khoahoc = listall_khoahoc();
                 include '../admin/view/sanpham/listsanpham.php';
                 break;
+
+
+//                XÓA KHÓA HỌC
+//        ====================================
             case 'delete_khoahoc':
                 if(isset($_GET['id']) && ($_GET['id']>0)){
                     delete_khoahoc($_GET['id']);
@@ -110,7 +188,11 @@ session_start();
                 $listall_khoahoc = listall_khoahoc();
                 include '../admin/view/sanpham/listsanpham.php';
                 break;
-        //giangvien
+
+
+
+        //THÊM GIẢNG VIÊN
+//            ===============================
             case 'add_giangvien':
                 include '../admin/view/giangvien/addgiangvien.php';
                 if(isset($_POST['add_giangvien']) && ($_POST['add_giangvien'])) {
@@ -152,16 +234,69 @@ session_start();
 
 
                     $thongbao = 'Thêm thành công';
+
                 }
                 $listall_giangvien=listall_giangvien();
                   include '../admin/view/giangvien/listgiangvien.php';
 
                 break;
-            case 'list_giangvien':
-                $listall_giangvien= listall_giangvien();
-                include '../admin/view/giangvien/listgiangvien.php';
+
+
+
+//                SỬA THÔNG TIN GIẢNG VIÊN
+//        =====================================================
+
+            case 'edit_giangvien':
+
+                include '../admin/view/giangvien/editgiangvien.php';
+                $error_update_giangvien = [];
+                if(isset($_POST['update_gv']) && ($_POST['update_gv'])){
+                    $magv = $_POST['magv'];
+                    $ten_gv = $_POST['ten_gv'];
+
+                    if (isset($_FILES['hinh_gv'])){
+                        $tagert_dir = "../admin/view/upfileanh/giangvien/";
+                        $name_image = $_FILES['hinh_gv']['name'];
+                        $tagert_file = $tagert_dir.$name_image;
+                        $maxfilesize = 800000;
+                        $allowtypes = ['jpg', 'png', 'gif', 'jpeg'];
+                        $allowupload = true;
+                        $imageFileType = pathinfo($tagert_file,PATHINFO_EXTENSION);
+                        if ($_FILES['hinh_gv']['size'] > $maxfilesize){
+                            $error_update_giangvien['imgSize'] = " Không được upload ảnh lớn hơn ".$maxfilesize."Byte";
+                            $allowupload = false;
+                        }
+
+                        if (!in_array($imageFileType,$allowtypes)){
+                            $error_update_giangvien['imgType'] = "Chỉ được upload các định dạng JPG , PNG , GIF , JPEG<br>";
+                            $allowupload = false;
+                        }
+                        if ($allowupload == true){
+                            // Xử lý di chuyển ảnh từ máy tính sang server
+                            // dung ham move_upload_file
+                            if (move_uploaded_file($_FILES['hinh_gv']['tmp_name'],$tagert_file)){
+//                                echo " Upload thành công ".$_FILES['hinh_gv']['tmp_name']."<br>";
+                            }else{
+                                echo "Lỗi khi đang thực hiện upload<br>";
+                            }
+                        }
+                    }
+                    $thong_tin_gv = $_POST['thong_tin_gv'];
+                    $trang_thai = $_POST['trang_thai'];
+                    if (!$error_update_giangvien) {
+                        update_khoahoc($ten_gv,$name_image, $thong_tin_gv,  $trang_thai);
+                        $thongbao= 'Cập nhật thành công';
+
+                    }
+
+                }
+
 
                 break;
+
+
+//                XÓA THÔNG TIN GIẢNG VIÊN
+//        =====================================================
             case 'delete_giangvien':
                 if(isset($_GET['magv']) && ($_GET['magv']>0)){
                     delete_giangvien($_GET['magv']);
@@ -170,6 +305,12 @@ session_start();
                 include '../admin/view/giangvien/listgiangvien.php';
                 break;
 
+            //                ĐỒ THÔNG TIN GIẢNG VIÊN
+//        =====================================================
+                case 'list_giangvien':
+                $listall_giangvien = listall_giangvien();
+                include '../admin/view/giangvien/listgiangvien.php';
+                break;
 
 //                học viên
 //            case 'list_danhmuc':
@@ -214,6 +355,11 @@ session_start();
 
                 include '../admin/dang_nhap.php';
                 break;
+            case 'list_binhluan':
+                include '../admin/view/binhluan/listbinhluan.php';
+                break;
+            case 'edit_binhluan':
+                include "../admin/view/binhluan/editbinhluan.php";
             default:
                 include '../admin/home.php';
         }
