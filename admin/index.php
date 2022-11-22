@@ -6,6 +6,8 @@ include  '../admin/model/khoahoc.php';
 include '../admin/model/loaikhoahoc.php';
 include '../admin/model/giangvien.php';
 include '../admin/model/lop.php';
+include '../admin/model/giohang.php';
+include '../admin/model/binhluan.php';
 
 // file trang dao diện và các chức năng khác nằm ở đây
 include '../admin/header.php';
@@ -13,7 +15,7 @@ if(isset($_GET['act'])){
     $act = $_GET['act'];
     switch ($act){
 
-        //danhmuc------------------------------------------------
+//        danhmuc------------------------------------------------
 
         case 'add_danhmuc':
             $error_add_danhmuc =[];
@@ -61,7 +63,7 @@ if(isset($_GET['act'])){
             include '../admin/view/danhmuc/listdanhmuc.php';
             break;
 
-            //khoahoc-thao------------------------------------------------
+//            khoahoc------------------------------------------------
 
         case 'add_khoahoc':
             $error_add_khoahoc = [];
@@ -125,7 +127,6 @@ if(isset($_GET['act'])){
             $listall_danhmuc = listall_danhmuc();
             include '../admin/view/sanpham/addsanpham.php';
             break;
-
         case 'list_khoahoc':
             $listall_khoahoc = listall_khoahoc();
             include '../admin/view/sanpham/listsanpham.php';
@@ -209,7 +210,7 @@ if(isset($_GET['act'])){
             include '../admin/view/sanpham/listsanpham.php';
             break;
 
-            //giangvien------------------------------------------------
+//            giangvien------------------------------------------------
 
         case 'add_giangvien':
             include '../admin/view/giangvien/addgiangvien.php';
@@ -218,7 +219,7 @@ if(isset($_GET['act'])){
             include '../admin/view/giangvien/listgiangvien.php';
             break;
 
-            // Lớp------------------------------------------------
+//             Lớp------------------------------------------------
 
         case 'list_lop':
             $list_lop = listall_lop();
@@ -313,6 +314,23 @@ if(isset($_GET['act'])){
             }
             $list_lop = listall_lop();
             include '../admin/view/lop/listlop.php';
+            break;
+
+//            bình luận------------------------------------------
+
+        case 'list_binhluan':
+            $list_binhluan = listall_binhluan();
+            include '../admin/view/binhluan/listbinhluan.php';
+            break;
+        case 'edit_binhluan':
+            include '../admin/view/binhluan/editbinhluan.php';
+            break;
+
+//            giỏ hàng---------------------------------------------------------
+
+        case 'list_donhang':
+//            $list_giohang = listall_giohang();
+            include '../admin/view/giohang/listgiohang.php';
             break;
         //dangnhap-admin
         case 'dang_nhap':
