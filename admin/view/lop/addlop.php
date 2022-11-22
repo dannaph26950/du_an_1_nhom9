@@ -5,16 +5,39 @@
 <form method="post" action="index.php?act=add_lop"  enctype="multipart/form-data">
     <div style="margin: 0px 300px;">
         <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label ">TÊN LỚP</label>
-            <input type="text"  class="form-control kiemtra" id="exampleInputEmail1" aria-describedby="emailHelp" name="ten_khoa_hoc">
+            <label for="exampleInputEmail1" class="form-label ">Tên Lớp</label>
+            <input type="text"  class="form-control kiemtra" id="exampleInputEmail1" aria-describedby="emailHelp" name="ten_lop">
+            <p style="color: red"><?php echo isset($error_add_lop["name"]) ? $error_add_lop["name"] : ""; ?></p>
         </div>
         <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label  ">MÃ GIÁO VIÊN</label>
-            <input type="number"  class="form-control kiemtra" id="exampleInputEmail1" aria-describedby="emailHelp" name="id_danh_muc">
+            <label for="exampleInputEmail1" class="form-label ">Thời Gian Khai Giảng</label>
+            <input type="date"  class="form-control kiemtra" id="exampleInputEmail1" aria-describedby="emailHelp" name="thoi_gian_khai_giang">
+            <p style="color: red"><?php echo isset($error_add_lop["time"]) ? $error_add_lop["time"] : ""; ?></p>
         </div>
         <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label  ">SỐ LƯỢNG HỌC VIÊN</label>
-            <input type="text"  class="form-control kiemtra" id="exampleInputEmail1" aria-describedby="emailHelp" name="anh">
+            <label for="exampleInputEmail1" class="form-label ">Địa Điểm Học</label>
+            <input type="text"  class="form-control kiemtra" id="exampleInputEmail1" aria-describedby="emailHelp" name="dia_diem_hoc">
+            <p style="color: red"><?php echo isset($error_add_lop["dia_diem"]) ? $error_add_lop["dia_diem"] : ""; ?></p>
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label  ">Số Lượng Học Viên</label>
+            <input type="number"  class="form-control kiemtra" id="exampleInputEmail1" aria-describedby="emailHelp" name="so_luong">
+            <p style="color: red"><?php echo isset($error_add_lop["so_luong"]) ? $error_add_lop["so_luong"] : ""; ?></p>
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label  ">Mã Giáo Viên</label>
+            <input type="number"  class="form-control kiemtra" id="exampleInputEmail1" aria-describedby="emailHelp" name="id_gv">
+            <p style="color: red"><?php echo isset($error_add_lop["id_gv"]) ? $error_add_lop["id_gv"] : ""; ?></p>
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label ">Mã Khóa Học</label>
+            <input type="number"  class="form-control kiemtra" id="exampleInputEmail1" aria-describedby="emailHelp" name="id_khoa_hoc">
+            <p style="color: red"><?php echo isset($error_add_lop["id_kh"]) ? $error_add_lop["id_kh"] : ""; ?></p>
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label  ">Trạng Thái</label>
+            <input type="number"  class="form-control kiemtra" id="exampleInputEmail1" aria-describedby="emailHelp" name="trang_thai">
+            <p style="color: red"><?php echo isset($error_add_lop["trang_thai"]) ? $error_add_lop["trang_thai"] : ""; ?></p>
         </div>
 
     </div>
