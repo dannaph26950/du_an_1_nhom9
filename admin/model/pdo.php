@@ -11,6 +11,16 @@ function pdo_get_connection(){
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     return $conn;
 }
+//    function pdo_get_connection(){
+//        //hàm kết nối cơ sở dữ liệu
+//
+//        $conn = new PDO(
+//            "mysql:host=202.92.5.49;dbname=wkyrthushosting_da1n9;charset=utf8",
+//            'wkyrthushosting_da1n9',
+//            'oediCST2JAIf',
+//    );
+//        return $conn;
+//    }
 /**
  * Thực thi câu lệnh sql thao tác dữ liệu (INSERT, UPDATE, DELETE)
  * @param string $sql câu lệnh sql

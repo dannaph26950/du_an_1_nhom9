@@ -6,6 +6,7 @@ session_start();
     include '../admin/model/loaikhoahoc.php';
     include '../admin/model/giangvien.php';
     include '../admin/model/hocvien.php';
+    include '../admin/model/lop.php';
 
 // file trang dao diện và các chức năng khác nằm ở đây
     include '../admin/header.php';
@@ -368,6 +369,87 @@ session_start();
                 include '../admin/view/hocvien/edithocvien.php';
 
                 break;
+
+
+
+//                Lớp
+            case 'list_lop' :
+
+                $list_lop=listall_lop ();
+                include '../admin/view/lop/listlop.php';
+                break;
+            case 'add_lop':
+                $error_add_lop = [];
+                if(isset($_POST['add_lop']) && ($_POST['add_lop'])){
+                    $ten_lop = $_POST['ten_lop'];
+                    $thoi_gian_khai_giang = $_POST['thoi_gian_khai_giang'];
+                    $dia_diem_hoc = $_POST['dia_diem_hoc'];
+//                    $so_luong = $_POST['so_luong'];
+//                    $id_gv = $_POST['id_gv'];
+//                    $id_khoa_hoc = $_POST['id_khoa_hoc'];
+//                    $trang_thai = $_POST['trang_thai'];
+                    if(empty($ten_lop)){
+                        $error_add_lop["name"] = "Không được để trống!!!";
+                    }
+                    if(empty($thoi_gian_khai_giang)){
+                        $error_add_lop["time"] = "Không được để trống!!!";
+                    }
+                    if(empty($dia_diem_hoc)){
+                        $error_add_lop["dia_diem"] = "Không được để trống!!!";
+                    }
+                    if(empty($so_luong)){
+                        $error_add_lop["so_luong"] = "Không được để trống!!!";
+                    }
+                    if(empty($id_gv)){
+                        $error_add_lop["id_gv"] = "Không được để trống!!!";
+                    }
+                    if(empty($id_khoa_hoc)){
+                        $error_add_lop["id_kh"] = "Không được để trống!!!";
+                    }
+                    if(empty($trang_thai)){
+                        $error_add_lop["trang_thai"] = "Không được để trống!!!";
+                    }
+                    if (!$error_add_lop) {
+                        insert_lop($ten_lop,$thoi_gian_khai_giang,$dia_diem_hoc,$so_luong,$id_gv,$id_khoa_hoc,$trang_thai);
+                        $thongbao = 'Đã thêm vào danh mục';
+                    }
+                }
+                include '../admin/view/lop/addlop.php';
+                break;
+//            case 'sua_lop':
+//                if(isset($_GET['id'])&&$_GET['id']>0);{
+//                $id = $_GET['id'];
+//                $list_lop = loadone_lop($id);
+//            }
+//                include '../admin/view/lop/editlop.php';
+//                break;
+//            case 'update_lop':
+//                if(isset($_POST['upadte_lop']) && ($_POST['upadte_lop'])){
+//                    $id_lop = $_POST['id'];
+//                    $ten_lop = $_POST['ten_lop'];
+//                    $thoi_gian_khai_giang = $_POST['thoi_gian_khai_giang'];
+//                    $dia_diem_hoc = $_POST['dia_diem_hoc'];
+//                    $so_luong = $_POST['so_luong'];
+//                    $id_gv = $_POST['id_gv'];
+//                    $id_khoa_hoc = $_POST['id_khoa_hoc'];
+//                    $trang_thai = $_POST['trang_thai'];
+//
+//                    update_lop($ten_lop,$thoi_gian_khai_giang,$dia_diem_hoc,$so_luong,$id_gv,$id_khoa_hoc,$trang_thai,$id_lop);
+//                    $thongbao = 'Đã thêm vào danh mục';
+//                }
+//                $list_lop = listall_lop();
+//                include '../admin/view/lop/listlop.php';
+//                break;
+            case 'xoa_lop':
+                if(isset($_GET['id'])&&$_GET['id']>0);{
+                $id_lop = $_GET['id'];
+                delete_lop($id_lop);
+            }
+                $list_lop = listall_lop();
+                include '../admin/view/lop/listlop.php';
+                break;
+            //dangnhap-admin
+            case 'dang_nhap':
         //dangnhap-admin
             case 'dang_nhap':
 
