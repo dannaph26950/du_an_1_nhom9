@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cc6cba04-603a-4918-b721-0684c76f7a58" name="Changes" comment="" />
+    <list default="true" id="cc6cba04-603a-4918-b721-0684c76f7a58" name="Changes" comment="validate edit san pham nhung dang bi loi =)))">
+      <change afterPath="$PROJECT_DIR$/admin/model/lop.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/view/lop/editlop.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/view/lop/listlop.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/view/lop/addlop.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/lop/addlop.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,6 +21,11 @@
     <execution />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -34,7 +46,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/xampp/htdocs/WEB2014/DANNAPh26950_ASSIGMENT2_WEB2014&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/xampp/htdocs/du_an_1_nhom9&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -71,23 +83,50 @@
       <workItem from="1668488991362" duration="5727000" />
       <workItem from="1668500338443" duration="778000" />
       <workItem from="1668501380190" duration="981000" />
-      <workItem from="1668512567830" duration="662000" />
+      <workItem from="1668521267876" duration="376000" />
+      <workItem from="1668530346162" duration="5882000" />
+      <workItem from="1668605284184" duration="13107000" />
+      <workItem from="1668680733861" duration="2725000" />
+      <workItem from="1668684430282" duration="4487000" />
+      <workItem from="1668963316963" duration="2440000" />
+      <workItem from="1669044500366" duration="11333000" />
     </task>
-    <task id="LOCAL-00001" summary="up file giang vien">
-      <created>1669080191900</created>
+    <task id="LOCAL-00001" summary="update files add">
+      <created>1668688059236</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1669080191900</updated>
+      <updated>1668688059236</updated>
     </task>
-    <task id="LOCAL-00002" summary="up file giang vien">
-      <created>1669080213952</created>
+    <task id="LOCAL-00002" summary="Upload">
+      <created>1668963833151</created>
       <option name="number" value="00002" />
       <option name="presentableId" value="LOCAL-00002" />
       <option name="project" value="LOCAL" />
-      <updated>1669080213952</updated>
+      <updated>1668963833152</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="validate add danh muc, validate add khoa hoc">
+      <created>1668977308197</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1668977308197</updated>
+    </task>
+    <task id="LOCAL-00004" summary="validate add danh muc, validate add khoa hoc">
+      <created>1668977340094</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1668977340094</updated>
+    </task>
+    <task id="LOCAL-00005" summary="validate edit san pham nhung dang bi loi =)))">
+      <created>1668977393290</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1668977393290</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -103,6 +142,13 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="update files add" />
+    <MESSAGE value="Upload" />
+    <MESSAGE value="validate add danh muc, validate add khoa hoc" />
+    <MESSAGE value="validate edit san pham nhung dang bi loi =)))" />
+    <option name="LAST_COMMIT_MESSAGE" value="validate edit san pham nhung dang bi loi =)))" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
