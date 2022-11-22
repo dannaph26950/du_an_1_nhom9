@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cc6cba04-603a-4918-b721-0684c76f7a58" name="Changes" comment="thêm xóa học viên giảng viên">
+    <list default="true" id="cc6cba04-603a-4918-b721-0684c76f7a58" name="Changes" comment="them giao dien: them sua xoa binh luan, don hang">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_22_11_2022_18_47_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_22_11_2022_18_47_PM__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/model/khoahoc.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/model/khoahoc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/view/hocvien/listhocvien.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/hocvien/listhocvien.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/view/lop/addlop.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/lop/addlop.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
