@@ -39,9 +39,9 @@
 </head>
 
 <body>
-<div class="preloader"><button class="as-btn style3 preloaderCls">Cancel Preloader</button>
-    <div class="preloader-inner"><span class="loader"></span></div>
-</div>
+<!--<div class="preloader"><button class="as-btn style3 preloaderCls">Cancel Preloader</button>-->
+<!--    <div class="preloader-inner"><span class="loader"></span></div>-->
+<!--</div>-->
 <div class="as-menu-wrapper">
     <div class="as-menu-area text-center"><button class="as-menu-toggle"><i class="fal fa-times"></i></button>
         <div class="mobile-logo"><a href="index.html"><img src="../user/assets/img/logo.svg" alt="Acadu"></a></div>
@@ -225,15 +225,11 @@
                                 <div class="col-auto">
                                     <nav class="main-menu d-none d-lg-inline-block">
                                         <ul>
-                                            <li class="menu-item-has-children"><a href="index.html">Trang chủ</a>
+                                            <li class=""><a href="index.php">Trang chủ</a>
 
                                             </li>
-                                            <li class="menu-item-has-children"><a href="#">Khóa học</a>
-                                                <ul class="sub-menu">
-                                                    <li><a href="course.html">Khóa học</a></li>
-                                                    <li><a href="video-course.html">Video khóa học</a></li>
-                                                    <li><a href="course-details.html">Thông tin khóa học</a></li>
-                                                </ul>
+                                            <li class=""><a href="index.php?act=khoa_hoc">Khóa học</a>
+
                                             </li>
                                             <li class="menu-item-has-children"><a href="#">Giáo viên</a>
                                                 <ul class="sub-menu">

@@ -4,28 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cc6cba04-603a-4918-b721-0684c76f7a58" name="Changes" comment="update giao diện user">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_18_11_2022_21_59_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_18_11_2022_21_59_PM__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_22_11_2022_18_47_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_22_11_2022_18_47_PM__Changes_.xml" afterDir="false" />
+    <list default="true" id="cc6cba04-603a-4918-b721-0684c76f7a58" name="Changes" comment="update files admin, model admin, view admin">
+      <change afterPath="$PROJECT_DIR$/view/khoahoc.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/model/binhluan.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/model/binhluan.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/model/giohang.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/model/giohang.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/model/hocvien.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/model/hocvien.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/model/khoahoc.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/model/khoahoc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/view/binhluan/editbinhluan.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/binhluan/editbinhluan.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/view/binhluan/listbinhluan.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/binhluan/listbinhluan.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/view/giangvien/addgiangvien.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/giangvien/addgiangvien.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/view/giangvien/editgiangvien.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/giangvien/editgiangvien.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/view/giohang/listgiohang.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/giohang/listgiohang.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/view/hocvien/addhocvien.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/hocvien/addhocvien.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/view/hocvien/edithocvien.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/hocvien/edithocvien.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/view/lop/addlop.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/lop/addlop.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/view/lop/editlop.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/lop/editlop.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/view/lop/listlop.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/lop/listlop.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/view/sanpham/editsanpham.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/sanpham/editsanpham.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/view/sanpham/listsanpham.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/sanpham/listsanpham.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/model/giangvien.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/model/giangvien.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/model/lop.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/model/lop.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/connect.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/header.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/view/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -134,7 +119,7 @@
       <workItem from="1669128044156" duration="6071000" />
       <workItem from="1669218913627" duration="446000" />
       <workItem from="1669219491564" duration="1459000" />
-      <workItem from="1669220978158" duration="9261000" />
+      <workItem from="1669220978158" duration="12346000" />
     </task>
     <task id="LOCAL-00001" summary="update files add">
       <created>1668688059236</created>
@@ -157,7 +142,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669135449625</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="update files admin, model admin, view admin">
+      <created>1669230435765</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1669230435766</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -177,7 +169,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="update files add" />
     <MESSAGE value="update giao diện user" />
-    <option name="LAST_COMMIT_MESSAGE" value="update giao diện user" />
+    <MESSAGE value="update files admin, model admin, view admin" />
+    <option name="LAST_COMMIT_MESSAGE" value="update files admin, model admin, view admin" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
