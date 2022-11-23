@@ -5,15 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cc6cba04-603a-4918-b721-0684c76f7a58" name="Changes" comment="update giao diện user">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_18_11_2022_21_59_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_18_11_2022_21_59_PM__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_22_11_2022_18_47_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_22_11_2022_18_47_PM__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/header.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/model/pdo.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/model/pdo.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/model/binhluan.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/model/binhluan.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/model/giohang.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/model/giohang.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/model/hocvien.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/model/hocvien.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/model/khoahoc.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/model/khoahoc.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/view/binhluan/editbinhluan.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/binhluan/editbinhluan.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/view/binhluan/listbinhluan.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/binhluan/listbinhluan.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/view/giangvien/addgiangvien.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/giangvien/addgiangvien.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/view/giangvien/editgiangvien.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/giangvien/editgiangvien.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/view/giohang/listgiohang.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/giohang/listgiohang.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/view/hocvien/addhocvien.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/hocvien/addhocvien.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/view/hocvien/edithocvien.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/hocvien/edithocvien.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/view/lop/addlop.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/lop/addlop.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/view/lop/editlop.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/lop/editlop.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/view/lop/listlop.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/lop/listlop.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/user/cart.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/course.html" beforeDir="false" afterPath="$PROJECT_DIR$/user/course.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/user/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/wishlist.html" beforeDir="false" afterPath="$PROJECT_DIR$/user/wishlist.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/view/sanpham/editsanpham.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/sanpham/editsanpham.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/view/sanpham/listsanpham.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/sanpham/listsanpham.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +74,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/xampp/htdocs/du_an_1_nhom9/user&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/xampp/htdocs/du_an_1_nhom9&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -119,6 +132,9 @@
       <workItem from="1669085702194" duration="10257000" />
       <workItem from="1669110342045" duration="792000" />
       <workItem from="1669128044156" duration="6071000" />
+      <workItem from="1669218913627" duration="446000" />
+      <workItem from="1669219491564" duration="1459000" />
+      <workItem from="1669220978158" duration="9261000" />
     </task>
     <task id="LOCAL-00001" summary="update files add">
       <created>1668688059236</created>

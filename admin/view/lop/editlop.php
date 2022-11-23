@@ -46,7 +46,7 @@ foreach ($list_lop as $key => $value) {
     <center>
         <div style="text-align: center">
             <input type="hidden" name="id" value="<?php if(isset($value['id_lop'])&&($value['id_lop']!="")) echo $value['id_lop']; ?>">
-            <a href="index.php?act=list_lop"><input type="submit" value="Cập Nhật" name="upadte_lop" class="btn btn-primary" style="width: 200px; margin: 0px 20px" onclick="return  kiemTraDuLieu()" ></a>
+            <input type="submit" value="SỬA" name="update_lop" class="btn btn-primary" style="width: 200px; margin: 0px 20px" onclick="location.href='index.php?act=list_khoahoc'"  >
             <input type="reset" value="Reset" name=""  class="btn btn-primary" style="width: 200px" >
         </div>
     </center>

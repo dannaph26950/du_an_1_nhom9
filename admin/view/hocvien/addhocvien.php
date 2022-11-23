@@ -1,6 +1,8 @@
 
 <center><h1 style="margin-top: 20px;">Thêm mới học viên</h1></center>
-
+<center>
+    <a href="index.php?act=list_hocvien"><input type="submit" value="DANH SÁCH" name="" class="btn btn-primary" style="width: 200px" ></a>
+</center>
 
 <form method="post" action="index.php?act=add_hocvien"  enctype="multipart/form-data">
     <div style="margin: 0px 300px;">

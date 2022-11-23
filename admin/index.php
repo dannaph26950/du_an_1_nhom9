@@ -7,6 +7,8 @@ session_start();
     include '../admin/model/giangvien.php';
     include '../admin/model/hocvien.php';
     include '../admin/model/lop.php';
+    include '../admin/model/binhluan.php';
+    include '../admin/model/giohang.php';
 
 // file trang dao diện và các chức năng khác nằm ở đây
     include '../admin/header.php';
@@ -20,7 +22,6 @@ session_start();
                      $ten_danh_muc = $_POST['ten_danh_muc'];
                     insert_danhmuc($ten_danh_muc);
                     $thongbao = 'Đã thêm vào danh mục';
-
                 }
 
                 include '../admin/view/danhmuc/adddanhmuc.php';
@@ -44,7 +45,7 @@ session_start();
 
                 include '../admin/view/danhmuc/editdanhmuc.php';
                 break;
-            case 'upd_danhmuc':
+            case 'update_danhmuc':
 
                 if (isset($_POST['edit_loaikhoahoc'])&&($_POST['edit_loaikhoahoc'])){
                     $id_danh_muc = $_POST['id_danh_muc'];
@@ -105,9 +106,15 @@ session_start();
 
 
 //                SỬA THÔNG TIN KHÓA HỌC
-            case 'upd_khoahoc':
-                    include '../admin/view/sanpham/editsanpham.php';
-                    $listone_khoahoc=listone_khoahoc();
+            case 'edit_khoahoc':
+                if(isset($_GET['id']) && ($_GET['id']>0)){
+                    $id = $_GET['id'];
+                    $listone_khoahoc=listone_khoahoc($id);
+                }
+                include '../admin/view/sanpham/editsanpham.php';
+                break;
+            case 'update_khoahoc':
+
                 $error_update_khoahoc = [];
                 if(isset($_POST['update_KH']) && ($_POST['update_KH'])){
                     $id_khoa_hoc = $_POST['id'];
@@ -167,7 +174,7 @@ session_start();
                         $thongbao= 'Cập nhật thành công';
 
                     }
-                      include '../admin/view/sanpham/editsanpham.php';
+
                 }
                 $listall_khoahoc = listall_khoahoc();
                 include '../admin/view/sanpham/listsanpham.php';
@@ -199,13 +206,12 @@ session_start();
         //THÊM GIẢNG VIÊN
 //            ===============================
             case 'add_giangvien':
-                include '../admin/view/giangvien/addgiangvien.php';
                 if(isset($_POST['add_giangvien']) && ($_POST['add_giangvien'])) {
 
                     $ten_gv = $_POST['ten_gv'];
 
                     if ( isset( $_FILES['hinh_gv'] ) ) {
-                        $tagert_dir = "../admin/view/upfileanh/giangvien";
+                        $tagert_dir = "../admin/view/upfileanh/giangvien/";
                         $name_image = $_FILES['hinh_gv']['name'];
                         $tagert_file = $tagert_dir . $name_image;
                         $maxfilesize = 800000;
@@ -238,22 +244,23 @@ session_start();
                     $thongbao="Thêm giảng viên thành công";
 
 
-                    $thongbao = 'Thêm thành công';
-
                 }
-                $listall_giangvien=listall_giangvien();
-                  include '../admin/view/giangvien/listgiangvien.php';
 
+                include '../admin/view/giangvien/addgiangvien.php';
                 break;
 
 
 
 //                SỬA THÔNG TIN GIẢNG VIÊN
 //        =====================================================
-
             case 'edit_giangvien':
-
+                if(isset($_GET['id']) && ($_GET['id']>0)){
+                    $id = $_GET['id'];
+                    $listone_giangvien=listone_giangvien($id);
+                }
                 include '../admin/view/giangvien/editgiangvien.php';
+                break;
+            case 'update_giangvien':
                 $error_update_giangvien = [];
                 if(isset($_POST['update_gv']) && ($_POST['update_gv'])){
                     $magv = $_POST['magv'];
@@ -295,8 +302,8 @@ session_start();
                     }
 
                 }
-
-
+                $listall_giangvien = listall_giangvien();
+                include '../admin/view/giangvien/listgiangvien.php';
                 break;
 
 
@@ -338,6 +345,7 @@ session_start();
             case 'add_hocvien':
 
                 if(isset($_POST['add_hocvien']) && ($_POST['add_hocvien'])) {
+
                     $ten_hv=$_POST['ten_hv'];
                     $email=$_POST['email'];
                     $sdt=$_POST['sdt'];
@@ -346,31 +354,31 @@ session_start();
                     insert_hocvien ($ten_hv,$email,$sdt,$dia_chi);
                     $thongbao="Thêm học viên thành công";
 
-
-
                 }
                 $listall_hocvien=listall_hocvien();
                 include '../admin/view/hocvien/addhocvien.php';
                 break;
             case 'edit_hocvien':
-                include "../admin/view/hocvien/edithocvien.php";
                 if(isset($_GET['id']) && ($_GET['id']>0)){
-                    $id=$_GET['id'];
-                    $listone_hocvien = listone_hocvien($id);
-                    $ten_hv=$_POST['ten_hv'];
-                    $email=$_POST['email'];
-
-                    $sdt=$_POST['sdt'];
-
-                    $dia_chi=$_POST['dia_chi'];
-                    update_hocvien($ten_hv,$email,$sdt,$dia_chi);
-                    $thongbao="Cập nhật học viên thành công";
+                    $id = $_GET['id'];
+                    $listone_hocvien=listone_hocvien($id);
                 }
                 include '../admin/view/hocvien/edithocvien.php';
-
                 break;
+            case 'update_hocvien':
 
-
+                if(isset($_POST['update_hv']) && ($_POST['update_hv'])){
+                    $id_hoc_vien = $_POST['id'];
+                    $ten_hv=$_POST['ten_hv'];
+                    $email=$_POST['email'];
+                    $sdt=$_POST['sdt'];
+                    $dia_chi = $_POST['dia_chi'];
+                    update_hocvien($ten_hv,$email,$sdt,$dia_chi,$id_hoc_vien);
+                    $thongbao="Cập nhật học viên thành công";
+                }
+                $listall_hocvien = listall_hocvien();
+                include '../admin/view/hocvien/listhocvien.php';
+                break;
 
 //                Lớp
             case 'list_lop' :
@@ -384,10 +392,10 @@ session_start();
                     $ten_lop = $_POST['ten_lop'];
                     $thoi_gian_khai_giang = $_POST['thoi_gian_khai_giang'];
                     $dia_diem_hoc = $_POST['dia_diem_hoc'];
-//                    $so_luong = $_POST['so_luong'];
-//                    $id_gv = $_POST['id_gv'];
-//                    $id_khoa_hoc = $_POST['id_khoa_hoc'];
-//                    $trang_thai = $_POST['trang_thai'];
+                    $so_luong = $_POST['so_luong'];
+                    $id_gv = $_POST['id_gv'];
+                    $id_khoa_hoc = $_POST['id_khoa_hoc'];
+                    $trang_thai = $_POST['trang_thai'];
                     if(empty($ten_lop)){
                         $error_add_lop["name"] = "Không được để trống!!!";
                     }
@@ -416,30 +424,30 @@ session_start();
                 }
                 include '../admin/view/lop/addlop.php';
                 break;
-//            case 'sua_lop':
-//                if(isset($_GET['id'])&&$_GET['id']>0);{
-//                $id = $_GET['id'];
-//                $list_lop = loadone_lop($id);
-//            }
-//                include '../admin/view/lop/editlop.php';
-//                break;
-//            case 'update_lop':
-//                if(isset($_POST['upadte_lop']) && ($_POST['upadte_lop'])){
-//                    $id_lop = $_POST['id'];
-//                    $ten_lop = $_POST['ten_lop'];
-//                    $thoi_gian_khai_giang = $_POST['thoi_gian_khai_giang'];
-//                    $dia_diem_hoc = $_POST['dia_diem_hoc'];
-//                    $so_luong = $_POST['so_luong'];
-//                    $id_gv = $_POST['id_gv'];
-//                    $id_khoa_hoc = $_POST['id_khoa_hoc'];
-//                    $trang_thai = $_POST['trang_thai'];
-//
-//                    update_lop($ten_lop,$thoi_gian_khai_giang,$dia_diem_hoc,$so_luong,$id_gv,$id_khoa_hoc,$trang_thai,$id_lop);
-//                    $thongbao = 'Đã thêm vào danh mục';
-//                }
-//                $list_lop = listall_lop();
-//                include '../admin/view/lop/listlop.php';
-//                break;
+            case 'edit_lop':
+                if(isset($_GET['id'])&&$_GET['id']>0);{
+                $id = $_GET['id'];
+                $list_lop = loadone_lop($id);
+            }
+                include '../admin/view/lop/editlop.php';
+                break;
+            case 'update_lop':
+                if(isset($_POST['update_lop']) && ($_POST['update_lop'])){
+                    $id_lop = $_POST['id'];
+                    $ten_lop = $_POST['ten_lop'];
+                    $thoi_gian_khai_giang = $_POST['thoi_gian_khai_giang'];
+                    $dia_diem_hoc = $_POST['dia_diem_hoc'];
+                    $so_luong = $_POST['so_luong'];
+                    $id_gv = $_POST['id_gv'];
+                    $id_khoa_hoc = $_POST['id_khoa_hoc'];
+                    $trang_thai = $_POST['trang_thai'];
+
+                    update_lop($ten_lop,$thoi_gian_khai_giang,$dia_diem_hoc,$so_luong,$id_gv,$id_khoa_hoc,$trang_thai,$id_lop);
+                    $thongbao = 'Đã thêm vào danh mục';
+                }
+                $list_lop = listall_lop();
+                include '../admin/view/lop/listlop.php';
+                break;
             case 'xoa_lop':
                 if(isset($_GET['id'])&&$_GET['id']>0);{
                 $id_lop = $_GET['id'];
@@ -448,18 +456,50 @@ session_start();
                 $list_lop = listall_lop();
                 include '../admin/view/lop/listlop.php';
                 break;
-            //dangnhap-admin
-            case 'dang_nhap':
+
         //dangnhap-admin
             case 'dang_nhap':
 
                 include '../admin/dang_nhap.php';
                 break;
             case 'list_binhluan':
+                $listall_binhluan = listall_binhluan();
                 include '../admin/view/binhluan/listbinhluan.php';
                 break;
+            case 'xoa_binhluan':
+                if(isset($_GET['id'])&&$_GET['id']>0);{
+                $id_binhluan = $_GET['id'];
+                delete_binhluan($id_binhluan);
+            }
+                $listall_binhluan = listall_binhluan();
+                include '../admin/view/binhluan/listbinhluan.php';
+                break;
+
             case 'edit_binhluan':
+                if(isset($_GET['id'])&&$_GET['id']>0);{
+                $id_binhluan = $_GET['id'];
+                $listone_binhluan= listone_binhluan($id_binhluan);
+                }
                 include "../admin/view/binhluan/editbinhluan.php";
+
+            case 'update_binhluan':
+                if(isset($_POST['update_binhluan']) && ($_POST['update_binhluan'])){
+                    $id_binhluan = $_POST['id'];
+                    $ten_bl = $_POST['ten_bl'];
+                   $id_hoc_vien = $_POST['id_hoc_vien'];
+                    $id_khoa_hoc = $_POST['id_khoa_hoc'];
+                    $trang_thai = $_POST['trang_thai'];
+                    update_binhluan($ten_bl,$id_khoa_hoc,$id_hoc_vien,$trang_thai,$id_binhluan);
+                    $thongbao = 'Đã thêm vào danh mục';
+                }
+                $listall_binhluan = listall_binhluan();
+                include '../admin/view/binhluan/listbinhluan.php';
+                break;
+                //giỏ hàng
+            case 'list_giohang':
+                $listall_giohang = listall_giohang() ;
+                include '../admin/view/giohang/listgiohang.php';
+                break;
             default:
                 include '../admin/home.php';
         }

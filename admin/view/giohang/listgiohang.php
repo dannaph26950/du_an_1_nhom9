@@ -19,18 +19,28 @@
         </tr>
         </thead>
         <tbody>
-        <tr>
-            <td>123</td>
-            <td>quyển sách rất hay</td>
-            <td><?php  ?>sách tiếng anh</td>
-            <td><?php  ?> hoàng long duy</td>
-            <td><?php  ?>đã học xong</td>
-            <td class="">
-                <input value="Sửa " type="button" class="btn btn-primary start-50" onclick="location.href='index.php?act=sua_binh_luan&id=<?php echo $value['id_binh_luan'] ?>'" ><br><br>
-                <input type="submit" class="btn btn-primary start-50" onclick="confirm('Bạn có muốn xóa bình luận \( <?php echo $value['ten_bl']?> \) hay không!') == true ? location.href='index.php?act=delete_binhluan&id=<?php echo $value['id_binh_luan']?>' : ''" value="Xóa"><br><br>
-            </td>
+        <?php
+        foreach ($listall_giohang as $index => $value){
 
+        ?>
+        <tr>
+            <td><?php echo $value ['id_dang_ky'] ?></td>
+            <td><?php echo $value ['id_hoc_vien'] ?></td>
+            <td><?php echo $value ['id_lop'] ?></td>
+            <td><?php echo $value ['gia_tien'] ?></td>
+            <td><?php echo $value ['ngay_dk'] ?></td>
+            <td><?php echo $value ['tinh_trang'] ?></td>
+
+<!--            DẤU-->
+            <td class="" hidden>
+                <input value="Sửa " type="button" class="btn btn-primary start-50" onclick="location.href='index.php?act=sua_binh_luan&id=<?php echo $value['id_binh_luan'] ?>//'" >
+                <input type="submit" class="btn btn-primary start-50" onclick="confirm('Bạn có muốn xóa bình luận \( <?php echo $value['ten_bl']?>// \) hay không!') == true ? location.href='index.php?act=delete_binhluan&id=<?php echo $value['id_binh_luan']?>//' : ''" value="Xóa"><br><br>
+            </td>
+<!--DẤU-->
         </tr>
+        <?php
+        }
+        ?>
         </tbody>
     </table>
 

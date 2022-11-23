@@ -24,9 +24,10 @@
                 <td><?php echo $value['id_lop'] ?></td>
                 <td><?php echo $value['ten_lop'] ?></td>
                 <td><?php echo $value['ma_gv'] ?></td>
-                <td><?php echo $value['so_luong_hv'] ?></td>
+                <td><?php echo $value['so_luong'] ?></td>
 
-                <td class=""><input value="Sửa " type="button" class="btn btn-primary start-50" onclick="location.href='index.php?act=sua_lop&id=<?php echo $value['id_lop'] ?>'" ><br><br>
+                <td class="">
+                    <input value="Sửa " type="button" class="btn btn-primary start-50" onclick="location.href='index.php?act=edit_lop&id=<?php echo $value['id_lop'] ?>'" ><br><br>
                     <input type="submit" class="btn btn-primary start-50" onclick="confirm('Bạn có muốn xóa lớp \( <?php echo $value['ten_lop']?> \) hay không!') == true ? location.href='index.php?act=xoa_lop&id=<?php echo $value['id_lop']?>' : ''" value="Xóa"><br><br>
                 </td>
 

@@ -90,7 +90,7 @@
                                             <li><a href="index.php?act=list_giangvien">Giảng Viên</a></li>
                                             <li><a href="index.php?act=list_hocvien">Học Viên</a></li>
                                             <li><a href="index.php?act=list_lop">Lớp</a>
-                                            <li><a href="index.php?act=list_donhang">Đơn hàng</a></li>
+                                            <li><a href="index.php?act=list_giohang">Đơn hàng</a></li>
                                             <li><a href="index.php?act=list_binhluan">Bình Luận</a></li>
                                         </ul>
                                     </nav>

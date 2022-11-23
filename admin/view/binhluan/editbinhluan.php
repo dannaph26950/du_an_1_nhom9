@@ -1,17 +1,17 @@
 <!--                PHP-->
 <?php
 
-//foreach ($list_binhluan as $key => $value){
+foreach ($listone_binhluan as $key => $value){
 
     ?>
     <main>
         <center><h1 style="margin-top: 20px;">CẬP NHẬT BÌNH LUẬN</h1>
         </center>
         <center>
-            <a href="index.php?act=list_danhmuc"><input type="submit" value="DANH SÁCH" name="" class="btn btn-primary" style="width: 200px" ></a>
+            <a href="index.php?act=list_binhluan"><input type="submit" value="DANH SÁCH" name="" class="btn btn-primary" style="width: 200px" ></a>
         </center>
         <div class="import-dm">
-            <form action="index.php?act=update_danhmuc" method="post">
+            <form action="index.php?act=update_binhluan" method="post">
 
 
                 <div style="margin: 0px 300px ;">
@@ -40,8 +40,8 @@
 
                     <center>
                         <div style= "">
-                            <input type="hidden" name="id_binh_luan" value="<?php if (isset($value['id_binh_luan']) && ($value['id_binh_luan'] != '')) echo $value['id_binh_luan']?>" >
-                            <input type="submit" value="SỬA" name="edit_binhluan" class="btn btn-primary" style="width: 200px; margin: 0px 20px" onclick="location.href='index.php?act=list_binhluan'"  >
+                            <input type="hidden" name="id" value="<?php if (isset($value['id_binh_luan']) && ($value['id_binh_luan'] != '')) echo $value['id_binh_luan']?>" >
+                            <input type="submit" value="SỬA" name="update_binhluan" class="btn btn-primary" style="width: 200px; margin: 0px 20px" onclick="location.href='index.php?act=list_binhluan'"  >
                             <input type="reset" value="CẬP NHẬT LẠI" name=""  class="btn btn-primary" style="width: 200px" >
                         </div>
                     </center>
@@ -63,4 +63,4 @@
         </div>
     </main>
     <!--                    PHP-->
-<?php //} ?>
+<?php } ?>

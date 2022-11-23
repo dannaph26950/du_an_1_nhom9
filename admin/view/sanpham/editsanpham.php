@@ -3,7 +3,7 @@
     foreach ($listone_khoahoc as $key => $value) {
         ?>
         <center><h1 style="margin-top: 20px;">Cập Nhật Khóa Học</h1></center>
-        <form method="post" action="index.php?act=upd_khoahoc"  enctype="multipart/form-data">
+        <form method="post" action="index.php?act=update_khoahoc"  enctype="multipart/form-data">
             <div style="margin: 0px 300px;">
                 <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label">Tên Khóa Học</label>
@@ -51,8 +51,10 @@
                 <center>
                     <div style="text-align: center">
                         <input type="hidden" name="id" value="<?php if(isset($value['id_khoa_hoc'])&&($value['id_khoa_hoc']!="")) echo $value['id_khoa_hoc']; ?>">
-                        <input type="submit" value="Cập Nhật" name="update_KH" class="btn btn-primary" style="width: 200px; margin: 0px 20px">
-                        <a href="index.php?act=list_khoahoc" ><input class="btn btn-primary" type="button" value="DANH SÁCH" style="width: 200px;margin: 0px 20px" ></a>
+
+                        <input type="submit" value="SỬA" name="update_KH" class="btn btn-primary" style="width: 200px; margin: 0px 20px" onclick="location.href='index.php?act=list_khoahoc'"  >
+
+<!--                        <a href="index.php?act=list_khoahoc" ><input class="btn btn-primary" type="button" value="DANH SÁCH" style="width: 200px;margin: 0px 20px" ></a>-->
                         <input type="reset" value="CẬP NHẬT LẠI" name=""  class="btn btn-primary" style="width: 200px" >
                     </div>
                 </center>
