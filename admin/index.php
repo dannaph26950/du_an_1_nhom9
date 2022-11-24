@@ -15,10 +15,9 @@ session_start();
     if(isset($_GET['act'])){
         $act = $_GET['act'];
         switch ($act){
-        //danhmuc
+//        danhmuc --------------------------------------------
             case 'add_danhmuc':
                 if(isset($_POST['add_loaikhoahoc']) && ($_POST['add_loaikhoahoc'])){
-//                    $id_danh_muc = $_POST['id_danh_muc'];
                      $ten_danh_muc = $_POST['ten_danh_muc'];
                     insert_danhmuc($ten_danh_muc);
                     $thongbao = 'Đã thêm vào danh mục';
@@ -58,8 +57,8 @@ session_start();
 
                 include '../admin/view/danhmuc/listdanhmuc.php';
                 break;
-        //khoahoc-thao
-                case 'add_khoahoc':
+//        khoahoc --------------------------------------------
+            case 'add_khoahoc':
                 if(isset($_POST['add_khoahoc']) && ($_POST['add_khoahoc'])){
                     $ten_khoa_hoc = $_POST['ten_khoa_hoc'];
                     $id_danh_muc = $_POST['id_danhmuc'];
@@ -81,10 +80,7 @@ session_start();
                             $allowupload = false;
                         }
                         if ($allowupload == true){
-                            // Xử lý di chuyển ảnh từ máy tính sang server
-                            // dung ham move_upload_file
                             if (move_uploaded_file($_FILES['anh']['tmp_name'],$tagert_file)){
-//                                echo " Upload thành công ".$_FILES['anh']['tmp_name']."<br>";
                             }else{
                                 echo "Lỗi khi đang thực hiện upload<br>";
                             }
@@ -105,10 +101,6 @@ session_start();
                     $listall_danhmuc = listall_danhmuc();
                 include '../admin/view/sanpham/addsanpham.php';
                 break;
-
-
-
-//                SỬA THÔNG TIN KHÓA HỌC
             case 'edit_khoahoc':
                 if(isset($_GET['id']) && ($_GET['id']>0)){
                     $id = $_GET['id'];
@@ -142,10 +134,7 @@ session_start();
                             $allowupload = false;
                         }
                         if ($allowupload == true){
-                            // Xử lý di chuyển ảnh từ máy tính sang server
-                            // dung ham move_upload_file
                             if (move_uploaded_file($_FILES['anh']['tmp_name'],$tagert_file)){
-//                                echo " Upload thành công ".$_FILES['anh']['tmp_name']."<br>";
                             }else{
                                 echo "Lỗi khi đang thực hiện upload<br>";
                             }
@@ -184,19 +173,10 @@ session_start();
                 $listall_khoahoc = listall_khoahoc();
                 include '../admin/view/sanpham/listsanpham.php';
                 break;
-
-
-
-//                IN KHÓA HỌC
-//        ==============================
             case 'list_khoahoc':
                 $listall_khoahoc = listall_khoahoc();
                 include '../admin/view/sanpham/listsanpham.php';
                 break;
-
-
-//                XÓA KHÓA HỌC
-//        ====================================
             case 'delete_khoahoc':
 
                 if(isset($_GET['id']) && ($_GET['id']>0)){
@@ -205,11 +185,7 @@ session_start();
                 $listall_khoahoc = listall_khoahoc();
                 include '../admin/view/sanpham/listsanpham.php';
                 break;
-
-
-
-        //THÊM GIẢNG VIÊN
-//            ===============================
+//        giang vien --------------------------------------------
             case 'add_giangvien':
                 if(isset($_POST['add_giangvien']) && ($_POST['add_giangvien'])) {
 
@@ -253,11 +229,6 @@ session_start();
 
                 include '../admin/view/giangvien/addgiangvien.php';
                 break;
-
-
-
-//                SỬA THÔNG TIN GIẢNG VIÊN
-//        =====================================================
             case 'edit_giangvien':
                 if(isset($_GET['id']) && ($_GET['id']>0)){
                     $id = $_GET['id'];
@@ -310,10 +281,6 @@ session_start();
                 $listall_giangvien = listall_giangvien();
                 include '../admin/view/giangvien/listgiangvien.php';
                 break;
-
-
-//                XÓA THÔNG TIN GIẢNG VIÊN
-//        =====================================================
             case 'delete_giangvien':
                 if(isset($_GET['id']) && ($_GET['id']>0)){
                     delete_giangvien($_GET['id']);
@@ -321,17 +288,11 @@ session_start();
                 $listall_giangvien = listall_giangvien();
                 include '../admin/view/giangvien/listgiangvien.php';
                 break;
-
-            //                ĐỒ THÔNG TIN GIẢNG VIÊN
-//        =====================================================
-                case 'list_giangvien':
+            case 'list_giangvien':
                 $listall_giangvien = listall_giangvien();
                 include '../admin/view/giangvien/listgiangvien.php';
                 break;
-
-
-
-//XÓA HỌC VIÊN
+//        hoc vien --------------------------------------------
             case 'delete_hocvien':
                 if(isset($_GET['id']) && ($_GET['id']>0)){
                     delete_hocvien($_GET['id']);
@@ -340,9 +301,6 @@ session_start();
 
                 include '../admin/view/hocvien/listhocvien.php';
                 break;
-
-                //                ĐỔ THÔNG TIN HỌC VIÊN
-//                ======================================================
             case 'list_hocvien':
                 $listall_hocvien = listall_hocvien();
                 include '../admin/view/hocvien/listhocvien.php';
@@ -384,8 +342,7 @@ session_start();
                 $listall_hocvien = listall_hocvien();
                 include '../admin/view/hocvien/listhocvien.php';
                 break;
-
-//                Lớp
+//        Lớp--------------------------------------------
             case 'list_lop' :
 
                 $list_lop=listall_lop ();
@@ -467,12 +424,12 @@ session_start();
                 $list_lop = listall_lop();
                 include '../admin/view/lop/listlop.php';
                 break;
-
-        //dangnhap-admin
+//        dangnhap-admin---------------------------------------
             case 'dang_nhap':
 
                 include '../admin/dang_nhap.php';
                 break;
+//        binh luan -------------------------------------------------
             case 'list_binhluan':
                 $listall_binhluan = listall_binhluan();
                 include '../admin/view/binhluan/listbinhluan.php';
@@ -506,7 +463,7 @@ session_start();
                 $listall_binhluan = listall_binhluan();
                 include '../admin/view/binhluan/listbinhluan.php';
                 break;
-                //giỏ hàng
+//        giỏ hàng --------------------------------------------------
             case 'list_giohang':
                 $listall_giohang = listall_giohang() ;
                 include '../admin/view/giohang/listgiohang.php';
