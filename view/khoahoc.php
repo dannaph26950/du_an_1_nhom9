@@ -11,8 +11,15 @@
     <div class="container">
         <div class="as-sort-bar">
             <div class="row justify-content-between align-items-center">
-                <div class="col-md-auto"><span class="course-result-count">Chúng tôi đã tìm thấy <span class="text-theme">
-                                khóa học</span> dành cho bạn</span></div>
+                <div class="col-md-auto"><label for="exampleInputEmail1" class="form-label">Loại khóa học</label>
+                    <select class="text-input small-input kiemtra" data-error="" id="" name="">
+
+                        <option value="1">1</option>
+                        <option value="1">2</option>
+                        <option value="1">3</option>
+                        <option value="1">4</option>
+
+                    </select></div>
                 <div class="col-md-auto">
                     <div class="nav" role="tablist"><a href="#" class="active" id="tab-course-grid" data-bs-toggle="tab" data-bs-target="#tab-grid" role="tab" aria-controls="tab-grid" aria-selected="true"><i class="fa-solid fa-grid-2"></i> Lưới</a> <a href="#" id="tab-course-list" data-bs-toggle="tab" data-bs-target="#tab-list" role="tab" aria-controls="tab-grid" aria-selected="false"><i class="fas fa-list"></i> Danh sách</a>
                     </div>

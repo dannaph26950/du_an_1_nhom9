@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cc6cba04-603a-4918-b721-0684c76f7a58" name="Changes" comment="update admin">
+    <list default="true" id="cc6cba04-603a-4918-b721-0684c76f7a58" name="Changes" comment="update trang home của view">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/view/sanpham/editsanpham.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/sanpham/editsanpham.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/view/sanpham/listsanpham.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/sanpham/listsanpham.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/pdo.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/pdo.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/course.html" beforeDir="false" afterPath="$PROJECT_DIR$/user/course.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/khoahoc.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/khoahoc.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,8 +121,8 @@
       <workItem from="1669233816413" duration="3000" />
       <workItem from="1669261862086" duration="2075000" />
       <workItem from="1669268614986" duration="2035000" />
-      <workItem from="1669271432957" duration="3392000" />
-      <workItem from="1669284397235" duration="1606000" />
+      <workItem from="1669271432957" duration="3067000" />
+      <workItem from="1669288483919" duration="2439000" />
     </task>
     <task id="LOCAL-00001" summary="update files add">
       <created>1668688059236</created>
@@ -171,14 +173,21 @@
       <option name="project" value="LOCAL" />
       <updated>1669271473478</updated>
     </task>
-    <task id="LOCAL-00008" summary="update admin">
-      <created>1669275258037</created>
+    <task id="LOCAL-00008" summary="update trang home của view">
+      <created>1669288529651</created>
       <option name="number" value="00008" />
       <option name="presentableId" value="LOCAL-00008" />
       <option name="project" value="LOCAL" />
-      <updated>1669275258037</updated>
+      <updated>1669288529651</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="update trang home của view">
+      <created>1669288554475</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1669288554475</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -201,8 +210,8 @@
     <MESSAGE value="update files admin, model admin, view admin" />
     <MESSAGE value="up file view khoa hoc demo" />
     <MESSAGE value="update file khoahoc view" />
-    <MESSAGE value="update admin" />
-    <option name="LAST_COMMIT_MESSAGE" value="update admin" />
+    <MESSAGE value="update trang home của view" />
+    <option name="LAST_COMMIT_MESSAGE" value="update trang home của view" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
