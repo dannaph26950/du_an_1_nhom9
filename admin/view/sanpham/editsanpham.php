@@ -6,6 +6,11 @@
         <form method="post" action="index.php?act=update_khoahoc"  enctype="multipart/form-data">
             <div style="margin: 0px 300px;">
                 <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label"> Mã Khóa Học</label>
+                    <input type="text" name="id_KH" value="<?php if(isset($value['id_khoa_hoc'])&&($value['id_khoa_hoc']!="")) echo $value['id_khoa_hoc']; ?>" class="form-control" disabled id="exampleInputEmail1" aria-describedby="emailHelp">
+
+                </div>
+                <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label">Tên Khóa Học</label>
                     <input type="text" name="ten_KH" value="<?php if(isset($value['ten_khoa_hoc'])&&($value['ten_khoa_hoc']!="")) echo $value['ten_khoa_hoc']; ?>" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                     <p style="color: red"><?php echo isset($error_update_khoahoc["name_KH"]) ? $error_update_khoahoc["name_KH"] : ""; ?></p>
@@ -55,7 +60,7 @@
                     <label for="exampleInputEmail1" class="form-label">Mã Lớp</label>
 
                     <select name="id_lop">
-                        <option hidden>Chọn danh mục</option>
+
                         <?php foreach ($list_lop as $key => $value){ ?>
                             <option value="<?php if(isset($value['id_lop'])&&($value['id_lop']!="")) echo $value['id_lop'] ?>"><?php echo $value['ten_lop'] ?></option>
                         <?php } ?>
