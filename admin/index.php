@@ -62,7 +62,7 @@ session_start();
                 if(isset($_POST['add_khoahoc']) && ($_POST['add_khoahoc'])){
                     $ten_khoa_hoc = $_POST['ten_khoa_hoc'];
                     $id_danh_muc = $_POST['id_danhmuc'];
-                    if (isset($_FILES['anh'])){
+                    if (isset($_FILES['anh'])&&($_FILES['anh']!="")){
                         $tagert_dir = "../admin/view/upfileanh/";
                         $name_image = $_FILES['anh']['name'];
                         $tagert_file = $tagert_dir.$name_image;
@@ -70,21 +70,7 @@ session_start();
                         $allowtypes = ['jpg', 'png', 'gif', 'jpeg'];
                         $allowupload = true;
                         $imageFileType = pathinfo($tagert_file,PATHINFO_EXTENSION);
-                        if ($_FILES['anh']['size'] > $maxfilesize){
-                            echo " Không được upload ảnh lớn hơn ".$maxfilesize."Byte";
-                            $allowupload = false;
-                        }
 
-                        if (!in_array($imageFileType,$allowtypes)){
-                            echo "Chỉ được upload các định dạng JPG , PNG , GIF , JPEG<br>";
-                            $allowupload = false;
-                        }
-                        if ($allowupload == true){
-                            if (move_uploaded_file($_FILES['anh']['tmp_name'],$tagert_file)){
-                            }else{
-                                echo "Lỗi khi đang thực hiện upload<br>";
-                            }
-                        }
                     }
                     $mo_ta = $_POST['mo_ta'];
                     $gia = $_POST['gia'];
@@ -125,45 +111,14 @@ session_start();
                         $allowtypes = ['jpg', 'png', 'gif', 'jpeg'];
                         $allowupload = true;
                         $imageFileType = pathinfo($tagert_file,PATHINFO_EXTENSION);
-                        if ($_FILES['anh']['size'] > $maxfilesize){
-                            $error_update_khoahoc['imgSize'] = " Không được upload ảnh lớn hơn ".$maxfilesize."Byte";
-                            $allowupload = false;
-                        }
 
-                        if (!in_array($imageFileType,$allowtypes)){
-                            $error_update_khoahoc['imgType'] = "Chỉ được upload các định dạng JPG , PNG , GIF , JPEG<br>";
-                            $allowupload = false;
-                        }
-                        if ($allowupload == true){
-                            if (move_uploaded_file($_FILES['anh']['tmp_name'],$tagert_file)){
-                            }else{
-                                echo "Lỗi khi đang thực hiện upload<br>";
-                            }
-                        }
                     }
                     $gia = $_POST['gia_KH'];
                     $thoi_gian_hoc = $_POST['thoiGian_KH'];
                     $mo_ta = $_POST['mota_KH'];
                     $id_danh_muc = $_POST['id_danh_muc'];
                     $id_lop= $_POST['id_lop'];
-                    if(empty($ten_khoa_hoc)){
-                        $error_update_khoahoc["name"] = "Vui lòng nhập tên khóa học";
-                    }
-                    if(empty($gia)){
-                        $error_update_khoahoc["gia"] = "Vui lòng nhập giá tiền";
-                    }
-                    if(empty($mo_ta)){
-                        $error_update_khoahoc["mota"] = "Vui lòng nhập mô tả";
-                    }
-                    if(empty($id_danh_muc)){
-                        $error_update_khoahoc["id_DM"] = "Vui lòng nhập mã danh mục";
-                    }
-                    if(empty($id_lop)){
-                        $error_update_khoahoc["id_lop"] = "Vui lòng nhập mã lớp";
-                    }
-                    if(empty($thoi_gian_hoc)){
-                        $error_update_khoahoc["time"] = "Vui lòng nhập thời gian học";
-                    }
+
                     if (!$error_update_khoahoc) {
                         update_khoahoc($ten_khoa_hoc,$name_image, $gia, $thoi_gian_hoc, $mo_ta, $id_danh_muc,$id_lop,$id);
                         $thongbao= 'Cập nhật thành công';
@@ -200,15 +155,6 @@ session_start();
                         $allowtypes = ['jpg' , 'png' , 'gif' , 'jpeg'];
                         $allowupload = TRUE;
                         $imageFileType = pathinfo ( $tagert_file , PATHINFO_EXTENSION );
-                        if ( $_FILES['hinh_gv']['size'] > $maxfilesize ) {
-                            echo " Không được upload ảnh lớn hơn " . $maxfilesize . "Byte";
-                            $allowupload = FALSE;
-                        }
-
-                        if ( ! in_array ( $imageFileType , $allowtypes ) ) {
-                            echo "Chỉ được upload các định dạng JPG , PNG , GIF , JPEG<br>";
-                            $allowupload = FALSE;
-                        }
                         if ( $allowupload == TRUE ) {
                             // Xử lý di chuyển ảnh từ máy tính sang server
                             // dung ham move_upload_file
@@ -251,24 +197,6 @@ session_start();
                         $allowtypes = ['jpg', 'png', 'gif', 'jpeg'];
                         $allowupload = true;
                         $imageFileType = pathinfo($tagert_file,PATHINFO_EXTENSION);
-                        if ($_FILES['hinh_gv']['size'] > $maxfilesize){
-                            $error_update_giangvien['imgSize'] = " Không được upload ảnh lớn hơn ".$maxfilesize."Byte";
-                            $allowupload = false;
-                        }
-
-                        if (!in_array($imageFileType,$allowtypes)){
-                            $error_update_giangvien['imgType'] = "Chỉ được upload các định dạng JPG , PNG , GIF , JPEG<br>";
-                            $allowupload = false;
-                        }
-                        if ($allowupload == true){
-                            // Xử lý di chuyển ảnh từ máy tính sang server
-                            // dung ham move_upload_file
-                            if (move_uploaded_file($_FILES['hinh_gv']['tmp_name'],$tagert_file)){
-//                                echo " Upload thành công ".$_FILES['hinh_gv']['tmp_name']."<br>";
-                            }else{
-                                echo "Lỗi khi đang thực hiện upload<br>";
-                            }
-                        }
                     }
                     $thong_tin_gv = $_POST['thong_tin_gv'];
                     $trang_thai = $_POST['trang_thai'];

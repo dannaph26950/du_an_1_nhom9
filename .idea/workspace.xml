@@ -4,19 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cc6cba04-603a-4918-b721-0684c76f7a58" name="Changes" comment="update trang home của view">
+    <list default="true" id="cc6cba04-603a-4918-b721-0684c76f7a58" name="Changes" comment="fix update giang vien, khoa hoc">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/header.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/model/giangvien.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/model/giangvien.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/model/khoahoc.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/model/khoahoc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/view/giangvien/editgiangvien.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/giangvien/editgiangvien.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/view/sanpham/addsanpham.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/sanpham/addsanpham.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/view/sanpham/editsanpham.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/sanpham/editsanpham.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/view/sanpham/listsanpham.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/sanpham/listsanpham.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/pdo.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/pdo.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/course.html" beforeDir="false" afterPath="$PROJECT_DIR$/user/course.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/khoahoc.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/khoahoc.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -194,7 +184,21 @@
       <option name="project" value="LOCAL" />
       <updated>1669288554475</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="fix update giang vien, khoa hoc">
+      <created>1669295124652</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1669295124652</updated>
+    </task>
+    <task id="LOCAL-00011" summary="fix update giang vien, khoa hoc">
+      <created>1669295176099</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1669295176099</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -218,7 +222,8 @@
     <MESSAGE value="up file view khoa hoc demo" />
     <MESSAGE value="update file khoahoc view" />
     <MESSAGE value="update trang home của view" />
-    <option name="LAST_COMMIT_MESSAGE" value="update trang home của view" />
+    <MESSAGE value="fix update giang vien, khoa hoc" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix update giang vien, khoa hoc" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
