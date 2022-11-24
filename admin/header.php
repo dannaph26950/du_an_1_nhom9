@@ -59,7 +59,7 @@
                     <div class="col-auto d-none d-md-block">
                         <div class="header-links">
                             <ul>
-                                <li><i class="far fa-user"></i><a href="index.php?act=dang_nhap">Đăng nhập</a></li>
+                                <li><i class="far fa-user"></i><a href="index.php?act=dang_nhap">Đăng xuất</a></li>
                             </ul>
                         </div>
                     </div>
