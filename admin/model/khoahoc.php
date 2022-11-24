@@ -30,4 +30,5 @@ function update_khoahoc($ten_khoa_hoc,$name_image, $gia, $thoi_gian_hoc, $mo_ta,
     pdo_execute($sql);
 }
 
+
 ?>
