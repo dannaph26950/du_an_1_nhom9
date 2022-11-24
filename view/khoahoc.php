@@ -1,4 +1,4 @@
-<div class="breadcumb-wrapper" data-bg-src="../user/assets/img/breadcumb/breadcumb-bg.jpg">
+<div class="breadcumb-wrapper" data-bg-src="../user/../view/assets/img/breadcumb/breadcumb-bg.jpg">
     <div class="container z-index-common">
         <h1 class="breadcumb-title">KHÓA HỌC CỦA CHÚNG TÔI</h1>
         <ul class="breadcumb-menu">
@@ -30,42 +30,48 @@
             <div class="tab-pane fade active show" id="tab-grid" role="tabpanel" aria-labelledby="tab-course-grid">
                 <div class="row gy-4 mb-30">
                     <?php
-                    foreach($listall_khoahoc_user as $index => $value){
+                    foreach($listall_khoahoc as $index => $value){
                     ?>
-                    <div class="col-md-6 col-lg-4 col-xxl-3">
-                        <div class="course-box style4">
-                            <div class="course-img"><a href="index.php?act=ct_khoahoc&id=<?php echo $value['id_khoa_hoc'] ?>"><img src="../admin/view/upfileanh/<?php echo $value['anh'] ?>" alt="course"></a> <span
-                                        class="tag"><?php echo $value['gia'] ?></span></div>
-                            <div class="course-content">
-                                <div class="course-author">
-                                    <div class="author-info"><img src="assets/img/course/author.jpg" alt="author">
-                                        <a href="course.html" class="author-name">Kevin Perry</a></div>
-                                    <div class="course-rating">
-                                        <div class="star-rating" role="img" aria-label="Rated 4.00 out of 5"><span
-                                                    style="width:79%">Rated <strong class="rating">4.00</strong> out of
-                                                    5</span></div>(4.00)
+                    <div class="col-md-6 col-lg-4 col-xxl-3" >
+
+                    <div class="course-box ">
+
+                        <div class="course-img"><img src="../Upfileanh/<?php echo listone_khoahoc($value['id_khoa_hoc'])[0]['anh'] ?>" alt="course" style="width: 200px;height: 200px" > <span
+                                    class="tag"><?php echo $value['gia'] ?></span></div>
+                        <div class="course-content">
+                            <div class="course-author">
+                                <div class="author-info"><img src="../Upfileanh/giangvien/thaodau.jpg" alt="author" style="width: 50px;height: 50px"> <a
+                                            href="course.html" class="author-name"><?php echo listone_giangvien(loadone_lop($value['id_lop'])[0]['magv'])[0]['ten_gv']; ?></a></div>
+                                <div class="course-rating">
+                                    <div class="star-rating" role="img" aria-label="Rated 3.00 out of 5"><span
+                                                style="width:79%">Rated <strong class="rating">3.00</strong> out of 5</span>
                                     </div>
+                                    (4.00)
                                 </div>
-                                <h3 class="course-title"><a href="index.php?act=ct_khoahoc&id=<?php echo $value['id_khoa_hoc'] ?>"><?php echo $value['ten_khoa_hoc'] ?></a></h3>
-                                <div class="course-meta"><span><i class="fal fa-file"></i>Lesson 20</span> <span><i
-                                                class="fal fa-user"></i>Students 50</span> <span><i
-                                                class="fal fa-eye"></i>View: 15K</span></div>
                             </div>
+
+                            <div>
+
+                                <h3 class="course-title"><a href="course-details.html"><?php echo $value['ten_khoa_hoc'] ?></a></h3>
+                                <div>
+
+                                </div>
+                                <div class="course-meta"><span><i class="fal fa-file"></i><?php echo $value['thoi_gian_hoc'] ?></span> <span><i
+                                                class="fal fa-user"></i>Sinh viên <?php echo loadone_lop($value['id_lop'])[0]['so_luong'] ?></span> <span><i class="fal fa-eye"></i>Lượt xem:
+                                    12 Nghìn</span></div>
+
+
+                            </div>
+
                         </div>
                     </div>
+                </div>
                     <?php }?>
                 </div>
 
             </div>
         </div>
-        <div class="as-pagination text-center pt-20">
-            <ul>
-                <li><a href="#">1</a></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-                <li><a href="#"><i class="far fa-arrow-right"></i></a></li>
-            </ul>
-        </div>
+
     </div>
 </section>
 <section class="" data-pos-for=".footer-wrapper" data-sec-pos="bottom-half">
@@ -73,7 +79,7 @@
         <div class="cta-wrap">
             <div class="row flex-row-reverse justify-content-between">
                 <div class="col-lg-6">
-                    <div class="cta-img"><img src="../../../user/assets/img/normal/cta_1_1.png" alt="Image"></div>
+                    <div class="cta-img"><img src="../user/../view/assets/img/normal/cta_1_1.png" alt="Image"></div>
                 </div>
                 <div class="col-lg-6 align-self-center">
                     <div class="cta-content">
@@ -84,7 +90,7 @@
                 </div>
             </div>
             <div class="shape-mockup movingX z-index-n1" data-bottom="0%" data-left="44%"><img
-                        src="../../../user/assets/img/shape/dot_shape_1.png" alt="shapes"></div>
+                        src="../user/../view/assets/img/shape/dot_shape_1.png" alt="shapes"></div>
         </div>
     </div>
 </section>

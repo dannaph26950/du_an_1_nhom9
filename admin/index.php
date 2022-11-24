@@ -63,7 +63,7 @@ session_start();
                     $ten_khoa_hoc = $_POST['ten_khoa_hoc'];
                     $id_danh_muc = $_POST['id_danhmuc'];
                     if (isset($_FILES['anh'])){
-                        $tagert_dir = "../admin/view/upfileanh/";
+                        $tagert_dir = "../Upfileanh/";
                         $name_image = $_FILES['anh']['name'];
                         $tagert_file = $tagert_dir.$name_image;
                         $maxfilesize = 800000;
@@ -118,7 +118,7 @@ session_start();
 
                     $ten_khoa_hoc = $_POST['ten_KH'];
                     if (isset($_FILES['anh'])){
-                        $tagert_dir = "../admin/view/upfileanh/";
+                        $tagert_dir = "../Upfileanh/";
                         $name_image = $_FILES['anh']['name'];
                         $tagert_file = $tagert_dir.$name_image;
                         $maxfilesize = 800000;
@@ -193,7 +193,7 @@ session_start();
                     $ten_gv = $_POST['ten_gv'];
 
                     if ( isset( $_FILES['hinh_gv'] ) ) {
-                        $tagert_dir = "../admin/view/upfileanh/giangvien/";
+                        $tagert_dir = "../Upfileanh/giangvien/";
                         $name_image = $_FILES['hinh_gv']['name'];
                         $tagert_file = $tagert_dir . $name_image;
                         $maxfilesize = 800000;
@@ -244,7 +244,7 @@ session_start();
                     $id = $_POST['id'];
 
                     if (isset($_FILES['hinh_gv'])){
-                        $tagert_dir = "../admin/view/upfileanh/giangvien/";
+                        $tagert_dir = "../Upfileanh/giangvien/";
                         $name_image = $_FILES['hinh_gv']['name'];
                         $tagert_file = $tagert_dir.$name_image;
                         $maxfilesize = 800000;
@@ -393,7 +393,7 @@ session_start();
                 if(isset($_GET['id'])&&$_GET['id']>0);{
                 $id = $_GET['id'];
                 $list_lop = loadone_lop($id);
-            }
+                }
                 $listall_khoahoc = listall_khoahoc();
                 $listall_giangvien = listall_giangvien();
                 include '../admin/view/lop/editlop.php';

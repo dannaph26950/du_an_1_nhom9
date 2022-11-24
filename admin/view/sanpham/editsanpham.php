@@ -17,7 +17,7 @@
                 </div>
                 <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label">Ảnh Khóa Học</label>
-                    <input type="file" name="anh" value="" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <input type="file" name="anh" value="<?php echo $value['anh'] ?>" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                     <p style="color: red"><?php
                             if (isset($error_update_khoahoc["imgSize"])){
                                 echo $error_update_khoahoc["imgSize"];

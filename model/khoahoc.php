@@ -1,7 +1,7 @@
 <?php
 //list ra user
 //List khóa học
-function listall_khoahoc_user(){
+function listall_khoahoc(){
     $sql="SELECT * FROM khoa_hoc";
     $listall_khoahoc = pdo_query($sql);
     return $listall_khoahoc;
@@ -12,4 +12,5 @@ function listone_khoahoc($id){
     $listone_khoahoc = pdo_query($sql);
     return $listone_khoahoc;
 }
+
 ?>

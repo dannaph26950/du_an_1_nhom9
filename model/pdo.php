@@ -2,25 +2,25 @@
 /**
  * Mở kết nối đến CSDL sử dụng PDO
  */
-//function pdo_get_connection(){
-//    $dburl = "mysql:host=localhost;dbname=duan1_nhom9;charset=utf8";
-//    $username = 'root';
-//    $password = '';
-//
-//    $conn = new PDO($dburl, $username, $password);
-//    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-//    return $conn;
-//}
-    function pdo_get_connection(){
-        //hàm kết nối cơ sở dữ liệu
+function pdo_get_connection(){
+    $dburl = "mysql:host=localhost;dbname=duan1_nhom9;charset=utf8";
+    $username = 'root';
+    $password = '';
 
-        $conn = new PDO(
-            "mysql:host=202.92.5.49;dbname=wkyrthushosting_da1n9;charset=utf8",
-            'wkyrthushosting_da1n9',
-            'oediCST2JAIf',
-    );
-        return $conn;
-    }
+    $conn = new PDO($dburl, $username, $password);
+    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    return $conn;
+}
+//    function pdo_get_connection(){
+//        //hàm kết nối cơ sở dữ liệu
+//
+//        $conn = new PDO(
+//            "mysql:host=202.92.5.49;dbname=wkyrthushosting_da1n9;charset=utf8",
+//            'wkyrthushosting_da1n9',
+//            'oediCST2JAIf',
+//    );
+//        return $conn;
+//    }
 /**
  * Thực thi câu lệnh sql thao tác dữ liệu (INSERT, UPDATE, DELETE)
  * @param string $sql câu lệnh sql

@@ -26,7 +26,7 @@
             <tr>
                 <td><?php echo $value['id_khoa_hoc'] ?></td>
                 <td><?php echo $value['ten_khoa_hoc'] ?></td>
-                <td><img src="../admin/view/upfileanh/<?php echo $value['anh'] ?>" alt="" style="width: 200px"></td>
+                <td><img src="../Upfileanh/<?php echo $value['anh'] ?>" alt="" style="width: 200px"></td>
                 <td><?php echo $value['gia'] ?></td>
                 <td><?php echo $value['thoi_gian_hoc'] ?></td>
                 <td><?php echo $value['mo_ta'] ?></td>
