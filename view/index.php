@@ -21,12 +21,18 @@ if (isset($_GET['act']) && ($_GET['act']) != ''){
 //            foreach ($listall_khoahoc_user as $index => $value){
 //               array_push($list_lop,$value['id_lop']);
 //            }
-//            $listone_lop = loadone_lop($list_lop);
+            $listone_lop = loadone_lop($list_lop);
 //
 
             include '../view/khoahoc.php';
             break;
         case 'ct_khoahoc':
+            if(isset($_GET['id']) && ($_GET['id']>0)){
+                $id = $_GET['id'];
+                $listone_khoahoc=listone_khoahoc($id);
+                $list_danhmuc = listone_danhmuc($id);
+                $list_lop = loadone_lop($id);
+            }
             include '../view/ctkhoahoc.php';
             break;
         case 'giangvien':

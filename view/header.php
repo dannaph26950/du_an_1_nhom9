@@ -183,7 +183,9 @@
                     <div class="col-auto d-none d-md-block">
                         <div class="header-links">
                             <ul>
-                                <li><i class="far fa-user"></i><a href="contact.html">Đăng nhập</a></li>
+<!--                                trỏ đến trang admin-->
+                                <li><i class="far fa-user"></i><a href="../admin/index.php">Đăng nhập Admin</a></li>
+
                             </ul>
                         </div>
                     </div>
