@@ -23,8 +23,11 @@
             <div class="tab-pane fade active show" id="tab-grid" role="tabpanel" aria-labelledby="tab-course-grid">
              
                 <div class="row gy-4 mb-30">
-                <?php foreach($listall_khoahoc_user as $index => $value){
-                        foreach ($listall_lop as $index2 => $value2){
+                <?php
+                foreach($listall_khoahoc_user as $index => $value){
+                        foreach ($listone_lop as $index2 => $value2){
+
+
                     ?>
                     <div class="col-md-6 col-lg-4 col-xxl-3">
                         <div class="course-box style4">
@@ -34,8 +37,8 @@
                                 <div class="course-content">
                                 <div class="course-author">
                                     <div class="author-info"><img src="../admin/view/upfileanh/<?php echo $value['anh'] ?>" alt="" style="width: 200px" alt="author">
-                                        <!-- <a href="course.html" class="author-name"></a> -->
-                                        <!-- Giáo viên -->
+                                         <a href="course.html" class="author-name"><?php echo $value2[''] ?>Giáo Viên</a>
+
                                     </div>
                                     <div class="course-rating">
                                         <div class="star-rating" role="img" aria-label="Rated 4.00 out of 5"><span style="width:79%">Rated <strong class="rating">4.00</strong> out of

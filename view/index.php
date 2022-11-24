@@ -15,8 +15,15 @@ if (isset($_GET['act']) && ($_GET['act']) != ''){
             include '../view/lienhe.php';
             break;
         case 'khoa_hoc':
-            $listall_lop = listall_lop();
+            $list_lop = [];
             $listall_khoahoc_user = listall_khoahoc_user();
+
+//            foreach ($listall_khoahoc_user as $index => $value){
+//               array_push($list_lop,$value['id_lop']);
+//            }
+//            $listone_lop = loadone_lop($list_lop);
+//
+
             include '../view/khoahoc.php';
             break;
         case 'ct_khoahoc':
