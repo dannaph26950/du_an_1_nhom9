@@ -94,11 +94,14 @@ session_start();
                     $gia = $_POST['gia'];
                     $thoi_gian_hoc = $_POST['thoi_gian_hoc'];
                     $id_lop= $_POST['id_lop'];
+
                     $listall_danhmuc = listall_danhmuc();
+
                     insert_khoahoc($ten_khoa_hoc,$name_image, $gia, $thoi_gian_hoc, $mo_ta,$id_danh_muc,$id_lop);
 
                     $thongbao= 'Thêm thành công';
                 }
+                    $list_lop = listall_lop();
                     $listall_danhmuc = listall_danhmuc();
                 include '../admin/view/sanpham/addsanpham.php';
                 break;
@@ -111,6 +114,8 @@ session_start();
                     $id = $_GET['id'];
                     $listone_khoahoc=listone_khoahoc($id);
                 }
+                $listall_danhmuc = listall_danhmuc();
+                $list_lop = listall_lop();
                 include '../admin/view/sanpham/editsanpham.php';
                 break;
             case 'update_khoahoc':
@@ -149,8 +154,8 @@ session_start();
                     $gia = $_POST['gia_KH'];
                     $thoi_gian_hoc = $_POST['thoiGian_KH'];
                     $mo_ta = $_POST['mota_KH'];
-                    $id_danh_muc = $_POST['id_danhmuc'];
-                    $id_lop= $_POST['id_Lop'];
+                    $id_danh_muc = $_POST['id_danh_muc'];
+                    $id_lop= $_POST['id_lop'];
                     if(empty($ten_khoa_hoc)){
                         $error_update_khoahoc["name"] = "Vui lòng nhập tên khóa học";
                     }
@@ -422,6 +427,8 @@ session_start();
                         $thongbao = 'Đã thêm vào danh mục';
                     }
                 }
+                $listall_giangvien = listall_giangvien();
+                $listall_khoahoc = listall_khoahoc();
                 include '../admin/view/lop/addlop.php';
                 break;
             case 'edit_lop':
@@ -429,9 +436,12 @@ session_start();
                 $id = $_GET['id'];
                 $list_lop = loadone_lop($id);
             }
+                $listall_khoahoc = listall_khoahoc();
+                $listall_giangvien = listall_giangvien();
                 include '../admin/view/lop/editlop.php';
                 break;
             case 'update_lop':
+
                 if(isset($_POST['update_lop']) && ($_POST['update_lop'])){
                     $id_lop = $_POST['id'];
                     $ten_lop = $_POST['ten_lop'];
@@ -446,6 +456,7 @@ session_start();
                     $thongbao = 'Đã thêm vào danh mục';
                 }
                 $list_lop = listall_lop();
+
                 include '../admin/view/lop/listlop.php';
                 break;
             case 'xoa_lop':

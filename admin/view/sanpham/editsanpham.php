@@ -40,12 +40,27 @@
                 </div>
                 <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label">Mã Danh Mục</label>
-                    <input type="text" name="id_danhmuc" value="<?php if(isset($value['id_danh_muc'])&&($value['id_danh_muc']!="")) echo $value['id_danh_muc']; ?>" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <select class="text-input small-input kiemtra" data-error="Nhập mã loại cha" id="ma_loai_cha" name="id_danh_muc"   >
+                        <?php foreach ($listall_danhmuc as $key => $value) {
+                            ?>
+                            <option value="<?php if(isset($value['id_danh_muc'])&&($value['id_danh_muc']!="")) echo $value['id_danh_muc']; ?>" ><?php echo $value['ten_danh_muc'];?></option>
+                            <?php
+                        }
+                        ?>
+                    </select>
+<!--                    <input type="text" name="id_danhmuc" value="--><?php //if(isset($value['id_danh_muc'])&&($value['id_danh_muc']!="")) echo $value['id_danh_muc']; ?><!--" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">-->
                     <p style="color: red"><?php echo isset($error_update_khoahoc["id_DM"]) ? $error_update_khoahoc["id_DM"] : ""; ?></p>
                 </div>
                 <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label">Mã Lớp</label>
-                    <input type="text" name="id_Lop" value="<?php if(isset($value['id_lop'])&&($value['id_lop']!="")) echo $value['id_lop'] ?>" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+
+                    <select name="id_lop">
+                        <option hidden>Chọn danh mục</option>
+                        <?php foreach ($list_lop as $key => $value){ ?>
+                            <option value="<?php if(isset($value['id_lop'])&&($value['id_lop']!="")) echo $value['id_lop'] ?>"><?php echo $value['ten_lop'] ?></option>
+                        <?php } ?>
+                    </select>
+<!--                    <input type="text" name="id_Lop" value="--><?php //if(isset($value['id_lop'])&&($value['id_lop']!="")) echo $value['id_lop'] ?><!--" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">-->
                     <p style="color: red"><?php echo isset($error_update_khoahoc["id_lop"]) ? $error_update_khoahoc["id_lop"] : ""; ?></p>
                 </div>
                 <center>

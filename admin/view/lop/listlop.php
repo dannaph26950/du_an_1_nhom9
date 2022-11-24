@@ -12,14 +12,16 @@
             <th>Mã Lớp</th>
             <th>Tên Lớp</th>
 
-            <th>Mã Giáo Vuên</th>
+            <th>Mã Giáo Viên</th>
             <th>Số Lượng Học Viên</th>
 
             <th>Thao Tác</th>
         </tr>
         </thead>
         <tbody>
-        <?php  foreach ($list_lop as $key=>$value) {?>
+        <?php  foreach ($list_lop as $key=>$value) {
+
+            ?>
             <tr>
                 <td><?php echo $value['id_lop'] ?></td>
                 <td><?php echo $value['ten_lop'] ?></td>

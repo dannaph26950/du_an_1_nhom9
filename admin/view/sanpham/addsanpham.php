@@ -43,7 +43,13 @@
         </div>
         <div class="mb-3">
             <label for="exampleInputEmail1"class="form-label" style="font-weight: bold" >MÃ LỚP</label>
-            <input type="text"  class="form-control kiemtra" id="exampleInputEmail1" aria-describedby="emailHelp" name="id_lop">
+            <select name="id_lop">
+                <option hidden>Chọn danh mục</option>
+                <?php foreach ($list_lop as $key => $value){ ?>
+                    <option value="<?php echo $value['id_lop'] ?>"><?php echo $value['ten_lop'] ?></option>
+                <?php } ?>
+            </select>
+<!--            <input type="text"  class="form-control kiemtra" id="exampleInputEmail1" aria-describedby="emailHelp" name="id_lop">-->
         </div>
         <center>
             <div style="text-align: center">

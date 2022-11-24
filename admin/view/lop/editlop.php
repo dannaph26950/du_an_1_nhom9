@@ -28,12 +28,22 @@ foreach ($list_lop as $key => $value) {
         </div>
         <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label  ">Mã Giáo Viên</label>
-            <input type="number"  class="form-control kiemtra" id="exampleInputEmail1" aria-describedby="emailHelp" name="id_gv" value="<?php if(isset($value['ma_gv'])&&($value['ma_gv']!="")) echo $value['ma_gv']; ?>">
+            <select name="id_gv">
+                <?php foreach ($listall_giangvien as $key => $value){ ?>
+                    <option value="<?php if(isset($value['ma_gv'])&&($value['ma_gv']!="")) echo $value['ma_gv']; ?>"><?php echo $value['ten_gv'] ?></option>
+                <?php } ?>
+            </select>
+<!--            <input type="number"  class="form-control kiemtra" id="exampleInputEmail1" aria-describedby="emailHelp" name="id_gv" value="--><?php //if(isset($value['ma_gv'])&&($value['ma_gv']!="")) echo $value['ma_gv']; ?><!--">-->
             <p style="color: red"><?php echo isset($error_add_lop["id_gv"]) ? $error_add_lop["id_gv"] : ""; ?></p>
         </div>
         <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label ">Mã Khóa Học</label>
-            <input type="number"  class="form-control kiemtra" id="exampleInputEmail1" aria-describedby="emailHelp" name="id_khoa_hoc" value="<?php if(isset($value['id_khoa_hoc'])&&($value['id_khoa_hoc']!="")) echo $value['id_khoa_hoc']; ?>">
+            <select name="id_khoa_hoc">
+                <?php foreach ($listall_khoahoc as $key => $value){ ?>
+                    <option value="<?php if(isset($value['id_khoa_hoc'])&&($value['id_khoa_hoc']!="")) echo $value['id_khoa_hoc']; ?>"><?php echo $value['ten_khoa_hoc'] ?></option>
+                <?php } ?>
+            </select>
+<!--            <input type="number"  class="form-control kiemtra" id="exampleInputEmail1" aria-describedby="emailHelp" name="id_khoa_hoc" value="--><?php //if(isset($value['id_khoa_hoc'])&&($value['id_khoa_hoc']!="")) echo $value['id_khoa_hoc']; ?><!--">-->
             <p style="color: red"><?php echo isset($error_add_lop["id_kh"]) ? $error_add_lop["id_kh"] : ""; ?></p>
         </div>
         <div class="mb-3">
