@@ -80,34 +80,36 @@
             </div>
             <div class="col-xl-6">
                 <div class="mb-35 mb-xl-5">
-                    <h2 class="fs-40 text-theme fw-light mb-0">Welcome to</h2>
-                    <h3 class="h1">Acadu University.</h3>
+                    <h2 class="fs-40 text-theme fw-light mb-0">Chào mừng bạn đến với</h2>
+                    <h3 class="h1">Đại học Acadu.</h3>
                 </div>
-                <p class="mt-n2 mb-35">Collaboratively simplify user friendly networks after principle centered
-                    coordinate effective methods of empowerment distributed niche markets pursue market positioning
-                    web-readiness after resource sucking applications.</p>
+                <p class="mt-n2 mb-35">Hợp tác đơn giản hóa các mạng thân thiện với người dùng sau khi lấy nguyên tắc làm trung tâm phối hợp các phương pháp hiệu quả để trao quyền cho các thị trường ngách phân tán theo đuổi định vị thị trường về sự sẵn sàng của web sau các ứng dụng hút tài nguyên.</p>
                 <div class="feature-box-wrap mb-45">
                     <div class="feature-box">
                         <div class="feature-box_icon"><img src="../user/assets/img/icon/about_1_1.png" alt="icon"></div>
                         <div class="feature-box_content">
-                            <h3 class="feature-box_title">Undergraduate Education</h3>
-                            <p class="feature-box_text">With flexible courses</p>
+                            <h3 class="feature-box_title">Giáo dục đại học</h3>
+                            <p class="feature-box_text">Với các khóa học linh hoạt
+
+                            </p>
                         </div>
                     </div>
                     <div class="feature-box">
                         <div class="feature-box_icon"><img src="../user/assets/img/icon/about_1_2.png" alt="icon"></div>
                         <div class="feature-box_content">
-                            <h3 class="feature-box_title">Postgraduate Education</h3>
-                            <p class="feature-box_text">Study flexibly online</p>
+                            <h3 class="feature-box_title">
+                                Giáo dục sau đại học</h3>
+                            <p class="feature-box_text">Học trực tuyến linh hoạt</p>
                         </div>
                     </div>
                 </div>
                 <div class="checklist mb-45">
                     <ul>
-                        <li>Our unique learning environment sparks physical growth</li>
-                        <li>Discovery while our creative curriculum which combines</li>
+                        <li>Môi trường học tập độc đáo của chúng tôi thúc đẩy sự phát triển thể chất</li>
+                        <li>Khám phá trong khi chương trình giảng dạy sáng tạo của chúng tôi kết hợp
+                            </li>
                     </ul>
-                </div><a href="about.html" class="as-btn">Get More Info</a>
+                </div><a href="about.html" class="as-btn">NHẬN THÊM THÔNG TIN</a>
             </div>
         </div>
     </div>
@@ -122,16 +124,15 @@
     <div class="notification-box">
         <div class="notification-icon"><img src="../user/assets/img/icon/notification.png" alt="icon"></div>
         <div class="notification-content">
-            <h4 class="notification-title">Get Online Courses</h4>
-            <p class="notification-text">Met consectetur adipiscing sed eiustempore dolore</p>
-        </div><a href="about.html" class="as-btn">Join With Us<i class="fas fa-arrow-right ms-2"></i></a>
+            <h4 class="notification-title">Nhận các khóa học trực tuyến</h4>
+            <p class="notification-text">Met sẽ theo đuổi công việc huấn luyện nhưng đồng thời với nỗi đau</p>
+        </div><a href="about.html" class="as-btn">THAM GIA VỚI CHÚNG TÔI<i class="fas fa-arrow-right ms-2"></i></a>
     </div>
 </div>
 <section class="space" id="course-sec" data-bg-src="../user/assets/img/bg/course_bg_1.jpg">
     <div class="container">
-        <div class="title-area text-center"><span class="sub-title"><i class="fal fa-book me-2"></i>Popular
-                    Courses</span>
-            <h2 class="sec-title">Our Top <span class="text-theme fw-light">Courses</span></h2>
+        <div class="title-area text-center"><span class="sub-title"><i class="fal fa-book me-2"></i>CÁC KHÓA HỌC PHỔ BIẾN</span>
+            <h2 class="sec-title">Các khóa học <span class="text-theme fw-light">hàng đầu của chúng tôi</span></h2>
         </div>
         <div class="row slider-shadow as-carousel" data-slide-show="4" data-ml-slide-show="3" data-lg-slide-show="3"
              data-md-slide-show="2">
@@ -149,80 +150,14 @@
                                 </div>(4.00)
                             </div>
                         </div>
-                        <h3 class="course-title"><a href="course-details.html">Learn React JS Tutorial For
-                                Beginners</a></h3>
-                        <div class="course-meta"><span><i class="fal fa-file"></i>Lesson 8</span> <span><i
-                                    class="fal fa-user"></i>Students 50</span> <span><i class="fal fa-eye"></i>View:
-                                    12K</span></div>
+                        <h3 class="course-title"><a href="course-details.html">Tìm hiểu React JS cho người mới bắt đầu</a></h3>
+                        <div class="course-meta"><span><i class="fal fa-file"></i>Số bài :  8</span> <span><i
+                                    class="fal fa-user"></i>Học sinh:  50</span> <span><i class="fal fa-eye"></i>Lượt xem:
+                                    12 nghìn</span></div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 col-lg-4 col-xxl-3">
-                <div class="course-box">
-                    <div class="course-img"><img src="../user/assets/img/course/course_2_2.jpg" alt="course"> <span
-                            class="tag">22.9$</span></div>
-                    <div class="course-content">
-                        <div class="course-author">
-                            <div class="author-info"><img src="../user/assets/img/course/author.jpg" alt="author"> <a
-                                    href="course.html" class="author-name">Kevin Perry</a></div>
-                            <div class="course-rating">
-                                <div class="star-rating" role="img" aria-label="Rated 4.00 out of 5"><span
-                                        style="width:79%">Rated <strong class="rating">4.00</strong> out of 5</span>
-                                </div>(4.00)
-                            </div>
-                        </div>
-                        <h3 class="course-title"><a href="course-details.html">Techs HTML5 JS Tutorial For
-                                Newbies</a></h3>
-                        <div class="course-meta"><span><i class="fal fa-file"></i>Lesson 9</span> <span><i
-                                    class="fal fa-user"></i>Students 55</span> <span><i class="fal fa-eye"></i>View:
-                                    13K</span></div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4 col-xxl-3">
-                <div class="course-box">
-                    <div class="course-img"><img src="../user/assets/img/course/course_2_3.jpg" alt="course"> <span
-                            class="tag">11.9$</span></div>
-                    <div class="course-content">
-                        <div class="course-author">
-                            <div class="author-info"><img src="../user/assets/img/course/author.jpg" alt="author"> <a
-                                    href="course.html" class="author-name">Kevin Perry</a></div>
-                            <div class="course-rating">
-                                <div class="star-rating" role="img" aria-label="Rated 4.00 out of 5"><span
-                                        style="width:79%">Rated <strong class="rating">4.00</strong> out of 5</span>
-                                </div>(4.00)
-                            </div>
-                        </div>
-                        <h3 class="course-title"><a href="course-details.html">Start Java3 JS Tutorial For
-                                Adanceds</a></h3>
-                        <div class="course-meta"><span><i class="fal fa-file"></i>Lesson 6</span> <span><i
-                                    class="fal fa-user"></i>Students 60</span> <span><i class="fal fa-eye"></i>View:
-                                    12K</span></div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4 col-xxl-3">
-                <div class="course-box">
-                    <div class="course-img"><img src="../user/assets/img/course/course_2_4.jpg" alt="course"> <span
-                            class="tag">20.1$</span></div>
-                    <div class="course-content">
-                        <div class="course-author">
-                            <div class="author-info"><img src="../user/assets/img/course/author.jpg" alt="author"> <a
-                                    href="course.html" class="author-name">Kevin Perry</a></div>
-                            <div class="course-rating">
-                                <div class="star-rating" role="img" aria-label="Rated 4.00 out of 5"><span
-                                        style="width:79%">Rated <strong class="rating">4.00</strong> out of 5</span>
-                                </div>(4.00)
-                            </div>
-                        </div>
-                        <h3 class="course-title"><a href="course-details.html">Learn React JS Tutorial For
-                                Beginners</a></h3>
-                        <div class="course-meta"><span><i class="fal fa-file"></i>Lesson 5</span> <span><i
-                                    class="fal fa-user"></i>Students 50</span> <span><i class="fal fa-eye"></i>View:
-                                    14K</span></div>
-                    </div>
-                </div>
-            </div>
+
         </div>
     </div>
 </section>
@@ -231,13 +166,12 @@
                                                                       alt="overlay"></div>
     <div class="container text-center">
         <div class="title-area text-center mb-40"><span class="sub-title text-white"><i
-                    class="fal fa-book me-2"></i>Are You Ready For This Offer</span>
-            <h2 class="sec-title text-white">50% Offer For Very First 50<br><span class="fw-light">Student’s &
-                        Mentors</span></h2>
+                    class="fal fa-book me-2"></i>BẠN ĐÃ SẴN SÀNG CHO ƯU ĐÃI NÀY CHƯA</span>
+            <h2 class="sec-title text-white">Ưu đãi 50% cho 50<br><span class="fw-light">học viên & người cố vấn đầu tiên</span></h2>
         </div>
-        <div class="btn-group justify-content-center"><a href="service.html" class="as-btn shadow-none">Become A
-                Student<i class="fas fa-arrow-right ms-2"></i></a> <a href="contact.html"
-                                                                      class="as-btn style2">Become A Teacher<i class="fas fa-arrow-right ms-2"></i></a></div>
+        <div class="btn-group justify-content-center"><a href="service.html" class="as-btn shadow-none">TRỞ THÀNH SINH VIÊN
+                                                                                                        <i class="fas fa-arrow-right ms-2"></i></a> <a href="contact.html"
+                                                                      class="as-btn style2">TRỞ THÀNH MỘT GIÁO VIÊN<i class="fas fa-arrow-right ms-2"></i></a></div>
     </div>
 </section>
 <div class="space">
@@ -246,7 +180,8 @@
             <div class="col-xl-6">
                 <div class="img-box2"><img class="w-100" src="../user/assets/img/normal/about_1_2.jpg" alt="About">
                     <div class="student-count">
-                        <h5 class="title">Total Students</h5>
+                        <h5 class="title">
+                                          Tổng số học sinh</h5>
                         <div class="avater-list">
                             <div class="avater"><img src="../user/assets/img/normal/student_1_1.png" alt="avater"></div>
                             <div class="avater"><img src="../user/assets/img/normal/student_1_2.png" alt="avater"></div>
@@ -259,25 +194,22 @@
             </div>
             <div class="col-xl-6">
                 <div class="mb-35 mb-xl-5">
-                    <h2 class="fs-40 text-theme fw-light mb-0">What People Think</h2>
-                    <h3 class="h2">About Acadu Company</h3>
+                    <h2 class="fs-40 text-theme fw-light mb-0">Thứ mọi người nghĩ</h2>
+                    <h3 class="h2">Về công ty Acadu</h3>
                 </div>
-                <p class="mt-n2 mb-25">Synergistically visualize alternative content before cross functional core
-                    Rapidiously administra standardized value via focused benefits. Rapidiously redefine highly
-                    efficient niche markets with plug-and-play materials professionally seize client centric
-                    solutions</p>
+                <p class="mt-n2 mb-25">Phối hợp trực quan hóa nội dung thay thế trước lõi chức năng chéo Nhanh chóng quản lý giá trị chuẩn hóa thông qua các lợi ích tập trung. Nhanh chóng xác định lại các thị trường ngách hiệu quả cao bằng các tài liệu plug-and-play nắm bắt các giải pháp lấy khách hàng làm trung tâm một cách chuyên nghiệp</p>
                 <div class="checklist style2 mb-35">
                     <ul>
                         <li>
-                            <h5 class="check-title">Competitive Rates</h5>
-                            <p class="check-text">Seamlessly envisioneer tactical data through services.</p>
+                            <h5 class="check-title">Tỷ giá cạnh tranh</h5>
+                            <p class="check-text">Dữ liệu chiến thuật của người xem liền mạch thông qua các dịch vụ.</p>
                         </li>
                         <li>
-                            <h5 class="check-title">Online Certificates</h5>
-                            <p class="check-text">Seamlessly envisioneer tactical data through services.</p>
+                            <h5 class="check-title">Chứng chỉ trực tuyến</h5>
+                            <p class="check-text">Dữ liệu chiến thuật của người xem liền mạch thông qua các dịch vụ.</p>
                         </li>
                     </ul>
-                </div><a href="about.html" class="as-btn">Learn More<i class="fas fa-arrow-right ms-2"></i></a>
+                </div><a href="about.html" class="as-btn">TÌM HIỂU THÊM<i class="fas fa-arrow-right ms-2"></i></a>
             </div>
         </div>
     </div>
@@ -290,25 +222,25 @@
             <div class="col-sm-6 col-xl-3 counter-card-wrap">
                 <div class="counter-card">
                     <h2 class="counter-card_number"><span class="counter-number">3526</span>+</h2><span
-                        class="counter-card_text"><strong>Successflly</strong> Trained</span>
+                        class="counter-card_text"><strong>Successflly</strong> Đào tạo thành công</span>
                 </div>
             </div>
             <div class="col-sm-6 col-xl-3 counter-card-wrap">
                 <div class="counter-card">
                     <h2 class="counter-card_number"><span class="counter-number">12,360</span>+</h2><span
-                        class="counter-card_text"><strong>Classes</strong> Completed</span>
+                        class="counter-card_text">Lớp học đã hoàn thành</span>
                 </div>
             </div>
             <div class="col-sm-6 col-xl-3 counter-card-wrap">
                 <div class="counter-card">
                     <h2 class="counter-card_number"><span class="counter-number">97.12</span>+</h2><span
-                        class="counter-card_text"><strong>Satisfaction</strong> Rate</span>
+                        class="counter-card_text">Tỷ lệ hài lòng</span>
                 </div>
             </div>
             <div class="col-sm-6 col-xl-3 counter-card-wrap">
                 <div class="counter-card">
                     <h2 class="counter-card_number"><span class="counter-number">96.22</span>+</h2><span
-                        class="counter-card_text"><strong>Success</strong> Rate</span>
+                        class="counter-card_text">Tỷ lệ thành công</span>
                 </div>
             </div>
         </div>
@@ -316,33 +248,31 @@
 </section>
 <section class="space-top space-extra-bottom">
     <div class="container mb-n2">
-        <div class="title-area text-center"><span class="sub-title"><i class="fal fa-book me-2"></i>Working
-                    Strategy</span>
-            <h2 class="sec-title">Our Work<span class="text-theme fw-light">Process</span></h2>
+        <div class="title-area text-center"><span class="sub-title"><i class="fal fa-book me-2"></i>CHIẾN LƯỢC LÀM VIỆC</span>
+            <h2 class="sec-title">Quy trình<span class="text-theme fw-light"> làm việc của chúng tôi</span></h2>
         </div>
         <div class="row justify-content-center">
             <div class="col-sm-6 col-lg-4 process-card-wrap">
                 <div class="process-card">
                     <div class="process-card_img"><img src="../user/assets/img/normal/process_1_1.jpg" alt="process"></div>
-                    <h2 class="process-card_title">Get Edidence Of What<br>You’ve Learned</h2>
-                    <p class="process-card_text">Standards in leadership skills synergize optimal expertise rather
-                        than innovative leadership skills.</p>
+                    <h2 class="process-card_title">Nhận được bằng chứng <br>về những gì
+                                                   bạn đã học</h2>
+                    <p class="process-card_text">Các tiêu chuẩn về kỹ năng lãnh đạo tổng hợp chuyên môn tối ưu hơn là kỹ năng lãnh đạo sáng tạo.</p>
                 </div>
             </div>
             <div class="col-sm-6 col-lg-4 process-card-wrap">
                 <div class="process-card">
                     <div class="process-card_img"><img src="../user/assets/img/normal/process_1_2.jpg" alt="process"></div>
-                    <h2 class="process-card_title">Easily Share Your<br>Achievements</h2>
-                    <p class="process-card_text">Standards in leadership skills synergize optimal expertise rather
-                        than innovative leadership skills.</p>
+                    <h2 class="process-card_title">Dễ dàng chia sẻ
+                                                   <br>thành tích của bạn</h2>
+                    <p class="process-card_text">Các tiêu chuẩn về kỹ năng lãnh đạo tổng hợp chuyên môn tối ưu hơn là kỹ năng lãnh đạo sáng tạo.</p>
                 </div>
             </div>
             <div class="col-sm-6 col-lg-4 process-card-wrap">
                 <div class="process-card">
                     <div class="process-card_img"><img src="../user/assets/img/normal/process_1_3.jpg" alt="process"></div>
-                    <h2 class="process-card_title">Lead a Depending<br>Future Life</h2>
-                    <p class="process-card_text">Standards in leadership skills synergize optimal expertise rather
-                        than innovative leadership skills.</p>
+                    <h2 class="process-card_title">Sống một cuộc sống <br>tương lai tùy thuộc</h2>
+                    <p class="process-card_text">Các tiêu chuẩn về kỹ năng lãnh đạo tổng hợp chuyên môn tối ưu hơn là kỹ năng lãnh đạo sáng tạo.</p>
                 </div>
             </div>
         </div>
@@ -357,19 +287,21 @@
         <div class="row">
             <div class="col-xl-6 mb-30 mb-xl-0">
                 <div class="cta-card" data-bg-src="../user/assets/img/bg/cta_bg_2.jpg">
-                    <div class="title-area mb-40"><span class="sub-title"><i class="fal fa-book me-2"></i>Popular
-                                Courses</span>
-                        <h4 class="sec-title">Get The Best Courses &<br>Upgrade Your Skills</h4>
-                    </div><a href="contact.html" class="as-btn">Join With Us<i
+                    <div class="title-area mb-40"><span class="sub-title"><i class="fal fa-book me-2"></i>CÁC KHÓA HỌC PHỔ BIẾN
+
+
+THAM GIA VỚI CHÚNG TÔI</span>
+                        <h4 class="sec-title">Nhận các khóa học tốt nhất và &<br>nâng cấp kỹ năng của bạn</h4>
+                    </div><a href="contact.html" class="as-btn">THAM GIA VỚI CHÚNG TÔI<i
                             class="fas fa-arrow-right ms-2"></i></a>
                 </div>
             </div>
             <div class="col-xl-6">
                 <div class="cta-card" data-bg-src="../user/assets/img/bg/cta_bg_3.jpg">
-                    <div class="title-area mb-40"><span class="sub-title"><i class="fal fa-book me-2"></i>Popular
-                                Courses</span>
-                        <h4 class="sec-title">Get The Best Courses &<br>Upgrade Your Skills</h4>
-                    </div><a href="contact.html" class="as-btn">Join With Us<i
+                    <div class="title-area mb-40"><span class="sub-title"><i class="fal fa-book me-2"></i>CÁC KHÓA HỌC PHỔ BIẾN</span>
+                        <h4 class="sec-title">Nhận các khóa học tốt nhất <br>và
+                                              nâng cấp kỹ năng của bạn </h4>
+                    </div><a href="contact.html" class="as-btn">THAM GIA VỚI CHÚNG TÔI<i
                             class="fas fa-arrow-right ms-2"></i></a>
                 </div>
             </div>
@@ -378,9 +310,8 @@
 </section>
 <section class="space">
     <div class="container z-index-common">
-        <div class="title-area text-center"><span class="sub-title"><i class="fal fa-book me-2"></i>Fetaured
-                    Events</span>
-            <h2 class="sec-title">Upcoming <span class="text-theme fw-light">Events</span></h2>
+        <div class="title-area text-center"><span class="sub-title"><i class="fal fa-book me-2"></i>SỰ KIỆN NỔI BẬT</span>
+            <h2 class="sec-title">Sự kiện <span class="text-theme fw-light"> sắp tới</span></h2>
         </div>
         <div class="row">
             <div class="col-xl-6">
@@ -391,9 +322,11 @@
                             <p><i class="fal fa-location-dot"></i>259 Hilton Street, NewYork</p>
                             <p><i class="fal fa-clock"></i>08:00 am - 10:00 am</p>
                         </div>
-                        <h3 class="event-card_title"><a href="event-details.html">What Soul Can Tech Us About Web
+                        <h3 class="event-card_title"><a href="event-details.html">
+
+                                                                                  Linh hồn nào có thể công nghệ cho chúng tôi về thiết kế web
                                 Design</a></h3>
-                        <div class="event-card_bottom"><a href="event-details.html" class="as-btn">View Event</a>
+                        <div class="event-card_bottom"><a href="event-details.html" class="as-btn">Xem sự kiện</a>
                             <div class="event-author">
                                 <div class="avater"><img src="../user/assets/img/event/avater.jpg" alt="avater"></div><span
                                     class="author-name">David Smith</span>
@@ -410,9 +343,8 @@
                             <p><i class="fal fa-location-dot"></i>559 Milton Street, London</p>
                             <p><i class="fal fa-clock"></i>09:00 am - 11:00 am</p>
                         </div>
-                        <h3 class="event-card_title"><a href="event-details.html">Why Soul Can Tech Us About
-                                Marketing</a></h3>
-                        <div class="event-card_bottom"><a href="event-details.html" class="as-btn">View Event</a>
+                        <h3 class="event-card_title"><a href="event-details.html">Linh hồn nào có thể công nghệ cho chúng tôi về thiết kế web</a></h3>
+                        <div class="event-card_bottom"><a href="event-details.html" class="as-btn">Xem sự kiện</a>
                             <div class="event-author">
                                 <div class="avater"><img src="../user/assets/img/event/avater.jpg" alt="avater"></div><span
                                     class="author-name">David Smith</span>
@@ -429,9 +361,9 @@
                             <p><i class="fal fa-location-dot"></i>359 Juabal Street, NewYork</p>
                             <p><i class="fal fa-clock"></i>10:00 am - 12:00 am</p>
                         </div>
-                        <h3 class="event-card_title"><a href="event-details.html">Tadit Soul Can Tech Us About Web
+                        <h3 class="event-card_title"><a href="event-details.html">Linh hồn nào có thể công nghệ cho chúng tôi về thiết kế web
                                 Docan</a></h3>
-                        <div class="event-card_bottom"><a href="event-details.html" class="as-btn">View Event</a>
+                        <div class="event-card_bottom"><a href="event-details.html" class="as-btn">Xem sự kiện</a>
                             <div class="event-author">
                                 <div class="avater"><img src="../user/assets/img/event/avater.jpg" alt="avater"></div><span
                                     class="author-name">David Smith</span>
@@ -448,9 +380,9 @@
                             <p><i class="fal fa-location-dot"></i>659 Kurban Street, Sweeden</p>
                             <p><i class="fal fa-clock"></i>06:00 am - 08:00 am</p>
                         </div>
-                        <h3 class="event-card_title"><a href="event-details.html">Goha Soul Can Tech Us About Web
+                        <h3 class="event-card_title"><a href="event-details.html">Linh hồn nào có thể công nghệ cho chúng tôi về thiết kế web
                                 Geisnm</a></h3>
-                        <div class="event-card_bottom"><a href="event-details.html" class="as-btn">View Event</a>
+                        <div class="event-card_bottom"><a href="event-details.html" class="as-btn">Xem sự kiện</a>
                             <div class="event-author">
                                 <div class="avater"><img src="../user/assets/img/event/avater.jpg" alt="avater"></div><span
                                     class="author-name">David Smith</span>
@@ -460,7 +392,7 @@
                 </div>
             </div>
         </div>
-        <div class="text-center mt-20 mt-xl-5"><a href="event.html" class="as-btn">View All Events<i
+        <div class="text-center mt-20 mt-xl-5"><a href="event.html" class="as-btn">Xem tất cả sự kiện<i
                     class="fas fa-arrow-right ms-2"></i></a></div>
     </div>
     <div class="shape-mockup jump d-none d-md-block" data-top="0%" data-left="0%"><img
@@ -474,11 +406,10 @@
     <div class="container">
         <div class="row">
             <div class="col-xl-6 col-lg-5 text-center text-lg-start">
-                <div class="mb-30 mb-xl-5"><span class="sub-title"><i class="fal fa-book me-2"></i>Happy
-                            Students</span>
-                    <h2 class="fs-40 text-white fw-light mb-0 mt-n3">Our Student’s Says</h2>
-                    <h3 class="h2 text-white">About Our University</h3>
-                </div><a href="course-details.html" class="as-btn style2">Give Feedback<i
+                <div class="mb-30 mb-xl-5"><span class="sub-title"><i class="fal fa-book me-2"></i>HỌC SINH HẠNH PHÚC</span>
+                    <h2 class="fs-40 text-white fw-light mb-0 mt-n3">Học viên của chúng tôi nói</h2>
+                    <h3 class="h2 text-white">Giới thiệu về trường đại học của chúng tôi</h3>
+                </div><a href="course-details.html" class="as-btn style2">ĐƯA RA PHẢN HỒI<i
                         class="fas fa-arrow-right ms-2"></i></a>
             </div>
             <div class="col-xl-6 col-lg-7">
@@ -495,10 +426,10 @@
                 <div class="testi-card-slide as-carousel" data-fade="true" data-slide-show="1">
                     <div>
                         <div class="testi-card">
-                            <p class="testi-card_text">Uniquely restore is intermandateds ideas with 24/365 quality
-                                vectors Assertively seize extensible leadership skills for revolutionary array of
-                                technology extensive materials. Energistically procrastinate market driven growth
-                                strategies whereas excellent process Intrinsicly unleash cost effective applications
+                            <p class="testi-card_text">Khôi phục độc đáo các ý tưởng liên cấp với chất lượng 24/365
+                                                       vectơ Quyết đoán nắm bắt các kỹ năng lãnh đạo mở rộng cho mảng mang tính cách mạng
+                                                       công nghệ vật liệu phong phú. Hăng hái trì hoãn tăng trưởng theo định hướng thị trường
+                                                       chiến lược trong khi quy trình xuất sắc Giải phóng nội tại các ứng dụng hiệu quả về chi phí
                             </p>
                             <h3 class="testi-card_name">Vlademir Hilton</h3><span class="testi-card_desig">CEO &
                                     Owner</span>
@@ -506,10 +437,10 @@
                     </div>
                     <div>
                         <div class="testi-card">
-                            <p class="testi-card_text">Vectors restore is intermandateds ideas with 24/365 quality
-                                vectors Assertively seize extensible leadership skills for revolutionary array of
-                                technology extensive materials. Energistically procrastinate market driven growth
-                                strategies whereas excellent process Intrinsicly unleash cost effective applications
+                            <p class="testi-card_text">Khôi phục độc đáo các ý tưởng liên cấp với chất lượng 24/365
+                                                       vectơ Quyết đoán nắm bắt các kỹ năng lãnh đạo mở rộng cho mảng mang tính cách mạng
+                                                       công nghệ vật liệu phong phú. Hăng hái trì hoãn tăng trưởng theo định hướng thị trường
+                                                       chiến lược trong khi quy trình xuất sắc Giải phóng nội tại các ứng dụng hiệu quả về chi phí
                             </p>
                             <h3 class="testi-card_name">David Milton</h3><span class="testi-card_desig">Store
                                     Owner</span>
@@ -517,10 +448,10 @@
                     </div>
                     <div>
                         <div class="testi-card">
-                            <p class="testi-card_text">Extensive restore is intermandateds ideas with 24/365 quality
-                                vectors Assertively seize extensible leadership skills for revolutionary array of
-                                technology extensive materials. Energistically procrastinate market driven growth
-                                strategies whereas excellent process Intrinsicly unleash cost effective applications
+                            <p class="testi-card_text">Khôi phục độc đáo các ý tưởng liên cấp với chất lượng 24/365
+                                                       vectơ Quyết đoán nắm bắt các kỹ năng lãnh đạo mở rộng cho mảng mang tính cách mạng
+                                                       công nghệ vật liệu phong phú. Hăng hái trì hoãn tăng trưởng theo định hướng thị trường
+                                                       chiến lược trong khi quy trình xuất sắc Giải phóng nội tại các ứng dụng hiệu quả về chi phí
                             </p>
                             <h3 class="testi-card_name">Abraham Khalil</h3><span class="testi-card_desig">Store
                                     Manager</span>
@@ -528,10 +459,10 @@
                     </div>
                     <div>
                         <div class="testi-card">
-                            <p class="testi-card_text">Whereas restore is intermandateds ideas with 24/365 quality
-                                vectors Assertively seize extensible leadership skills for revolutionary array of
-                                technology extensive materials. Energistically procrastinate market driven growth
-                                strategies whereas excellent process Intrinsicly unleash cost effective applications
+                            <p class="testi-card_text">Khôi phục độc đáo các ý tưởng liên cấp với chất lượng 24/365
+                                                       vectơ Quyết đoán nắm bắt các kỹ năng lãnh đạo mở rộng cho mảng mang tính cách mạng
+                                                       công nghệ vật liệu phong phú. Hăng hái trì hoãn tăng trưởng theo định hướng thị trường
+                                                       chiến lược trong khi quy trình xuất sắc Giải phóng nội tại các ứng dụng hiệu quả về chi phí
                             </p>
                             <h3 class="testi-card_name">David Smithe</h3><span class="testi-card_desig">Shop
                                     Manager</span>
@@ -539,10 +470,10 @@
                     </div>
                     <div>
                         <div class="testi-card">
-                            <p class="testi-card_text">Unleash restore is intermandateds ideas with 24/365 quality
-                                vectors Assertively seize extensible leadership skills for revolutionary array of
-                                technology extensive materials. Energistically procrastinate market driven growth
-                                strategies whereas excellent process Intrinsicly unleash cost effective applications
+                            <p class="testi-card_text">Khôi phục độc đáo các ý tưởng liên cấp với chất lượng 24/365
+                                                       vectơ Quyết đoán nắm bắt các kỹ năng lãnh đạo mở rộng cho mảng mang tính cách mạng
+                                                       công nghệ vật liệu phong phú. Hăng hái trì hoãn tăng trưởng theo định hướng thị trường
+                                                       chiến lược trong khi quy trình xuất sắc Giải phóng nội tại các ứng dụng hiệu quả về chi phí
                             </p>
                             <h3 class="testi-card_name">Justin Dacusta</h3><span class="testi-card_desig">CEO &
                                     Owner</span>
@@ -550,10 +481,10 @@
                     </div>
                     <div>
                         <div class="testi-card">
-                            <p class="testi-card_text">Materials restore is intermandateds ideas with 24/365 quality
-                                vectors Assertively seize extensible leadership skills for revolutionary array of
-                                technology extensive materials. Energistically procrastinate market driven growth
-                                strategies whereas excellent process Intrinsicly unleash cost effective applications
+                            <p class="testi-card_text">Khôi phục độc đáo các ý tưởng liên cấp với chất lượng 24/365
+                                                       vectơ Quyết đoán nắm bắt các kỹ năng lãnh đạo mở rộng cho mảng mang tính cách mạng
+                                                       công nghệ vật liệu phong phú. Hăng hái trì hoãn tăng trưởng theo định hướng thị trường
+                                                       chiến lược trong khi quy trình xuất sắc Giải phóng nội tại các ứng dụng hiệu quả về chi phí
                             </p>
                             <h3 class="testi-card_name">Ashley Kumara</h3><span class="testi-card_desig">Store
                                     Owner</span>
@@ -566,40 +497,39 @@
 </section>
 <section class="space">
     <div class="container">
-        <div class="title-area text-center"><span class="sub-title"><i class="fal fa-book me-2"></i>Our Blog
-                    Posts</span>
-            <h2 class="sec-title">Latest News <span class="text-theme fw-light">Update</span></h2>
+        <div class="title-area text-center"><span class="sub-title"><i class="fal fa-book me-2"></i>BÀI VIẾT TRÊN BLOG CỦA CHÚNG TÔI</span>
+            <h2 class="sec-title"> <span class="text-theme fw-light">Cập nhật tin tức mới nhất</span></h2>
         </div>
         <div class="blog-grid-wrap">
             <div class="blog-grid">
                 <div class="blog-img"><img src="../user/assets/img/blog/blog_1_1.jpg" alt="blog image"></div>
-                <div class="blog-content"><a class="tag" href="blog.html">Learning</a>
-                    <h3 class="blog-title"><a href="blog-details.html">Repurpose mission critical action life items
-                            rather total linkagesuds</a></h3>
-                    <div class="blog-meta style2"><a href="blog.html"><i class="far fa-clock"></i>March 15, 2022</a>
-                        <a href="blog.html"><i class="far fa-folder"></i>Marketing</a></div>
+                <div class="blog-content"><a class="tag" href="blog.html"> HỌC TẬP</a>
+                    <h3 class="blog-title"><a href="blog-details.html">Sử dụng lại các vật phẩm trong cuộc sống hành động quan trọng của nhiệm vụ thay vì tổng số liên kết</a></h3>
+                    <div class="blog-meta style2"><a href="blog.html"><i class="far fa-clock"></i>Ngày 15 tháng 3 năm 2022</a>
+                        <a href="blog.html"><i class="far fa-folder"></i>Tiếp thị</a></div>
                 </div>
             </div>
             <div class="blog-grid">
                 <div class="blog-img"><img src="../user/assets/img/blog/blog_1_2.jpg" alt="blog image"></div>
-                <div class="blog-content"><a class="tag" href="blog.html">Course</a>
-                    <h3 class="blog-title"><a href="blog-details.html">Toanmisra mission critical action life items
-                            rather Gotan</a></h3>
-                    <div class="blog-meta style2"><a href="blog.html"><i class="far fa-clock"></i>March 16, 2022</a>
-                        <a href="blog.html"><i class="far fa-folder"></i>Technology</a></div>
+                <div class="blog-content"><a class="tag" href="blog.html">KHÓA HỌC</a>
+                    <h3 class="blog-title"><a href="blog-details.html">
+                                                                       Toanmisra nhiệm vụ hành động quan trọng sống mục hơn Gotan
+                                                                        </a></h3>
+                    <div class="blog-meta style2"><a href="blog.html"><i class="far fa-clock"></i>Ngày 16 tháng 3 năm 2022</a>
+                        <a href="blog.html"><i class="far fa-folder"></i>Công nghệ</a></div>
                 </div>
             </div>
             <div class="blog-grid">
                 <div class="blog-img"><img src="../user/assets/img/blog/blog_1_3.jpg" alt="blog image"></div>
-                <div class="blog-content"><a class="tag" href="blog.html">Learning</a>
-                    <h3 class="blog-title"><a href="blog-details.html">Habijoria mission critical action life items
-                            rather Moran</a></h3>
-                    <div class="blog-meta style2"><a href="blog.html"><i class="far fa-clock"></i>March 17, 2022</a>
-                        <a href="blog.html"><i class="far fa-folder"></i>Programing</a></div>
+                <div class="blog-content"><a class="tag" href="blog.html">HỌC TẬP</a>
+                    <h3 class="blog-title"><a href="blog-details.html">
+                                                                       Nhiệm vụ Habijoria hành động quan trọng trong cuộc sống thay vì Moran</a></h3>
+                    <div class="blog-meta style2"><a href="blog.html"><i class="far fa-clock"></i>Ngày 16 tháng 3 năm 2022</a>
+                        <a href="blog.html"><i class="far fa-folder"></i>Lập trình</a></div>
                 </div>
             </div>
         </div>
-        <div class="text-center mt-40 mt-xl-5"><a href="blog.html" class="as-btn">View All Blogs<i
+        <div class="text-center mt-40 mt-xl-5"><a href="blog.html" class="as-btn">Xem tất cả các blog<i
                     class="fas fa-arrow-right ms-2"></i></a></div>
     </div>
     <div class="shape-mockup jump-reverse d-none d-lg-block" data-bottom="28%" data-right="3%"><img
@@ -616,9 +546,11 @@
                 </div>
                 <div class="col-lg-6 align-self-center">
                     <div class="cta-content">
-                        <h2 class="fs-40 fw-light text-theme mb-10">Learn From Our Platform</h2>
-                        <h2 class="mb-25">That Take You Next Level</h2><a href="contact.html"
-                                                                          class="as-btn">Register Now<i class="fas fa-arrow-right ms-2"></i></a>
+                        <h2 class="fs-40 fw-light text-theme mb-10">Học hỏi từ nền tảng của chúng tôi</h2>
+                        <h2 class="mb-25">Điều đó đưa bạn lên cấp độ tiếp theo</h2><a href="contact.html"
+                                                                          class="as-btn">ĐĂNG KÝ NGAY
+
+                            <i class="fas fa-arrow-right ms-2"></i></a>
                     </div>
                 </div>
             </div>

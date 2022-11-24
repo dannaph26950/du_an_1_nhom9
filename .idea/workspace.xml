@@ -4,14 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cc6cba04-603a-4918-b721-0684c76f7a58" name="Changes" comment="update file khoahoc view">
+    <list default="true" id="cc6cba04-603a-4918-b721-0684c76f7a58" name="Changes" comment="update admin">
+      <change afterPath="$PROJECT_DIR$/sad" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/view/lop/addlop.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/lop/addlop.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/view/lop/editlop.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/lop/editlop.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/view/lop/listlop.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/lop/listlop.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/view/sanpham/addsanpham.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/sanpham/addsanpham.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/view/sanpham/editsanpham.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/sanpham/editsanpham.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/home.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/home.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
