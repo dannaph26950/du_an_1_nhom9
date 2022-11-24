@@ -31,140 +31,157 @@
     <link rel="preconnect" href="https://fonts.googleapis.com/">
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&amp;family=Roboto:wght@100;300;400;500;700&amp;display=swap"
-        rel="stylesheet">
+            href="https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&amp;family=Roboto:wght@100;300;400;500;700&amp;display=swap"
+            rel="stylesheet">
     <link rel="stylesheet" href="assets/css/app.min.css">
     <link rel="stylesheet" href="assets/css/fontawesome.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
-    <div class="preloader"><button class="as-btn style3 preloaderCls">Cancel Preloader</button>
-        <div class="preloader-inner"><span class="loader"></span></div>
+<div class="preloader">
+    <button class="as-btn style3 preloaderCls">Cancel Preloader</button>
+    <div class="preloader-inner"><span class="loader"></span></div>
+</div>
+<div class="sidemenu-wrapper d-none d-lg-block">
+    <div class="sidemenu-content">
+        <button class="closeButton sideMenuCls"><i class="far fa-times"></i></button>
+        <div class="widget woocommerce widget_shopping_cart">
+            <h3 class="widget_title">Shopping cart</h3>
+            <div class="widget_shopping_cart_content">
+                <ul class="woocommerce-mini-cart cart_list product_list_widget">
+                    <li class="woocommerce-mini-cart-item mini_cart_item"><a href="#"
+                                                                             class="remove remove_from_cart_button"><i
+                            class="far fa-times"></i></a> <a href="#"><img
+                            src="assets/img/cart/cart_1_1.jpg" alt="Cart Image">HTML5 Course</a> <span
+                            class="quantity">1 × <span class="woocommerce-Price-amount amount"><span
+                            class="woocommerce-Price-currencySymbol">$</span>40.00</span></span></li>
+                    <li class="woocommerce-mini-cart-item mini_cart_item"><a href="#"
+                                                                             class="remove remove_from_cart_button"><i
+                            class="far fa-times"></i></a> <a href="#"><img
+                            src="assets/img/cart/cart_1_2.jpg" alt="Cart Image">JS ES6 Course</a> <span
+                            class="quantity">1 × <span class="woocommerce-Price-amount amount"><span
+                            class="woocommerce-Price-currencySymbol">$</span>99.00</span></span></li>
+                    <li class="woocommerce-mini-cart-item mini_cart_item"><a href="#"
+                                                                             class="remove remove_from_cart_button"><i
+                            class="far fa-times"></i></a> <a href="#"><img
+                            src="assets/img/cart/cart_1_3.jpg" alt="Cart Image">PHP Course</a> <span
+                            class="quantity">1 × <span class="woocommerce-Price-amount amount"><span
+                            class="woocommerce-Price-currencySymbol">$</span>56.00</span></span></li>
+                    <li class="woocommerce-mini-cart-item mini_cart_item"><a href="#"
+                                                                             class="remove remove_from_cart_button"><i
+                            class="far fa-times"></i></a> <a href="#"><img
+                            src="assets/img/cart/cart_1_4.jpg" alt="Cart Image">Python Course</a> <span
+                            class="quantity">1 × <span class="woocommerce-Price-amount amount"><span
+                            class="woocommerce-Price-currencySymbol">$</span>23.00</span></span></li>
+                    <li class="woocommerce-mini-cart-item mini_cart_item"><a href="#"
+                                                                             class="remove remove_from_cart_button"><i
+                            class="far fa-times"></i></a> <a href="#"><img
+                            src="assets/img/cart/cart_1_5.jpg" alt="Cart Image">WordPress Course</a> <span
+                            class="quantity">1 × <span class="woocommerce-Price-amount amount"><span
+                            class="woocommerce-Price-currencySymbol">$</span>100.00</span></span></li>
+                </ul>
+                <p class="woocommerce-mini-cart__total total"><strong>Subtotal:</strong> <span
+                        class="woocommerce-Price-amount amount"><span
+                        class="woocommerce-Price-currencySymbol">$</span>318.00</span></p>
+                <p class="woocommerce-mini-cart__buttons buttons"><a href="cart.html" class="as-btn wc-forward">View
+                                                                                                                cart</a>
+                    <a href="checkout.html" class="as-btn checkout wc-forward">Checkout</a></p>
+            </div>
+        </div>
     </div>
-    <div class="sidemenu-wrapper d-none d-lg-block">
-        <div class="sidemenu-content"><button class="closeButton sideMenuCls"><i class="far fa-times"></i></button>
-            <div class="widget woocommerce widget_shopping_cart">
-                <h3 class="widget_title">Shopping cart</h3>
-                <div class="widget_shopping_cart_content">
-                    <ul class="woocommerce-mini-cart cart_list product_list_widget">
-                        <li class="woocommerce-mini-cart-item mini_cart_item"><a href="#"
-                                class="remove remove_from_cart_button"><i class="far fa-times"></i></a> <a href="#"><img
-                                    src="assets/img/cart/cart_1_1.jpg" alt="Cart Image">HTML5 Course</a> <span
-                                class="quantity">1 × <span class="woocommerce-Price-amount amount"><span
-                                        class="woocommerce-Price-currencySymbol">$</span>40.00</span></span></li>
-                        <li class="woocommerce-mini-cart-item mini_cart_item"><a href="#"
-                                class="remove remove_from_cart_button"><i class="far fa-times"></i></a> <a href="#"><img
-                                    src="assets/img/cart/cart_1_2.jpg" alt="Cart Image">JS ES6 Course</a> <span
-                                class="quantity">1 × <span class="woocommerce-Price-amount amount"><span
-                                        class="woocommerce-Price-currencySymbol">$</span>99.00</span></span></li>
-                        <li class="woocommerce-mini-cart-item mini_cart_item"><a href="#"
-                                class="remove remove_from_cart_button"><i class="far fa-times"></i></a> <a href="#"><img
-                                    src="assets/img/cart/cart_1_3.jpg" alt="Cart Image">PHP Course</a> <span
-                                class="quantity">1 × <span class="woocommerce-Price-amount amount"><span
-                                        class="woocommerce-Price-currencySymbol">$</span>56.00</span></span></li>
-                        <li class="woocommerce-mini-cart-item mini_cart_item"><a href="#"
-                                class="remove remove_from_cart_button"><i class="far fa-times"></i></a> <a href="#"><img
-                                    src="assets/img/cart/cart_1_4.jpg" alt="Cart Image">Python Course</a> <span
-                                class="quantity">1 × <span class="woocommerce-Price-amount amount"><span
-                                        class="woocommerce-Price-currencySymbol">$</span>23.00</span></span></li>
-                        <li class="woocommerce-mini-cart-item mini_cart_item"><a href="#"
-                                class="remove remove_from_cart_button"><i class="far fa-times"></i></a> <a href="#"><img
-                                    src="assets/img/cart/cart_1_5.jpg" alt="Cart Image">WordPress Course</a> <span
-                                class="quantity">1 × <span class="woocommerce-Price-amount amount"><span
-                                        class="woocommerce-Price-currencySymbol">$</span>100.00</span></span></li>
-                    </ul>
-                    <p class="woocommerce-mini-cart__total total"><strong>Subtotal:</strong> <span
-                            class="woocommerce-Price-amount amount"><span
-                                class="woocommerce-Price-currencySymbol">$</span>318.00</span></p>
-                    <p class="woocommerce-mini-cart__buttons buttons"><a href="cart.html" class="as-btn wc-forward">View
-                            cart</a> <a href="checkout.html" class="as-btn checkout wc-forward">Checkout</a></p>
+</div>
+<div class="popup-search-box d-none d-lg-block">
+    <button class="searchClose"><i class="fal fa-times"></i></button>
+    <form action="#"><input type="text" placeholder="What are you looking for?">
+        <button type="submit"><i
+                class="fal fa-search"></i></button>
+    </form>
+</div>
+
+<header class="as-header header-layout1">
+    <div class="header-top">
+        <div class="container">
+            <div class="row justify-content-center justify-content-md-between align-items-center gy-2">
+                <div class="col-auto d-none d-md-block">
+                    <div class="header-links">
+                        <ul>
+                            <li><i class="fal fa-phone"></i><a href="tel:+256214203215">0812349078</a></li>
+                            <li class="d-none d-xl-inline-block"><i class="fal fa-location-dot"></i>Trịnh Văn Bô, Nam Từ
+                                                                                                    Liêm, Hà Nội
+                            </li>
+                            <li><i class="fal fa-clock"></i>T2 - T7: 8:00 - 15:00</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-auto">
+                    <div class="header-links">
+                        <ul>
+                            <li class="d-none d-lg-inline-block"><i class="far fa-user"></i><a
+                                    href="contact.html">Đăng nhập / Đăng ký</a></li>
+                            <li>
+                                <div class="header-social"><span class="social-title">Theo dõi chúng tôi:</span> <a
+                                        href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a> <a
+                                        href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a> <a
+                                        href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a> <a
+                                        href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a> <a
+                                        href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a></div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="popup-search-box d-none d-lg-block"><button class="searchClose"><i class="fal fa-times"></i></button>
-        <form action="#"><input type="text" placeholder="What are you looking for?"> <button type="submit"><i
-                    class="fal fa-search"></i></button></form>
-    </div>
-    
-    <header class="as-header header-layout1">
-        <div class="header-top">
-            <div class="container">
-                <div class="row justify-content-center justify-content-md-between align-items-center gy-2">
-                    <div class="col-auto d-none d-md-block">
-                        <div class="header-links">
-                            <ul>
-                                <li><i class="fal fa-phone"></i><a href="tel:+256214203215">0812349078</a></li>
-                                <li class="d-none d-xl-inline-block"><i class="fal fa-location-dot"></i>Trịnh Văn Bô, Nam Từ Liêm, Hà Nội</li>
-                                <li><i class="fal fa-clock"></i>T2 - T7: 8:00 - 15:00</li>
-                            </ul>
+    <div class="sticky-wrapper">
+        <div class="sticky-active">
+            <div class="menu-area">
+                <div class="container">
+                    <div class="row align-items-center justify-content-between">
+                        <div class="col-auto">
+                            <div class="header-logo"><a href="index.html"><img src="assets/img/logo.svg"
+                                                                               alt="Acadu"></a></div>
                         </div>
-                    </div>
-                    <div class="col-auto">
-                        <div class="header-links">
-                            <ul>
-                                <li class="d-none d-lg-inline-block"><i class="far fa-user"></i><a
-                                        href="contact.html">Đăng nhập / Đăng ký</a></li>
-                                <li>
-                                    <div class="header-social"><span class="social-title">Theo dõi chúng tôi:</span> <a
-                                            href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a> <a
-                                            href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a> <a
-                                            href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a> <a
-                                            href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a> <a
-                                            href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a></div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="sticky-wrapper">
-            <div class="sticky-active">
-                <div class="menu-area">
-                    <div class="container">
-                        <div class="row align-items-center justify-content-between">
-                            <div class="col-auto">
-                                <div class="header-logo"><a href="index.html"><img src="assets/img/logo.svg"
-                                            alt="Acadu"></a></div>
-                            </div>
-                            <div class="col-auto">
-                                <div class="row align-items-center">
-                                    <div class="col-auto">
-                                        <nav class="main-menu d-none d-lg-inline-block">
-                                            <div class="col-auto">
-                                                <nav class="main-menu d-none d-lg-inline-block">
-                                                    <ul>
-                                                        <li class=""><a href="index.html">Trang chủ</a>
-                                                         
-                                                        </li>
-                                                        <li class=""><a href="course.html">Khóa học</a>
+                        <div class="col-auto">
+                            <div class="row align-items-center">
+                                <div class="col-auto">
+                                    <nav class="main-menu d-none d-lg-inline-block">
+                                        <div class="col-auto">
+                                            <nav class="main-menu d-none d-lg-inline-block">
+                                                <ul>
+                                                    <li class=""><a href="index.html">Trang chủ</a>
 
-                                                        </li>
-                                                        <li class=""><a href="team.html">Giáo viên</a>
+                                                    </li>
+                                                    <li class=""><a href="course.html">Khóa học</a>
 
-                                                        </li>
-                                                        
+                                                    </li>
+                                                    <li class=""><a href="team.html">Giáo viên</a>
 
-                                                        <li><a href="contact.html">Liên hệ</a></li>
-                                                    </ul>
-                                                </nav><button type="button" class="as-menu-toggle d-inline-block d-lg-none"><i
-                                                        class="far fa-bars"></i></button>
-                                            </div>
-                                        </nav><button type="button" class="as-menu-toggle d-inline-block d-lg-none"><i
-                                                class="far fa-bars"></i></button>
-                                    </div>
-                                    <div class="col-auto d-none d-xxl-block">
-                                        <div class="header-button"><button type="button"
+                                                    </li>
+
+
+                                                    <li><a href="contact.html">Liên hệ</a></li>
+                                                </ul>
+                                            </nav>
+                                            <button type="button" class="as-menu-toggle d-inline-block d-lg-none"><i
+                                                    class="far fa-bars"></i></button>
+                                        </div>
+                                    </nav>
+                                    <button type="button" class="as-menu-toggle d-inline-block d-lg-none"><i
+                                            class="far fa-bars"></i></button>
+                                </div>
+                                <div class="col-auto d-none d-xxl-block">
+                                    <div class="header-button">
+                                        <button type="button"
                                                 class="icon-btn searchBoxToggler"><i class="far fa-search"></i></button>
-                                            <a href="wishlist.html" class="icon-btn"><i class="far fa-heart"></i> <span
-                                                    class="badge">3</span> </a><a href="#"
-                                                class="icon-btn sideMenuToggler"><i class="far fa-cart-shopping"></i>
-                                                <span class="badge bg-theme2">5</span> </a><a href="contact.html"
-                                                class="as-btn ml-25">Đăng Ký Ngay<i
-                                                    class="fas fa-arrow-right ms-2"></i></a></div>
-                                    </div>
+                                        <a href="wishlist.html" class="icon-btn"><i class="far fa-heart"></i> <span
+                                                class="badge">3</span> </a><a href="#"
+                                                                              class="icon-btn sideMenuToggler"><i
+                                            class="far fa-cart-shopping"></i>
+                                        <span class="badge bg-theme2">5</span> </a><a href="contact.html"
+                                                                                      class="as-btn ml-25">Đăng Ký
+                                                                                                           Ngay<i
+                                                class="fas fa-arrow-right ms-2"></i></a></div>
                                 </div>
                             </div>
                         </div>
@@ -172,335 +189,370 @@
                 </div>
             </div>
         </div>
-    </header>
-    <div class="breadcumb-wrapper" data-bg-src="assets/img/breadcumb/breadcumb-bg.jpg">
-        <div class="container z-index-common">
-            <h1 class="breadcumb-title">KHÓA HỌC CỦA CHÚNG TÔI</h1>
-            <ul class="breadcumb-menu">
-                <li><a href="index.html">Trang chủ</a></li>
-                <li>Khóa học của chúng tôi</li>
+    </div>
+</header>
+<div class="breadcumb-wrapper" data-bg-src="assets/img/breadcumb/breadcumb-bg.jpg">
+    <div class="container z-index-common">
+        <h1 class="breadcumb-title">KHÓA HỌC CỦA CHÚNG TÔI</h1>
+        <ul class="breadcumb-menu">
+            <li><a href="index.html">Trang chủ</a></li>
+            <li>Khóa học của chúng tôi</li>
+        </ul>
+    </div>
+</div>
+<section class="space-top space-extra-bottom">
+    <div class="container">
+        <div class="as-sort-bar">
+            <div class="row justify-content-between align-items-center">
+                <div class="col-md-auto">
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Loại khóa học</label>
+                        <select class="text-input small-input kiemtra" data-error="" id="" name="">
+
+                            <option value="1">1</option>
+                            <option value="1">2</option>
+                            <option value="1">3</option>
+                            <option value="1">4</option>
+
+                        </select>
+
+                    </div>
+                </div>
+
+                <div class="col-md-auto">
+                    <div class="nav" role="tablist"><a href="#" class="active" id="tab-course-grid"
+                                                       data-bs-toggle="tab" data-bs-target="#tab-grid" role="tab"
+                                                       aria-controls="tab-grid"
+                                                       aria-selected="true"><i class="fa-solid fa-grid-2"></i> Lưới</a>
+                        <a href="#"
+                           id="tab-course-list" data-bs-toggle="tab" data-bs-target="#tab-list" role="tab"
+                           aria-controls="tab-grid" aria-selected="false"><i class="fas fa-list"></i> Danh sách</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade active show" id="tab-grid" role="tabpanel" aria-labelledby="tab-course-grid">
+                <div class="row gy-4 mb-30">
+                    <div class="col-md-6 col-lg-4 col-xxl-3">
+                        <div class="course-box style4">
+                            <div class="course-img"><img src="assets/img/course/course_1_1.jpg" alt="course"> <span
+                                    class="tag">Free</span></div>
+                            <div class="course-content">
+                                <div class="course-author">
+                                    <div class="author-info"><img src="assets/img/course/author.jpg" alt="author">
+                                        <a href="course.html" class="author-name">Kevin Perry</a></div>
+                                    <div class="course-rating">
+                                        <div class="star-rating" role="img" aria-label="Rated 4.00 out of 5"><span
+                                                style="width:79%">Rated <strong class="rating">4.00</strong> out of
+                                                    5</span></div>
+                                        (4.00)
+                                    </div>
+                                </div>
+                                <h3 class="course-title"><a href="course-details.html">Learn React JS Tutorial For
+                                                                                       Beginners</a></h3>
+                                <div class="course-meta"><span><i class="fal fa-file"></i>Lesson 8</span> <span><i
+                                        class="fal fa-user"></i>Students 50</span> <span><i
+                                        class="fal fa-eye"></i>View: 12K</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="tab-pane fade" id="tab-list" role="tabpanel" aria-labelledby="tab-course-list">
+                <div class="course-list">
+                    <div class="course-img"><img src="assets/img/course/course_6_1.jpg" alt="course"> <span
+                            class="tag">Free</span></div>
+                    <div class="course-content">
+                        <h3 class="course-title"><a href="course-details.html">How To Make Something Very Easier
+                                                                               Than You Think</a></h3>
+                        <div class="course-author"><a href="course.html" class="author-name">by David Anfle
+                                                                                             Smith</a>
+                            <div class="course-rating">
+                                <div class="star-rating" role="img" aria-label="Rated 4.00 out of 5"><span
+                                        style="width:79%">Rated <strong class="rating">4.00</strong> out of 5</span>
+                                </div>
+                                (4.00)
+                            </div>
+                        </div>
+                        <p class="course-text">Learn How To Build The Perfect Diet & Meal Plan For Improved Health,
+                                               Better Weight Loss And More Health, Better Weight Loss And More Health,
+                                               Better Weight
+                                               Loss And More Health, Diet & Meal Plan For Improved Better Weight Loss
+                                               And More</p>
+                        <div class="course-meta">
+                            <div class="meta-box"><i class="fas fa-file"></i>
+                                <div><span class="text">Total Lesson:</span> <span class="number">328</span></div>
+                            </div>
+                            <div class="meta-box"><i class="fas fa-user"></i>
+                                <div><span class="text">Total Students:</span> <span class="number">25,869</span>
+                                </div>
+                            </div>
+                            <div class="meta-box"><i class="fas fa-eye"></i>
+                                <div><span class="text">Total Views:</span> <span class="number">1256k</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-list">
+                    <div class="course-img"><img src="assets/img/course/course_6_2.jpg" alt="course"> <span
+                            class="tag">22.9$</span></div>
+                    <div class="course-content">
+                        <h3 class="course-title"><a href="course-details.html">Try To Make Something Very Easier
+                                                                               Than You Learn</a></h3>
+                        <div class="course-author"><a href="course.html" class="author-name">by David Anfle
+                                                                                             Smith</a>
+                            <div class="course-rating">
+                                <div class="star-rating" role="img" aria-label="Rated 4.00 out of 5"><span
+                                        style="width:79%">Rated <strong class="rating">4.00</strong> out of 5</span>
+                                </div>
+                                (4.00)
+                            </div>
+                        </div>
+                        <p class="course-text">Learn How To Build The Perfect Diet & Meal Plan For Improved Health,
+                                               Better Weight Loss And More Health, Better Weight Loss And More Health,
+                                               Better Weight
+                                               Loss And More Health, Diet & Meal Plan For Improved Better Weight Loss
+                                               And More</p>
+                        <div class="course-meta">
+                            <div class="meta-box"><i class="fas fa-file"></i>
+                                <div><span class="text">Total Lesson:</span> <span class="number">526</span></div>
+                            </div>
+                            <div class="meta-box"><i class="fas fa-user"></i>
+                                <div><span class="text">Total Students:</span> <span class="number">25,777</span>
+                                </div>
+                            </div>
+                            <div class="meta-box"><i class="fas fa-eye"></i>
+                                <div><span class="text">Total Views:</span> <span class="number">1352k</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-list">
+                    <div class="course-img"><img src="assets/img/course/course_6_3.jpg" alt="course"> <span
+                            class="tag">Free</span></div>
+                    <div class="course-content">
+                        <h3 class="course-title"><a href="course-details.html">Got To Make Something Very Easier
+                                                                               Than You Better</a></h3>
+                        <div class="course-author"><a href="course.html" class="author-name">by David Anfle
+                                                                                             Smith</a>
+                            <div class="course-rating">
+                                <div class="star-rating" role="img" aria-label="Rated 4.00 out of 5"><span
+                                        style="width:79%">Rated <strong class="rating">4.00</strong> out of 5</span>
+                                </div>
+                                (4.00)
+                            </div>
+                        </div>
+                        <p class="course-text">Learn How To Build The Perfect Diet & Meal Plan For Improved Health,
+                                               Better Weight Loss And More Health, Better Weight Loss And More Health,
+                                               Better Weight
+                                               Loss And More Health, Diet & Meal Plan For Improved Better Weight Loss
+                                               And More</p>
+                        <div class="course-meta">
+                            <div class="meta-box"><i class="fas fa-file"></i>
+                                <div><span class="text">Total Lesson:</span> <span class="number">328</span></div>
+                            </div>
+                            <div class="meta-box"><i class="fas fa-user"></i>
+                                <div><span class="text">Total Students:</span> <span class="number">25,869</span>
+                                </div>
+                            </div>
+                            <div class="meta-box"><i class="fas fa-eye"></i>
+                                <div><span class="text">Total Views:</span> <span class="number">1256k</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-list">
+                    <div class="course-img"><img src="assets/img/course/course_6_4.jpg" alt="course"> <span
+                            class="tag">22.9$</span></div>
+                    <div class="course-content">
+                        <h3 class="course-title"><a href="course-details.html">How To Make Something Very Easier
+                                                                               Than You Think</a></h3>
+                        <div class="course-author"><a href="course.html" class="author-name">by David Anfle
+                                                                                             Smith</a>
+                            <div class="course-rating">
+                                <div class="star-rating" role="img" aria-label="Rated 4.00 out of 5"><span
+                                        style="width:79%">Rated <strong class="rating">4.00</strong> out of 5</span>
+                                </div>
+                                (4.00)
+                            </div>
+                        </div>
+                        <p class="course-text">Learn How To Build The Perfect Diet & Meal Plan For Improved Health,
+                                               Better Weight Loss And More Health, Better Weight Loss And More Health,
+                                               Better Weight
+                                               Loss And More Health, Diet & Meal Plan For Improved Better Weight Loss
+                                               And More</p>
+                        <div class="course-meta">
+                            <div class="meta-box"><i class="fas fa-file"></i>
+                                <div><span class="text">Total Lesson:</span> <span class="number">526</span></div>
+                            </div>
+                            <div class="meta-box"><i class="fas fa-user"></i>
+                                <div><span class="text">Total Students:</span> <span class="number">25,777</span>
+                                </div>
+                            </div>
+                            <div class="meta-box"><i class="fas fa-eye"></i>
+                                <div><span class="text">Total Views:</span> <span class="number">1352k</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-list">
+                    <div class="course-img"><img src="assets/img/course/course_6_5.jpg" alt="course"> <span
+                            class="tag">Free</span></div>
+                    <div class="course-content">
+                        <h3 class="course-title"><a href="course-details.html">Try To Make Something Very Easier
+                                                                               Than You Learn</a></h3>
+                        <div class="course-author"><a href="course.html" class="author-name">by David Anfle
+                                                                                             Smith</a>
+                            <div class="course-rating">
+                                <div class="star-rating" role="img" aria-label="Rated 4.00 out of 5"><span
+                                        style="width:79%">Rated <strong class="rating">4.00</strong> out of 5</span>
+                                </div>
+                                (4.00)
+                            </div>
+                        </div>
+                        <p class="course-text">Learn How To Build The Perfect Diet & Meal Plan For Improved Health,
+                                               Better Weight Loss And More Health, Better Weight Loss And More Health,
+                                               Better Weight
+                                               Loss And More Health, Diet & Meal Plan For Improved Better Weight Loss
+                                               And More</p>
+                        <div class="course-meta">
+                            <div class="meta-box"><i class="fas fa-file"></i>
+                                <div><span class="text">Total Lesson:</span> <span class="number">328</span></div>
+                            </div>
+                            <div class="meta-box"><i class="fas fa-user"></i>
+                                <div><span class="text">Total Students:</span> <span class="number">25,869</span>
+                                </div>
+                            </div>
+                            <div class="meta-box"><i class="fas fa-eye"></i>
+                                <div><span class="text">Total Views:</span> <span class="number">1256k</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="as-pagination text-center pt-20">
+            <ul>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#"><i class="far fa-arrow-right"></i></a></li>
             </ul>
         </div>
     </div>
-    <section class="space-top space-extra-bottom">
-        <div class="container">
-            <div class="as-sort-bar">
-                <div class="row justify-content-between align-items-center">
-                    <div class="col-md-auto"><span class="course-result-count">Chúng tôi đã tìm thấy <span class="text-theme">12
-                                khóa học</span> dành cho bạn</span></div>
-                    <div class="col-md-auto">
-                        <div class="nav" role="tablist"><a href="#" class="active" id="tab-course-grid"
-                                data-bs-toggle="tab" data-bs-target="#tab-grid" role="tab" aria-controls="tab-grid"
-                                aria-selected="true"><i class="fa-solid fa-grid-2"></i> Lưới</a> <a href="#"
-                                id="tab-course-list" data-bs-toggle="tab" data-bs-target="#tab-list" role="tab"
-                                aria-controls="tab-grid" aria-selected="false"><i class="fas fa-list"></i> Danh sách</a>
-                        </div>
+</section>
+<section class="" data-pos-for=".footer-wrapper" data-sec-pos="bottom-half">
+    <div class="container">
+        <div class="cta-wrap">
+            <div class="row flex-row-reverse justify-content-between">
+                <div class="col-lg-6">
+                    <div class="cta-img"><img src="assets/img/normal/cta_1_1.png" alt="Image"></div>
+                </div>
+                <div class="col-lg-6 align-self-center">
+                    <div class="cta-content">
+                        <h2 class="fs-40 fw-light text-theme mb-10">Học hỏi từ nền tảng của chúng tôi</h2>
+                        <h2 class="mb-25">Điều đó đưa bạn lên cấp độ tiếp theo</h2><a href="contact.html"
+                                                                                      class="as-btn">ĐĂNG KÝ NGAY<i
+                            class="fas fa-arrow-right ms-2"></i></a>
                     </div>
                 </div>
             </div>
-            <div class="tab-content" id="nav-tabContent">
-                <div class="tab-pane fade active show" id="tab-grid" role="tabpanel" aria-labelledby="tab-course-grid">
-                    <div class="row gy-4 mb-30">
-                        <div class="col-md-6 col-lg-4 col-xxl-3">
-                            <div class="course-box style4">
-                                <div class="course-img"><img src="assets/img/course/course_1_1.jpg" alt="course"> <span
-                                        class="tag">Free</span></div>
-                                <div class="course-content">
-                                    <div class="course-author">
-                                        <div class="author-info"><img src="assets/img/course/author.jpg" alt="author">
-                                            <a href="course.html" class="author-name">Kevin Perry</a></div>
-                                        <div class="course-rating">
-                                            <div class="star-rating" role="img" aria-label="Rated 4.00 out of 5"><span
-                                                    style="width:79%">Rated <strong class="rating">4.00</strong> out of
-                                                    5</span></div>(4.00)
-                                        </div>
-                                    </div>
-                                    <h3 class="course-title"><a href="course-details.html">Learn React JS Tutorial For
-                                            Beginners</a></h3>
-                                    <div class="course-meta"><span><i class="fal fa-file"></i>Lesson 8</span> <span><i
-                                                class="fal fa-user"></i>Students 50</span> <span><i
-                                                class="fal fa-eye"></i>View: 12K</span></div>
-                                </div>
-                            </div>
+            <div class="shape-mockup movingX z-index-n1" data-bottom="0%" data-left="44%"><img
+                    src="assets/img/shape/dot_shape_1.png" alt="shapes"></div>
+        </div>
+    </div>
+</section>
+<footer class="footer-wrapper footer-layout1">
+    <div class="widget-area">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-md-6 col-xxl-3 col-xl-4">
+                    <div class="widget footer-widget">
+                        <div class="as-widget-about">
+                            <div class="about-logo"><a href="index.html"><img src="assets/img/logo-white.svg"
+                                                                              alt="Acadu"></a></div>
+                            <p class="about-text">ACADU- Website đồng hành học tiếng anh cùng mọi người</p>
+                            <h4 class="footer-info-title">Theo dõi qua: </h4>
+                            <div class="as-social"><a href="https://www.facebook.com/"><i
+                                    class="fab fa-facebook-f"></i></a> <a href="https://www.twitter.com/"><i
+                                    class="fab fa-twitter"></i></a> <a href="https://www.linkedin.com/"><i
+                                    class="fab fa-linkedin-in"></i></a> <a href="https://www.instagram.com/"><i
+                                    class="fab fa-instagram"></i></a> <a href="https://www.youtube.com/"><i
+                                    class="fab fa-youtube"></i></a></div>
                         </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-auto">
+                    <div class="widget widget_nav_menu footer-widget">
+                        <h3 class="widget_title">Địa Chỉ</h3>
+                        <div class="menu-all-pages-container">
+                            <ul class="menu">
+                                <li><a href="team.html">Trịnh Văn Bô, Nam Từ Liêm, Hà Nội</a></li>
+                                <li><a href="team.html">0812349078</a></li>
+                                <li><a href="team.html">dannaph26950@fpt.edu.vn</a></li>
 
-                    </div>
-                </div>
-                <div class="tab-pane fade" id="tab-list" role="tabpanel" aria-labelledby="tab-course-list">
-                    <div class="course-list">
-                        <div class="course-img"><img src="assets/img/course/course_6_1.jpg" alt="course"> <span
-                                class="tag">Free</span></div>
-                        <div class="course-content">
-                            <h3 class="course-title"><a href="course-details.html">How To Make Something Very Easier
-                                    Than You Think</a></h3>
-                            <div class="course-author"><a href="course.html" class="author-name">by David Anfle
-                                    Smith</a>
-                                <div class="course-rating">
-                                    <div class="star-rating" role="img" aria-label="Rated 4.00 out of 5"><span
-                                            style="width:79%">Rated <strong class="rating">4.00</strong> out of 5</span>
-                                    </div>(4.00)
-                                </div>
-                            </div>
-                            <p class="course-text">Learn How To Build The Perfect Diet & Meal Plan For Improved Health,
-                                Better Weight Loss And More Health, Better Weight Loss And More Health, Better Weight
-                                Loss And More Health, Diet & Meal Plan For Improved Better Weight Loss And More</p>
-                            <div class="course-meta">
-                                <div class="meta-box"><i class="fas fa-file"></i>
-                                    <div><span class="text">Total Lesson:</span> <span class="number">328</span></div>
-                                </div>
-                                <div class="meta-box"><i class="fas fa-user"></i>
-                                    <div><span class="text">Total Students:</span> <span class="number">25,869</span>
-                                    </div>
-                                </div>
-                                <div class="meta-box"><i class="fas fa-eye"></i>
-                                    <div><span class="text">Total Views:</span> <span class="number">1256k</span></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="course-list">
-                        <div class="course-img"><img src="assets/img/course/course_6_2.jpg" alt="course"> <span
-                                class="tag">22.9$</span></div>
-                        <div class="course-content">
-                            <h3 class="course-title"><a href="course-details.html">Try To Make Something Very Easier
-                                    Than You Learn</a></h3>
-                            <div class="course-author"><a href="course.html" class="author-name">by David Anfle
-                                    Smith</a>
-                                <div class="course-rating">
-                                    <div class="star-rating" role="img" aria-label="Rated 4.00 out of 5"><span
-                                            style="width:79%">Rated <strong class="rating">4.00</strong> out of 5</span>
-                                    </div>(4.00)
-                                </div>
-                            </div>
-                            <p class="course-text">Learn How To Build The Perfect Diet & Meal Plan For Improved Health,
-                                Better Weight Loss And More Health, Better Weight Loss And More Health, Better Weight
-                                Loss And More Health, Diet & Meal Plan For Improved Better Weight Loss And More</p>
-                            <div class="course-meta">
-                                <div class="meta-box"><i class="fas fa-file"></i>
-                                    <div><span class="text">Total Lesson:</span> <span class="number">526</span></div>
-                                </div>
-                                <div class="meta-box"><i class="fas fa-user"></i>
-                                    <div><span class="text">Total Students:</span> <span class="number">25,777</span>
-                                    </div>
-                                </div>
-                                <div class="meta-box"><i class="fas fa-eye"></i>
-                                    <div><span class="text">Total Views:</span> <span class="number">1352k</span></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="course-list">
-                        <div class="course-img"><img src="assets/img/course/course_6_3.jpg" alt="course"> <span
-                                class="tag">Free</span></div>
-                        <div class="course-content">
-                            <h3 class="course-title"><a href="course-details.html">Got To Make Something Very Easier
-                                    Than You Better</a></h3>
-                            <div class="course-author"><a href="course.html" class="author-name">by David Anfle
-                                    Smith</a>
-                                <div class="course-rating">
-                                    <div class="star-rating" role="img" aria-label="Rated 4.00 out of 5"><span
-                                            style="width:79%">Rated <strong class="rating">4.00</strong> out of 5</span>
-                                    </div>(4.00)
-                                </div>
-                            </div>
-                            <p class="course-text">Learn How To Build The Perfect Diet & Meal Plan For Improved Health,
-                                Better Weight Loss And More Health, Better Weight Loss And More Health, Better Weight
-                                Loss And More Health, Diet & Meal Plan For Improved Better Weight Loss And More</p>
-                            <div class="course-meta">
-                                <div class="meta-box"><i class="fas fa-file"></i>
-                                    <div><span class="text">Total Lesson:</span> <span class="number">328</span></div>
-                                </div>
-                                <div class="meta-box"><i class="fas fa-user"></i>
-                                    <div><span class="text">Total Students:</span> <span class="number">25,869</span>
-                                    </div>
-                                </div>
-                                <div class="meta-box"><i class="fas fa-eye"></i>
-                                    <div><span class="text">Total Views:</span> <span class="number">1256k</span></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="course-list">
-                        <div class="course-img"><img src="assets/img/course/course_6_4.jpg" alt="course"> <span
-                                class="tag">22.9$</span></div>
-                        <div class="course-content">
-                            <h3 class="course-title"><a href="course-details.html">How To Make Something Very Easier
-                                    Than You Think</a></h3>
-                            <div class="course-author"><a href="course.html" class="author-name">by David Anfle
-                                    Smith</a>
-                                <div class="course-rating">
-                                    <div class="star-rating" role="img" aria-label="Rated 4.00 out of 5"><span
-                                            style="width:79%">Rated <strong class="rating">4.00</strong> out of 5</span>
-                                    </div>(4.00)
-                                </div>
-                            </div>
-                            <p class="course-text">Learn How To Build The Perfect Diet & Meal Plan For Improved Health,
-                                Better Weight Loss And More Health, Better Weight Loss And More Health, Better Weight
-                                Loss And More Health, Diet & Meal Plan For Improved Better Weight Loss And More</p>
-                            <div class="course-meta">
-                                <div class="meta-box"><i class="fas fa-file"></i>
-                                    <div><span class="text">Total Lesson:</span> <span class="number">526</span></div>
-                                </div>
-                                <div class="meta-box"><i class="fas fa-user"></i>
-                                    <div><span class="text">Total Students:</span> <span class="number">25,777</span>
-                                    </div>
-                                </div>
-                                <div class="meta-box"><i class="fas fa-eye"></i>
-                                    <div><span class="text">Total Views:</span> <span class="number">1352k</span></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="course-list">
-                        <div class="course-img"><img src="assets/img/course/course_6_5.jpg" alt="course"> <span
-                                class="tag">Free</span></div>
-                        <div class="course-content">
-                            <h3 class="course-title"><a href="course-details.html">Try To Make Something Very Easier
-                                    Than You Learn</a></h3>
-                            <div class="course-author"><a href="course.html" class="author-name">by David Anfle
-                                    Smith</a>
-                                <div class="course-rating">
-                                    <div class="star-rating" role="img" aria-label="Rated 4.00 out of 5"><span
-                                            style="width:79%">Rated <strong class="rating">4.00</strong> out of 5</span>
-                                    </div>(4.00)
-                                </div>
-                            </div>
-                            <p class="course-text">Learn How To Build The Perfect Diet & Meal Plan For Improved Health,
-                                Better Weight Loss And More Health, Better Weight Loss And More Health, Better Weight
-                                Loss And More Health, Diet & Meal Plan For Improved Better Weight Loss And More</p>
-                            <div class="course-meta">
-                                <div class="meta-box"><i class="fas fa-file"></i>
-                                    <div><span class="text">Total Lesson:</span> <span class="number">328</span></div>
-                                </div>
-                                <div class="meta-box"><i class="fas fa-user"></i>
-                                    <div><span class="text">Total Students:</span> <span class="number">25,869</span>
-                                    </div>
-                                </div>
-                                <div class="meta-box"><i class="fas fa-eye"></i>
-                                    <div><span class="text">Total Views:</span> <span class="number">1256k</span></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="as-pagination text-center pt-20">
-                <ul>
-                    <li><a href="#">1</a></li>
-                    <li><a href="#">2</a></li>
-                    <li><a href="#">3</a></li>
-                    <li><a href="#"><i class="far fa-arrow-right"></i></a></li>
-                </ul>
-            </div>
-        </div>
-    </section>
-    <section class="" data-pos-for=".footer-wrapper" data-sec-pos="bottom-half">
-        <div class="container">
-            <div class="cta-wrap">
-                <div class="row flex-row-reverse justify-content-between">
-                    <div class="col-lg-6">
-                        <div class="cta-img"><img src="assets/img/normal/cta_1_1.png" alt="Image"></div>
-                    </div>
-                    <div class="col-lg-6 align-self-center">
-                        <div class="cta-content">
-                            <h2 class="fs-40 fw-light text-theme mb-10">Học hỏi từ nền tảng của chúng tôi</h2>
-                            <h2 class="mb-25">Điều đó đưa bạn lên cấp độ tiếp theo</h2><a href="contact.html"
-                                class="as-btn">ĐĂNG KÝ NGAY<i class="fas fa-arrow-right ms-2"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="shape-mockup movingX z-index-n1" data-bottom="0%" data-left="44%"><img
-                        src="assets/img/shape/dot_shape_1.png" alt="shapes"></div>
-            </div>
-        </div>
-    </section>
-    <footer class="footer-wrapper footer-layout1">
-        <div class="widget-area">
-            <div class="container">
-                <div class="row justify-content-between">
-                    <div class="col-md-6 col-xxl-3 col-xl-4">
-                        <div class="widget footer-widget">
-                            <div class="as-widget-about">
-                                <div class="about-logo"><a href="index.html"><img src="assets/img/logo-white.svg"
-                                            alt="Acadu"></a></div>
-                                <p class="about-text">ACADU- Website đồng hành học tiếng anh cùng mọi người</p>
-                                <h4 class="footer-info-title">Theo dõi qua: </h4>
-                                <div class="as-social"><a href="https://www.facebook.com/"><i
-                                            class="fab fa-facebook-f"></i></a> <a href="https://www.twitter.com/"><i
-                                            class="fab fa-twitter"></i></a> <a href="https://www.linkedin.com/"><i
-                                            class="fab fa-linkedin-in"></i></a> <a href="https://www.instagram.com/"><i
-                                            class="fab fa-instagram"></i></a> <a href="https://www.youtube.com/"><i
-                                            class="fab fa-youtube"></i></a></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-xl-auto">
-                        <div class="widget widget_nav_menu footer-widget">
-                            <h3 class="widget_title">Địa Chỉ</h3>
-                            <div class="menu-all-pages-container">
-                                <ul class="menu">
-                                    <li><a href="team.html">Trịnh Văn Bô, Nam Từ Liêm, Hà Nội</a></li>
-                                    <li><a href="team.html">0812349078</a></li>
-                                    <li><a href="team.html">dannaph26950@fpt.edu.vn</a></li>
-                                    
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-xl-auto">
-                        <div class="widget widget_nav_menu footer-widget">
-                            <h3 class="widget_title">Hotline:</h3>
-                            <div class="menu-all-pages-container">
-                                <ul class="menu">
-                                    <li><a href="team.html">0393xxxxxx</a></li>
-                                    <li><a href="contact.html">0123xxxxxx</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-xl-3">
-                        <div class="widget footer-widget">
-<h3 class="widget_title">Kết nối!</h3>
-                            <form class="newsletter-widget">
-                                <p class="footer-text">Liên hệ trực tiếp với chúng tôi: </p>
-                                <div class="form-group"><input class="form-control" type="email"
-                                        placeholder="Điền email vào đây" required=""> <i class="fal fa-envelope"></i></div>
-                                <button type="submit" class="as-btn shadow-none">Gửi thư</button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="copyright-wrap">
-                <div class="row justify-content-between align-items-center">
-                    <div class="col-lg-6">
-                        <p class="copyright-text">Bản Quyền  <i class="fal fa-copyright"></i> 2022 <a
-                                href="https://themeforest.net/user/angfuz_soft">Thuộc sở hữu </a>. Nhóm 9.</p>
-                    </div>
-                    <div class="col-lg-6 text-end d-none d-lg-block">
-                        <div class="footer-links">
-                            <ul>
-                                <li><a href="about.html">Tin tức</a></li>
-                                <li><a href="about.html">Sử dụng</a></li>
                             </ul>
                         </div>
                     </div>
                 </div>
+                <div class="col-md-6 col-xl-auto">
+                    <div class="widget widget_nav_menu footer-widget">
+                        <h3 class="widget_title">Hotline:</h3>
+                        <div class="menu-all-pages-container">
+                            <ul class="menu">
+                                <li><a href="team.html">0393xxxxxx</a></li>
+                                <li><a href="contact.html">0123xxxxxx</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-3">
+                    <div class="widget footer-widget">
+                        <h3 class="widget_title">Kết nối!</h3>
+                        <form class="newsletter-widget">
+                            <p class="footer-text">Liên hệ trực tiếp với chúng tôi: </p>
+                            <div class="form-group"><input class="form-control" type="email"
+                                                           placeholder="Điền email vào đây" required=""> <i
+                                    class="fal fa-envelope"></i></div>
+                            <button type="submit" class="as-btn shadow-none">Gửi thư</button>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="shape-mockup jump d-none d-xl-block" data-top="24%" data-left="4%"><img
-                src="assets/img/shape/footer_shape_1.png" alt="shapes"></div>
-        <div class="shape-mockup jump-reverse d-none d-xl-block" data-bottom="20%" data-right="4%"><img
-                src="assets/img/shape/footer_shape_2.png" alt="shapes"></div>
-        <div class="shape-mockup" data-top="0" data-right="0"><img src="assets/img/shape/footer_shape_3.png"
-                alt="shapes"></div>
-    </footer><a href="#" class="scrollToTop scroll-btn"><i class="far fa-arrow-up"></i></a>
+    </div>
+    <div class="container">
+        <div class="copyright-wrap">
+            <div class="row justify-content-between align-items-center">
+                <div class="col-lg-6">
+                    <p class="copyright-text">Bản Quyền <i class="fal fa-copyright"></i> 2022 <a
+                            href="https://themeforest.net/user/angfuz_soft">Thuộc sở hữu </a>. Nhóm 9.</p>
+                </div>
+                <div class="col-lg-6 text-end d-none d-lg-block">
+                    <div class="footer-links">
+                        <ul>
+                            <li><a href="about.html">Tin tức</a></li>
+                            <li><a href="about.html">Sử dụng</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="shape-mockup jump d-none d-xl-block" data-top="24%" data-left="4%"><img
+            src="assets/img/shape/footer_shape_1.png" alt="shapes"></div>
+    <div class="shape-mockup jump-reverse d-none d-xl-block" data-bottom="20%" data-right="4%"><img
+            src="assets/img/shape/footer_shape_2.png" alt="shapes"></div>
+    <div class="shape-mockup" data-top="0" data-right="0"><img src="assets/img/shape/footer_shape_3.png"
+                                                               alt="shapes"></div>
+</footer>
+<a href="#" class="scrollToTop scroll-btn"><i class="far fa-arrow-up"></i></a>
 
-    <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
-    <script src="assets/js/app.min.js"></script>
-    <script src="assets/js/main.js"></script>
+<script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
+<script src="assets/js/app.min.js"></script>
+<script src="assets/js/main.js"></script>
 </body>
 <!-- Mirrored from angfuzsoft.com/html/acadu/demo/course.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 07 Nov 2022 16:04:13 GMT -->
 
