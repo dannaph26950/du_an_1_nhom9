@@ -24,8 +24,8 @@
         return $sql;
     }
 
-    function update_giangvien($magv,$ten_gv,$hinh_gv,$thong_tin_gv,$trang_thai){
-        $sql = "UPDATE `giang_vien` SET `ten_gv`='$ten_gv',hinh_gv='$hinh_gv',thong_tin_gv='$thong_tin_gv',trang_thai='$trang_thai' WHERE magv = '$magv'";
+    function update_giangvien($ten_gv,$name_image,$thong_tin_gv,$trang_thai,$id){
+        $sql = "UPDATE `giang_vien` SET `ten_gv`='$ten_gv',hinh_gv='$name_image',thong_tin_gv='$thong_tin_gv',trang_thai='$trang_thai' WHERE magv = '$id'";
         pdo_execute($sql);
     }
 ?>

@@ -20,8 +20,13 @@ foreach ($listone_giangvien as $key=>$value){
                 <p style="color: red"> </p>
             </div>
             <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">HÌnh Giảng viên</label>
+                <label for="exampleInputEmail1" class="form-label">Hình Giảng viên</label>
                 <input type="file" name="hinh_gv" value="<?php if(isset($value['hinh_gv'])&&($value['hinh_gv']!="")) echo $value['hinh_gv']; ?>" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <p style="color: red"> </p>
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Thông tin</label>
+                <input class="form-control" name="thong_tin_gv"  value="<?php if(isset($value['thong_tin_gv'])&&($value['thong_tin_gv']!="")) echo $value['thong_tin_gv']; ?>">
                 <p style="color: red"> </p>
             </div>
             <div class="mb-3">
