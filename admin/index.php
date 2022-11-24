@@ -114,7 +114,8 @@ session_start();
 
                 $error_update_khoahoc = [];
                 if(isset($_POST['update_KH']) && ($_POST['update_KH'])){
-                    $id_khoa_hoc = $_POST['id'];
+                    $id = $_POST['id'];
+
                     $ten_khoa_hoc = $_POST['ten_KH'];
                     if (isset($_FILES['anh'])){
                         $tagert_dir = "../admin/view/upfileanh/";
@@ -164,7 +165,7 @@ session_start();
                         $error_update_khoahoc["time"] = "Vui lòng nhập thời gian học";
                     }
                     if (!$error_update_khoahoc) {
-                        update_khoahoc($ten_khoa_hoc,$name_image, $gia, $thoi_gian_hoc, $mo_ta, $id_danh_muc,$id_lop,$id_khoa_hoc);
+                        update_khoahoc($ten_khoa_hoc,$name_image, $gia, $thoi_gian_hoc, $mo_ta, $id_danh_muc,$id_lop,$id);
                         $thongbao= 'Cập nhật thành công';
 
                     }
@@ -238,9 +239,9 @@ session_start();
                 break;
             case 'update_giangvien':
                 $error_update_giangvien = [];
-                if(isset($_POST['update_gv']) && ($_POST['update_gv'])){
-                    $magv = $_POST['magv'];
+                if(isset($_POST['update_giangvien']) && ($_POST['update_giangvien'])){
                     $ten_gv = $_POST['ten_gv'];
+                    $id = $_POST['id'];
 
                     if (isset($_FILES['hinh_gv'])){
                         $tagert_dir = "../admin/view/upfileanh/giangvien/";
@@ -272,7 +273,7 @@ session_start();
                     $thong_tin_gv = $_POST['thong_tin_gv'];
                     $trang_thai = $_POST['trang_thai'];
                     if (!$error_update_giangvien) {
-                        update_giangvien($ten_gv,$name_image, $thong_tin_gv, $trang_thai);
+                        update_giangvien($ten_gv,$name_image, $thong_tin_gv, $trang_thai,$id);
                         $thongbao= 'Cập nhật thành công';
 
                     }
@@ -476,6 +477,7 @@ session_start();
     }
 
     include '../admin/footer.php';
+
 
 
 ?>

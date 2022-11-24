@@ -48,7 +48,6 @@
                         }
                         ?>
                     </select>
-<!--                    <input type="text" name="id_danhmuc" value="--><?php //if(isset($value['id_danh_muc'])&&($value['id_danh_muc']!="")) echo $value['id_danh_muc']; ?><!--" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">-->
                     <p style="color: red"><?php echo isset($error_update_khoahoc["id_DM"]) ? $error_update_khoahoc["id_DM"] : ""; ?></p>
                 </div>
                 <div class="mb-3">
@@ -60,16 +59,14 @@
                             <option value="<?php if(isset($value['id_lop'])&&($value['id_lop']!="")) echo $value['id_lop'] ?>"><?php echo $value['ten_lop'] ?></option>
                         <?php } ?>
                     </select>
-<!--                    <input type="text" name="id_Lop" value="--><?php //if(isset($value['id_lop'])&&($value['id_lop']!="")) echo $value['id_lop'] ?><!--" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">-->
                     <p style="color: red"><?php echo isset($error_update_khoahoc["id_lop"]) ? $error_update_khoahoc["id_lop"] : ""; ?></p>
                 </div>
                 <center>
                     <div style="text-align: center">
-                        <input type="hidden" name="id" value="<?php if(isset($value['id_khoa_hoc'])&&($value['id_khoa_hoc']!="")) echo $value['id_khoa_hoc']; ?>">
+                        <input type="hidden" name="id" value="<?php echo $_GET['id']; ?>">
 
                         <input type="submit" value="SỬA" name="update_KH" class="btn btn-primary" style="width: 200px; margin: 0px 20px" onclick="location.href='index.php?act=list_khoahoc'"  >
 
-<!--                        <a href="index.php?act=list_khoahoc" ><input class="btn btn-primary" type="button" value="DANH SÁCH" style="width: 200px;margin: 0px 20px" ></a>-->
                         <input type="reset" value="CẬP NHẬT LẠI" name=""  class="btn btn-primary" style="width: 200px" >
                     </div>
                 </center>
@@ -87,4 +84,5 @@
         </form>
         <?php
     }
+
 ?>
