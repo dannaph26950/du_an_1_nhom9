@@ -4,37 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cc6cba04-603a-4918-b721-0684c76f7a58" name="Changes" comment="update trang view new">
-      <change afterPath="$PROJECT_DIR$/user/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/dangky.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/lienhe.php" afterDir="false" />
+    <list default="true" id="cc6cba04-603a-4918-b721-0684c76f7a58" name="Changes" comment="  user">
+      <change afterPath="$PROJECT_DIR$/view/dang_nhap.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/connect.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/connect.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/gio-hang.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/home.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/layout.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/san-pham.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/about-2.html" beforeDir="false" afterPath="$PROJECT_DIR$/user/about-2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/user/about.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/blog-details.html" beforeDir="false" afterPath="$PROJECT_DIR$/user/blog-details.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/user/blog.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/user/cart.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/checkout.html" beforeDir="false" afterPath="$PROJECT_DIR$/user/checkout.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/user/contact.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/course-details.html" beforeDir="false" afterPath="$PROJECT_DIR$/user/course-details.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/course.html" beforeDir="false" afterPath="$PROJECT_DIR$/user/course.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/error.html" beforeDir="false" afterPath="$PROJECT_DIR$/user/error.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/event-details.html" beforeDir="false" afterPath="$PROJECT_DIR$/user/event-details.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/event.html" beforeDir="false" afterPath="$PROJECT_DIR$/user/event.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/gallery.html" beforeDir="false" afterPath="$PROJECT_DIR$/user/gallery.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/team-details.html" beforeDir="false" afterPath="$PROJECT_DIR$/user/team-details.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/team.html" beforeDir="false" afterPath="$PROJECT_DIR$/user/team.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/video-course.html" beforeDir="false" afterPath="$PROJECT_DIR$/user/video-course.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/wishlist.html" beforeDir="false" afterPath="$PROJECT_DIR$/user/wishlist.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/giangvien.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/giangvien.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/view/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/header.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/view/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/index.php" afterDir="false" />
     </list>
@@ -79,23 +51,24 @@
     <option name="showLibraryContents" value="true" />
     <option name="showMembers" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/xampp/htdocs/du_an_1_nhom9&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;terminal&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/xampp/htdocs/du_an_1_nhom9/view",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "terminal",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\du_an_1_nhom9\view" />
       <recent name="C:\xampp\htdocs\du_an_1_nhom9\user" />
       <recent name="C:\xampp\htdocs\duan1_nhom9\model" />
     </key>
@@ -230,7 +203,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669316448138</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="  user">
+      <created>1669386124655</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1669386124655</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -256,7 +236,8 @@
     <MESSAGE value="update trang home của view" />
     <MESSAGE value="update trang view" />
     <MESSAGE value="update trang view new" />
-    <option name="LAST_COMMIT_MESSAGE" value="update trang view new" />
+    <MESSAGE value="  user" />
+    <option name="LAST_COMMIT_MESSAGE" value="  user" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

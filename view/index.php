@@ -69,6 +69,9 @@ if (isset($_GET['act']) && ($_GET['act']) != ''){
         case 'lienhe':
             include "../view/lienhe.php";
             break;
+        case 'dangnhap':
+            include "../view/dang_nhap.php";
+            break;
         default:
             include '../view/home.php';
     }

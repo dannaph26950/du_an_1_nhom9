@@ -184,7 +184,7 @@
                         <div class="header-links">
                             <ul>
 <!--                                trỏ đến trang admin-->
-                                <li><i class="far fa-user"></i><a href="../admin/index.php">Đăng nhập Admin</a></li>
+                                <li><i class="far fa-user"></i><a href="../view/index.php?act=dangnhap">Đăng nhập </a></li>
 
                             </ul>
                         </div>
