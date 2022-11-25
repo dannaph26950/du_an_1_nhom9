@@ -47,9 +47,14 @@ if (isset($_GET['act']) && ($_GET['act']) != ''){
                 $id = $_GET['id'];
                 $listone_khoahoc=listone_khoahoc($id);
                 $list_danhmuc = listone_danhmuc($id);
-                $list_lop = loadone_lop($id);
-
             }
+            $listall_khoahoc = listall_khoahoc();
+            $listall_lop = listall_lop();
+
+//            $list_lop = loadone_lop(131)[0]['ten_lop'];
+//            echo "<pre>";
+//            print_r($listone_giangvien);
+//            die();
             include '../view/ctkhoahoc.php';
             break;
         case 'giangvien':

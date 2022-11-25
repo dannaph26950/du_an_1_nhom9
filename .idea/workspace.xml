@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cc6cba04-603a-4918-b721-0684c76f7a58" name="Changes" comment="update trang view">
+    <list default="true" id="cc6cba04-603a-4918-b721-0684c76f7a58" name="Changes" comment="update trang view new">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/assets/css/app.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/view/assets/css/app.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/view/assets/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/ctkhoahoc.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/ctkhoahoc.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/khoahoc.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/khoahoc.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,6 +124,7 @@
       <workItem from="1669268614986" duration="2035000" />
       <workItem from="1669271432957" duration="3067000" />
       <workItem from="1669288483919" duration="2439000" />
+      <workItem from="1669360215105" duration="3949000" />
     </task>
     <task id="LOCAL-00001" summary="update files add">
       <created>1668688059236</created>
@@ -191,7 +196,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669315864737</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="update trang view new">
+      <created>1669316448138</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1669316448138</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -216,7 +228,8 @@
     <MESSAGE value="update file khoahoc view" />
     <MESSAGE value="update trang home của view" />
     <MESSAGE value="update trang view" />
-    <option name="LAST_COMMIT_MESSAGE" value="update trang view" />
+    <MESSAGE value="update trang view new" />
+    <option name="LAST_COMMIT_MESSAGE" value="update trang view new" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

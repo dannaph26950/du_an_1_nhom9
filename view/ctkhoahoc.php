@@ -17,18 +17,19 @@
             <div class="col-xxl-9 col-lg-8">
                 <div class="course-single">
                     <div class="course-single-top">
-                        <div class="course-img"><img src="../admin/view/upfileanh/<?php echo $value['anh'] ?>" alt="Course Image">
+                        <div class="course-img"><img src="../Upfileanh/<?php echo $value['anh'] ?>" alt="Course Image">
                         </div>
                         <h2 class="course-title"><?php echo $value['ten_khoa_hoc'];?></h2>
                         <div class="course-single-meta"><a href="#"><img
-                                        src="assets/img/course/author.jpg" alt="author"><span
-                                        class="text-theme">Giảng Viên: </span>Hoàng Quốc ManCity</a> <a href="#"><i
-                                        class="fas fa-tags"></i> Mã Khóa Học: <?php echo $value['id_danh_muc']; ?></a><a href="course.html"><i
+                                        src="../Upfileanh/giangvien/<?php echo listone_giangvien(loadone_lop($value['id_lop'])[0]['magv'])[0]['hinh_gv']; ?>" style="width: 50px;height: 50px" alt="author"><span
+                                        class="text-theme">Giảng Viên: </span><?php echo listone_giangvien(loadone_lop($value['id_lop'])[0]['magv'])[0]['ten_gv']; ?></a> <a href="#"><i
+                                        class="fas fa-tags"></i> Mã Khóa Học: <?php echo $value['id_danh_muc']; ?></a>
+                                        <a href="course.html"><i
                                         class="far fa-clock"></i> Thời Gian Học: <?php echo $value['thoi_gian_hoc'] ?></a>
                             <div class="course-rating">
                                 <div class="star-rating" role="img" aria-label="Rated 4.00 out of 5"><span
-                                            style="width:80%">Rated <strong class="rating">4.00</strong> out of 5</span>
-                                </div>(4.00)
+                                            style="width:90%">Rated <strong class="rating">5.00</strong> out of 5</span>
+                                </div>(4.80)
                             </div>
                         </div>
                     </div>
@@ -62,25 +63,25 @@
                                         <th>Tên Lớp</th>
                                         <th>Thời Gian Khai Giảng</th>
                                         <th>Địa Điểm Học</th>
-                                        <th>Mã Giáo Viên</th>
+                                        <th>Tên Giáo Viên</th>
                                         <th>Trạng Thái</th>
                                         <th></th>
                                     </tr>
                                     </thead>
                                     <tbody>
-                                    <?php  foreach ($list_lop as $key=>$value) {?>
+<!--                                    --><?php // foreach ($list_lop as $key=>$value) {?>
                                         <tr>
-                                            <td><?php echo $value['ten_lop'] ?></td>
-                                            <td><?php echo $value['thoi_gian_khai_giang'] ?></td>
-                                            <td><?php echo $value['dia_diem_hoc'] ?></td>
-                                            <td><?php echo $value['ma_gv'] ?></td>
+                                            <td><?php echo loadone_lop($value['id_lop'])[0]['ten_lop'] ?></td>
+                                            <td><?php echo  loadone_lop($value['id_lop'])[0]['thoi_gian_khai_giang'] ?></td>
+                                            <td><?php echo  loadone_lop($value['id_lop'])[0]['dia_diem_hoc'] ?></td>
+                                            <td><?php echo listone_giangvien(loadone_lop($value['id_lop'])[0]['magv'])[0]['ten_gv']; ?></td>
 
                                             <td class="">
-                                                <input value="Đăng Kí" type="button" class="btn btn-primary start-50" ><br><br>
+                                                <input value="Đăng Kí" name="dangki" type="button" class="btn btn-primary start-50" onclick="location.href='index.php?act=giang_vien'" ><br><br>
                                             </td>
 
                                         </tr>
-                                    <?php }?>
+<!--                                    --><?php //}?>
                                     </tbody>
                                 </table>
 
@@ -90,27 +91,25 @@
                                  aria-labelledby="curriculam-tab">
 
                                 <p><?php
-
-                                    foreach ($listone_khoahoc as $key => $value){
-
-                                     echo $value['mo_ta'];
-                                } ?></p>
+                                     echo $value['mo_ta']; ?></p>
 
                             </div>
+                            <?php
+//                            foreach ($list_lop as $index => $value){
+                            ?>
                             <div class="tab-pane fade" id="instructor" role="tabpanel"
                                  aria-labelledby="instructor-tab">
                                 <div class="course-instructor">
 
                                     <div class="course-author-box">
-                                        <div class="auhtor-img"><img style="width: 409px; height: 384px" src="../admin/view/upfileanh/giangvien/img.png"
-                                                                     alt="Author Image"></div>
+                                        <div class="auhtor-img"><img src="../Upfileanh/giangvien/<?php echo listone_giangvien(loadone_lop($value['id_lop'])[0]['magv'])[0]['hinh_gv']; ?>" alt="author" ></div>
                                         <div class="media-body">
                                             <h3 class="author-name"><a class="text-inherit"
-                                                                       href="#">Hoàng Quốc ManCity</a></h3>
-                                            <p class="author-text">Tối ưu hóa nội dung phát triển tài nguyên trong khi giá trị có tầm nhìn xa trông rộng. Tham gia một cách hấp dẫn vào quy trình có thể mở rộng với các cải tiến quy trình kinh doanh.</p>
-                                            <div class="author-meta"><a href="#"><i
-                                                            class="fal fa-file-video"></i>4 Courses</a> <span><i
-                                                            class="fal fa-users"></i>2500 Students</span></div>
+                                                                       href="#"><?php echo listone_giangvien(loadone_lop($value['id_lop'])[0]['magv'])[0]['ten_gv']; ?></a></h3>
+                                            <p class="author-text"><?php echo listone_giangvien(loadone_lop($value['id_lop'])[0]['magv'])[0]['thong_tin_gv']; ?></p>
+                                            <div class="author-meta"><a href="index.php?act=dang_ky"><i
+                                                            class="fal fa-file-video"></i>Đăng Ký</a> <span><i
+                                                            class="fal fa-users"></i></span></div>
                                             <div class="as-social"><a href="https://facebook.com/"
                                                                       target="_blank"><i class="fab fa-facebook-f"></i></a> <a
                                                         href="https://twitter.com/" target="_blank"><i
@@ -124,6 +123,7 @@
 
                                 </div>
                             </div>
+<!--                            --><?php //} ?>
                             <div class="tab-pane fade" id="reviews" role="tabpanel" aria-labelledby="reviews-tab">
                                 <div class="course-Reviews">
 
@@ -165,31 +165,33 @@
                     </div>
                 </div>
             </div>
+<!--            Phần bên phải-->
+            <?php foreach ($listone_khoahoc as $index => $value){ ?>
             <div class="col-xxl-3 col-lg-4">
                 <aside class="sidebar-area">
                     <div class="widget widget_info">
-                        <div class="as-video"><img src="assets/img/widget/video_1.jpg" alt="video"> <a
+                        <div class="as-video"><img src="../Upfileanh/<?php echo $value['anh'] ?>" alt="video"> <a
                                     href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" class="play-btn popup-video"><i
-                                        class="fas fa-play"></i></a></div><span class="h4 course-price">$90.00 <span
+                                        class="fas fa-play"></i></a></div><span class="h4 course-price"><?php echo $value['gia'] ?> <span
                                     class="tag">25% Off</span></span> <a href="cart.html" class="as-btn">Thêm vào giỏ hảng</a>
                         <h3 class="widget_title">Thông Tin Khóa Học</h3>
                         <div class="info-list">
                             <ul>
-                                <li><i class="fa-light fa-user"></i> <strong>Giảng Viên: </strong><span>Hoàng Quốc ManCity</span></li>
-                                <li><i class="fa-light fa-file"></i> <strong>Bài Học: </strong><span>8</span></li>
-                                <li><i class="fa-light fa-clock"></i> <strong>Thời Gian: </strong><span>15h 30m
+                                <li><i class="fa-light fa-user"></i> <strong>Giảng Viên: </strong><span><?php echo listone_giangvien(loadone_lop($value['id_lop'])[0]['magv'])[0]['ten_gv']; ?></span></li>
+                                <li><i class="fa-light fa-file"></i> <strong>Mã khóa học</strong><span><?php echo $value['id_danh_muc']; ?></span></li>
+                                <li><i class="fa-light fa-clock"></i> <strong>Thời Gian: </strong><span> <?php echo $value['thoi_gian_hoc'] ?>
                                             36s</span></li>
                                 <li><i class="fa-light fa-tag"></i> <strong>Cấp Độ:
                                     </strong><span>Cơ Bản</span></li>
                                 <li><i class="fa-light fa-globe"></i> <strong>Ngôn Ngữ:
                                     </strong><span>English</span></li>
-                                <li><i class="fa-light fa-puzzle-piece"></i> <strong>Bài Kiểm Tra:
-                                    </strong><span>04</span></li>
+
                             </ul>
                         </div>
                     </div>
                 </aside>
             </div>
+            <?php } ?>
         </div>
     </div>
 </section>
