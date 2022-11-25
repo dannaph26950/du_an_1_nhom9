@@ -13,9 +13,9 @@
             <div class="row justify-content-between align-items-center">
                 <div class="col-md-auto"><label for="exampleInputEmail1" class="form-label">Loại khóa học</label>
                     <select class="text-input small-input kiemtra" data-error="" id="" name="">
-                        <?php foreach ($listall_khoahoc as $index => $value){ ?>
+                        <?php foreach ($listall_danhmuc as $index => $value){ ?>
 
-                            <option value="<?php echo $value['id_khoa_hoc'] ?>"><?php echo $value['ten_khoa_hoc'] ?></option>
+                            <option value="<?php echo $value['id_danh_muc'] ?>"><?php echo $value['ten_danh_muc'] ?></option>
                         <?php } ?>
                     </select></div>
 

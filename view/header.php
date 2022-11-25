@@ -261,8 +261,8 @@
                                 <div class="col-auto d-none d-xl-block">
                                     <div class="header-button"><button type="button"
                                                                        class="icon-btn style2 searchBoxToggler"><i
-                                                    class="far fa-search"></i></button> <a href="wishlist.html"
-                                                                                           class="icon-btn style2"><i class="far fa-heart"></i></a>
+                                                    class="far fa-search"></i></button>
+                                        <a href="#" class="icon-btn style2 sideMenuToggler"><i class="far fa-cart-shopping"></i> <span class="badge bg-theme2">5</span></a>
                                         <?php
                                         if(isset($_SESSION['user'])){
                                         ?>
@@ -278,9 +278,12 @@
                                         <?php
                                         }
                                         ?>
-                                        <a href="#" class="icon-btn style2 sideMenuToggler"><i
-                                                    class="far fa-cart-shopping"></i> <span
-                                                    class="badge bg-theme2">5</span></a></div>
+
+                                        <a href="wishlist.html"
+                                           class="icon-btn style2"><i class="far fa-heart"></i></a>
+                                    </div>
+
+
                                 </div>
                             </div>
                         </div>

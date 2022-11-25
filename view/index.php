@@ -19,6 +19,7 @@ if (isset($_GET['act']) && ($_GET['act']) != ''){
             $listall_lop = listall_lop();
 
             $listall_khoahoc = listall_khoahoc();
+            $listall_danhmuc = listall_danhmuc();
             //Cách lấy một phần tử đổ vào trong admin khi chưa thiết lập khóa:
             /* tạo một biến listone_(tên bảng) = function(tham số lấy number id chính, vd: 12);
             Dùng echo "<pre>"; để kiếm tra
@@ -29,11 +30,11 @@ if (isset($_GET['act']) && ($_GET['act']) != ''){
 
 //            var_dump($listall_lop);
         //khóa học lấy id lớp
-            $listone_khoahoc = listone_khoahoc(34)[0]['id_lop'];
+//            $listone_khoahoc = listone_khoahoc(34)[0]['id_lop'];
             //lớp lấy mã giáo viên
-            $listone_lop = loadone_lop(131)[0]['magv'];
+//            $listone_lop = loadone_lop(131)[0]['magv'];
             //giáo viên lấy tên giảng viên
-            $listone_giangvien = listone_giangvien(3)[0]['ten_gv'];
+//            $listone_giangvien = listone_giangvien(3)[0]['ten_gv'];
 //            echo "<pre>";
 //            print_r($listone_lop);
 //            echo "<pre>";
@@ -58,7 +59,16 @@ if (isset($_GET['act']) && ($_GET['act']) != ''){
 //            die();
             include '../view/ctkhoahoc.php';
             break;
+
+//      giang vien------------------------------------
+
         case 'giangvien':
+            $listall_giangvien = listall_giangvien();
+//            $listone_giangvien = listone_giangvien(3)[0]['magv'];
+            $loadone_lop = loadone_lop(132)[0]['id_lop'];
+//            echo "<pre>";
+//            print_r($listone_giangvien);
+//            die();
             include '../view/giangvien.php';
             break;
         case 'ct_giangvien':
@@ -66,17 +76,40 @@ if (isset($_GET['act']) && ($_GET['act']) != ''){
             break;
 //dang_ky
         case 'add_dangky':
-
+            $error_dk = [];
             if(isset($_POST['dang_ky']) && ($_POST['dang_ky'])){
-                echo 'Dang ki thanh cong';
                 $tai_khoan = $_POST['tai_khoan'];
                 $mat_khau = $_POST['mat_khau'];
+                $matkhau1 = $_POST['mat_khau1'];
                 $ten_hv = $_POST['ten_hv'];
                 $email = $_POST['email'];
                 $dia_chi = $_POST['dia_chi'];
                 $sdt = $_POST['sdt'];
-                add_taikhoan($ten_hv,$tai_khoan,$mat_khau,$email,$sdt,$dia_chi);
-                $thongbao = 'Đăng ký thành công';
+                if(empty($tai_khoan)){
+                    $error_dk["tai_khoan"] = "Vui lòng nhập tên tài khoản";
+                }
+                if(empty($mat_khau)){
+                    $error_dk["mat_khau"] = "Vui lòng nhập mật khẩu";
+                }
+                if($mat_khau != $matkhau1){
+                    $error_dk["mat_khau1"] = "Mật khẩu nhập lại không đúng";
+                }
+                if(empty($ten_hv)){
+                    $error_dk["ten_hv"] = "Vui lòng nhập tên";
+                }
+                if(empty($email)){
+                    $error_dk["email"] = "Vui lòng nhập email";
+                }
+                if(empty($dia_chi)){
+                    $error_dk["dia_chi"] = "Vui lòng nhập địa chỉ";
+                }
+                if(empty($sdt)){
+                    $error_dk["sdt"] = "Vui lòng nhập số điện thoại";
+                }
+                if(!$error_dk){
+                    add_taikhoan($ten_hv,$tai_khoan,$mat_khau,$email,$sdt,$dia_chi);
+                    $thongbao = 'Đăng ký thành công';
+                }
             }
             include "../view/dangky.php";
             break;
@@ -84,12 +117,32 @@ if (isset($_GET['act']) && ($_GET['act']) != ''){
             include "../view/lienhe.php";
             break;
         case 'dang_nhap':
+//                              ---------------------------- ĐỪNG XÓA -------------------------------
+//            $error_dn = [];
+//            if (isset($_POST['dang_nhap'])){
+//
+//                $user = $_POST['tai_khoan'];
+//                $pass = $_POST['mat_khau'];
+//                $check_user = check_user($user);
+//                $tai_khoan = $check_user['tai_khoan'];
+//                $check_pass = check_pass($tai_khoan);
+////                echo $check_user['tai_khoan'];
+////                die();
+////                if($user != $check_user['tai_khoan']){
+////                    $error_dk["tai_khoan1"] = "Tài khoản không tồn tại";
+////                }
+//                if(empty($pass)){
+//                    $error_dk["mat_khau"] = "Vui lòng nhập mật khẩu";
+//                }
+//                if()
+//
+//            }
+
             if (isset($_POST['dang_nhap'])){
 
                 $user = $_POST['tai_khoan'];
                 $pass = $_POST['mat_khau'];
                 $check_user = check_user($user,$pass);
-//                var_dump($check_user);
                 if (is_array($check_user)){
                     $_SESSION['user'] = $check_user;
                     $thongbao = 'Đã đăng nhập thành công';
@@ -105,10 +158,12 @@ if (isset($_GET['act']) && ($_GET['act']) != ''){
             session_unset();
             echo "<script>window.location.href='index.php';</script>";
             break;
+
         default:
             include '../view/home.php';
     }
 }else{
+    $listall_lop = listall_lop();
     include  'home.php';
 }
 

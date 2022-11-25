@@ -6,10 +6,12 @@
     <div class="mb-3">
         <label for="exampleInputEmail1" class="form-label">Tài khoản: </label>
         <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="tai_khoan">
+        <p style="color: red"><?php echo isset($error_dk["tai_khoan1"]) ? $error_dk["tai_khoan1"] : ""; ?></p>
     </div>
     <div class="mb-3">
         <label for="exampleInputEmail1" class="form-label">Mật khẩu</label>
-        <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="mat_khau">
+        <input type="password" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="mat_khau">
+        <p style="color: red"><?php echo isset($error_dk["mat_khau"]) ? $error_dk["mat_khau"] : ""; ?></p>
     </div>
 
     <div style="display: flex; align-items:center; margin-left: 300px ; ">

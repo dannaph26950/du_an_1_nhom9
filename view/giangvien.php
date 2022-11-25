@@ -1,44 +1,3 @@
-<!doctype html>
-<html class="no-js" lang="zxx">
-<!-- Mirrored from angfuzsoft.com/html/acadu/demo/team.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 07 Nov 2022 16:04:17 GMT -->
-
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Đội ngũ giảng viên</title>
-    <meta name="author" content="Angfuzsoft">
-    <meta name="description" content="Acadu - Online Courses & Education HTML Template">
-    <meta name="keywords" content="Acadu - Online Courses & Education HTML Template">
-    <meta name="robots" content="INDEX,FOLLOW">
-    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
-    <link rel="apple-touch-icon" sizes="57x57" href="assets/img/favicons/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="assets/img/favicons/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="assets/img/favicons/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="assets/img/favicons/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="assets/img/favicons/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="assets/img/favicons/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="assets/img/favicons/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="assets/img/favicons/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="assets/img/favicons/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicons/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png">
-    <link rel="manifest" href="assets/img/favicons/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="assets/img/favicons/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
-    <link rel="preconnect" href="https://fonts.googleapis.com/">
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&amp;family=Roboto:wght@100;300;400;500;700&amp;display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/app.min.css">
-    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-</head>
-
-<body>
 <div class="preloader"><button class="as-btn style3 preloaderCls">Cancel Preloader</button>
     <div class="preloader-inner"><span class="loader"></span></div>
 </div>
@@ -100,97 +59,26 @@
 </div>
 <section class="bg-white space">
     <div class="container">
+        <?php
+        foreach($listall_giangvien as $index => $value){
+            ?>
         <div class="row gy-4">
+
             <div class="col-md-6 col-lg-4 col-xl-3">
                 <div class="team-grid">
-                    <div class="team-img"><img src="assets/img/team/team_3_1.jpg" alt="Team"></div>
+                    <div class="team-img"><img src="../Upfileanh/giangvien/<?php echo $value['hinh_gv'] ?>" alt="Team"></div>
                     <div class="team-content">
-                        <h3 class="team-title"><a href="team-details.html">Nguyễn Thị Hoài</a></h3><span
+                        <h3 class="team-title"><a href="team-details.html"><?php echo $value['ten_gv'] ?></a></h3><span
                             class="team-desig">Giảng Viên</span>
                     </div>
-                    <div class="team-info"><span><i class="fa-light fa-file"></i>6 Lớp</span> <span
-                            class="line"></span> <span><i class="fa-light fa-users"></i>25 Học Viên</span></div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4 col-xl-3">
-                <div class="team-grid">
-                    <div class="team-img"><img src="assets/img/team/team_3_2.jpg" alt="Team"></div>
-                    <div class="team-content">
-                        <h3 class="team-title"><a href="team-details.html">Hoàng Quang Thắng</a></h3><span
-                            class="team-desig">Giảng Viên</span>
-                    </div>
-                    <div class="team-info"><span><i class="fa-light fa-file"></i>3 Lớp</span> <span
-                            class="line"></span> <span><i class="fa-light fa-users"></i>15 Học Viên</span></div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4 col-xl-3">
-                <div class="team-grid">
-                    <div class="team-img"><img src="assets/img/team/team_3_3.jpg" alt="Team"></div>
-                    <div class="team-content">
-                        <h3 class="team-title"><a href="team-details.html">Phạm Thị Thiện</a></h3><span
-                            class="team-desig">Giảng Viên</span>
-                    </div>
-                    <div class="team-info"><span><i class="fa-light fa-file"></i>4 Lớp</span> <span
-                            class="line"></span> <span><i class="fa-light fa-users"></i>35 Học Viên</span></div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4 col-xl-3">
-                <div class="team-grid">
-                    <div class="team-img"><img src="assets/img/team/team_3_4.jpg" alt="Team"></div>
-                    <div class="team-content">
-                        <h3 class="team-title"><a href="team-details.html">Đỗ Mạnh Hùng</a></h3><span
-                            class="team-desig">Giảng Viên</span>
-                    </div>
-                    <div class="team-info"><span><i class="fa-light fa-file"></i>5 Lớp</span> <span
-                            class="line"></span> <span><i class="fa-light fa-users"></i>50 Học Viên</span></div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4 col-xl-3">
-                <div class="team-grid">
-                    <div class="team-img"><img src="assets/img/team/team_3_5.jpg" alt="Team"></div>
-                    <div class="team-content">
-                        <h3 class="team-title"><a href="team-details.html">Nguyễn Thị My</a></h3><span
-                            class="team-desig">Giảng Viên</span>
-                    </div>
-                    <div class="team-info"><span><i class="fa-light fa-file"></i>2 Lớp</span> <span
-                            class="line"></span> <span><i class="fa-light fa-users"></i>12 Học Viên</span></div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4 col-xl-3">
-                <div class="team-grid">
-                    <div class="team-img"><img src="assets/img/team/team_3_6.jpg" alt="Team"></div>
-                    <div class="team-content">
-                        <h3 class="team-title"><a href="team-details.html">Nguyễn Văn A</a></h3><span
-                            class="team-desig">Giảng Viên</span>
-                    </div>
-                    <div class="team-info"><span><i class="fa-light fa-file"></i>4 Lớp</span> <span
-                            class="line"></span> <span><i class="fa-light fa-users"></i>14 Học Viên</span></div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4 col-xl-3">
-                <div class="team-grid">
-                    <div class="team-img"><img src="assets/img/team/team_3_7.jpg" alt="Team"></div>
-                    <div class="team-content">
-                        <h3 class="team-title"><a href="team-details.html">Nguyễn Thị An</a></h3><span
-                            class="team-desig">Giảng Viên</span>
-                    </div>
-                    <div class="team-info"><span><i class="fa-light fa-file"></i>5 Lớp</span> <span
-                            class="line"></span> <span><i class="fa-light fa-users"></i>65 Học Viên</span></div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4 col-xl-3">
-                <div class="team-grid">
-                    <div class="team-img"><img src="assets/img/team/team_3_8.jpg" alt="Team"></div>
-                    <div class="team-content">
-                        <h3 class="team-title"><a href="team-details.html">Hướng Văn Nghĩa</a></h3><span
-                            class="team-desig">Giảng Viên</span>
-                    </div>
-                    <div class="team-info"><span><i class="fa-light fa-file"></i>2 Lớp</span> <span
-                            class="line"></span> <span><i class="fa-light fa-users"></i>52 Học Viên</span></div>
+                    <div class="team-info"><span><i class="fa-light fa-file"></i><?php ?> Lớp</span> <span
+                            class="line"></span> <span><i class="fa-light fa-users"></i><?php echo loadone_lop($value['id_lop'])[0]['so_luong'] ?> Học Viên</span></div>
                 </div>
             </div>
         </div>
     </div>
+    <?php }?>
+
 </section>
 <section class="space bg-smoke">
     <div class="container">
@@ -202,7 +90,7 @@
                 <div class="title-area mb-30"><span class="sub-title">Bạn có thể biết ? </span>
                     <h2 class="sec-title fw-semibold">Hãy bắt đầu sự nghiệp của bạn với Acadu Education</h2>
                 </div>
-                <p class="mb-30">Với đội ngũ giảng viên chất lượng và có kinh nghiệm hẳn 10 năm trong lĩnh vực giảng dạy tiếng anh. Chúng tôi cam kết sẽ đưa cho bạn những tài liệu học bám sát với các đề thi.</p><a href="course.html"
+                <p class="mb-30">Với đội ngũ giảng viên chất lượng và có kinh nghiệm hẳn 10 năm trong lĩnh vực giảng dạy tiếng anh. Chúng tôi cam kết sẽ đưa cho bạn những tài liệu học bám sát với các đề thi.</p><a href="index.php?act=khoa_hoc"
                                                                                                                                                                                                                       class="as-btn style4">Hãy bắt đầu với lớp học<i class="far fa-play ms-2"></i></a>
             </div>
         </div>
@@ -218,7 +106,7 @@
                 <div class="col-lg-6 align-self-center">
                     <div class="cta-content">
                         <h2 class="fs-40 fw-light text-theme mb-10">Học hỏi từ nền tảng của chúng tôi</h2>
-                        <h2 class="mb-25">Điều đó đưa bạn lên cấp độ tiếp theo</h2><a href="contact.html"
+                        <h2 class="mb-25">Điều đó đưa bạn lên cấp độ tiếp theo</h2><a href="index.php?act=add_dangky"
                                                                                       class="as-btn">Đăng Ký ngay<i class="fas fa-arrow-right ms-2"></i></a>
                     </div>
                 </div>
@@ -232,7 +120,3 @@
 <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
 <script src="assets/js/app.min.js"></script>
 <script src="assets/js/main.js"></script>
-</body>
-<!-- Mirrored from angfuzsoft.com/html/acadu/demo/team.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 07 Nov 2022 16:04:20 GMT -->
-
-</html>
