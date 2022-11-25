@@ -1,6 +1,12 @@
+<?php
+    include '../admin/model/pdo.php';
+    include "../admin/model/khoahoc.php";
+
+?>
+
 <!doctype html>
 <html class="no-js" lang="zxx">
-<!-- Mirrored from angfuzsoft.com/html/acadu/demo/course.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 07 Nov 2022 16:04:11 GMT -->
+<!-- Mirrored from angfuzsoft.com/html/acadu/demo/course.php by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 07 Nov 2022 16:04:11 GMT -->
 
 <head>
     <meta charset="utf-8">
@@ -139,8 +145,8 @@
                 <div class="container">
                     <div class="row align-items-center justify-content-between">
                         <div class="col-auto">
-                            <div class="header-logo"><a href="index.html"><img src="assets/img/logo.svg"
-                                                                               alt="Acadu"></a></div>
+                            <div class="header-logo"><a href="index.php"><img src="assets/img/logo.svg"
+                                                                              alt="Acadu"></a></div>
                         </div>
                         <div class="col-auto">
                             <div class="row align-items-center">
@@ -149,7 +155,7 @@
                                         <div class="col-auto">
                                             <nav class="main-menu d-none d-lg-inline-block">
                                                 <ul>
-                                                    <li class=""><a href="index.html">Trang chủ</a>
+                                                    <li class=""><a href="index.php">Trang chủ</a>
 
                                                     </li>
                                                     <li class=""><a href="course.html">Khóa học</a>
@@ -195,7 +201,7 @@
     <div class="container z-index-common">
         <h1 class="breadcumb-title">KHÓA HỌC CỦA CHÚNG TÔI</h1>
         <ul class="breadcumb-menu">
-            <li><a href="index.html">Trang chủ</a></li>
+            <li><a href="index.php">Trang chủ</a></li>
             <li>Khóa học của chúng tôi</li>
         </ul>
     </div>
@@ -234,29 +240,42 @@
         <div class="tab-content" id="nav-tabContent">
             <div class="tab-pane fade active show" id="tab-grid" role="tabpanel" aria-labelledby="tab-course-grid">
                 <div class="row gy-4 mb-30">
-                    <div class="col-md-6 col-lg-4 col-xxl-3">
-                        <div class="course-box style4">
-                            <div class="course-img"><img src="assets/img/course/course_1_1.jpg" alt="course"> <span
-                                    class="tag">Free</span></div>
-                            <div class="course-content">
-                                <div class="course-author">
-                                    <div class="author-info"><img src="assets/img/course/author.jpg" alt="author">
-                                        <a href="course.html" class="author-name">Kevin Perry</a></div>
-                                    <div class="course-rating">
-                                        <div class="star-rating" role="img" aria-label="Rated 4.00 out of 5"><span
-                                                style="width:79%">Rated <strong class="rating">4.00</strong> out of
-                                                    5</span></div>
-                                        (4.00)
+                    <?php foreach (listall_khoahoc () as $key=>$value){ ?>
+                    <div class="col-md-6 col-lg-4 col-xxl-3 "  ">
+
+                    <div class="course-box ">
+
+                        <div class="course-img"><img src="assets/img/course/course_2_1.jpg" alt="course"> <span
+                                class="tag">Free</span></div>
+                        <div class="course-content">
+                            <div class="course-author">
+                                <div class="author-info"><img src="assets/img/course/author.jpg" alt="author"> <a
+                                        href="course.html" class="author-name">Kevin Perry</a></div>
+                                <div class="course-rating">
+                                    <div class="star-rating" role="img" aria-label="Rated 4.00 out of 5"><span
+                                            style="width:79%">Rated <strong class="rating">4.00</strong> out of 5</span>
                                     </div>
+                                    (4.00)
                                 </div>
-                                <h3 class="course-title"><a href="course-details.html">Learn React JS Tutorial For
-                                                                                       Beginners</a></h3>
-                                <div class="course-meta"><span><i class="fal fa-file"></i>Lesson 8</span> <span><i
-                                        class="fal fa-user"></i>Students 50</span> <span><i
-                                        class="fal fa-eye"></i>View: 12K</span></div>
                             </div>
+
+                            <div>
+
+                                <h3 class="course-title"><a href="course-details.html"><?php echo $value['ten_khoa_hoc'] ?></a></h3>
+                                <div>
+
+                                </div>
+                                <div class="course-meta"><span><i class="fal fa-file"></i>Bài 8</span> <span><i
+                                        class="fal fa-user"></i>Sinh viên 50</span> <span><i class="fal fa-eye"></i>Lượt xem:
+                                    12 Nghìn</span></div>
+
+
+                            </div>
+
                         </div>
                     </div>
+                </div>
+                <?php }?>
 
                 </div>
             </div>
@@ -471,8 +490,8 @@
                 <div class="col-md-6 col-xxl-3 col-xl-4">
                     <div class="widget footer-widget">
                         <div class="as-widget-about">
-                            <div class="about-logo"><a href="index.html"><img src="assets/img/logo-white.svg"
-                                                                              alt="Acadu"></a></div>
+                            <div class="about-logo"><a href="index.php"><img src="assets/img/logo-white.svg"
+                                                                             alt="Acadu"></a></div>
                             <p class="about-text">ACADU- Website đồng hành học tiếng anh cùng mọi người</p>
                             <h4 class="footer-info-title">Theo dõi qua: </h4>
                             <div class="as-social"><a href="https://www.facebook.com/"><i
@@ -554,6 +573,6 @@
 <script src="assets/js/app.min.js"></script>
 <script src="assets/js/main.js"></script>
 </body>
-<!-- Mirrored from angfuzsoft.com/html/acadu/demo/course.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 07 Nov 2022 16:04:13 GMT -->
+<!-- Mirrored from angfuzsoft.com/html/acadu/demo/course.php by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 07 Nov 2022 16:04:13 GMT -->
 
 </html>

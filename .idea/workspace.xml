@@ -5,12 +5,38 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cc6cba04-603a-4918-b721-0684c76f7a58" name="Changes" comment="update trang view new">
+      <change afterPath="$PROJECT_DIR$/user/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/view/dangky.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/view/lienhe.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/assets/css/app.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/view/assets/css/app.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/view/assets/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/ctkhoahoc.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/ctkhoahoc.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/connect.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/connect.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/gio-hang.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/home.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/layout.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/san-pham.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/about-2.html" beforeDir="false" afterPath="$PROJECT_DIR$/user/about-2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/user/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/blog-details.html" beforeDir="false" afterPath="$PROJECT_DIR$/user/blog-details.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/user/blog.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/user/cart.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/checkout.html" beforeDir="false" afterPath="$PROJECT_DIR$/user/checkout.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/user/contact.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/course-details.html" beforeDir="false" afterPath="$PROJECT_DIR$/user/course-details.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/course.html" beforeDir="false" afterPath="$PROJECT_DIR$/user/course.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/error.html" beforeDir="false" afterPath="$PROJECT_DIR$/user/error.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/event-details.html" beforeDir="false" afterPath="$PROJECT_DIR$/user/event-details.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/event.html" beforeDir="false" afterPath="$PROJECT_DIR$/user/event.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/gallery.html" beforeDir="false" afterPath="$PROJECT_DIR$/user/gallery.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/team-details.html" beforeDir="false" afterPath="$PROJECT_DIR$/user/team-details.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/team.html" beforeDir="false" afterPath="$PROJECT_DIR$/user/team.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/video-course.html" beforeDir="false" afterPath="$PROJECT_DIR$/user/video-course.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/wishlist.html" beforeDir="false" afterPath="$PROJECT_DIR$/user/wishlist.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/giangvien.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/giangvien.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/header.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/view/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/khoahoc.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/khoahoc.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,6 +100,7 @@
       <recent name="C:\xampp\htdocs\duan1_nhom9\model" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\du_an_1_nhom9\view" />
       <recent name="C:\xampp\htdocs\duan1_nhom9\admin" />
       <recent name="C:\xampp\htdocs\duan1_nhom9\admin\model" />
       <recent name="C:\xampp\htdocs\duan1_nhom9\templates\frontend\giaoVien" />

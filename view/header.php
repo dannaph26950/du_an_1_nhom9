@@ -233,15 +233,15 @@
                                             <li class=""><a href="index.php?act=khoa_hoc">Khóa học</a>
 
                                             </li>
-                                            <li class="menu-item-has-children"><a href="#">Giáo viên</a>
+                                            <li class=" "><a href="index.php?act=giangvien">Giáo viên</a>
                                                 <ul class="sub-menu">
-                                                    <li><a href="team.html">Giáo viên</a></li>
-                                                    <li><a href="team-details.html">Thông tin giáo viên</a></li>
+                                                    <li><a href="index.php?act=giangvien">Giáo viên</a></li>
+                                                    <li><a href="index.php?act=ct_giangvien">Thông tin giáo viên</a></li>
                                                 </ul>
                                             </li>
 
 
-                                            <li><a href="contact.html">Liên hệ</a></li>
+                                            <li><a href="index.php?act=lienhe">Liên hệ</a></li>
                                         </ul>
                                     </nav><button type="button" class="as-menu-toggle d-inline-block d-lg-none"><i
                                                 class="far fa-bars"></i></button>
@@ -251,7 +251,7 @@
                                                                        class="icon-btn style2 searchBoxToggler"><i
                                                     class="far fa-search"></i></button> <a href="wishlist.html"
                                                                                            class="icon-btn style2"><i class="far fa-heart"></i></a> <a
-                                                href="contact.html"
+                                                href="index.php?act=dang_ky"
                                                 class="as-btn style6 d-none d-xxl-inline-block">Đăng ký ngay<i
                                                     class="fas fa-arrow-right ms-2"></i></a> <a href="#"
                                                                                                 class="icon-btn style2 sideMenuToggler"><i
