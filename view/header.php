@@ -240,12 +240,7 @@
                                                 </ul>
                                             </li>
 
-                                            <li class="menu-item-has-children"><a href="#">Bài viết</a>
-                                                <ul class="sub-menu">
-                                                    <li><a href="blog.html">Bài viết</a></li>
-                                                    <li><a href="blog-details.html">Thông tin bài viết</a></li>
-                                                </ul>
-                                            </li>
+
                                             <li><a href="contact.html">Liên hệ</a></li>
                                         </ul>
                                     </nav><button type="button" class="as-menu-toggle d-inline-block d-lg-none"><i

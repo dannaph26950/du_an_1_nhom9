@@ -28,5 +28,4 @@
         $sql = "UPDATE `giang_vien` SET `ten_gv`='$ten_gv',hinh_gv='$name_image',thong_tin_gv='$thong_tin_gv',trang_thai='$trang_thai' WHERE magv = '$id'";
         pdo_execute($sql);
     }
-
 ?>

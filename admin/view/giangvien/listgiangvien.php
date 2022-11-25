@@ -23,7 +23,7 @@
             <tr>
                 <td><?php echo $value['magv'] ?></td>
                 <td><?php echo $value['ten_gv'] ?></td>
-                <td><img src="../admin/view/upfileanh/giangvien/<?php echo $value['hinh_gv'] ?>" alt="" style="width: 200px"></td>
+                <td><img src="../Upfileanh/giangvien/<?php echo $value['hinh_gv'] ?>" alt="" style="width: 200px"></td>
                 <td><?php echo $value['thong_tin_gv'] ?></td>
                 <td><?php echo $value['trang_thai'] ?></td>
 
