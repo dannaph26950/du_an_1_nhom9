@@ -1,3 +1,6 @@
+<?php
+//var_dump($_SESSION['user']);
+?>
 <center><h1>Đăng nhập</h1></center>
 <form method="post" action="index.php?act=dang_nhap" style="margin: 0px 400px;">
     <div class="mb-3">
@@ -16,9 +19,10 @@
     <div style="margin-top: 300px; background-color: white"></div>
 
 
-    <?php
-    if (isset($thongbao) && ($thongbao != '')){
-        echo $thongbao;
-    }
-    ?>
+
 </form>
+<?php
+if (isset($thongbao) && ($thongbao != '')){
+    echo $thongbao;
+}
+?>

@@ -184,7 +184,19 @@
                         <div class="header-links">
                             <ul>
 <!--                                trỏ đến trang admin-->
-                                <li><i class="far fa-user"></i><a href="../view/index.php?act=dangnhap">Đăng nhập </a></li>
+                                <li><i class="far fa-user"></i>
+                                    <?php if(isset($_SESSION['user'])){
+
+                                    ?>
+                                    <a>Xin chao, <?php echo $_SESSION['user']['ten_hv'] ?></a>
+                                    <?php
+                                     }else{
+                                        ?>
+                                        <a href="../view/index.php?act=dang_nhap">Đăng nhập </a>
+                                    <?php
+                                    }
+                                    ?>
+                                </li>
 
                             </ul>
                         </div>
@@ -250,11 +262,23 @@
                                     <div class="header-button"><button type="button"
                                                                        class="icon-btn style2 searchBoxToggler"><i
                                                     class="far fa-search"></i></button> <a href="wishlist.html"
-                                                                                           class="icon-btn style2"><i class="far fa-heart"></i></a> <a
-                                                href="index.php?act=dang_ky"
-                                                class="as-btn style6 d-none d-xxl-inline-block">Đăng ký ngay<i
-                                                    class="fas fa-arrow-right ms-2"></i></a> <a href="#"
-                                                                                                class="icon-btn style2 sideMenuToggler"><i
+                                                                                           class="icon-btn style2"><i class="far fa-heart"></i></a>
+                                        <?php
+                                        if(isset($_SESSION['user'])){
+                                        ?>
+                                            <a href="index.php?act=dang_xuat" class="as-btn style6 d-none d-xxl-inline-block">Đăng xuất<i
+                                                        class="fas fa-arrow-right ms-2"></i>
+                                            </a>
+                                        <?php
+                                        }else{
+                                        ?>
+                                        <a href="index.php?act=add_dangky" class="as-btn style6 d-none d-xxl-inline-block">Đăng ký ngay<i
+                                                        class="fas fa-arrow-right ms-2"></i>
+                                            </a>
+                                        <?php
+                                        }
+                                        ?>
+                                        <a href="#" class="icon-btn style2 sideMenuToggler"><i
                                                     class="far fa-cart-shopping"></i> <span
                                                     class="badge bg-theme2">5</span></a></div>
                                 </div>

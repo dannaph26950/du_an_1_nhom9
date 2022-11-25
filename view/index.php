@@ -6,6 +6,7 @@ include '../model/khoahoc.php';
 include '../model/lop.php';
 include '../model/danhmuc.php';
 include '../model/giangvien.php';
+include '../model/taikhoan.php';
 
 include 'header.php';
 if (isset($_GET['act']) && ($_GET['act']) != ''){
@@ -63,14 +64,46 @@ if (isset($_GET['act']) && ($_GET['act']) != ''){
         case 'ct_giangvien':
             include '../view/ctgiangvien.php';
             break;
-        case 'dang_ky':
+//dang_ky
+        case 'add_dangky':
+
+            if(isset($_POST['dang_ky']) && ($_POST['dang_ky'])){
+                echo 'Dang ki thanh cong';
+                $tai_khoan = $_POST['tai_khoan'];
+                $mat_khau = $_POST['mat_khau'];
+                $ten_hv = $_POST['ten_hv'];
+                $email = $_POST['email'];
+                $dia_chi = $_POST['dia_chi'];
+                $sdt = $_POST['sdt'];
+                add_taikhoan($ten_hv,$tai_khoan,$mat_khau,$email,$sdt,$dia_chi);
+                $thongbao = 'Đăng ký thành công';
+            }
             include "../view/dangky.php";
             break;
         case 'lienhe':
             include "../view/lienhe.php";
             break;
-        case 'dangnhap':
+        case 'dang_nhap':
+            if (isset($_POST['dang_nhap'])){
+
+                $user = $_POST['tai_khoan'];
+                $pass = $_POST['mat_khau'];
+                $check_user = check_user($user,$pass);
+//                var_dump($check_user);
+                if (is_array($check_user)){
+                    $_SESSION['user'] = $check_user;
+                    $thongbao = 'Đã đăng nhập thành công';
+                    echo "<script>window.location.href='index.php';</script>";
+                }elseif(!is_array($check_user)){
+                    $thongbao = 'Tài khoản không tồn tại';
+                    echo "<script>alert('Khong ton tai')</script>";
+                }
+            }
             include "../view/dang_nhap.php";
+            break;
+        case 'dang_xuat':
+            session_unset();
+            echo "<script>window.location.href='index.php';</script>";
             break;
         default:
             include '../view/home.php';
