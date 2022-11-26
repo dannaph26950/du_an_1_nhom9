@@ -19,4 +19,10 @@ function lop_join_giangvien(){
     $list_join_lop_giangvien = pdo_query($sql);
     return $list_join_lop_giangvien;
 }
+// đổ ra lớp theo khóa học
+function list_lop($id_khoa_hoc){
+    $sql ="SELECT * FROM `lop` WHERE id_khoa_hoc = '$id_khoa_hoc'";
+    $list_lop = pdo_query($sql);
+    return $list_lop;
+}
 ?>

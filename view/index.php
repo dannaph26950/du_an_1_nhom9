@@ -50,7 +50,12 @@ if (isset($_GET['act']) && ($_GET['act']) != ''){
                 $id = $_GET['id'];
                 $listone_khoahoc=listone_khoahoc($id);
                 $list_danhmuc = listone_danhmuc($id);
+                $list_lop = list_lop($id);
             }
+//            echo "<pre>";
+//            print_r($list_lop);
+//            die();
+
             $listall_khoahoc = listall_khoahoc();
             $listall_lop = listall_lop();
 

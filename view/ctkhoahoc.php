@@ -69,11 +69,23 @@
                                     </tr>
                                     </thead>
                                     <tbody>
-<!--                                    --><?php // foreach ($list_lop as $key=>$value) {?>
+                                    <?php  foreach ($list_lop as $key=>$value) {?>
+<!--                                        <tr>-->
+<!--                                            <td>--><?php //echo loadone_lop($value['id_lop'])[0]['ten_lop'] ?><!--</td>-->
+<!--                                            <td>--><?php //echo  loadone_lop($value['id_lop'])[0]['thoi_gian_khai_giang'] ?><!--</td>-->
+<!--                                            <td>--><?php //echo  loadone_lop($value['id_lop'])[0]['dia_diem_hoc'] ?><!--</td>-->
+<!--                                            <td>--><?php //echo listone_giangvien(loadone_lop($value['id_lop'])[0]['magv'])[0]['ten_gv']; ?><!--</td>-->
+<!---->
+<!--                                            <td class="">-->
+<!--                                                <input value="Đăng Kí" name="dangki" type="button" class="btn btn-primary start-50" onclick="location.href='index.php?act=giang_vien'" ><br><br>-->
+<!--                                            </td>-->
+<!---->
+<!--                                        </tr>-->
+
                                         <tr>
-                                            <td><?php echo loadone_lop($value['id_lop'])[0]['ten_lop'] ?></td>
-                                            <td><?php echo  loadone_lop($value['id_lop'])[0]['thoi_gian_khai_giang'] ?></td>
-                                            <td><?php echo  loadone_lop($value['id_lop'])[0]['dia_diem_hoc'] ?></td>
+                                            <td><?php echo $value['ten_lop'] ?></td>
+                                            <td><?php echo $value['thoi_gian_khai_giang'] ?></td>
+                                            <td><?php echo $value['dia_diem_hoc'] ?></td>
                                             <td><?php echo listone_giangvien(loadone_lop($value['id_lop'])[0]['magv'])[0]['ten_gv']; ?></td>
 
                                             <td class="">
@@ -81,7 +93,7 @@
                                             </td>
 
                                         </tr>
-<!--                                    --><?php //}?>
+                                    <?php }?>
                                     </tbody>
                                 </table>
 
@@ -91,7 +103,12 @@
                                  aria-labelledby="curriculam-tab">
 
                                 <p><?php
-                                     echo $value['mo_ta']; ?></p>
+                                    foreach ($listone_khoahoc as $key => $value) {
+                                        echo $value['mo_ta'];
+                                    }
+                                    ?>
+
+                                </p>
 
                             </div>
                             <?php
