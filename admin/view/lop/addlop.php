@@ -8,11 +8,11 @@ if(isset($_SESSION['taikhoan'])){
 </center>
 <form method="post" action="index.php?act=add_lop"  enctype="multipart/form-data">
     <div style="margin: 0px 300px;">
-        <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label ">Mã Lớp</label>
-            <input type="text"  class="form-control kiemtra" id="exampleInputEmail1" aria-describedby="emailHelp" name="ten_lop">
-            <p style="color: red"><?php echo isset($error_add_lop["name"]) ? $error_add_lop["name"] : ""; ?></p>
-        </div>
+<!--        <div class="mb-3">-->
+<!--            <label for="exampleInputEmail1" class="form-label ">Mã Lớp</label>-->
+<!--            <input type="text"  class="form-control kiemtra" id="exampleInputEmail1" aria-describedby="emailHelp" name="ten_lop">-->
+<!--            <p style="color: red">--><?php //echo isset($error_add_lop["name"]) ? $error_add_lop["name"] : ""; ?><!--</p>-->
+<!--        </div>-->
         <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label ">Tên Lớp</label>
             <input type="text"  class="form-control kiemtra" id="exampleInputEmail1" aria-describedby="emailHelp" name="ten_lop">

@@ -33,12 +33,12 @@
 
                     <div class="course-box " style="background-color: #C6E2FF">
                         <div style="height: 450px">
-                            <div class="course-img"><img src="../Upfileanh/<?php echo listone_khoahoc($value['id_khoa_hoc'])[0]['anh'] ?>" alt="course" style="width: 200px;height: 200px" > <span
+                            <div class="course-img"><a href="index.php?act=ct_khoahoc&id=<?php echo $value['id_khoa_hoc'] ?>"><img src="../Upfileanh/<?php echo listone_khoahoc($value['id_khoa_hoc'])[0]['anh'] ?>" alt="course" style="width: 200px;height: 200px" ></a> <span
                                         class="tag"><?php echo $value['gia'] ?></span></div>
                             <div class="course-content">
                                 <div class="course-author">
                                     <div class="author-info"><img src="../Upfileanh/giangvien/<?php echo listone_giangvien(loadone_lop($value['id_lop'])[0]['magv'])[0]['hinh_gv']; ?>" alt="author" style="width: 50px;height: 50px"> <a
-                                                href="index.php?act=khoahoc" class="author-name"><?php echo listone_giangvien(loadone_lop($value['id_lop'])[0]['magv'])[0]['ten_gv']; ?></a></div>
+                                                href="index.php?act=giangvien" class="author-name"><?php echo listone_giangvien(loadone_lop($value['id_lop'])[0]['magv'])[0]['ten_gv']; ?></a></div>
                                     <div class="course-rating">
                                         <div class="star-rating" role="img" aria-label="Rated 5.00 out of 5"><span
                                                     style="width:79%">Rated <strong class="rating">3.00</strong> out of 5</span>
