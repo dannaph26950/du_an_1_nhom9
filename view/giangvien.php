@@ -71,8 +71,8 @@
                         <h3 class="team-title"><a href="team-details.html"><?php echo $value['ten_gv'] ?></a></h3><span
                             class="team-desig">Giảng Viên</span>
                     </div>
-                    <div class="team-info"><span><i class="fa-light fa-file"></i><?php  ?> Lớp</span> <span
-                            class="line"></span> <span><i class="fa-light fa-users"></i> Học Viên</span></div>
+                    <div class="team-info"><span><i class="fa-light fa-file"></i><?php echo count(list_lop_magv($value['magv']));  ?> Lớp</span> <span
+                            class="line"></span> <span><i class="fa-light fa-users"></i> <?php echo count(list_lop_soluong($value['magv']));  ?> Học Viên</span></div>
                 </div>
             </div>
             <?php }?>
@@ -98,27 +98,32 @@
         </div>
     </div>
 </section>
-<section class="bg-smoke" data-pos-for=".footer-wrapper" data-sec-pos="bottom-half">
-    <div class="container">
-        <div class="cta-wrap">
-            <div class="row flex-row-reverse justify-content-between">
-                <div class="col-lg-6">
-                    <div class="cta-img"><img src="assets/img/normal/cta_1_1.png" alt="Image"></div>
-                </div>
-                <div class="col-lg-6 align-self-center">
-                    <div class="cta-content">
-                        <h2 class="fs-40 fw-light text-theme mb-10">Học hỏi từ nền tảng của chúng tôi</h2>
-                        <h2 class="mb-25">Điều đó đưa bạn lên cấp độ tiếp theo</h2><a href="index.php?act=add_dangky"
-                                                                                      class="as-btn">Đăng Ký ngay<i class="fas fa-arrow-right ms-2"></i></a>
+<?php
+if(isset($_SESSION['user'])){
+?>
+
+<?php }else{ ?>
+    <section class="bg-smoke" data-pos-for=".footer-wrapper" data-sec-pos="bottom-half">
+        <div class="container">
+            <div class="cta-wrap">
+                <div class="row flex-row-reverse justify-content-between">
+                    <div class="col-lg-6">
+                        <div class="cta-img"><img src="assets/img/normal/cta_1_1.png" alt="Image"></div>
+                    </div>
+                    <div class="col-lg-6 align-self-center">
+                        <div class="cta-content">
+                            <h2 class="fs-40 fw-light text-theme mb-10">Học hỏi từ nền tảng của chúng tôi</h2>
+                            <h2 class="mb-25">Điều đó đưa bạn lên cấp độ tiếp theo</h2><a href="index.php?act=add_dangky"
+                                                                                          class="as-btn">Đăng Ký ngay<i class="fas fa-arrow-right ms-2"></i></a>
+                        </div>
                     </div>
                 </div>
+                <div class="shape-mockup movingX z-index-n1" data-bottom="0%" data-left="44%"><img
+                            src="assets/img/shape/dot_shape_1.png" alt="shapes"></div>
             </div>
-            <div class="shape-mockup movingX z-index-n1" data-bottom="0%" data-left="44%"><img
-                    src="assets/img/shape/dot_shape_1.png" alt="shapes"></div>
         </div>
-    </div>
-</section>
-
+    </section>
+<?php } ?>
 <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
 <script src="assets/js/app.min.js"></script>
 <script src="assets/js/main.js"></script>

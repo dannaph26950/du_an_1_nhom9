@@ -70,12 +70,15 @@ if (isset($_GET['act']) && ($_GET['act']) != ''){
 
         case 'giangvien':
             $listall_giangvien = listall_giangvien();
+//            $list_lop_magv = list_lop_magv(3);
+//            $count_lop = count($list_lop_magv);
+
 //            $listone_giangvien = listone_giangvien(3)[0]['magv'];
 //            $loadone_lop = loadone_lop(listone_giangvien(3)[0]['magv'])[0]['id_lop'];
 
 
 //            echo "<pre>";
-//            print_r($loadone_lop);
+//            print_r($count_lop);
 //            die();
             include '../view/giangvien.php';
             break;

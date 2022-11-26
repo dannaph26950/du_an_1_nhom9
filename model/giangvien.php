@@ -11,4 +11,5 @@ function listone_giangvien($magv){
     $listone_giangvien = pdo_query($sql);
     return $listone_giangvien ;
 }
+
 ?>

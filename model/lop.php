@@ -25,4 +25,14 @@ function list_lop($id_khoa_hoc){
     $list_lop = pdo_query($sql);
     return $list_lop;
 }
+function list_lop_magv($magv){
+    $sql ="SELECT id_lop FROM `lop` WHERE magv = '$magv'";
+    $list_lop_magv = pdo_query($sql);
+    return $list_lop_magv;
+}
+function list_lop_soluong($magv){
+    $sql ="SELECT so_luong FROM `lop` WHERE magv = '$magv'";
+    $list_lop_soluong = pdo_query($sql);
+    return $list_lop_soluong;
+}
 ?>
