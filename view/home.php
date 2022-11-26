@@ -139,27 +139,65 @@
 
 <!-- ----------------đổ ra khóa học -------------------------------->
 
-            <div class="col-md-6 col-lg-4 col-xxl-3">
-                <div class="course-box">
-                    <div class="course-img"><img src="../user/assets/img/course/course_2_1.jpg" alt="course"> <span
-                            class="tag">Free</span></div>
-                    <div class="course-content">
-                        <div class="course-author">
-                            <div class="author-info"><img src="../user/assets/img/course/author.jpg" alt="author"> <a
-                                    href="course.html" class="author-name">Kevin Perry</a></div>
-                            <div class="course-rating">
-                                <div class="star-rating" role="img" aria-label="Rated 4.00 out of 5"><span
-                                        style="width:79%">Rated <strong class="rating">4.00</strong> out of 5</span>
-                                </div>(4.00)
+<!--            <div class="col-md-6 col-lg-4 col-xxl-3">-->
+<!--                <div class="course-box">-->
+<!--                    <div class="course-img"><img src="../user/assets/img/course/course_2_1.jpg" alt="course"> <span-->
+<!--                            class="tag">Free</span></div>-->
+<!--                    <div class="course-content">-->
+<!--                        <div class="course-author">-->
+<!--                            <div class="author-info"><img src="../user/assets/img/course/author.jpg" alt="author"> <a-->
+<!--                                    href="course.html" class="author-name">Kevin Perry</a></div>-->
+<!--                            <div class="course-rating">-->
+<!--                                <div class="star-rating" role="img" aria-label="Rated 4.00 out of 5"><span-->
+<!--                                        style="width:79%">Rated <strong class="rating">4.00</strong> out of 5</span>-->
+<!--                                </div>(4.00)-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <h3 class="course-title"><a href="course-details.html">Tìm hiểu React JS cho người mới bắt đầu</a></h3>-->
+<!--                        <div class="course-meta"><span><i class="fal fa-file"></i>Số bài :  8</span> <span><i-->
+<!--                                    class="fal fa-user"></i>Học sinh:  50</span> <span><i class="fal fa-eye"></i>Lượt xem:-->
+<!--                                    12 nghìn</span></div>-->
+<!--                    </div>-->
+<!--                </div>-->
+                <?php
+                foreach($listall_khoahoc as $index => $value){
+                    ?>
+                    <div class="col-md-6 col-lg-3 col-xxl-3 "  >
+
+                        <div class="course-box " style="background-color: #C6E2FF">
+                            <div style="height: 450px">
+                                <div class="course-img"><img src="../Upfileanh/<?php echo listone_khoahoc($value['id_khoa_hoc'])[0]['anh'] ?>" alt="course" style="width: 200px;height: 200px" > <span
+                                            class="tag"><?php echo $value['gia'] ?></span></div>
+                                <div class="course-content">
+                                    <div class="course-author">
+                                        <div class="author-info"><img src="../Upfileanh/giangvien/<?php echo listone_giangvien(loadone_lop($value['id_lop'])[0]['magv'])[0]['hinh_gv']; ?>" alt="author" style="width: 50px;height: 50px"> <a
+                                                    href="course.html" class="author-name"><?php echo listone_giangvien(loadone_lop($value['id_lop'])[0]['magv'])[0]['ten_gv']; ?></a></div>
+                                        <div class="course-rating">
+                                            <div class="star-rating" role="img" aria-label="Rated 3.00 out of 5"><span
+                                                        style="width:79%">Rated <strong class="rating">3.00</strong> out of 5</span>
+                                            </div>
+                                            (4.00)
+                                        </div>
+                                    </div>
+
+                                    <div>
+
+                                        <h3 class="course-title"><a href="index.php?act=ct_khoahoc&id=<?php echo $value['id_khoa_hoc'] ?>"><?php echo $value['ten_khoa_hoc'] ?></a></h3>
+                                        <div>
+
+                                        </div>
+                                        <div class="course-meta"><span><i class="fal fa-file"></i><?php echo $value['thoi_gian_hoc'] ?></span> <span><i
+                                                        class="fal fa-user"></i>Sinh viên <?php echo loadone_lop($value['id_lop'])[0]['so_luong'] ?></span></div>
+
+
+                                    </div>
+
+                                </div>
                             </div>
                         </div>
-                        <h3 class="course-title"><a href="course-details.html">Tìm hiểu React JS cho người mới bắt đầu</a></h3>
-                        <div class="course-meta"><span><i class="fal fa-file"></i>Số bài :  8</span> <span><i
-                                    class="fal fa-user"></i>Học sinh:  50</span> <span><i class="fal fa-eye"></i>Lượt xem:
-                                    12 nghìn</span></div>
                     </div>
-                </div>
-            </div>
+                <?php }?>
+<!--            </div>-->
 
 <!------------------------------------------------------------->
 

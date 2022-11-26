@@ -1,5 +1,5 @@
 <?php
-
+if(isset($_SESSION['user'])){
     foreach ($listone_khoahoc as $key => $value) {
         ?>
         <center><h1 style="margin-top: 20px;">Cập Nhật Khóa Học</h1></center>
@@ -87,7 +87,7 @@
             <div style="margin-top: 100px; background-color: white"></div>
 
         </form>
-        <?php
-    }
-
-?>
+<?php }} else{
+    echo "<script>alert('Đăng Nhập admin có thể sử dụng được trang này!');</script>";
+    echo "<script>window.location.href='index.php?act=dang_nhap';</script>";
+} ?>

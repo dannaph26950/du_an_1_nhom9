@@ -9,6 +9,7 @@ session_start();
     include '../admin/model/lop.php';
     include '../admin/model/binhluan.php';
     include '../admin/model/giohang.php';
+    include '../admin/model/taikhoan_admin.php';
 
 // file trang dao diện và các chức năng khác nằm ở đây
     include '../admin/header.php';
@@ -427,8 +428,23 @@ session_start();
                 break;
 //        dangnhap-admin---------------------------------------
             case 'dang_nhap':
-
+                if (isset($_POST['dang_nhap'])&&($_POST['dang_nhap'])){
+                    $user = $_POST['tai_khoan'];
+                    $pass = $_POST['mat_khau'];
+                    $checkuser = checkuser($user,$pass);
+                    if (is_array($checkuser)){
+                        $_SESSION['user'] = $checkuser;
+                        echo "<script>alert('Đăng Nhập Thành Công!');</script>";
+                        echo "<script>window.location.href='index.php';</script>";
+                    }else{
+                        echo "<script>alert('Chưa đúng mật khẩu hoặc tài khoản!');</script>";
+                    }
+                }
                 include '../admin/dang_nhap.php';
+                break;
+            case 'dang_xuat':
+                session_unset();
+                echo "<script>window.location.href='index.php';</script>";
                 break;
 //        binh luan -------------------------------------------------
             case 'list_binhluan':

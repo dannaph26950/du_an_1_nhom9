@@ -1,3 +1,7 @@
+<?php
+if(isset($_SESSION['user'])){
+?>
+
 <main>
     <center><h1 style="margin-top: 20px;">Thêm Mới Danh Mục</h1>
     </center>
@@ -42,3 +46,9 @@
         <div style="margin-top: 200px; background-color: white"></div>
     </div>
 </main>
+    <?php
+} else{
+    echo "<script>alert('Đăng Nhập admin có thể sử dụng được trang này!');</script>";
+    echo "<script>window.location.href='index.php?act=dang_nhap';</script>";
+}
+?>

@@ -53,14 +53,34 @@
         <div class="header-top">
             <div class="container">
                 <div class="row justify-content-center justify-content-md-between align-items-center">
+                    <?php if(isset($_SESSION['user'])){
+                    ?>
                     <div class="col-auto">
                         <p class="header-notice">Chào mừng bạn đến với trang quản trị admin </p>
                     </div>
                     <div class="col-auto d-none d-md-block">
                         <div class="header-links">
                             <ul>
-                                <li><i class="far fa-user"></i><a href="index.php?act=dang_nhap">Đăng xuất</a></li>
+
+                                <li><i class="far fa-user"></i><a href="index.php?act=dang_xuat">Đăng xuất</a></li>
                             </ul>
+                                <?php
+                                }else{
+                                ?>
+                            <div class="col-auto">
+                                <p class="header-notice">Hãy đăng nhập trang admin để sử dụng </p>
+                            </div>
+                            <div class="col-auto d-none d-md-block">
+                                <div class="header-links">
+                                    <ul>
+
+                                        <li><i class="far fa-user"></i><a href="index.php?act=dang_nhap">Đăng nhập admin</a></li>
+                                    </ul>
+
+                                <?php
+                                }
+                                ?>
+
                         </div>
                     </div>
                 </div>

@@ -1,3 +1,7 @@
+<?php
+if(isset($_SESSION['user'])){
+?>
+
 <main style="margin-bottom: 200px">
     <div class="container">
 <!--        tôi lấy ở cái file wishlist.html-->
@@ -41,3 +45,9 @@
         </div>
     </div>
 </main>
+    <?php
+} else{
+    echo "<script>alert('Đăng Nhập admin có thể sử dụng được trang này!');</script>";
+    echo "<script>window.location.href='index.php?act=dang_nhap';</script>";
+}
+?>

@@ -1,6 +1,7 @@
 
-<?php
 
+<?php
+if(isset($_SESSION['user'])){
 foreach ($listone_giangvien as $key=>$value){
 
 
@@ -56,6 +57,8 @@ foreach ($listone_giangvien as $key=>$value){
         <div style="margin-top: 100px; background-color: white"></div>
 
     </form>
-<?php }?>
-
+<?php }} else{
+    echo "<script>alert('Đăng Nhập admin có thể sử dụng được trang này!');</script>";
+    echo "<script>window.location.href='index.php?act=dang_nhap';</script>";
+} ?>
 

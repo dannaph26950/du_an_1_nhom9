@@ -1,4 +1,6 @@
-
+<?php
+if(isset($_SESSION['user'])){
+    ?>
 <center><h1 style="margin: 60px 0px">DANH SÁCH ĐƠN HÀNG</h1></center>
 <div style="text-align: center; margin: 60px 0px">
     <a href="index.php?act=list_giohang"></a>
@@ -45,4 +47,10 @@
     </table>
 
 </div>
+<?php
+     } else{
+    echo "<script>alert('Đăng Nhập admin có thể sử dụng được trang này!');</script>";
+    echo "<script>window.location.href='index.php?act=dang_nhap';</script>";
+}
+    ?>
 

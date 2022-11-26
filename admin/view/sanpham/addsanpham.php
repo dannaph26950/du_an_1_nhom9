@@ -1,4 +1,6 @@
-
+<?php
+if(isset($_SESSION['user'])){
+?>
 <center><h1 style="margin-top: 20px;">Thêm mới Khóa học</h1></center>
 <center>
     <a href="index.php?act=list_khoahoc"><input type="submit" value="DANH SÁCH" name="list_khoahoc" class="btn btn-primary" style="width: 200px" ></a>
@@ -72,3 +74,9 @@
 
 
 <div style="margin-top: 100px; background-color: white"></div>
+    <?php
+} else{
+    echo "<script>alert('Đăng Nhập admin có thể sử dụng được trang này!');</script>";
+    echo "<script>window.location.href='index.php?act=dang_nhap';</script>";
+}
+?>

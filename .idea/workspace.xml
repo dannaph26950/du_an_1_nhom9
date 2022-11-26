@@ -4,23 +4,34 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cc6cba04-603a-4918-b721-0684c76f7a58" name="Changes" comment="update upfile ảnh">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_18_11_2022_21_59_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_18_11_2022_21_59_PM__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_22_11_2022_18_47_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_22_11_2022_18_47_PM__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_22_11_2022_23_46_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_22_11_2022_23_46_PM__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_24_11_2022_17_16_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_24_11_2022_17_16_PM__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_24_11_2022_20_10_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_24_11_2022_20_10_PM__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_24_11_2022_4_47_AM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_24_11_2022_4_47_AM__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_25_11_2022_20_49_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_25_11_2022_20_49_PM__Changes_.xml" afterDir="false" />
+    <list default="true" id="cc6cba04-603a-4918-b721-0684c76f7a58" name="Changes" comment="file dangnhap-dangky view">
+      <change afterPath="$PROJECT_DIR$/admin/model/taikhoan_admin.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/taikhoan.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/taikhoan.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/dang_nhap.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/dang_nhap.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/dangky.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/dangky.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/view/binhluan/editbinhluan.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/binhluan/editbinhluan.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/view/binhluan/listbinhluan.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/binhluan/listbinhluan.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/view/danhmuc/adddanhmuc.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/danhmuc/adddanhmuc.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/view/danhmuc/editdanhmuc.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/danhmuc/editdanhmuc.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/view/danhmuc/listdanhmuc.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/danhmuc/listdanhmuc.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/view/giangvien/addgiangvien.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/giangvien/addgiangvien.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/view/giangvien/editgiangvien.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/giangvien/editgiangvien.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/view/giangvien/listgiangvien.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/giangvien/listgiangvien.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/view/giohang/listgiohang.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/giohang/listgiohang.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/view/hocvien/addhocvien.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/hocvien/addhocvien.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/view/hocvien/edithocvien.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/hocvien/edithocvien.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/view/hocvien/listhocvien.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/hocvien/listhocvien.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/view/lop/addlop.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/lop/addlop.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/view/lop/editlop.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/lop/editlop.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/view/lop/listlop.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/lop/listlop.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/view/sanpham/addsanpham.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/sanpham/addsanpham.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/view/sanpham/editsanpham.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/sanpham/editsanpham.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/view/sanpham/listsanpham.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/sanpham/listsanpham.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/assets/css/app.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/view/assets/css/app.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/assets/css/fontawesome.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/view/assets/css/fontawesome.min.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/view/giangvien.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/giangvien.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/header.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/view/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/home.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/view/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/khoahoc.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/khoahoc.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -140,6 +151,7 @@
       <workItem from="1669387733556" duration="8302000" />
       <workItem from="1669399326298" duration="1812000" />
       <workItem from="1669402287354" duration="14144000" />
+      <workItem from="1669443595136" duration="1425000" />
     </task>
     <task id="LOCAL-00001" summary="update files add">
       <created>1668688059236</created>

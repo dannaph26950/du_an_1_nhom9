@@ -59,25 +59,27 @@
 </div>
 <section class="bg-white space">
     <div class="container">
-        <?php
-        foreach($listall_giangvien as $index => $value){
-            ?>
-        <div class="row gy-4">
 
+        <div class="row gy-4">
+            <?php
+            foreach($listall_giangvien as $index => $value){
+            ?>
             <div class="col-md-6 col-lg-4 col-xl-3">
                 <div class="team-grid">
-                    <div class="team-img"><img src="../Upfileanh/giangvien/<?php echo $value['hinh_gv'] ?>" alt="Team"></div>
+                    <div class="team-img"><img src="../Upfileanh/giangvien/<?php echo $value['hinh_gv'] ?>" style="height: 400px" alt="Team"></div>
                     <div class="team-content">
                         <h3 class="team-title"><a href="team-details.html"><?php echo $value['ten_gv'] ?></a></h3><span
                             class="team-desig">Giảng Viên</span>
                     </div>
-                    <div class="team-info"><span><i class="fa-light fa-file"></i><?php ?> Lớp</span> <span
-                            class="line"></span> <span><i class="fa-light fa-users"></i><?php echo loadone_lop($value['id_lop'])[0]['so_luong'] ?> Học Viên</span></div>
+                    <div class="team-info"><span><i class="fa-light fa-file"></i><?php  ?> Lớp</span> <span
+                            class="line"></span> <span><i class="fa-light fa-users"></i> Học Viên</span></div>
                 </div>
             </div>
+            <?php }?>
         </div>
+
     </div>
-    <?php }?>
+
 
 </section>
 <section class="space bg-smoke">

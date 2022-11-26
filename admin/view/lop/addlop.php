@@ -1,4 +1,6 @@
-
+<?php
+if(isset($_SESSION['user'])){
+?>
 <center><h1 style="margin-top: 20px;">Thêm mới lớp</h1></center>
 
 <center>
@@ -82,3 +84,9 @@
 
 
 <div style="margin-top: 100px; background-color: white"></div>
+    <?php
+} else{
+    echo "<script>alert('Đăng Nhập admin có thể sử dụng được trang này!');</script>";
+    echo "<script>window.location.href='index.php?act=dang_nhap';</script>";
+}
+?>

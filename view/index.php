@@ -65,9 +65,11 @@ if (isset($_GET['act']) && ($_GET['act']) != ''){
         case 'giangvien':
             $listall_giangvien = listall_giangvien();
 //            $listone_giangvien = listone_giangvien(3)[0]['magv'];
-            $loadone_lop = loadone_lop(132)[0]['id_lop'];
+//            $loadone_lop = loadone_lop(listone_giangvien(3)[0]['magv'])[0]['id_lop'];
+
+
 //            echo "<pre>";
-//            print_r($listone_giangvien);
+//            print_r($loadone_lop);
 //            die();
             include '../view/giangvien.php';
             break;
@@ -164,6 +166,7 @@ if (isset($_GET['act']) && ($_GET['act']) != ''){
     }
 }else{
     $listall_lop = listall_lop();
+    $listall_khoahoc = listall_khoahoc();
     include  'home.php';
 }
 

@@ -1,6 +1,6 @@
 <!--                PHP-->
 <?php
-
+if(isset($_SESSION['user'])){
 foreach ($list_danhmuc as $key => $value){
 
     ?>
@@ -51,4 +51,7 @@ foreach ($list_danhmuc as $key => $value){
     </div>
 </main>
     <!--                    PHP-->
-<?php } ?>
+<?php }} else{
+    echo "<script>alert('Đăng Nhập admin có thể sử dụng được trang này!');</script>";
+    echo "<script>window.location.href='index.php?act=dang_nhap';</script>";
+} ?>
