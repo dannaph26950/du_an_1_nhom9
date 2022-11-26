@@ -36,8 +36,8 @@
                 <p class="woocommerce-mini-cart__total total"><strong>Subtotal:</strong> <span
                         class="woocommerce-Price-amount amount"><span
                             class="woocommerce-Price-currencySymbol">$</span>318.00</span></p>
-                <p class="woocommerce-mini-cart__buttons buttons"><a href="cart.php" class="as-btn wc-forward">View
-                                                                                                               cart</a> <a href="checkout.php" class="as-btn checkout wc-forward">Checkout</a></p>
+                <p class="woocommerce-mini-cart__buttons buttons"><a href="dangky_kh.php" class="as-btn wc-forward">View
+                                                                                                                    cart</a> <a href="checkout.php" class="as-btn checkout wc-forward">Checkout</a></p>
             </div>
         </div>
     </div>

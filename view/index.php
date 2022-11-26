@@ -119,7 +119,7 @@ if (isset($_GET['act']) && ($_GET['act']) != ''){
                     $thongbao = 'Đăng ký thành công';
                 }
             }
-            include "../view/dangky.php";
+            include "../view/dangky_user.php";
             break;
         case 'lienhe':
             include "../view/lienhe.php";
@@ -176,11 +176,15 @@ if (isset($_GET['act']) && ($_GET['act']) != ''){
             if(isset($_GET['id']) && ($_GET['id']>0)){
                 $id = $_GET['id'];
                 $listone_khoahoc=listone_khoahoc($id);
-                $list_danhmuc = listone_danhmuc($id);
+
             }
-            $listall_khoahoc = listall_khoahoc();
-            $listall_lop = listall_lop();
-            include '../view/cart.php';
+
+//            if(isset($_POST['cart']) && ($_POST['cart'])){
+//                $ten_danh_muc = $_POST['ten_danh_muc'];
+//                insert_danhmuc($ten_danh_muc);
+//                $thongbao = 'Đã thêm vào danh mục';
+//            }
+            include '../view/dangky_kh.php';
             break;
 
 

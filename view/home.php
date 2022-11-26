@@ -171,7 +171,7 @@
                                 <div class="course-content">
                                     <div class="course-author">
                                         <div class="author-info"><img src="../Upfileanh/giangvien/<?php echo listone_giangvien(loadone_lop($value['id_lop'])[0]['magv'])[0]['hinh_gv']; ?>" alt="author" style="width: 50px;height: 50px"> <a
-                                                    href="course.html" class="author-name"><?php echo listone_giangvien(loadone_lop($value['id_lop'])[0]['magv'])[0]['ten_gv']; ?></a></div>
+                                                    href="index.php?act=ct_khoahoc&id=<?php echo $value['id_khoa_hoc'] ?>" class="author-name"><?php echo listone_giangvien(loadone_lop($value['id_lop'])[0]['magv'])[0]['ten_gv']; ?></a></div>
                                         <div class="course-rating">
                                             <div class="star-rating" role="img" aria-label="Rated 3.00 out of 5"><span
                                                         style="width:79%">Rated <strong class="rating">3.00</strong> out of 5</span>

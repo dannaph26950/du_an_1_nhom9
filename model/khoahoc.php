@@ -12,5 +12,10 @@ function listone_khoahoc($id){
     $listone_khoahoc = pdo_query($sql);
     return $listone_khoahoc;
 }
+    function listcate_khoahoc($id){
+        $sql = "SELECT * FROM khoa_hoc WHERE id_danh_muc ='$id'";
+        $listcate_khoahoc = pdo_query($sql);
+        return $listcate_khoahoc;
+    }
 
 ?>

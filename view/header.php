@@ -109,7 +109,7 @@
                                 <li><a href="event-details.html">Event Details</a></li>
                                 <li><a href="gallery.html">Gallery</a></li>
                                 <li><a href="contact.html">Contact Us</a></li>
-                                <li><a href="cart.php">Shopping Cart</a></li>
+                                <li><a href="dangky_kh.php">Shopping Cart</a></li>
                                 <li><a href="wishlist.php">Wishlist</a></li>
                                 <li><a href="error.html">Error Page</a></li>
                             </ul>
@@ -166,8 +166,8 @@
                 <p class="woocommerce-mini-cart__total total"><strong>Subtotal:</strong> <span
                             class="woocommerce-Price-amount amount"><span
                                 class="woocommerce-Price-currencySymbol">$</span>318.00</span></p>
-                <p class="woocommerce-mini-cart__buttons buttons"><a href="cart.php" class="as-btn wc-forward">View
-                                                                                                               cart</a> <a href="checkout.php" class="as-btn checkout wc-forward">Checkout</a></p>
+                <p class="woocommerce-mini-cart__buttons buttons"><a href="dangky_kh.php" class="as-btn wc-forward">View
+                                                                                                                    cart</a> <a href="checkout.php" class="as-btn checkout wc-forward">Checkout</a></p>
             </div>
         </div>
     </div>
@@ -262,8 +262,7 @@
 <!--                                        <a href="#" class="icon-btn style2 sideMenuToggler"><i class="far fa-cart-shopping"></i> <span class="badge bg-theme2">5</span></a>-->
                                         <a href="index.php?act=wishlist"
                                            class="icon-btn style2"><i class="far fa-heart"></i></a>
-                                        <a href="index.php?act=cart"
-                                           class="icon-btn style2"><i class="far fa-cart-shopping"></i></a>
+
 
                                         <?php
                                         if(isset($_SESSION['user'])){

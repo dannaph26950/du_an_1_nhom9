@@ -13,16 +13,14 @@
             <div class="row justify-content-between align-items-center">
                 <div class="col-md-auto"><label for="exampleInputEmail1" class="form-label">Loại khóa học</label>
                     <select class="text-input small-input kiemtra" data-error="" id="" name="">
+                        <option value="all_course">Tất cả khóa học</option>
                         <?php foreach ($listall_danhmuc as $index => $value){ ?>
 
                             <option value="<?php echo $value['id_danh_muc'] ?>"><?php echo $value['ten_danh_muc'] ?></option>
                         <?php } ?>
                     </select></div>
 
-                <div class="col-md-auto">
-                    <div class="nav" role="tablist"><a href="#" class="active" id="tab-course-grid" data-bs-toggle="tab" data-bs-target="#tab-grid" role="tab" aria-controls="tab-grid" aria-selected="true"><i class="fa-solid fa-grid-2"></i> Lưới</a> <a href="#" id="tab-course-list" data-bs-toggle="tab" data-bs-target="#tab-list" role="tab" aria-controls="tab-grid" aria-selected="false"><i class="fas fa-list"></i> Danh sách</a>
-                    </div>
-                </div>
+
             </div>
         </div>
         <div class="tab-content" id="nav-tabContent">
@@ -40,9 +38,9 @@
                             <div class="course-content">
                                 <div class="course-author">
                                     <div class="author-info"><img src="../Upfileanh/giangvien/<?php echo listone_giangvien(loadone_lop($value['id_lop'])[0]['magv'])[0]['hinh_gv']; ?>" alt="author" style="width: 50px;height: 50px"> <a
-                                                href="course.html" class="author-name"><?php echo listone_giangvien(loadone_lop($value['id_lop'])[0]['magv'])[0]['ten_gv']; ?></a></div>
+                                                href="index.php?act=khoahoc" class="author-name"><?php echo listone_giangvien(loadone_lop($value['id_lop'])[0]['magv'])[0]['ten_gv']; ?></a></div>
                                     <div class="course-rating">
-                                        <div class="star-rating" role="img" aria-label="Rated 3.00 out of 5"><span
+                                        <div class="star-rating" role="img" aria-label="Rated 5.00 out of 5"><span
                                                     style="width:79%">Rated <strong class="rating">3.00</strong> out of 5</span>
                                         </div>
                                         (4.00)
@@ -57,7 +55,7 @@
                                     </div>
                                     <div class="course-meta"><span><i class="fal fa-file"></i><?php echo $value['thoi_gian_hoc'] ?></span> <span><i
                                                     class="fal fa-user"></i>Sinh viên <?php echo loadone_lop($value['id_lop'])[0]['so_luong'] ?></span> <span><i class="fal fa-eye"></i>Lượt xem:
-                                        12 Nghìn</span></div>
+                                        12 k</span></div>
 
 
                                 </div>

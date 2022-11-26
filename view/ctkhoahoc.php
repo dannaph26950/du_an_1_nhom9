@@ -89,7 +89,7 @@
                                             <td><?php echo listone_giangvien(loadone_lop($value['id_lop'])[0]['magv'])[0]['ten_gv']; ?></td>
 
                                             <td class="">
-                                                <input value="Đăng Kí" name="dangki" type="button" class="btn btn-primary start-50" onclick="location.href='index.php?act=giang_vien'" ><br><br>
+                                                <input value="Đăng Kí" name="dangki" type="button" class="btn btn-primary start-50" onclick="location.href='index.php?act=cart&id=<?php echo $value['id_khoa_hoc'] ?>'" ><br><br>
                                             </td>
 
                                         </tr>
@@ -122,7 +122,7 @@
                                         <div class="auhtor-img"><img src="../Upfileanh/giangvien/<?php echo listone_giangvien(loadone_lop($value['id_lop'])[0]['magv'])[0]['hinh_gv']; ?>" alt="author" ></div>
                                         <div class="media-body">
                                             <h3 class="author-name"><a class="text-inherit"
-                                                                       href="#"><?php echo listone_giangvien(loadone_lop($value['id_lop'])[0]['magv'])[0]['ten_gv']; ?></a></h3>
+                                                                       href="index.php?act_khoahoc"><?php echo listone_giangvien(loadone_lop($value['id_lop'])[0]['magv'])[0]['ten_gv']; ?></a></h3>
                                             <p class="author-text"><?php echo listone_giangvien(loadone_lop($value['id_lop'])[0]['magv'])[0]['thong_tin_gv']; ?></p>
                                             <div class="author-meta"><a href="index.php?act=dang_ky"><i
                                                             class="fal fa-file-video"></i>Đăng Ký</a> <span><i
@@ -238,7 +238,7 @@
                         <div class="as-video"><img src="../Upfileanh/<?php echo $value['anh'] ?>" alt="video"> <a
                                     href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" class="play-btn popup-video"><i
                                         class="fas fa-play"></i></a></div><span class="h4 course-price"><?php echo $value['gia'] ?> <span
-                                    class="tag">25% Off</span></span> <a href="index.php?act=cart&id=<?php echo $value['id_khoa_hoc'] ?>" class="as-btn">Thêm vào giỏ hảng</a>
+                                    class="tag">25% Off</span></span> <a href="index.php?act=cart&id=<?php echo $value['id_khoa_hoc'] ?>" class="as-btn">Đăng ký</a>
                         <h3 class="widget_title">Thông Tin Khóa Học</h3>
                         <div class="info-list">
                             <ul>
