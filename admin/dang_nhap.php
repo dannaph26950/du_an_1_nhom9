@@ -11,7 +11,7 @@
 
     <div style="display: flex; align-items:center; margin-left: 300px ; ">
         <input type="submit" value="Đăng Nhập" name="dang_nhap" class="btn btn-primary" style="width: 200px; margin-right: 20px;" >
-        <a href="index.php?act=list_khoa_hoc" >Quên mật khẩu</a>
+        <a href="index.php?act=quen_matkhau" >Quên mật khẩu</a>
     </div>
     <div style="margin-top: 300px; background-color: white"></div>
 

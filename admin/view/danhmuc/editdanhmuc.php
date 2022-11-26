@@ -1,6 +1,6 @@
 <!--                PHP-->
 <?php
-if(isset($_SESSION['user'])){
+if(isset($_SESSION['taikhoan'])){
 foreach ($list_danhmuc as $key => $value){
 
     ?>

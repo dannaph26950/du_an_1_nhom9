@@ -53,7 +53,7 @@
         <div class="header-top">
             <div class="container">
                 <div class="row justify-content-center justify-content-md-between align-items-center">
-                    <?php if(isset($_SESSION['user'])){
+                    <?php if(isset($_SESSION['taikhoan'])){
                     ?>
                     <div class="col-auto">
                         <p class="header-notice">Chào mừng bạn đến với trang quản trị admin </p>

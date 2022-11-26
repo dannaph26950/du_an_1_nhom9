@@ -1,5 +1,5 @@
 <?php
-if(isset($_SESSION['user'])){
+if(isset($_SESSION['taikhoan'])){
 ?>
 <center><h1 style="margin: 60px 0px">DANH SÁCH BÌNH LUẬN</h1></center>
 

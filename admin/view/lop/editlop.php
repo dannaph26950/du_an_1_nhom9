@@ -2,7 +2,7 @@
 <center><h1 style="margin-top: 20px;">Thêm mới lớp</h1></center>
 
 <?php
-if(isset($_SESSION['user'])){
+if(isset($_SESSION['taikhoan'])){
 foreach ($list_lop as $key => $value) {
 ?>
 <form method="post" action="index.php?act=update_lop"  enctype="multipart/form-data">

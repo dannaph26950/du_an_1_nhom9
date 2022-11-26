@@ -1,5 +1,5 @@
 <?php
-if(isset($_SESSION['user'])){
+if(isset($_SESSION['taikhoan'])){
     foreach ($listone_khoahoc as $key => $value) {
         ?>
         <center><h1 style="margin-top: 20px;">Cập Nhật Khóa Học</h1></center>

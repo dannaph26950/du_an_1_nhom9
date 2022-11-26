@@ -1,5 +1,5 @@
 <?php
-if(isset($_SESSION['user'])){
+if(isset($_SESSION['taikhoan'])){
 ?>
 <center><h1 style="margin-top: 20px;">Thêm mới Khóa học</h1></center>
 <center>

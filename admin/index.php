@@ -429,11 +429,11 @@ session_start();
 //        dangnhap-admin---------------------------------------
             case 'dang_nhap':
                 if (isset($_POST['dang_nhap'])&&($_POST['dang_nhap'])){
-                    $user = $_POST['tai_khoan'];
-                    $pass = $_POST['mat_khau'];
-                    $checkuser = checkuser($user,$pass);
+                    $taikhoan = $_POST['tai_khoan'];
+                    $matkhau = $_POST['mat_khau'];
+                    $checkuser = checkuser($taikhoan,$matkhau);
                     if (is_array($checkuser)){
-                        $_SESSION['user'] = $checkuser;
+                        $_SESSION['taikhoan'] = $checkuser;
                         echo "<script>alert('Đăng Nhập Thành Công!');</script>";
                         echo "<script>window.location.href='index.php';</script>";
                     }else{

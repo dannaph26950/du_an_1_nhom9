@@ -1,7 +1,7 @@
 
 
 <?php
-if(isset($_SESSION['user'])){
+if(isset($_SESSION['taikhoan'])){
 foreach ($listone_giangvien as $key=>$value){
 
 

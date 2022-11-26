@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cc6cba04-603a-4918-b721-0684c76f7a58" name="Changes" comment="update du lieu truyen vao khi dang nhap duoc">
+    <list default="true" id="cc6cba04-603a-4918-b721-0684c76f7a58" name="Changes" comment="update admin">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/dang_nhap.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/dang_nhap.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,6 +130,7 @@
       <workItem from="1669402287354" duration="14144000" />
       <workItem from="1669443595136" duration="1425000" />
       <workItem from="1669462889084" duration="2464000" />
+      <workItem from="1669466838121" duration="711000" />
     </task>
     <task id="LOCAL-00001" summary="update files add">
       <created>1668688059236</created>
@@ -226,7 +230,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669457635541</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="update admin">
+      <created>1669467214996</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1669467214996</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -255,7 +266,8 @@
     <MESSAGE value="  user" />
     <MESSAGE value="update upfile ảnh" />
     <MESSAGE value="thêm 1 khóa học vào giỏ hàng" />
-    <option name="LAST_COMMIT_MESSAGE" value="thêm 1 khóa học vào giỏ hàng" />
+    <MESSAGE value="update admin" />
+    <option name="LAST_COMMIT_MESSAGE" value="update admin" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
