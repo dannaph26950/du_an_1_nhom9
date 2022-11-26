@@ -5,32 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cc6cba04-603a-4918-b721-0684c76f7a58" name="Changes" comment="file dangnhap-dangky view">
-      <change afterPath="$PROJECT_DIR$/admin/model/taikhoan_admin.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/giohang.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/view/cart.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/view/checkout.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/view/wishlist.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/view/binhluan/editbinhluan.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/binhluan/editbinhluan.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/view/binhluan/listbinhluan.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/binhluan/listbinhluan.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/view/danhmuc/adddanhmuc.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/danhmuc/adddanhmuc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/view/danhmuc/editdanhmuc.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/danhmuc/editdanhmuc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/view/danhmuc/listdanhmuc.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/danhmuc/listdanhmuc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/view/giangvien/addgiangvien.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/giangvien/addgiangvien.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/view/giangvien/editgiangvien.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/giangvien/editgiangvien.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/view/giangvien/listgiangvien.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/giangvien/listgiangvien.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/view/giohang/listgiohang.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/giohang/listgiohang.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/view/hocvien/addhocvien.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/hocvien/addhocvien.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/view/hocvien/edithocvien.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/hocvien/edithocvien.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/view/hocvien/listhocvien.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/hocvien/listhocvien.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/view/lop/addlop.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/lop/addlop.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/view/lop/editlop.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/lop/editlop.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/view/lop/listlop.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/lop/listlop.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/view/sanpham/addsanpham.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/sanpham/addsanpham.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/view/sanpham/editsanpham.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/sanpham/editsanpham.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/view/sanpham/listsanpham.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/sanpham/listsanpham.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/assets/css/app.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/view/assets/css/app.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/assets/css/fontawesome.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/view/assets/css/fontawesome.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/user/cart.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/checkout.html" beforeDir="false" afterPath="$PROJECT_DIR$/user/checkout.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/wishlist.html" beforeDir="false" afterPath="$PROJECT_DIR$/user/wishlist.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/ctkhoahoc.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/ctkhoahoc.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/view/giangvien.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/giangvien.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/home.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/header.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/view/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

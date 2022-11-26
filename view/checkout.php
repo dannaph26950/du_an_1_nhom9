@@ -77,8 +77,8 @@
                     <p class="woocommerce-mini-cart__total total"><strong>Subtotal:</strong> <span
                             class="woocommerce-Price-amount amount"><span
                                 class="woocommerce-Price-currencySymbol">$</span>318.00</span></p>
-                    <p class="woocommerce-mini-cart__buttons buttons"><a href="cart.html" class="as-btn wc-forward">View
-                            cart</a> <a href="checkout.html" class="as-btn checkout wc-forward">Checkout</a></p>
+                    <p class="woocommerce-mini-cart__buttons buttons"><a href="cart.php" class="as-btn wc-forward">View
+                                                                                                                   cart</a> <a href="checkout.html" class="as-btn checkout wc-forward">Checkout</a></p>
                 </div>
             </div>
         </div>
@@ -158,7 +158,7 @@
                                     <div class="col-auto d-none d-xxl-block">
                                         <div class="header-button"><button type="button"
                                                 class="icon-btn searchBoxToggler"><i class="far fa-search"></i></button>
-                                            <a href="wishlist.html" class="icon-btn"><i class="far fa-heart"></i> <span
+                                            <a href="wishlist.php" class="icon-btn"><i class="far fa-heart"></i> <span
                                                     class="badge">3</span> </a><a href="#"
                                                 class="icon-btn sideMenuToggler"><i class="far fa-cart-shopping"></i>
                                                 <span class="badge bg-theme2">5</span> </a><a href="contact.html"

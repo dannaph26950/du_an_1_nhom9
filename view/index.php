@@ -161,6 +161,31 @@ if (isset($_GET['act']) && ($_GET['act']) != ''){
             echo "<script>window.location.href='index.php';</script>";
             break;
 
+
+
+//            GIỎ HÀNG
+//    ------------------------------------------------
+        case 'cart':
+
+            if(isset($_GET['id']) && ($_GET['id']>0)){
+                $id = $_GET['id'];
+                $listone_khoahoc=listone_khoahoc($id);
+                $list_danhmuc = listone_danhmuc($id);
+            }
+            $listall_khoahoc = listall_khoahoc();
+            $listall_lop = listall_lop();
+            include '../view/cart.php';
+            break;
+
+
+
+
+//            DANH SÁCH YÊU THÍCH
+//------------------------------------------------
+        case 'wishlist':
+            include '../view/wishlist.php';
+            break;
+
         default:
             include '../view/home.php';
     }

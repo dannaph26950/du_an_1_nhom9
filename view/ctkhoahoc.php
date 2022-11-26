@@ -167,13 +167,14 @@
             </div>
 <!--            Phần bên phải-->
             <?php foreach ($listone_khoahoc as $index => $value){ ?>
+
             <div class="col-xxl-3 col-lg-4">
                 <aside class="sidebar-area">
                     <div class="widget widget_info">
                         <div class="as-video"><img src="../Upfileanh/<?php echo $value['anh'] ?>" alt="video"> <a
                                     href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" class="play-btn popup-video"><i
                                         class="fas fa-play"></i></a></div><span class="h4 course-price"><?php echo $value['gia'] ?> <span
-                                    class="tag">25% Off</span></span> <a href="cart.html" class="as-btn">Thêm vào giỏ hảng</a>
+                                    class="tag">25% Off</span></span> <a href="index.php?act=cart&id=<?php echo $value['id_khoa_hoc'] ?>" class="as-btn">Thêm vào giỏ hảng</a>
                         <h3 class="widget_title">Thông Tin Khóa Học</h3>
                         <div class="info-list">
                             <ul>
