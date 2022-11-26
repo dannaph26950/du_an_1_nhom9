@@ -231,7 +231,7 @@
                 <div class="container">
                     <div class="row align-items-center justify-content-between">
                         <div class="col-auto">
-                            <div class="header-logo"><a href="index.html"><img src="../user/assets/img/logo.svg"
+                            <div class="header-logo"><a href="index.php"><img src="../user/assets/img/logo.svg"
                                                                                alt="Acadu"></a></div>
                         </div>
                         <div class="col-auto">
@@ -246,10 +246,7 @@
 
                                             </li>
                                             <li class=" "><a href="index.php?act=giangvien">Giáo viên</a>
-                                                <ul class="sub-menu">
-                                                    <li><a href="index.php?act=giangvien">Giáo viên</a></li>
-                                                    <li><a href="index.php?act=ct_giangvien">Thông tin giáo viên</a></li>
-                                                </ul>
+
                                             </li>
 
 
