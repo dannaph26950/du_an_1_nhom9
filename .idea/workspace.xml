@@ -4,9 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cc6cba04-603a-4918-b721-0684c76f7a58" name="Changes" comment="thêm 1 khóa học vào giỏ hàng">
-      <change beforePath="$PROJECT_DIR$/admin/view/lop/addlop.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/lop/addlop.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/khoahoc.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/khoahoc.php" afterDir="false" />
+    <list default="true" id="cc6cba04-603a-4918-b721-0684c76f7a58" name="Changes" comment="update đổ ra dữ liệu">
+      <change afterPath="$PROJECT_DIR$/model/binhluan.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/connect.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/hocvien.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/view/binhluan.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/lop.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/lop.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/ctkhoahoc.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/ctkhoahoc.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +60,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/xampp/htdocs/du_an_1_nhom9/view&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/xampp/htdocs/du_an_1_nhom9/model&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -66,6 +72,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\du_an_1_nhom9\model" />
       <recent name="C:\xampp\htdocs\du_an_1_nhom9\view" />
       <recent name="C:\xampp\htdocs\du_an_1_nhom9\user" />
       <recent name="C:\xampp\htdocs\duan1_nhom9\model" />
@@ -129,6 +136,10 @@
       <workItem from="1669443595136" duration="1425000" />
       <workItem from="1669462889084" duration="2464000" />
       <workItem from="1669466838121" duration="711000" />
+      <workItem from="1669481702963" duration="6503000" />
+      <workItem from="1669511077017" duration="5488000" />
+      <workItem from="1669544674264" duration="3548000" />
+      <workItem from="1669558427823" duration="5600000" />
     </task>
     <task id="LOCAL-00001" summary="update files add">
       <created>1668688059236</created>
@@ -235,7 +246,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669467214996</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="update đổ ra dữ liệu">
+      <created>1669481005043</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1669481005043</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -265,7 +283,8 @@
     <MESSAGE value="update upfile ảnh" />
     <MESSAGE value="thêm 1 khóa học vào giỏ hàng" />
     <MESSAGE value="update admin" />
-    <option name="LAST_COMMIT_MESSAGE" value="update admin" />
+    <MESSAGE value="update đổ ra dữ liệu" />
+    <option name="LAST_COMMIT_MESSAGE" value="update đổ ra dữ liệu" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

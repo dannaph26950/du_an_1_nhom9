@@ -2,7 +2,7 @@
     <div class="container z-index-common">
         <h1 class="breadcumb-title">Chi Tiết Khóa Học</h1>
         <ul class="breadcumb-menu">
-            <li><a href="index.html">Trang Chủ</a></li>
+            <li><a href="index.php">Trang Chủ</a></li>
             <li>Chi Tiết Khóa Học</li>
         </ul>
     </div>
@@ -145,49 +145,43 @@
 
 
                             <?php
-                            if(isset($_SESSION['user'])){
+//                            if(isset($_SESSION['user'])){
                             ?>
                             <div class="tab-pane fade" id="reviews" role="tabpanel" aria-labelledby="reviews-tab">
                                 <div class="course-Reviews">
-
-                                    <h1>Bình luận</h1>
-
+<!--                                    Chèn bình luận -->
                                     <div class="as-comment-form">
-                                        <div class="form-title">
-                                            <h3 class="blog-inner-title">Add a review</h3>
-                                        </div>
-                                        <div class="row">
-                                            <div class="form-group rating-select d-flex align-items-center">
-                                                <label>Your Rating</label>
-                                                <p class="stars"><span><a class="star-1" href="#">1</a> <a
-                                                                class="star-2" href="#">2</a> <a class="star-3"
-                                                                                                 href="#">3</a> <a class="star-4" href="#">4</a> <a
-                                                                class="star-5" href="#">5</a></span></p>
+                                        
+                                    <div class="comment">
+                                        <h2>Bình luận:</h2>
+                                        
+                                        <?php    
+                                        foreach ($listone_khoahoc as $key => $value){
+                                        ?>
+                                            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+                                            <script>
+                                                $(document).ready(function(){
+                                                    $("#binhluan").load("../view/binhluan.php", {idpro: <?php echo $value['id_khoa_hoc']?>});
+                                                });
+                                            </script>
+                                            <div class="box-row" id="binhluan">
+                                                <!--            <div class="box-title">BÌNH LUẬN</div>-->
+                                                <!--            <div class="box-content">-->
+                                                <!--                <iframe src="../view/binhluan/binhluanform.php?id_bl=--><?php //echo $value['id'] ?><!--" frameborder="0" width="100%" height="300px"></iframe>-->
+                                                <!--            </div>-->
                                             </div>
-                                            <div class="col-12 form-group"><textarea placeholder="Write a Message"
-                                                                                     class="form-control"></textarea> <i
-                                                        class="text-title far fa-pencil-alt"></i></div>
-                                            <div class="col-md-6 form-group"><input type="text"
-                                                                                    placeholder="Your Name" class="form-control"> <i
-                                                        class="text-title far fa-user"></i></div>
-                                            <div class="col-md-6 form-group"><input type="text"
-                                                                                    placeholder="Your Email" class="form-control"> <i
-                                                        class="text-title far fa-envelope"></i></div>
-                                            <div class="col-12 form-group"><input id="reviewcheck"
-                                                                                  name="reviewcheck" type="checkbox"> <label
-                                                        for="reviewcheck">Save my name, email, and website in this
-                                                    browser for the next time I comment.<span
-                                                            class="checkmark"></span></label></div>
-                                            <div class="col-12 form-group mb-0"><button class="as-btn">Post
-                                                    Review</button></div>
-                                        </div>
+                                        <?php } ?>
+                                    </div>
+
+
+
                                     </div>
                                 </div>
                             </div>
                             <?php
-                            }else{
+//                            }else{
                                 ?>
-
+<!--                                    che dấu-->
                                 <div class="tab-pane fade" id="reviews" role="tabpanel" aria-labelledby="reviews-tab" style="display: none">
                                 <div class="course-Reviews">
 
@@ -195,38 +189,35 @@
 
                                     <div class="as-comment-form">
                                         <div class="form-title">
-                                            <h3 class="blog-inner-title">Add a review</h3>
+                                            <h3 class="blog-inner-title">Viết bình luận</h3>
                                         </div>
                                         <div class="row">
-                                            <div class="form-group rating-select d-flex align-items-center">
-                                                <label>Your Rating</label>
-                                                <p class="stars"><span><a class="star-1" href="#">1</a> <a
-                                                                class="star-2" href="#">2</a> <a class="star-3"
-                                                                                                 href="#">3</a> <a class="star-4" href="#">4</a> <a
-                                                                class="star-5" href="#">5</a></span></p>
-                                            </div>
-                                            <div class="col-12 form-group"><textarea placeholder="Write a Message"
-                                                                                     class="form-control"></textarea> <i
-                                                        class="text-title far fa-pencil-alt"></i></div>
-                                            <div class="col-md-6 form-group"><input type="text"
-                                                                                    placeholder="Your Name" class="form-control"> <i
-                                                        class="text-title far fa-user"></i></div>
-                                            <div class="col-md-6 form-group"><input type="text"
-                                                                                    placeholder="Your Email" class="form-control"> <i
-                                                        class="text-title far fa-envelope"></i></div>
-                                            <div class="col-12 form-group"><input id="reviewcheck"
-                                                                                  name="reviewcheck" type="checkbox"> <label
-                                                        for="reviewcheck">Save my name, email, and website in this
-                                                    browser for the next time I comment.<span
-                                                            class="checkmark"></span></label></div>
-                                            <div class="col-12 form-group mb-0"><button class="as-btn">Post
-                                                    Review</button></div>
+                                            <form action="index.php?act=binh_luan" method="post">
+                                                <div class="form-group rating-select d-flex align-items-center">
+                                                    <label>Đánh giá</label>
+                                                    <p class="stars"><span><a class="star-1" href="#">1</a> <a
+                                                                    class="star-2" href="#">2</a> <a class="star-3"
+                                                                                                     href="#">3</a> <a class="star-4" href="#">4</a> <a
+                                                                    class="star-5" href="#">5</a></span></p>
+                                                </div>
+                                                <div class="col-12 form-group"><textarea placeholder="Write a Message"
+                                                                                         class="form-control"></textarea> <i
+                                                            class="text-title far fa-pencil-alt"></i></div>
+                                                <div class="col-md-6 form-group"><input type="text"
+                                                                                        placeholder="Your Name" class="form-control"> <i
+                                                            class="text-title far fa-user"></i></div>
+                                                <div class="col-md-6 form-group"><input type="text"
+                                                                                        placeholder="Your Email" class="form-control"> <i
+                                                            class="text-title far fa-envelope"></i></div>
+
+                                                <div class="col-12 form-group mb-0"><button class="as-btn">Gửi bình luận</button></div>
+                                            </form>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <?php
-                            }
+//                            }
                             ?>
                         </div>
                     </div>

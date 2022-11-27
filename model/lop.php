@@ -35,4 +35,10 @@ function list_lop_soluong($magv){
     $list_lop_soluong = pdo_query($sql);
     return $list_lop_soluong;
 }
+// list lop theo id lop
+function listone_lop_tenlop($id){
+    $sql = "SELECT ten_lop FROM lop where id_lop = '$id'";
+    $listone_lop_tenlop = pdo_query($sql);
+    return $listone_lop_tenlop;
+}
 ?>

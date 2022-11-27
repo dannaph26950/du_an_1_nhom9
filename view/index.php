@@ -7,7 +7,8 @@ include '../model/lop.php';
 include '../model/danhmuc.php';
 include '../model/giangvien.php';
 include '../model/taikhoan.php';
-
+include '../model/hocvien.php';
+include '../model/binhluan.php';
 
 include 'header.php';
 if (isset($_GET['act']) && ($_GET['act']) != ''){
@@ -52,17 +53,21 @@ if (isset($_GET['act']) && ($_GET['act']) != ''){
                 $list_danhmuc = listone_danhmuc($id);
                 $list_lop = list_lop($id);
             }
+
+//            $id = listone_lop_tenlop($_SESSION['user']['id_lop']);
+//
 //            echo "<pre>";
-//            print_r($list_lop);
+//            print_r($id);
 //            die();
+
+
+
 
             $listall_khoahoc = listall_khoahoc();
             $listall_lop = listall_lop();
 
 //            $list_lop = loadone_lop(131)[0]['ten_lop'];
-//            echo "<pre>";
-//            print_r($listone_giangvien);
-//            die();
+
             include '../view/ctkhoahoc.php';
             break;
 
@@ -189,8 +194,6 @@ if (isset($_GET['act']) && ($_GET['act']) != ''){
 //            }
             include '../view/dangky_kh.php';
             break;
-
-
 
 
 //            DANH SÁCH YÊU THÍCH
