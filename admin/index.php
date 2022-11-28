@@ -312,11 +312,13 @@ session_start();
                 if(isset($_POST['add_hocvien']) && ($_POST['add_hocvien'])) {
 
                     $ten_hv=$_POST['ten_hv'];
+                    $taikhoan=$_POST['tai_khoan'];
+                    $matkhau=$_POST['mat_khau'];
                     $email=$_POST['email'];
                     $sdt=$_POST['sdt'];
                     $dia_chi=$_POST['dia_chi'];
 
-                    insert_hocvien ($ten_hv,$email,$sdt,$dia_chi);
+                    insert_hocvien ($ten_hv,$taikhoan,$matkhau,$email,$sdt,$dia_chi);
                     $thongbao="Thêm học viên thành công";
 
                 }
@@ -407,7 +409,7 @@ session_start();
                     $thoi_gian_khai_giang = $_POST['thoi_gian_khai_giang'];
                     $dia_diem_hoc = $_POST['dia_diem_hoc'];
                     $so_luong = $_POST['so_luong'];
-                    $id_gv = $_POST['id_gv'];
+                    $id_gv = $_POST['magv'];
                     $id_khoa_hoc = $_POST['id_khoa_hoc'];
                     $trang_thai = $_POST['trang_thai'];
 

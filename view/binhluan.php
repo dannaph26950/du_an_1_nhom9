@@ -22,7 +22,9 @@ $dsbl = listall_binhluan($idpro);
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="../../src/css/style.css">
+    <link rel="stylesheet" href="../view/assets/css/style.css">
+    <link rel="stylesheet" href="../view/assets/css/app.min.css">
+    <link rel="stylesheet" href="../view/assets/css/fontawesome.min.css">
     <style>
         p {
             font-family: sans-serif;

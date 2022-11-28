@@ -29,13 +29,13 @@ foreach ($list_lop as $key => $value) {
         </div>
         <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label  ">Mã Giáo Viên</label>
-            <select name="id_gv">
+            <select name="magv">
                 <?php foreach ($listall_giangvien as $key => $value){ ?>
-                    <option value="<?php if(isset($value['ma_gv'])&&($value['ma_gv']!="")) echo $value['ma_gv']; ?>"><?php echo $value['ten_gv'] ?></option>
+                    <option value="<?php if(isset($value['magv'])&&($value['magv']!="")) echo $value['magv']; ?>"><?php echo $value['ten_gv'] ?></option>
                 <?php } ?>
             </select>
 <!--            <input type="number"  class="form-control kiemtra" id="exampleInputEmail1" aria-describedby="emailHelp" name="id_gv" value="--><?php //if(isset($value['ma_gv'])&&($value['ma_gv']!="")) echo $value['ma_gv']; ?><!--">-->
-            <p style="color: red"><?php echo isset($error_add_lop["id_gv"]) ? $error_add_lop["id_gv"] : ""; ?></p>
+<!--            <p style="color: red">--><?php //echo isset($error_add_lop["magv"]) ? $error_add_lop["magv"] : ""; ?><!--</p>-->
         </div>
         <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label ">Mã Khóa Học</label>
@@ -45,12 +45,12 @@ foreach ($list_lop as $key => $value) {
                 <?php } ?>
             </select>
 <!--            <input type="number"  class="form-control kiemtra" id="exampleInputEmail1" aria-describedby="emailHelp" name="id_khoa_hoc" value="--><?php //if(isset($value['id_khoa_hoc'])&&($value['id_khoa_hoc']!="")) echo $value['id_khoa_hoc']; ?><!--">-->
-            <p style="color: red"><?php echo isset($error_add_lop["id_kh"]) ? $error_add_lop["id_kh"] : ""; ?></p>
+<!--            <p style="color: red">--><?php //echo isset($error_add_lop["id_kh"]) ? $error_add_lop["id_kh"] : ""; ?><!--</p>-->
         </div>
         <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label  ">Trạng Thái</label>
             <input type="number"  class="form-control kiemtra" id="exampleInputEmail1" aria-describedby="emailHelp" name="trang_thai" value="<?php if(isset($value['trang_thai'])&&($value['trang_thai']!="")) echo $value['trang_thai']; ?>">
-            <p style="color: red"><?php echo isset($error_add_lop["trang_thai"]) ? $error_add_lop["trang_thai"] : ""; ?></p>
+<!--            <p style="color: red">--><?php //echo isset($error_add_lop["trang_thai"]) ? $error_add_lop["trang_thai"] : ""; ?><!--</p>-->
         </div>
 
     </div>

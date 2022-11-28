@@ -27,9 +27,9 @@
                                         <a href="course.html"><i
                                         class="far fa-clock"></i> Thời Gian Học: <?php echo $value['thoi_gian_hoc'] ?></a>
                             <div class="course-rating">
-                                <div class="star-rating" role="img" aria-label="Rated 4.00 out of 5"><span
-                                            style="width:90%">Rated <strong class="rating">5.00</strong> out of 5</span>
-                                </div>(4.80)
+<!--                                <div class="star-rating" role="img" aria-label="Rated 4.00 out of 5"><span-->
+<!--                                            style="width:90%">Rated <strong class="rating">5.00</strong> out of 5</span>-->
+<!--                                </div>(4.80)-->
                             </div>
                         </div>
                     </div>
@@ -193,13 +193,7 @@
                                         </div>
                                         <div class="row">
                                             <form action="index.php?act=binh_luan" method="post">
-                                                <div class="form-group rating-select d-flex align-items-center">
-                                                    <label>Đánh giá</label>
-                                                    <p class="stars"><span><a class="star-1" href="#">1</a> <a
-                                                                    class="star-2" href="#">2</a> <a class="star-3"
-                                                                                                     href="#">3</a> <a class="star-4" href="#">4</a> <a
-                                                                    class="star-5" href="#">5</a></span></p>
-                                                </div>
+
                                                 <div class="col-12 form-group"><textarea placeholder="Write a Message"
                                                                                          class="form-control"></textarea> <i
                                                             class="text-title far fa-pencil-alt"></i></div>

@@ -4,15 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cc6cba04-603a-4918-b721-0684c76f7a58" name="Changes" comment="update đổ ra dữ liệu">
-      <change afterPath="$PROJECT_DIR$/model/binhluan.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/connect.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/hocvien.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/binhluan.php" afterDir="false" />
+    <list default="true" id="cc6cba04-603a-4918-b721-0684c76f7a58" name="Changes" comment="create chức năng bình luận, thêm bình luận">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/lop.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/lop.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/model/hocvien.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/model/hocvien.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/view/hocvien/addhocvien.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/hocvien/addhocvien.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/view/hocvien/listhocvien.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/hocvien/listhocvien.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/view/lop/editlop.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/lop/editlop.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/binhluan.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/binhluan.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/view/ctkhoahoc.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/ctkhoahoc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/khoahoc.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/khoahoc.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -140,6 +141,9 @@
       <workItem from="1669511077017" duration="5488000" />
       <workItem from="1669544674264" duration="3548000" />
       <workItem from="1669558427823" duration="5600000" />
+      <workItem from="1669567885096" duration="581000" />
+      <workItem from="1669569627129" duration="1483000" />
+      <workItem from="1669642015743" duration="5732000" />
     </task>
     <task id="LOCAL-00001" summary="update files add">
       <created>1668688059236</created>
@@ -253,7 +257,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669481005043</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="create chức năng bình luận, thêm bình luận">
+      <created>1669567973960</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1669567973960</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -284,7 +295,8 @@
     <MESSAGE value="thêm 1 khóa học vào giỏ hàng" />
     <MESSAGE value="update admin" />
     <MESSAGE value="update đổ ra dữ liệu" />
-    <option name="LAST_COMMIT_MESSAGE" value="update đổ ra dữ liệu" />
+    <MESSAGE value="create chức năng bình luận, thêm bình luận" />
+    <option name="LAST_COMMIT_MESSAGE" value="create chức năng bình luận, thêm bình luận" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

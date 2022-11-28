@@ -1,8 +1,8 @@
 <?php
     // chưa chạy đc
 
-    function insert_hocvien($ten_hv,$email,$sdt,$dia_chi){
-        $sql = "INSERT INTO hoc_vien VALUES (null,'$ten_hv','$email','$sdt','$dia_chi' )";
+    function insert_hocvien($ten_hv,$tai_khoan,$mat_khau,$email,$sdt,$dia_chi){
+        $sql = "INSERT INTO hoc_vien VALUES (null,'$ten_hv','$tai_khoan','$mat_khau','$email','$sdt','$dia_chi',null )";
         pdo_execute($sql);
     }
     //List khóa học

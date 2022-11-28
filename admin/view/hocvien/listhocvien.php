@@ -13,6 +13,8 @@ if(isset($_SESSION['taikhoan'])){
         <tr>
             <th>ID học viên</th>
             <th>Tên học viên</th>
+            <th>Tài khoản</th>
+            <th>Mật khẩu</th>
             <th>Email </th>
             <th>SĐT</th>
             <th>Địa chỉ</th>
@@ -25,6 +27,8 @@ if(isset($_SESSION['taikhoan'])){
             <tr>
                 <td><?php echo $value['id_hoc_vien'] ?></td>
                 <td><?php echo $value['ten_hv'] ?></td>
+                <td><?php echo $value['tai_khoan'] ?></td>
+                <td><?php echo $value['mat_khau'] ?></td>
                  <td><?php echo $value['email'] ?></td>
                 <td><?php echo $value['sdt'] ?></td>
                 <td><?php echo $value['dia_chi'] ?></td>

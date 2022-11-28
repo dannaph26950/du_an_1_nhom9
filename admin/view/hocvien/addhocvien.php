@@ -13,6 +13,14 @@ if(isset($_SESSION['taikhoan'])){
             <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="ten_hv">
         </div>
         <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label" style="font-weight: bold">Tài khoản</label>
+            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="tai_khoan">
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label" style="font-weight: bold">Mật khẩu</label>
+            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="mat_khau">
+        </div>
+        <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label" style="font-weight: bold">EMAIL</label>
             <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email">
         </div>
