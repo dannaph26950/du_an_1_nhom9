@@ -15,7 +15,7 @@
                 <li><a href="index.php?act=profile">Thông tin</a></li>
                 <li><a href="index.php?act=update_thong_tin">Cập nhật thông tin</a></li>
                 <li><a href="index.php?act=list_khoa_hoc">Khóa học đã đăng ký</a></li>
-                <li><a href="index.php?act=act=dang_xuat">Đăng xuất</a></li>
+                <li><a href="index.php?act=dang_xuat">Đăng xuất</a></li>
             </ul>
         </nav>
     </div>
@@ -57,6 +57,6 @@
         </div>
     </div>
 </div>
-
+</div>
 </body>
 </html>

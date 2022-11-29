@@ -72,11 +72,10 @@ if (isset($_GET['act']) && ($_GET['act']) != ''){
                 $id_lop = $_POST['id_lop'];
                 $id_hoc_vien = $_POST['id_hoc_vien'];
                 $update = update_hocvien_idlop($id_lop,$id_hoc_vien);
-                if (is_array($update)){
-                    echo "<script>alert(Đã cập nhật lớp bạn đã đăng ký !)</script>";
-                }
+
 
             }
+            echo "<script>alert('Bạn đã cập nhật lại lớp!!!')</script>";
             $listall_khoahoc = listall_khoahoc();
             include '../view/khoahoc.php';
             break;

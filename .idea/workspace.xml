@@ -4,26 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cc6cba04-603a-4918-b721-0684c76f7a58" name="Changes" comment="create chức năng bình luận, thêm bình luận">
-      <change afterPath="$PROJECT_DIR$/view/assets/css/profile.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/profile_user.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/thong_tin_user_kh.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/thong_tin_user_update.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_18_11_2022_21_59_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_18_11_2022_21_59_PM__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_22_11_2022_18_47_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_22_11_2022_18_47_PM__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_22_11_2022_23_46_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_22_11_2022_23_46_PM__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_24_11_2022_17_16_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_24_11_2022_17_16_PM__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_24_11_2022_20_10_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_24_11_2022_20_10_PM__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_24_11_2022_4_47_AM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_24_11_2022_4_47_AM__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_25_11_2022_20_49_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_25_11_2022_20_49_PM__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_26_11_2022_15_18_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_26_11_2022_15_18_PM__Changes_.xml" afterDir="false" />
+    <list default="true" id="cc6cba04-603a-4918-b721-0684c76f7a58" name="Changes" comment="create profile user , update id lớp dựa theo id học viên">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/hocvien.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/hocvien.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/lop.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/lop.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/ctkhoahoc.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/ctkhoahoc.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/assets/css/profile.css" beforeDir="false" afterPath="$PROJECT_DIR$/view/assets/css/profile.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/view/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/header.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/view/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/khoahoc.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/khoahoc.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/profile_user.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/profile_user.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/thong_tin_user_kh.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/thong_tin_user_kh.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/thong_tin_user_update.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/thong_tin_user_update.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -155,6 +143,8 @@
       <workItem from="1669569627129" duration="1483000" />
       <workItem from="1669642015743" duration="5732000" />
       <workItem from="1669714090198" duration="4273000" />
+      <workItem from="1669718417990" duration="98000" />
+      <workItem from="1669720773473" duration="4436000" />
     </task>
     <task id="LOCAL-00001" summary="update files add">
       <created>1668688059236</created>
@@ -275,7 +265,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669567973960</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="create profile user , update id lớp dựa theo id học viên">
+      <created>1669718503804</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1669718503804</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -307,7 +304,8 @@
     <MESSAGE value="update admin" />
     <MESSAGE value="update đổ ra dữ liệu" />
     <MESSAGE value="create chức năng bình luận, thêm bình luận" />
-    <option name="LAST_COMMIT_MESSAGE" value="create chức năng bình luận, thêm bình luận" />
+    <MESSAGE value="create profile user , update id lớp dựa theo id học viên" />
+    <option name="LAST_COMMIT_MESSAGE" value="create profile user , update id lớp dựa theo id học viên" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

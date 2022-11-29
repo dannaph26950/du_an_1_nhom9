@@ -22,7 +22,7 @@
     <div class="phai">
 
         <form action="index.php?act=update_thong_tin" method="post">
-            <center>
+
                 <h2>Cập nhật thông tin</h2>
                 <?php
                 foreach ($listone_hocvien as $index => $value){ ?>
@@ -67,10 +67,11 @@
             }
             ?>
         </span>
-            </center>
+
             <?php } ?>
         </form>
     </div>
+</div>
 </div>
 </body>
 </html>
