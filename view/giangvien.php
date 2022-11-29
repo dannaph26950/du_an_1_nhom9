@@ -68,7 +68,7 @@
                 <div class="team-grid">
                     <div class="team-img"><img src="../Upfileanh/giangvien/<?php echo $value['hinh_gv'] ?>" style="height: 400px" alt="Team"></div>
                     <div class="team-content">
-                        <h3 class="team-title"><a href="team-details.html"><?php echo $value['ten_gv'] ?></a></h3><span
+                        <h3 class="team-title"><a href="index.php?act=ct_giangvien&id=<?php echo $value['magv'] ?>"><?php echo $value['ten_gv'] ?></a></h3><span
                             class="team-desig">Giảng Viên</span>
                     </div>
                     <div class="team-info"><span><i class="fa-light fa-file"></i><?php echo count(list_lop_magv($value['magv']));  ?> Lớp</span> <span

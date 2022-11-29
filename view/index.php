@@ -81,13 +81,16 @@ if (isset($_GET['act']) && ($_GET['act']) != ''){
 //            $listone_giangvien = listone_giangvien(3)[0]['magv'];
 //            $loadone_lop = loadone_lop(listone_giangvien(3)[0]['magv'])[0]['id_lop'];
 
-
 //            echo "<pre>";
 //            print_r($count_lop);
 //            die();
             include '../view/giangvien.php';
             break;
         case 'ct_giangvien':
+            if(isset($_GET['id']) && ($_GET['id']>0)){
+                $id = $_GET['id'];
+                $listone_giangvien = listone_giangvien($id);
+            }
             include '../view/ctgiangvien.php';
             break;
 //dang_ky
@@ -165,7 +168,7 @@ if (isset($_GET['act']) && ($_GET['act']) != ''){
                     echo "<script>window.location.href='index.php';</script>";
                 }elseif(!is_array($check_user)){
                     $thongbao = 'Tài khoản không tồn tại';
-                    echo "<script>alert('Khong ton tai')</script>";
+                    echo "<script>alert('Tên đăng nhập hoặc mật khẩu không đúng!!!')</script>";
                 }
             }
             include "../view/dang_nhap.php";
