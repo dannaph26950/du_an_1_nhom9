@@ -41,4 +41,5 @@ function listone_lop_tenlop($id){
     $listone_lop_tenlop = pdo_query($sql);
     return $listone_lop_tenlop;
 }
+
 ?>

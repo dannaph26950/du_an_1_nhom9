@@ -188,7 +188,7 @@
                                     <?php if(isset($_SESSION['user'])){
 
                                     ?>
-                                    <a>Xin chao, <?php echo $_SESSION['user']['ten_hv'] ?></a>
+                                        <a href="index.php?act=profile">Xin chao, <?php echo $_SESSION['user']['ten_hv'] ?></a>
                                     <?php
                                      }else{
                                         ?>

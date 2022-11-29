@@ -54,15 +54,12 @@ if (isset($_GET['act']) && ($_GET['act']) != ''){
                 $list_lop = list_lop($id);
             }
 
+
 //            $id = listone_lop_tenlop($_SESSION['user']['id_lop']);
 //
 //            echo "<pre>";
 //            print_r($id);
 //            die();
-
-
-
-
             $listall_khoahoc = listall_khoahoc();
             $listall_lop = listall_lop();
 
@@ -70,7 +67,19 @@ if (isset($_GET['act']) && ($_GET['act']) != ''){
 
             include '../view/ctkhoahoc.php';
             break;
+        case 'update_idlop':
+            if(isset($_POST['dangki'])){
+                $id_lop = $_POST['id_lop'];
+                $id_hoc_vien = $_POST['id_hoc_vien'];
+                $update = update_hocvien_idlop($id_lop,$id_hoc_vien);
+                if (is_array($update)){
+                    echo "<script>alert(Đã cập nhật lớp bạn đã đăng ký !)</script>";
+                }
 
+            }
+            $listall_khoahoc = listall_khoahoc();
+            include '../view/khoahoc.php';
+            break;
 //      giang vien------------------------------------
 
         case 'giangvien':
@@ -204,6 +213,43 @@ if (isset($_GET['act']) && ($_GET['act']) != ''){
         case 'wishlist':
             include '../view/wishlist.php';
             break;
+        case 'profile':
+            if(isset($_SESSION['user']['id_hoc_vien'])){
+                $listone_hocvien = listone_hocvien($_SESSION['user']['id_hoc_vien']);
+            }
+            include '../view/profile_user.php';
+            break;
+        case 'edit_thong_tin':
+//            var_dump($_SESSION['user']['id_hoc_vien']); die();
+            if(isset($_SESSION['user']['id_hoc_vien'])){
+                $listone_hocvien = listone_hocvien($_SESSION['user']['id_hoc_vien']);
+            }
+
+            include '../view/thong_tin_user_update.php';
+            break;
+        case 'update_thong_tin':
+
+            if(isset($_POST['update_hv']) && ($_POST['update_hv'])){
+                $id_hoc_vien = $_POST['id'];
+                $ten_hv=$_POST['ten_hv'];
+                $email=$_POST['email'];
+                $sdt=$_POST['sdt'];
+                $dia_chi = $_POST['dia_chi'];
+                update_hocvien($ten_hv,$email,$sdt,$dia_chi,$id_hoc_vien);
+            }
+            if(isset($_SESSION['user']['id_hoc_vien'])){
+            $listone_hocvien = listone_hocvien($_SESSION['user']['id_hoc_vien']);
+                }
+
+            include '../view/profile_user.php';
+            break;
+        case 'list_khoa_hoc':
+            if(isset($_SESSION['user']['id_hoc_vien'])){
+                $listone_hocvien = listone_hocvien($_SESSION['user']['id_hoc_vien']);
+            }
+            include '../view/thong_tin_user_kh.php';
+            break;
+
 
         default:
             include '../view/home.php';

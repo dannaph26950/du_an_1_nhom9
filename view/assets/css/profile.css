@@ -1,0 +1,31 @@
+*{
+    font-family: roboto;
+}
+.khung{
+
+    display: flex;
+}
+.trai{
+    background-color:#0D5EF4;
+    width: 20%;
+    height:550px;
+
+}
+.phai{
+    padding: 40px 60px ;
+    width: 80%;
+    height: 1000px;
+}
+nav ul{
+    list-style-type: none;
+}
+li{
+    margin: 90px 20px;
+}
+a{
+    text-decoration:none;
+    color:white
+}
+a:hover{
+    text-decoration:underline;
+}

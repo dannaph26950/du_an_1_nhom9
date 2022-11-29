@@ -11,14 +11,14 @@
     <div class="container">
         <div class="as-sort-bar">
             <div class="row justify-content-between align-items-center">
-                <div class="col-md-auto"><label for="exampleInputEmail1" class="form-label">Loại khóa học</label>
-                    <select class="text-input small-input kiemtra" data-error="" id="" name="">
-                        <option value="all_course">Tất cả khóa học</option>
-                        <?php foreach ($listall_danhmuc as $index => $value){ ?>
-
-                            <option value="<?php echo $value['id_danh_muc'] ?>"><?php echo $value['ten_danh_muc'] ?></option>
-                        <?php } ?>
-                    </select></div>
+<!--                <div class="col-md-auto"><label for="exampleInputEmail1" class="form-label">Loại khóa học</label>-->
+<!--                    <select class="text-input small-input kiemtra" data-error="" id="" name="">-->
+<!--                        <option value="all_course">Tất cả khóa học</option>-->
+<!--                        --><?php //foreach ($listall_danhmuc as $index => $value){ ?>
+<!---->
+<!--                            <option value="--><?php //echo $value['id_danh_muc'] ?><!--">--><?php //echo $value['ten_danh_muc'] ?><!--</option>-->
+<!--                        --><?php //} ?>
+<!--                    </select></div>-->
 
 
             </div>
