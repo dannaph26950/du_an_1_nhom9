@@ -6,7 +6,7 @@
     </div>
     <div class="mb-3">
         <label for="exampleInputEmail1" class="form-label">Mật khẩu</label>
-        <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="mat_khau">
+        <input type="password" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="mat_khau">
     </div>
 
     <div style="display: flex; align-items:center; margin-left: 300px ; ">
