@@ -238,7 +238,7 @@
                                 <li><i class="fa-light fa-user"></i> <strong>Giảng Viên: </strong><span><?php echo listone_giangvien(loadone_lop($value['id_lop'])[0]['magv'])[0]['ten_gv']; ?></span></li>
                                 <li><i class="fa-light fa-file"></i> <strong>Mã khóa học</strong><span><?php echo $value['id_danh_muc']; ?></span></li>
                                 <li><i class="fa-light fa-clock"></i> <strong>Thời Gian: </strong><span> <?php echo $value['thoi_gian_hoc'] ?>
-                                            36s</span></li>
+                                            </span></li>
                                 <li><i class="fa-light fa-tag"></i> <strong>Cấp Độ:
                                     </strong><span>Cơ Bản</span></li>
                                 <li><i class="fa-light fa-globe"></i> <strong>Ngôn Ngữ:

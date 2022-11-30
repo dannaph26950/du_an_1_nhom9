@@ -70,14 +70,14 @@
         </div>
             </div>
 
-            <div class="col-xxl-3 col-lg-4"><h4>DANH MỤC</h4>
-
-                <?php foreach ($listall_danhmuc as $key =>$value) { ?>
-                <a href="index.php?act=locdanhmuc&id=<?php echo $value['id_danh_muc']?>"><?php echo $value['ten_danh_muc'];   ?></a><br>
-                    <br>
-                <?php }?>
-            </div>
-        </div>
+<!--            <div class="col-xxl-3 col-lg-4"><h4>DANH MỤC</h4>-->
+<!---->
+<!--                --><?php //foreach ($listall_danhmuc as $key =>$value) { ?>
+<!--                <a href="index.php?act=locdanhmuc&id=--><?php //echo $value['id_danh_muc']?><!--">--><?php //echo $value['ten_danh_muc'];   ?><!--</a><br>-->
+<!--                    <br>-->
+<!--                --><?php //}?>
+<!--            </div>-->
+<!--        </div>-->
     </div>
 </section>
 <?php  if(isset($_SESSION['user'])){ ?>

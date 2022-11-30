@@ -59,15 +59,29 @@ if (isset($_GET['act']) && ($_GET['act']) != ''){
             include '../view/ctkhoahoc.php';
             break;
         case 'update_idlop':
+            if(isset($_POST['timkiem']) && ($_POST['timkiem'])){
+                $tukhoa = $_POST['search'];
+                $listall_lop = listall_lop();
+                $list_khoahoc = sreach_khoahoc($tukhoa);
+                $listall_danhmuc = listall_danhmuc();
+            }
+            elseif(isset($_GET['id']) && ($_GET['id']>0)){
+                $id = $_GET['id'];
+                $listall_lop = listall_lop();
+                $list_khoahoc = list_khoahoc($id);
+                $listall_danhmuc = listall_danhmuc();
+            }else{
+                $listall_lop = listall_lop();
+                $list_khoahoc = listall_khoahoc();
+                $listall_danhmuc = listall_danhmuc();
+            }
             if(isset($_POST['dangki'])){
                 $id_lop = $_POST['id_lop'];
                 $id_hoc_vien = $_POST['id_hoc_vien'];
                 $update = update_hocvien_idlop($id_lop,$id_hoc_vien);
-
-
             }
             echo "<script>alert('Bạn đã cập nhật lại lớp!!!')</script>";
-            $listall_khoahoc = listall_khoahoc();
+
             include '../view/khoahoc.php';
             break;
 //      giang vien------------------------------------
@@ -182,10 +196,13 @@ if (isset($_GET['act']) && ($_GET['act']) != ''){
 //            GIỎ HÀNG
 //    ------------------------------------------------
         case 'cart':
-
+            echo "<pre>";
+            print_r(list_lop(44));
+            die();
             if(isset($_GET['id']) && ($_GET['id']>0)){
                 $id = $_GET['id'];
                 $listone_khoahoc=listone_khoahoc($id);
+                $list_lop = list_lop($id);
 
             }
 
@@ -200,14 +217,14 @@ if (isset($_GET['act']) && ($_GET['act']) != ''){
 
 //            TƯ VẤN :
 
-        case 'tuvan':
-            if(isset($_GET['id']) && ($_GET['id']>0)){
-                $id = $_GET['id'];
-                $listone_hocvien=listone_hocvien($id);
-
-            }
-
-            include "../view/tuvan.php";
+//        case 'tuvan':
+//            if(isset($_GET['id']) && ($_GET['id']>0)){
+//                $id = $_GET['id'];
+//                $listone_hocvien=listone_hocvien($id);
+//
+//            }
+//
+//            include "../view/tuvan.php";
 
 //            DANH SÁCH YÊU THÍCH
 //------------------------------------------------
@@ -253,16 +270,16 @@ if (isset($_GET['act']) && ($_GET['act']) != ''){
             include '../view/thong_tin_user_kh.php';
             break;
 
-        case 'locdanhmuc':
-$listall_danhmuc=listall_danhmuc ();
-
-            if(isset($_GET['id']) && ($_GET['id']>0)){
-                $id = $_GET['id'];
-                $listcate_khoahoc  =listcate_khoahoc($id);
-
-            }
-            include '../view/locdanhmuc.php';
-            break;
+//        case 'locdanhmuc':
+//$listall_danhmuc=listall_danhmuc ();
+//
+//            if(isset($_GET['id']) && ($_GET['id']>0)){
+//                $id = $_GET['id'];
+//                $listcate_khoahoc  =listcate_khoahoc($id);
+//
+//            }
+//            include '../view/locdanhmuc.php';
+//            break;
         default:
             include '../view/home.php';
     }
