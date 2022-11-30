@@ -6,7 +6,7 @@ function insert_khoahoc($ten_khoa_hoc,$anh, $gia, $thoi_gian_hoc, $mo_ta, $id_da
 }
 //List khóa học
 function listall_khoahoc(){
-    $sql="SELECT * FROM khoa_hoc";
+    $sql="SELECT * FROM khoa_hoc ORDER BY id_khoa_hoc DESC ";
     $listall_khoahoc = pdo_query($sql);
     return $listall_khoahoc;
 }

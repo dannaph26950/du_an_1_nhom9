@@ -7,7 +7,7 @@
     }
 //List khóa học
     function listall_giangvien(){
-        $sql="SELECT * FROM giang_vien";
+        $sql="SELECT * FROM giang_vien ORDER BY magv  DESC ";
         $listall_giangvien = pdo_query($sql);
         return $listall_giangvien;
     }

@@ -7,7 +7,7 @@
     }
     //List khóa học
     function listall_hocvien(){
-        $sql="SELECT * FROM hoc_vien";
+        $sql="SELECT * FROM hoc_vien ORDER BY id_hoc_vien  DESC ";
         $listall_hocvien = pdo_query($sql);
         return $listall_hocvien;
     }
