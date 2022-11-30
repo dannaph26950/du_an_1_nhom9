@@ -9,6 +9,9 @@
 </div>
 <section class="space-top space-extra-bottom">
     <div class="container">
+
+        <div class="row">
+            <div class="col-xxl-9 col-lg-8">
         <div class="as-sort-bar">
             <div class="row justify-content-between align-items-center">
 
@@ -65,7 +68,16 @@
 
             </div>
         </div>
+            </div>
 
+            <div class="col-xxl-3 col-lg-4"><h4>DANH MỤC</h4>
+
+                <?php foreach ($listall_danhmuc as $key =>$value) { ?>
+                <a href="index.php?act=locdanhmuc&id=<?php echo $value['id_danh_muc']?>"><?php echo $value['ten_danh_muc'];   ?></a><br>
+                    <br>
+                <?php }?>
+            </div>
+        </div>
     </div>
 </section>
 <?php  if(isset($_SESSION['user'])){ ?>

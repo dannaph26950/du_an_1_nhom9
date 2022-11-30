@@ -198,6 +198,17 @@ if (isset($_GET['act']) && ($_GET['act']) != ''){
             break;
 
 
+//            TƯ VẤN :
+
+        case 'tuvan':
+            if(isset($_GET['id']) && ($_GET['id']>0)){
+                $id = $_GET['id'];
+                $listone_hocvien=listone_hocvien($id);
+
+            }
+
+            include "../view/tuvan.php";
+
 //            DANH SÁCH YÊU THÍCH
 //------------------------------------------------
         case 'wishlist':
@@ -237,10 +248,21 @@ if (isset($_GET['act']) && ($_GET['act']) != ''){
             if(isset($_SESSION['user']['id_hoc_vien'])){
                 $listone_hocvien = listone_hocvien($_SESSION['user']['id_hoc_vien']);
             }
+
+            $listall_danhmuc=listall_danhmuc ();
             include '../view/thong_tin_user_kh.php';
             break;
 
+        case 'locdanhmuc':
+$listall_danhmuc=listall_danhmuc ();
 
+            if(isset($_GET['id']) && ($_GET['id']>0)){
+                $id = $_GET['id'];
+                $listcate_khoahoc  =listcate_khoahoc($id);
+
+            }
+            include '../view/locdanhmuc.php';
+            break;
         default:
             include '../view/home.php';
     }
