@@ -4,14 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cc6cba04-603a-4918-b721-0684c76f7a58" name="Changes" comment="create profile user , update id lớp dựa theo id học viên">
+    <list default="true" id="cc6cba04-603a-4918-b721-0684c76f7a58" name="Changes" comment="update">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_22_11_2022_18_47_PM_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_22_11_2022_18_47_PM__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_22_11_2022_23_46_PM_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_22_11_2022_23_46_PM__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/assets/css/profile.css" beforeDir="false" afterPath="$PROJECT_DIR$/view/assets/css/profile.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/view/binhluan/listbinhluan.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/binhluan/listbinhluan.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/view/giohang/listgiohang.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/giohang/listgiohang.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/danhmuc.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/danhmuc.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/khoahoc.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/khoahoc.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/view/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/header.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/view/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/profile_user.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/profile_user.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/thong_tin_user_kh.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/thong_tin_user_kh.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/thong_tin_user_update.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/thong_tin_user_update.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/khoahoc.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/khoahoc.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -145,6 +150,7 @@
       <workItem from="1669714090198" duration="4273000" />
       <workItem from="1669718417990" duration="98000" />
       <workItem from="1669720773473" duration="4436000" />
+      <workItem from="1669761261365" duration="11357000" />
     </task>
     <task id="LOCAL-00001" summary="update files add">
       <created>1668688059236</created>

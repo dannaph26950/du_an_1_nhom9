@@ -11,14 +11,11 @@
     <div class="container">
         <div class="as-sort-bar">
             <div class="row justify-content-between align-items-center">
-<!--                <div class="col-md-auto"><label for="exampleInputEmail1" class="form-label">Loại khóa học</label>-->
-<!--                    <select class="text-input small-input kiemtra" data-error="" id="" name="">-->
-<!--                        <option value="all_course">Tất cả khóa học</option>-->
-<!--                        --><?php //foreach ($listall_danhmuc as $index => $value){ ?>
-<!---->
-<!--                            <option value="--><?php //echo $value['id_danh_muc'] ?><!--">--><?php //echo $value['ten_danh_muc'] ?><!--</option>-->
-<!--                        --><?php //} ?>
-<!--                    </select></div>-->
+
+                <form action="index.php?act=khoa_hoc" method="post" class="input-group" style="width: 400px">
+                        <input  type="text" name="search" class="form-control rounded" placeholder="Tìm Kiếm Khóa Học" aria-label="Search" aria-describedby="search-addon" />
+                    <input type="submit" name="timkiem" value="Tìm Kiếm" style="width: 100px" class="btn btn-outline-primary">
+                </form>
 
 
             </div>
@@ -27,8 +24,7 @@
             <div class="tab-pane fade active show" id="tab-grid" role="tabpanel" aria-labelledby="tab-course-grid">
                 <div class="row gy-4 mb-30">
                     <?php
-
-                    foreach($listall_khoahoc as $index => $value){
+                    foreach($list_khoahoc as $index => $value){
                     ?>
                     <div class="col-md-6 col-lg-3 col-xxl-3 "  >
 

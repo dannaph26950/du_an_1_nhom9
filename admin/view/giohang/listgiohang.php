@@ -17,6 +17,7 @@ if(isset($_SESSION['taikhoan'])){
             <th>Giá Tiền</th>
             <th>Ngày Đăng Kí</th>
             <th>Tình Trạng</th>
+            <th></th>
 
         </tr>
         </thead>
@@ -31,12 +32,11 @@ if(isset($_SESSION['taikhoan'])){
             <td><?php echo $value ['id_lop'] ?></td>
             <td><?php echo $value ['gia_tien'] ?></td>
             <td><?php echo $value ['ngay_dk'] ?></td>
-            <td><?php echo $value ['tinh_trang'] ?></td>
+            <td><?php if($value ['tinh_trang'] == 1) echo "Chưa thanh toán"; elseif($value ['tinh_trang'] == 2) echo "Đang xử lí"; elseif($value ['tinh_trang'] == 3) echo "Thanh Toán thành công" ?></td>
 
 <!--            DẤU-->
-            <td class="" hidden>
-                <input value="Sửa " type="button" class="btn btn-primary start-50" onclick="location.href='index.php?act=sua_binh_luan&id=<?php echo $value['id_binh_luan'] ?>//'" >
-                <input type="submit" class="btn btn-primary start-50" onclick="confirm('Bạn có muốn xóa bình luận \( <?php echo $value['ten_bl']?>// \) hay không!') == true ? location.href='index.php?act=delete_binhluan&id=<?php echo $value['id_binh_luan']?>//' : ''" value="Xóa"><br><br>
+            <td class="">
+                <input value="Cập Nhật" type="button" class="btn btn-primary start-50" onclick="location.href='index.php?act=sua_don_hang&id=<?php echo $value['id_dang_ki'] ?>//'" >
             </td>
 <!--DẤU-->
         </tr>

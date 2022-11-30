@@ -1,7 +1,7 @@
 <?php 
 //load all danh muc
 function listall_danhmuc(){
-    $sql = "SELECT * FROM `danh_muc` ";
+    $sql = "SELECT * FROM `danh_muc` ORDER BY id_danh_muc DESC";
     $list_danhmuc = pdo_query($sql);
     return $list_danhmuc;
 }

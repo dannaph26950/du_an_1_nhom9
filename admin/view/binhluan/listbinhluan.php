@@ -24,7 +24,7 @@ if(isset($_SESSION['taikhoan'])){
         <?php foreach ($listall_binhluan as $index => $value) {
             ?>
         <tr>
-            <td><?php echo $value['id_binh_luan'] ?></td>
+            <td><?php echo $value['id_binhluan'] ?></td>
             <td>
                 <?php echo $value['ten_bl'] ?>
             </td>

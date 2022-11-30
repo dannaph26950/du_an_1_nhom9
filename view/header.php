@@ -243,7 +243,11 @@
 
                                             </li>
                                             <li class=""><a href="index.php?act=khoa_hoc">Khóa học</a>
-
+                                                <ul class="sub-menu">
+                                                    <?php foreach ($listall_danhmuc as $index => $value){  ?>
+                                                    <li><a href="index.php?act=khoa_hoc&id=<?php echo $value['id_danh_muc']; ?>"><?php echo $value['ten_danh_muc'] ?></a></li>
+                                                    <?php } ?>
+                                                </ul>
                                             </li>
                                             <li class=" "><a href="index.php?act=giangvien">Giáo viên</a>
 
@@ -256,11 +260,9 @@
                                                 class="far fa-bars"></i></button>
                                 </div>
                                 <div class="col-auto d-none d-xl-block">
-                                    <div class="header-button"><button type="button"
-                                                                       class="icon-btn style2 searchBoxToggler"><i
-                                                    class="far fa-search"></i></button>
+                                    <div class="header-button">
 <!--                                        <a href="#" class="icon-btn style2 sideMenuToggler"><i class="far fa-cart-shopping"></i> <span class="badge bg-theme2">5</span></a>-->
-                                        <a href="index.php?act=wishlist"
+                                        <a href="#"
                                            class="icon-btn style2"><i class="far fa-heart"></i></a>
 
 
