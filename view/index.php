@@ -30,12 +30,10 @@ if (isset($_GET['act']) && ($_GET['act']) != ''){
                 $listall_lop = listall_lop();
                 $list_khoahoc = list_khoahoc($id);
                 $listall_danhmuc = listall_danhmuc();
-                echo $id;
             }else{
                 $listall_lop = listall_lop();
                 $list_khoahoc = listall_khoahoc();
                 $listall_danhmuc = listall_danhmuc();
-                echo "đầu buổi";
             }
             include '../view/khoahoc.php';
             break;
