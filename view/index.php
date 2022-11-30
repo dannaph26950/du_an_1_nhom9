@@ -75,13 +75,20 @@ if (isset($_GET['act']) && ($_GET['act']) != ''){
                 $list_khoahoc = listall_khoahoc();
                 $listall_danhmuc = listall_danhmuc();
             }
-            if(isset($_POST['dangki'])){
-                $id_lop = $_POST['id_lop'];
-                $id_hoc_vien = $_POST['id_hoc_vien'];
-                $update = update_hocvien_idlop($id_lop,$id_hoc_vien);
-            }
-            echo "<script>alert('Bạn đã cập nhật lại lớp!!!')</script>";
+            //làm validate khi ko có user
+            if(isset($_SESSION['user'])){
+                if(isset($_POST['dangki'])){
+                    $id_lop = $_POST['id_lop'];
+                    $id_hoc_vien = $_POST['id_hoc_vien'];
+                    $update = update_hocvien_idlop($id_lop,$id_hoc_vien);
+                }
+                echo "<script>alert('Bạn đã cập nhật lại lớp!!!')</script>";
 
+            }else{
+                echo "<script>alert('Đăng ký hoặc đăng nhập thì mới được mua khóa học này')</script>";
+                echo "<script>window.location.href='index.php?act=add_dangky';</script>";
+            }
+            // hết
             include '../view/khoahoc.php';
             break;
 //      giang vien------------------------------------
@@ -196,15 +203,23 @@ if (isset($_GET['act']) && ($_GET['act']) != ''){
 //            GIỎ HÀNG
 //    ------------------------------------------------
         case 'cart':
-            echo "<pre>";
-            print_r(list_lop(44));
-            die();
+//            echo "<pre>";
+//            print_r(listone_khoahoc(44));
+//            die();
+//            if(isset($_GET['id']) && ($_GET['id']>0)){
+//                $id = $_GET['id'];
+//                $listone_khoahoc=listone_khoahoc($id);
+//                $list_lop = list_lop($id);
+//
+//            }
             if(isset($_GET['id']) && ($_GET['id']>0)){
                 $id = $_GET['id'];
                 $listone_khoahoc=listone_khoahoc($id);
+                $list_danhmuc = listone_danhmuc($id);
                 $list_lop = list_lop($id);
-
             }
+            $listall_khoahoc = listall_khoahoc();
+            $listall_lop = listall_lop();
 
 //            if(isset($_POST['cart']) && ($_POST['cart'])){
 //                $ten_danh_muc = $_POST['ten_danh_muc'];
@@ -264,6 +279,7 @@ if (isset($_GET['act']) && ($_GET['act']) != ''){
         case 'list_khoa_hoc':
             if(isset($_SESSION['user']['id_hoc_vien'])){
                 $listone_hocvien = listone_hocvien($_SESSION['user']['id_hoc_vien']);
+
             }
 
             $listall_danhmuc=listall_danhmuc ();

@@ -26,7 +26,7 @@
             <?php foreach ($listone_hocvien as $index => $value){ ?>
             <div style="margin: 0px 100px;">
                 <div class="mb-3" >
-                    <label for="exampleInputEmail1" class="form-label">Mã Học Viên</label>
+                    <label for="exampleInputEmail1" class="form-label " >Mã Học Viên</label>
                     <input type="text" name="id_hoc_vien" value="<?php if(isset($value['id_hoc_vien'])&&($value['id_hoc_vien']!="")) echo $value['id_hoc_vien']; ?>" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" disabled>
 
                 </div>

@@ -4,12 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cc6cba04-603a-4918-b721-0684c76f7a58" name="Changes" comment="create profile user , update id lớp dựa theo id học viên">
+    <list default="true" id="cc6cba04-603a-4918-b721-0684c76f7a58" name="Changes" comment="fix lại file lọc danh mục của đan với cả update lại khi click vào đăng kí nó ra trang ctkhoahoc">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/ctkhoahoc.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/ctkhoahoc.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/view/dangky_kh.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/dangky_kh.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/header.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/view/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/khoahoc.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/khoahoc.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/profile_user.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/profile_user.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -146,7 +146,7 @@
       <workItem from="1669731689426" duration="615000" />
       <workItem from="1669812143494" duration="1819000" />
       <workItem from="1669821508594" duration="562000" />
-      <workItem from="1669822090402" duration="2065000" />
+      <workItem from="1669822090402" duration="5882000" />
     </task>
     <task id="LOCAL-00001" summary="update files add">
       <created>1668688059236</created>
@@ -281,7 +281,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669725805725</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="fix lại file lọc danh mục của đan với cả update lại khi click vào đăng kí nó ra trang ctkhoahoc">
+      <created>1669824481439</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1669824481439</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -314,7 +321,8 @@
     <MESSAGE value="update đổ ra dữ liệu" />
     <MESSAGE value="create chức năng bình luận, thêm bình luận" />
     <MESSAGE value="create profile user , update id lớp dựa theo id học viên" />
-    <option name="LAST_COMMIT_MESSAGE" value="create profile user , update id lớp dựa theo id học viên" />
+    <MESSAGE value="fix lại file lọc danh mục của đan với cả update lại khi click vào đăng kí nó ra trang ctkhoahoc" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix lại file lọc danh mục của đan với cả update lại khi click vào đăng kí nó ra trang ctkhoahoc" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
