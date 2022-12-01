@@ -491,6 +491,9 @@ session_start();
                 else{
                     $listall_giohang = listall_giohang();
                 }
+//                echo "<pre>";
+//                print_r(listone_hocvien(6)[0]['ten_hv']);
+//                die();
                 include '../admin/view/giohang/listgiohang.php';
                 break;
             case 'edit_giohang':

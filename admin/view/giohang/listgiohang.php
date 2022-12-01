@@ -26,8 +26,8 @@ if(isset($_SESSION['taikhoan'])){
         <thead>
         <tr>
             <th>Mã Đơn Hàng</th>
-            <th>Mã Học Viên</th>
-            <th>Mã Lớp</th>
+            <th>Tên Học Viên</th>
+            <th>Tên Lớp</th>
             <th>Giá Tiền</th>
             <th>Ngày Đăng Kí</th>
             <th>Tình Trạng</th>
@@ -42,8 +42,8 @@ if(isset($_SESSION['taikhoan'])){
         ?>
         <tr>
             <td><?php echo $value ['id_dang_ky'] ?></td>
-            <td><?php echo $value ['id_hoc_vien'] ?></td>
-            <td><?php echo $value ['id_lop'] ?></td>
+            <td><?php echo listone_hocvien($value['id_hoc_vien'])[0]['ten_hv'] ?></td>
+            <td><?php echo loadone_lop($value ['id_lop'])[0]['ten_lop'] ?></td>
             <td><?php echo $value ['gia_tien'] ?></td>
             <td><?php echo $value ['ngay_dk'] ?></td>
             <td style="color: blue"><?php if($value ['tinh_trang'] == 0) echo "Chưa thanh toán"; elseif($value ['tinh_trang'] == 1) echo "Đang xử lí"; elseif($value ['tinh_trang'] == 2) echo "Thanh Toán thành công" ?></td>
