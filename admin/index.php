@@ -10,7 +10,7 @@ session_start();
     include '../admin/model/binhluan.php';
     include '../admin/model/giohang.php';
     include '../admin/model/taikhoan_admin.php';
-
+    include '../admin/model/thongke.php';
 // file trang dao diện và các chức năng khác nằm ở đây
     include '../admin/header.php';
     if(isset($_GET['act'])){
@@ -510,6 +510,14 @@ session_start();
                     $listall_giohang = listall_giohang();
                 }
                 include '../admin/view/giohang/listgiohang.php';
+                break;
+            case 'thongke':
+                $listthongke = load_allthongke();
+                include "../admin/thongke.php";
+                break;
+            case 'list_thongke':
+                $listthongke = load_allthongke();
+                include "../admin/view/list_product_thong_ke.php";
                 break;
             default:
                 include '../admin/home.php';

@@ -36,6 +36,7 @@
     <link rel="stylesheet" href="../user/assets/css/app.min.css">
     <link rel="stylesheet" href="../user/assets/css/fontawesome.min.css">
     <link rel="stylesheet" href="../user/assets/css/style.css">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 </head>
 
 <body>
@@ -112,6 +113,7 @@
                                             <li><a href="index.php?act=list_lop">Lớp</a>
                                             <li><a href="index.php?act=list_giohang">Đơn hàng</a></li>
                                             <li><a href="index.php?act=list_binhluan">Bình Luận</a></li>
+                                            <li><a href="index.php?act=list_thongke">Thống kê</a></li>
                                         </ul>
                                     </nav>
 <!--                                    <button type="button" class="as-menu-toggle d-inline-block d-lg-none"><i-->

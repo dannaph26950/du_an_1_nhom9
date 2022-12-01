@@ -286,6 +286,7 @@ if (isset($_GET['act']) && ($_GET['act']) != ''){
             include '../view/thong_tin_user_kh.php';
             break;
 
+
 //        case 'locdanhmuc':
 //$listall_danhmuc=listall_danhmuc ();
 //

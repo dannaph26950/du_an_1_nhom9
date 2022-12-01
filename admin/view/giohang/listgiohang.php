@@ -46,7 +46,7 @@ if(isset($_SESSION['taikhoan'])){
             <td><?php echo $value ['id_lop'] ?></td>
             <td><?php echo $value ['gia_tien'] ?></td>
             <td><?php echo $value ['ngay_dk'] ?></td>
-            <td><?php if($value ['tinh_trang'] == 0) echo "Chưa thanh toán"; elseif($value ['tinh_trang'] == 1) echo "Đang xử lí"; elseif($value ['tinh_trang'] == 2) echo "Thanh Toán thành công" ?></td>
+            <td style="color: blue"><?php if($value ['tinh_trang'] == 0) echo "Chưa thanh toán"; elseif($value ['tinh_trang'] == 1) echo "Đang xử lí"; elseif($value ['tinh_trang'] == 2) echo "Thanh Toán thành công" ?></td>
 
 <!--            DẤU-->
             <td class="">
