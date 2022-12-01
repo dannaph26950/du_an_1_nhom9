@@ -14,4 +14,9 @@ function update_giohang($trangthai,$id){
         $sql = "UPDATE `dang_ky` SET `tinh_trang`='$trangthai' WHERE id_dang_ky = '$id'";
         pdo_execute($sql);
 }
+function listone_giohang($id){
+    $sql = "select * from dang_ky where id_hoc_vien=".$id;
+    $listone_giohang = pdo_query($sql);
+    return $listone_giohang ;
+}
 ?>

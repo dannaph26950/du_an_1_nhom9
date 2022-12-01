@@ -9,6 +9,7 @@ include '../model/giangvien.php';
 include '../model/taikhoan.php';
 include '../model/hocvien.php';
 include '../model/binhluan.php';
+include '../admin/model/giohang.php';
 include '../admin/model/gui_bang_chung.php';
 
 $listall_danhmuc = listall_danhmuc();
@@ -83,7 +84,8 @@ if (isset($_GET['act']) && ($_GET['act']) != ''){
                     $id_hoc_vien = $_POST['id_hoc_vien'];
                     $update = update_hocvien_idlop($id_lop,$id_hoc_vien);
                 }
-                echo "<script>alert('Bạn đã cập nhật lại lớp!!!')</script>";
+                echo "<script>alert('Đã thêm khóa học thành công. Vui lòng thanh toán!!!')</script>";
+                echo "<script>window.location.href='index.php?act=list_khoa_hoc';</script>";
 
             }else{
                 echo "<script>alert('Đăng ký hoặc đăng nhập thì mới được mua khóa học này')</script>";
@@ -157,27 +159,6 @@ if (isset($_GET['act']) && ($_GET['act']) != ''){
             include "../view/lienhe.php";
             break;
         case 'dang_nhap':
-//                              ---------------------------- ĐỪNG XÓA -------------------------------
-//            $error_dn = [];
-//            if (isset($_POST['dang_nhap'])){
-//
-//                $user = $_POST['tai_khoan'];
-//                $pass = $_POST['mat_khau'];
-//                $check_user = check_user($user);
-//                $tai_khoan = $check_user['tai_khoan'];
-//                $check_pass = check_pass($tai_khoan);
-////                echo $check_user['tai_khoan'];
-////                die();
-////                if($user != $check_user['tai_khoan']){
-////                    $error_dk["tai_khoan1"] = "Tài khoản không tồn tại";
-////                }
-//                if(empty($pass)){
-//                    $error_dk["mat_khau"] = "Vui lòng nhập mật khẩu";
-//                }
-//                if()
-//
-//            }
-
             if (isset($_POST['dang_nhap'])){
 
                 $user = $_POST['tai_khoan'];
@@ -204,15 +185,6 @@ if (isset($_GET['act']) && ($_GET['act']) != ''){
 //            GIỎ HÀNG
 //    ------------------------------------------------
         case 'cart':
-//            echo "<pre>";
-//            print_r(listone_khoahoc(44));
-//            die();
-//            if(isset($_GET['id']) && ($_GET['id']>0)){
-//                $id = $_GET['id'];
-//                $listone_khoahoc=listone_khoahoc($id);
-//                $list_lop = list_lop($id);
-//
-//            }
             if(isset($_GET['id']) && ($_GET['id']>0)){
                 $id = $_GET['id'];
                 $listone_khoahoc=listone_khoahoc($id);
@@ -222,16 +194,11 @@ if (isset($_GET['act']) && ($_GET['act']) != ''){
             $listall_khoahoc = listall_khoahoc();
             $listall_lop = listall_lop();
 
-//            if(isset($_POST['cart']) && ($_POST['cart'])){
-//                $ten_danh_muc = $_POST['ten_danh_muc'];
-//                insert_danhmuc($ten_danh_muc);
-//                $thongbao = 'Đã thêm vào danh mục';
-//            }
             include '../view/dangky_kh.php';
             break;
 
 
-//            TƯ VẤN :
+//            TƯ VẤN -------------------------------------
 
 //        case 'tuvan':
 //            if(isset($_GET['id']) && ($_GET['id']>0)){
@@ -242,11 +209,6 @@ if (isset($_GET['act']) && ($_GET['act']) != ''){
 //
 //            include "../view/tuvan.php";
 
-//            DANH SÁCH YÊU THÍCH
-//------------------------------------------------
-        case 'wishlist':
-            include '../view/wishlist.php';
-            break;
         case 'profile':
             if(isset($_SESSION['user']['id_hoc_vien'])){
                 $listone_hocvien = listone_hocvien($_SESSION['user']['id_hoc_vien']);
@@ -278,61 +240,26 @@ if (isset($_GET['act']) && ($_GET['act']) != ''){
             include '../view/profile_user.php';
             break;
         case 'list_khoa_hoc':
+            if(isset($_POST['add_hoadon']) && ($_POST['add_hoadon'])) {
+                $id = $_POST['id'];
+                if ( isset( $_FILES['image'] ) ) {
+                    $tagert_dir = "../Upfileanh/hoadon/";
+                    $name_image = $_FILES['image']['name'];
+                    $tagert_file = $tagert_dir . $name_image;
+                    $maxfilesize = 800000;
+                    $allowtypes = ['jpg' , 'png' , 'gif' , 'jpeg'];
+                    $imageFileType = pathinfo ( $tagert_file , PATHINFO_EXTENSION );
+                    move_uploaded_file ( $_FILES['image']['tmp_name'] , $tagert_file );
+                    }
+                insert_hoadon($name_image,$id);
+                $thongbao="gửi hóa đơn thành công";
+            }
             if(isset($_SESSION['user']['id_hoc_vien'])){
-                $listone_hocvien = listone_hocvien($_SESSION['user']['id_hoc_vien']);
-
+                $listone_giohang = listone_giohang($_SESSION['user']['id_hoc_vien']);
             }
             $listall_danhmuc=listall_danhmuc ();
             include '../view/thong_tin_user_kh.php';
             break;
-//        case 'anh_bang_chung':
-////            echo update_guibangchung($sql);
-////            var_dump($update_bangchung); die();
-//            if(isset($_POST['add_bangchung']) && ($_POST['add_bangchung'])){
-//                $id_hoc_vien = $_POST['id_hv'];
-//                if (isset($_FILES['hinh_anh'])){
-//                    $tagert_dir = "../Upfileanh/anh_bangchung/";
-//                    $name_image = $_FILES['hinh_anh']['name'];
-//                    $tagert_file = $tagert_dir.$name_image;
-//                    $maxfilesize = 800000;
-//                    $allowtypes = ['jpg', 'png', 'gif', 'jpeg'];
-//                    $allowupload = true;
-//                    $imageFileType = pathinfo($tagert_file,PATHINFO_EXTENSION);
-//                    if ($_FILES['hinh_anh']['size'] > $maxfilesize){
-//                        $error_update_giangvien['imgSize'] = " Không được upload ảnh lớn hơn ".$maxfilesize."Byte";
-//                        $allowupload = false;
-//                    }
-//
-//                    if (!in_array($imageFileType,$allowtypes)){
-//                        $error_update_giangvien['imgType'] = "Chỉ được upload các định dạng JPG , PNG , GIF , JPEG<br>";
-//                        $allowupload = false;
-//                    }
-//                    if ($allowupload == true){
-//                        // Xử lý di chuyển ảnh từ máy tính sang server
-//                        // dung ham move_upload_file
-//                        if (move_uploaded_file($_FILES['hinh_anh']['tmp_name'],$tagert_file)){
-////                                echo " Upload thành công ".$_FILES['hinh_gv']['tmp_name']."<br>";
-//                        }else{
-//                            echo "Lỗi khi đang thực hiện upload<br>";
-//                        }
-//                    }
-//                }
-//                $update_bangchung=update_guibangchung($name_image,$id_hoc_vien);
-//                echo "<script>alert('Gửi ảnh bằng chứng thành công, vui lòng chờ 1-2 ngày check email')</script>";
-//            };
-//            include '../view/index.php';
-//            break;
-
-//        case 'locdanhmuc':
-//$listall_danhmuc=listall_danhmuc ();
-//
-//            if(isset($_GET['id']) && ($_GET['id']>0)){
-//                $id = $_GET['id'];
-//                $listcate_khoahoc  =listcate_khoahoc($id);
-//
-//            }
-//            include '../view/locdanhmuc.php';
-//            break;
         default:
             include '../view/home.php';
     }

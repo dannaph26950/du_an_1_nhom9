@@ -27,9 +27,6 @@
                                         <a href="course.html"><i
                                         class="far fa-clock"></i> Thời Gian Học: <?php echo $value['thoi_gian_hoc'] ?></a>
                             <div class="course-rating">
-<!--                                <div class="star-rating" role="img" aria-label="Rated 4.00 out of 5"><span-->
-<!--                                            style="width:90%">Rated <strong class="rating">5.00</strong> out of 5</span>-->
-<!--                                </div>(4.80)-->
                             </div>
                         </div>
                     </div>
@@ -63,29 +60,18 @@
                                         <th>Tên Lớp</th>
                                         <th>Thời Gian Khai Giảng</th>
                                         <th>Địa Điểm Học</th>
+                                        <th>Số lượng</th>
                                         <th>Tên Giáo Viên</th>
                                         <th>Trạng Thái</th>
-                                        <th></th>
                                     </tr>
                                     </thead>
                                     <tbody>
                                     <?php  foreach ($list_lop as $key=>$value) {?>
-<!--                                        <tr>-->
-<!--                                            <td>--><?php //echo loadone_lop($value['id_lop'])[0]['ten_lop'] ?><!--</td>-->
-<!--                                            <td>--><?php //echo  loadone_lop($value['id_lop'])[0]['thoi_gian_khai_giang'] ?><!--</td>-->
-<!--                                            <td>--><?php //echo  loadone_lop($value['id_lop'])[0]['dia_diem_hoc'] ?><!--</td>-->
-<!--                                            <td>--><?php //echo listone_giangvien(loadone_lop($value['id_lop'])[0]['magv'])[0]['ten_gv']; ?><!--</td>-->
-<!---->
-<!--                                            <td class="">-->
-<!--                                                <input value="Đăng Kí" name="dangki" type="button" class="btn btn-primary start-50" onclick="location.href='index.php?act=giang_vien'" ><br><br>-->
-<!--                                            </td>-->
-<!---->
-<!--                                        </tr>-->
-
                                         <tr>
                                             <td><?php echo $value['ten_lop'] ?></td>
                                             <td><?php echo $value['thoi_gian_khai_giang'] ?></td>
                                             <td><?php echo $value['dia_diem_hoc'] ?></td>
+                                            <td><?php echo $value['so_luong'] ?>/40</td>
                                             <td><?php echo listone_giangvien(loadone_lop($value['id_lop'])[0]['magv'])[0]['ten_gv']; ?></td>
 
                                             <td class="">
@@ -116,9 +102,6 @@
                                 </p>
 
                             </div>
-                            <?php
-//                            foreach ($list_lop as $index => $value){
-                            ?>
                             <div class="tab-pane fade" id="instructor" role="tabpanel"
                                  aria-labelledby="instructor-tab">
                                 <div class="course-instructor">
@@ -170,10 +153,6 @@
                                                 });
                                             </script>
                                             <div class="box-row" id="binhluan">
-                                                <!--            <div class="box-title">BÌNH LUẬN</div>-->
-                                                <!--            <div class="box-content">-->
-                                                <!--                <iframe src="../view/binhluan/binhluanform.php?id_bl=--><?php //echo $value['id'] ?><!--" frameborder="0" width="100%" height="300px"></iframe>-->
-                                                <!--            </div>-->
                                             </div>
                                         <?php } ?>
                                     </div>
@@ -183,9 +162,6 @@
                                     </div>
                                 </div>
                             </div>
-                            <?php
-//                            }else{
-                                ?>
 <!--                                    che dấu-->
                                 <div class="tab-pane fade" id="reviews" role="tabpanel" aria-labelledby="reviews-tab" style="display: none">
                                 <div class="course-Reviews">
@@ -215,9 +191,6 @@
                                     </div>
                                 </div>
                             </div>
-                            <?php
-//                            }
-                            ?>
                         </div>
                     </div>
                 </div>
@@ -236,7 +209,7 @@
                         <div class="info-list">
                             <ul>
                                 <li><i class="fa-light fa-user"></i> <strong>Giảng Viên: </strong><span><?php echo listone_giangvien(loadone_lop($value['id_lop'])[0]['magv'])[0]['ten_gv']; ?></span></li>
-                                <li><i class="fa-light fa-file"></i> <strong>Mã khóa học</strong><span><?php echo $value['id_danh_muc']; ?></span></li>
+                                <li><i class="fa-light fa-file"></i> <strong>Mã khóa học: </strong><span><?php echo $value['id_danh_muc']; ?></span></li>
                                 <li><i class="fa-light fa-clock"></i> <strong>Thời Gian: </strong><span> <?php echo $value['thoi_gian_hoc'] ?>
                                             </span></li>
                                 <li><i class="fa-light fa-tag"></i> <strong>Cấp Độ:

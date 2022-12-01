@@ -27,30 +27,24 @@
                 <table class="table table-bordered">
                     <thead>
                         <tr>
-                            <th>ID học viên</th>
-                            <th>Tên học viên</th>
-                            <th>Tài khoản</th>
-                            <th>Mật khẩu</th>
-                            <th>Email </th>
-                            <th>SĐT</th>
-                            <th>Địa chỉ</th>
-                            <th>Mã lớp</th>
-                            <th>Tên lớp</th>
+                            <th>Mã Đăng Ký</th>
+                            <th>Tên Học Viên</th>
+                            <th>Tên Lớp</th>
+                            <th>Giá Tiền</th>
+                            <th>Thời Gian Đăng Ký</th>
+                            <th>Trạng Thái</th>
                         </tr>
                     </thead>
                     <tbody>
                         <?php
-                        foreach ($listone_hocvien as $key => $value) { ?>
+                        foreach ($listone_giohang as $key => $value) { ?>
                             <tr>
-                                <td><?php echo $value['id_hoc_vien'] ?></td>
-                                <td><?php echo $value['ten_hv'] ?></td>
-                                <td><?php echo $value['tai_khoan'] ?></td>
-                                <td><?php echo $value['mat_khau'] ?></td>
-                                <td><?php echo $value['email'] ?></td>
-                                <td><?php echo $value['sdt'] ?></td>
-                                <td><?php echo $value['dia_chi'] ?></td>
-                                <td><?php echo $value['id_lop'] ?></td>
+                                <td><?php echo $value['id_dang_ky'] ?></td>
+                                <td><?php echo listone_hocvien($value['id_hoc_vien'])[0]['ten_hv'] ?></td>
                                 <td><?php echo listone_lop_tenlop($value['id_lop'])[0]['ten_lop'] ?></td>
+                                <td><?php echo $value['gia_tien'] ?></td>
+                                <td><?php echo $value['ngay_dk'] ?></td>
+                                <td><?php if($value ['tinh_trang'] == 0) echo "Chưa thanh toán"; elseif($value ['tinh_trang'] == 1) echo "Đang xử lí"; elseif($value ['tinh_trang'] == 2) echo "Thanh Toán thành công"  ?></td>
                             </tr>
                         <?php } ?>
                     </tbody>
@@ -62,11 +56,6 @@
                     <h2 class="h4 summary-title">Đơn đăng kí </h2>
                     <table class="cart_totals">
                         <tbody>
-                            <tr>
-                                <td>Giá khóa học</td>
-                                <td data-title="Cart Subtotal"><span class="amount"><bdi><span>$</span>47</bdi></span>
-                                </td>
-                            </tr>
                             <tr class="shipping">
                                 <th>Quét bằng mã QR</th>
                                 <td data-title="Shipping and Handling">
@@ -80,20 +69,25 @@
                             </tr>
                         </tbody>
                         <tfoot>
-<!--                        <form action="index.php?act=anh_bang_chung" method="post" enctype="multipart/form-data">-->
-<!--                            <tr class="order-total">-->
-<!--                                <td>Gửi bằng chứng</td>-->
-<!--                                  <input type="hidden" id="id_hv" value="--><?php //echo $_SESSION['user']['id_hoc_vien']; ?><!--">-->
-<!--                                    <td data-title="Total"> <input type="file" id="hinh_anh" value="0" > </td>-->
-<!---->
-<!--                            </tr>-->
+                        <form action="index.php?act=list_khoa_hoc" method="post" enctype="multipart/form-data">
+                            <tr class="order-total">
+                                <td>Gửi hóa đơn</td>
+                                  <input type="hidden" id="id_hv" name="id" value="<?php echo listone_giohang($_SESSION['user']['id_hoc_vien'])[0]['id_dang_ky'] ?>">
+                                    <td data-title="Total"> <input type="file" id="hinh_anh" value="0" name="image" > </td>
+                            </tr>
                         </tfoot>
                     </table>
-<!--                    <div class="wc-proceed-to-checkout mb-30">-->
-<!--                        <a href="index.php?act=profile"><input type="submit" value="Gửi" name="add_bangchung" class="btn btn-primary" style="width: 200px; margin: 0px 20px" ></a>-->
-<!---->
-<!--                    </div>-->
-<!--                    </form>-->
+                    <div class="wc-proceed-to-checkout mb-30">
+                        <a href="index.php?act=list_khoa_hoc"><input type="submit" value="Gửi" name="add_hoadon" class="btn btn-primary" style="width: 200px; margin: 0px 20px" ></a>
+                        <span style="color: red">
+                            <?php
+                            if (isset($thongbao) && ($thongbao != '')){
+                                echo $thongbao;
+                            }
+                            ?>
+                        </span>
+                    </div>
+                    </form>
                 </div>
             </div>
         </div>

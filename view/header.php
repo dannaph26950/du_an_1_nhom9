@@ -39,9 +39,6 @@
 </head>
 
 <body>
-<!--<div class="preloader"><button class="as-btn style3 preloaderCls">Cancel Preloader</button>-->
-<!--    <div class="preloader-inner"><span class="loader"></span></div>-->
-<!--</div>-->
 <div class="as-menu-wrapper">
     <div class="as-menu-area text-center"><button class="as-menu-toggle"><i class="fal fa-times"></i></button>
         <div class="mobile-logo"><a href="index.html"><img src="../user/assets/img/logo.svg" alt="Acadu"></a></div>
@@ -188,7 +185,7 @@
                                     <?php if(isset($_SESSION['user'])){
 
                                     ?>
-                                        <a href="index.php?act=profile">Xin chao, <?php echo $_SESSION['user']['ten_hv'] ?></a>
+                                        <a href="index.php?act=profile">Trang cá nhân, <?php echo $_SESSION['user']['ten_hv'] ?></a>
                                     <?php
                                      }else{
                                         ?>
