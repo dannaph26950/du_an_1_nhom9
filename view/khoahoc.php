@@ -23,61 +23,47 @@
 
             </div>
         </div>
-        <div class="tab-content" id="nav-tabContent">
-            <div class="tab-pane fade active show" id="tab-grid" role="tabpanel" aria-labelledby="tab-course-grid">
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade active show" id="tab-grid" role="tabpanel" aria-labelledby="tab-course-grid">
                 <div class="row gy-4 mb-30">
                     <?php
                     foreach($list_khoahoc as $index => $value){
                     ?>
-                    <div class="col-md-6 col-lg-3 col-xxl-3 "  >
+                        <div class="col-md-6 col-lg-3 col-xxl-3 ">
 
-                    <div class="course-box " style="background-color: #C6E2FF">
-                        <div style="height: 450px">
-                            <div class="course-img"><a href="index.php?act=ct_khoahoc&id=<?php echo $value['id_khoa_hoc'] ?>"><img src="../Upfileanh/<?php echo listone_khoahoc($value['id_khoa_hoc'])[0]['anh'] ?>" alt="course" style="width: 200px;height: 200px" ></a> <span
-                                        class="tag"><?php echo $value['gia'] ?></span></div>
-                            <div class="course-content">
-                                <div class="course-author">
-                                    <div class="author-info"><img src="../Upfileanh/giangvien/<?php echo listone_giangvien(loadone_lop($value['id_lop'])[0]['magv'])[0]['hinh_gv']; ?>" alt="author" style="width: 50px;height: 50px"> <a
-                                                href="index.php?act=giangvien" class="author-name"><?php echo listone_giangvien(loadone_lop($value['id_lop'])[0]['magv'])[0]['ten_gv']; ?></a></div>
-<!--                                    <div class="course-rating">-->
-<!--                                        <div class="star-rating" role="img" aria-label="Rated 5.00 out of 5"><span-->
-<!--                                                    style="width:79%">Rated <strong class="rating">3.00</strong> out of 5</span>-->
-<!--                                        </div>-->
-<!--                                        (4.00)-->
-<!--                                    </div>-->
-                                </div>
+                            <div class="course-box " style="background-color: #C6E2FF">
+                                <div style="height: 450px;">
+                                    <div class="course-img"><img src="../Upfileanh/<?php echo listone_khoahoc($value['id_khoa_hoc'])[0]['anh'] ?>" alt="course" style="width: 200px;height: 200px" > <span
+                                                class="tag"><?php echo $value['gia'] ?></span></div>
+                                    <div class="course-content">
+                                        <div class="course-author">
+                                            <div class="author-info"><img src="../Upfileanh/giangvien/<?php echo listone_giangvien(loadone_lop($value['id_lop'])[0]['magv'])[0]['hinh_gv']; ?>" alt="author" style="width: 50px;height: 50px"> <a
+                                                        href="index.php?act=ct_khoahoc&id=<?php echo $value['id_khoa_hoc'] ?>" class="author-name"><?php echo listone_giangvien(loadone_lop($value['id_lop'])[0]['magv'])[0]['ten_gv']; ?></a></div>
 
-                                <div>
+                                        </div>
 
-                                    <h3 class="course-title"><a href="index.php?act=ct_khoahoc&id=<?php echo $value['id_khoa_hoc'] ?>"><?php echo $value['ten_khoa_hoc'] ?></a></h3>
-                                    <div>
+                                        <div>
+
+                                            <h3 class="course-title"><a href="index.php?act=ct_khoahoc&id=<?php echo $value['id_khoa_hoc'] ?>"><?php echo $value['ten_khoa_hoc'] ?></a></h3>
+                                            <div>
+
+                                            </div>
+                                            <div class="course-meta"><span><i class="fal fa-file"></i><?php echo $value['thoi_gian_hoc'] ?></span> <span><i
+                                                            class="fal fa-user"></i>Sinh viên <?php echo loadone_lop($value['id_lop'])[0]['so_luong'] ?></span></div>
+
+
+                                        </div>
 
                                     </div>
-                                    <div class="course-meta"><span><i class="fal fa-file"></i><?php echo $value['thoi_gian_hoc'] ?></span> <span><i
-                                                    class="fal fa-user"></i>Sinh viên <?php echo loadone_lop($value['id_lop'])[0]['so_luong'] ?></span></div>
-
-
                                 </div>
-
                             </div>
                         </div>
-                    </div>
-                </div>
                     <?php }?>
                 </div>
 
             </div>
         </div>
             </div>
-
-<!--            <div class="col-xxl-3 col-lg-4"><h4>DANH MỤC</h4>-->
-<!---->
-<!--                --><?php //foreach ($listall_danhmuc as $key =>$value) { ?>
-<!--                <a href="index.php?act=locdanhmuc&id=--><?php //echo $value['id_danh_muc']?><!--">--><?php //echo $value['ten_danh_muc'];   ?><!--</a><br>-->
-<!--                    <br>-->
-<!--                --><?php //}?>
-<!--            </div>-->
-<!--        </div>-->
     </div>
 </section>
 <?php  if(isset($_SESSION['user'])){ ?>
