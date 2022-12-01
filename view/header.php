@@ -5,7 +5,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>AAA</title>
+    <title>ACADU</title>
     <meta name="author" content="Angfuzsoft">
     <meta name="description" content="Acadu - Online Courses & Education HTML Template">
     <meta name="keywords" content="Acadu - Online Courses & Education HTML Template">

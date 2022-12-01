@@ -3,10 +3,24 @@ if(isset($_SESSION['taikhoan'])){
     ?>
 <center><h1 style="margin: 60px 0px">DANH SÁCH ĐƠN HÀNG</h1></center>
 <div style="text-align: center; margin: 60px 0px">
-    <a href="index.php?act=list_giohang"></a>
+
+    <form action="index.php?act=list_giohang" method="post">
+        <div class="input-group" style="margin-left: 1150px">
+            <div class="form-outline">
+                <select id="form1" class="form-control" name="tt">
+                    <option value="">Chọn Trạng Thái</option>
+                    <option value="2">Thanh Toán Thành Công</option>
+                    <option value="1">Đang Xử Lí</option>
+                    <option value="0">Chưa Thanh Toán</option>
+                </select>
+            </div>
+            <button type="submit" name="tinh_trang" class="btn btn-primary" style="height: 55px">
+                <i class="fas fa-search"></i>
+            </button>
+        </div>
+    </form>
 
 </div>
-
 <div class="container">
     <table class="table table-bordered">
         <thead>
@@ -32,11 +46,11 @@ if(isset($_SESSION['taikhoan'])){
             <td><?php echo $value ['id_lop'] ?></td>
             <td><?php echo $value ['gia_tien'] ?></td>
             <td><?php echo $value ['ngay_dk'] ?></td>
-            <td><?php if($value ['tinh_trang'] == 1) echo "Chưa thanh toán"; elseif($value ['tinh_trang'] == 2) echo "Đang xử lí"; elseif($value ['tinh_trang'] == 3) echo "Thanh Toán thành công" ?></td>
+            <td><?php if($value ['tinh_trang'] == 0) echo "Chưa thanh toán"; elseif($value ['tinh_trang'] == 1) echo "Đang xử lí"; elseif($value ['tinh_trang'] == 2) echo "Thanh Toán thành công" ?></td>
 
 <!--            DẤU-->
             <td class="">
-                <input value="Cập Nhật" type="button" class="btn btn-primary start-50" onclick="location.href='index.php?act=sua_don_hang&id=<?php echo $value['id_dang_ki'] ?>//'" >
+                <input value="Cập Nhật" type="submit" class="btn btn-primary start-50" onclick="location.href='index.php?act=edit_giohang&id=<?php echo $value['id_dang_ky'] ?>'" >
             </td>
 <!--DẤU-->
         </tr>

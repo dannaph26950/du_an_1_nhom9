@@ -468,7 +468,7 @@ session_start();
                 $listone_binhluan= listone_binhluan($id_binhluan);
                 }
                 include "../admin/view/binhluan/editbinhluan.php";
-
+                break;
             case 'update_binhluan':
                 if(isset($_POST['update_binhluan']) && ($_POST['update_binhluan'])){
                     $id_binhluan = $_POST['id'];
@@ -484,7 +484,31 @@ session_start();
                 break;
 //        giỏ hàng --------------------------------------------------
             case 'list_giohang':
-                $listall_giohang = listall_giohang() ;
+                if(isset($_POST['tinh_trang'])){
+                $tinh_trang = $_POST['tt'];
+                $listall_giohang = list_giohang($tinh_trang);
+                }
+                else{
+                    $listall_giohang = listall_giohang();
+                }
+                include '../admin/view/giohang/listgiohang.php';
+                break;
+            case 'edit_giohang':
+                include '../admin/view/giohang/editgiohang.php';
+                break;
+            case 'update_giohang':
+                if(isset($_POST['update_giohang'])){
+                    $trangthai = $_POST['t_t'];
+                    $id = $_POST['id'];
+                    update_giohang($trangthai,$id);
+                }
+                if(isset($_POST['tinh_trang'])){
+                    $tinh_trang = $_POST['tt'];
+                    $listall_giohang = list_giohang($tinh_trang);
+                }
+                else{
+                    $listall_giohang = listall_giohang();
+                }
                 include '../admin/view/giohang/listgiohang.php';
                 break;
             default:

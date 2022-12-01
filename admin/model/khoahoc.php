@@ -25,8 +25,6 @@ function update_khoahoc($ten_khoa_hoc,$name_image, $gia, $thoi_gian_hoc, $mo_ta,
 {
     $sql = "UPDATE `khoa_hoc` SET `ten_khoa_hoc`='$ten_khoa_hoc',`anh`='$name_image',`gia`='$gia',`thoi_gian_hoc`='$thoi_gian_hoc',`mo_ta`='$mo_ta',`id_danh_muc`='$id_danh_muc',`id_lop`='$id_lop' WHERE id_khoa_hoc = '$id'";
 
-//    echo $sql;
-//    die();
     pdo_execute($sql);
 }
 
