@@ -4,18 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cc6cba04-603a-4918-b721-0684c76f7a58" name="Changes" comment="sửa lại file đăng kí bên trái trong file ctkhoahoc list ra các lớp để đăng kí">
-      <change afterPath="$PROJECT_DIR$/admin/model/thongke.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/thongke.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/view/list_product_thong_ke.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_24_11_2022_4_47_AM_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_24_11_2022_4_47_AM__Changes_.xml" beforeDir="false" />
+    <list default="true" id="cc6cba04-603a-4918-b721-0684c76f7a58" name="Changes" comment="biểu đồ thống kê danh mục và sửa css">
+      <change afterPath="$PROJECT_DIR$/admin/model/gui_bang_chung.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_24_11_2022_17_16_PM_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_24_11_2022_17_16_PM__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/view/giohang/listgiohang.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/giohang/listgiohang.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/assets/css/profile.css" beforeDir="false" afterPath="$PROJECT_DIR$/view/assets/css/profile.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/view/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/thong_tin_user_kh.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/thong_tin_user_kh.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -154,7 +150,9 @@
       <workItem from="1669812143494" duration="1819000" />
       <workItem from="1669821508594" duration="562000" />
       <workItem from="1669822090402" duration="10402000" />
-      <workItem from="1669870268392" duration="3746000" />
+      <workItem from="1669870268392" duration="11867000" />
+      <workItem from="1669891510956" duration="985000" />
+      <workItem from="1669894177587" duration="885000" />
     </task>
     <task id="LOCAL-00001" summary="update files add">
       <created>1668688059236</created>
@@ -303,7 +301,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669828195136</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="biểu đồ thống kê danh mục và sửa css">
+      <created>1669874602751</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1669874602751</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -338,7 +343,23 @@
     <MESSAGE value="create profile user , update id lớp dựa theo id học viên" />
     <MESSAGE value="fix lại file lọc danh mục của đan với cả update lại khi click vào đăng kí nó ra trang ctkhoahoc" />
     <MESSAGE value="sửa lại file đăng kí bên trái trong file ctkhoahoc list ra các lớp để đăng kí" />
-    <option name="LAST_COMMIT_MESSAGE" value="sửa lại file đăng kí bên trái trong file ctkhoahoc list ra các lớp để đăng kí" />
+    <MESSAGE value="biểu đồ thống kê danh mục và sửa css" />
+    <option name="LAST_COMMIT_MESSAGE" value="biểu đồ thống kê danh mục và sửa css" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php-line-method">
+          <url>file://$PROJECT_DIR$/admin/model/loaikhoahoc.php</url>
+          <line>1</line>
+          <properties>
+            <option name="className" value="" />
+            <option name="methodName" value="\insert_danhmuc" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

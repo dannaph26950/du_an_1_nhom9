@@ -9,6 +9,7 @@ include '../model/giangvien.php';
 include '../model/taikhoan.php';
 include '../model/hocvien.php';
 include '../model/binhluan.php';
+include '../admin/model/gui_bang_chung.php';
 
 $listall_danhmuc = listall_danhmuc();
 include 'header.php';
@@ -281,11 +282,46 @@ if (isset($_GET['act']) && ($_GET['act']) != ''){
                 $listone_hocvien = listone_hocvien($_SESSION['user']['id_hoc_vien']);
 
             }
-
             $listall_danhmuc=listall_danhmuc ();
             include '../view/thong_tin_user_kh.php';
             break;
-
+//        case 'anh_bang_chung':
+////            echo update_guibangchung($sql);
+////            var_dump($update_bangchung); die();
+//            if(isset($_POST['add_bangchung']) && ($_POST['add_bangchung'])){
+//                $id_hoc_vien = $_POST['id_hv'];
+//                if (isset($_FILES['hinh_anh'])){
+//                    $tagert_dir = "../Upfileanh/anh_bangchung/";
+//                    $name_image = $_FILES['hinh_anh']['name'];
+//                    $tagert_file = $tagert_dir.$name_image;
+//                    $maxfilesize = 800000;
+//                    $allowtypes = ['jpg', 'png', 'gif', 'jpeg'];
+//                    $allowupload = true;
+//                    $imageFileType = pathinfo($tagert_file,PATHINFO_EXTENSION);
+//                    if ($_FILES['hinh_anh']['size'] > $maxfilesize){
+//                        $error_update_giangvien['imgSize'] = " Không được upload ảnh lớn hơn ".$maxfilesize."Byte";
+//                        $allowupload = false;
+//                    }
+//
+//                    if (!in_array($imageFileType,$allowtypes)){
+//                        $error_update_giangvien['imgType'] = "Chỉ được upload các định dạng JPG , PNG , GIF , JPEG<br>";
+//                        $allowupload = false;
+//                    }
+//                    if ($allowupload == true){
+//                        // Xử lý di chuyển ảnh từ máy tính sang server
+//                        // dung ham move_upload_file
+//                        if (move_uploaded_file($_FILES['hinh_anh']['tmp_name'],$tagert_file)){
+////                                echo " Upload thành công ".$_FILES['hinh_gv']['tmp_name']."<br>";
+//                        }else{
+//                            echo "Lỗi khi đang thực hiện upload<br>";
+//                        }
+//                    }
+//                }
+//                $update_bangchung=update_guibangchung($name_image,$id_hoc_vien);
+//                echo "<script>alert('Gửi ảnh bằng chứng thành công, vui lòng chờ 1-2 ngày check email')</script>";
+//            };
+//            include '../view/index.php';
+//            break;
 
 //        case 'locdanhmuc':
 //$listall_danhmuc=listall_danhmuc ();
