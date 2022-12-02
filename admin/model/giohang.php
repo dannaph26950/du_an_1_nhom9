@@ -19,4 +19,9 @@ function listone_giohang($id){
     $listone_giohang = pdo_query($sql);
     return $listone_giohang ;
 }
+function listone_gio_hang($id){
+    $sql = "select * from dang_ky where id_dang_ky=".$id;
+    $listone_giohang = pdo_query($sql);
+    return $listone_giohang ;
+}
 ?>

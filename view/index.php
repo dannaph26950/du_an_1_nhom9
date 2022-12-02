@@ -1,6 +1,7 @@
 <?php
 //trang user
 session_start();
+date_default_timezone_set('Asia/Ho_Chi_Minh');
 include '../model/pdo.php';
 include '../model/khoahoc.php';
 include '../model/lop.php';
@@ -37,6 +38,7 @@ if (isset($_GET['act']) && ($_GET['act']) != ''){
                 $list_khoahoc = listall_khoahoc();
                 $listall_danhmuc = listall_danhmuc();
             }
+
             include '../view/khoahoc.php';
             break;
         case 'ct_khoahoc':
@@ -46,21 +48,11 @@ if (isset($_GET['act']) && ($_GET['act']) != ''){
                 $list_danhmuc = listone_danhmuc($id);
                 $list_lop = list_lop($id);
             }
-
-
-//            $id = listone_lop_tenlop($_SESSION['user']['id_lop']);
-//
-//            echo "<pre>";
-//            print_r($id);
-//            die();
             $listall_khoahoc = listall_khoahoc();
             $listall_lop = listall_lop();
-
-//            $list_lop = loadone_lop(131)[0]['ten_lop'];
-
             include '../view/ctkhoahoc.php';
             break;
-        case 'update_idlop':
+        case 'add_lop':
             if(isset($_POST['timkiem']) && ($_POST['timkiem'])){
                 $tukhoa = $_POST['search'];
                 $listall_lop = listall_lop();
@@ -80,9 +72,13 @@ if (isset($_GET['act']) && ($_GET['act']) != ''){
             //làm validate khi ko có user
             if(isset($_SESSION['user'])){
                 if(isset($_POST['dangki'])){
+                    $id = $_POST['id_hv'];
                     $id_lop = $_POST['id_lop'];
-                    $id_hoc_vien = $_POST['id_hoc_vien'];
-                    $update = update_hocvien_idlop($id_lop,$id_hoc_vien);
+                    $gia = $_POST['gia'];
+                    $trang_thai = $_POST['trang_thai'];
+                    $times = time();
+                    $times = strftime('%Y-%m-%d %H:%M:%S');
+                    insert_dangki($id, $id_lop, $gia, $trang_thai,$times);
                 }
                 echo "<script>alert('Đã thêm khóa học thành công. Vui lòng thanh toán!!!')</script>";
                 echo "<script>window.location.href='index.php?act=list_khoa_hoc';</script>";
@@ -94,19 +90,41 @@ if (isset($_GET['act']) && ($_GET['act']) != ''){
             // hết
             include '../view/khoahoc.php';
             break;
+        case 'thanh_toan':
+//            echo '<pre>';
+//            print_r($_SESSION['user']);
+//            print_r(listone_gio_hang(11)) ;
+//            echo $_GET['id'];
+//            die();
+
+            if(isset($_GET['id']) && ($_GET['id']>0)){
+                $id_dk = $_GET['id'];
+                $listone_giohang = listone_gio_hang($id_dk);
+            }
+            $listall_danhmuc=listall_danhmuc();
+            include '../view/thanh_toan.php';
+            break;
+        case 'update_thanh_toan':
+            if(isset($_POST['update_hoadon']) && ($_POST['update_hoadon'])) {
+                $id = $_POST['id'];
+                if ( isset( $_FILES['image'] ) ) {
+                    $tagert_dir = "../Upfileanh/hoadon/";
+                    $name_image = $_FILES['image']['name'];
+                    $tagert_file = $tagert_dir . $name_image;
+                    $maxfilesize = 800000;
+                    $allowtypes = ['jpg' , 'png' , 'gif' , 'jpeg'];
+                    $imageFileType = pathinfo ( $tagert_file , PATHINFO_EXTENSION );
+                    move_uploaded_file ( $_FILES['image']['tmp_name'] , $tagert_file );
+                }
+                insert_hoadon($name_image,$id);
+                $thongbao="gửi hóa đơn thành công";
+            }
+            include '../view/thong_tin_user_kh.php';
+            break;
 //      giang vien------------------------------------
 
         case 'giangvien':
             $listall_giangvien = listall_giangvien();
-//            $list_lop_magv = list_lop_magv(3);
-//            $count_lop = count($list_lop_magv);
-
-//            $listone_giangvien = listone_giangvien(3)[0]['magv'];
-//            $loadone_lop = loadone_lop(listone_giangvien(3)[0]['magv'])[0]['id_lop'];
-
-//            echo "<pre>";
-//            print_r($count_lop);
-//            die();
             include '../view/giangvien.php';
             break;
         case 'ct_giangvien':
@@ -116,7 +134,7 @@ if (isset($_GET['act']) && ($_GET['act']) != ''){
             }
             include '../view/ctgiangvien.php';
             break;
-//dang_ky
+//      Đăng Ký-----------------------------------------
         case 'add_dangky':
             $error_dk = [];
             if(isset($_POST['dang_ky']) && ($_POST['dang_ky'])){
@@ -179,11 +197,7 @@ if (isset($_GET['act']) && ($_GET['act']) != ''){
             session_unset();
             echo "<script>window.location.href='index.php';</script>";
             break;
-
-
-
-//            GIỎ HÀNG
-//    ------------------------------------------------
+//      GIỎ HÀNG-----------------------------
         case 'cart':
             if(isset($_GET['id']) && ($_GET['id']>0)){
                 $id = $_GET['id'];
@@ -196,19 +210,6 @@ if (isset($_GET['act']) && ($_GET['act']) != ''){
 
             include '../view/dangky_kh.php';
             break;
-
-
-//            TƯ VẤN -------------------------------------
-
-//        case 'tuvan':
-//            if(isset($_GET['id']) && ($_GET['id']>0)){
-//                $id = $_GET['id'];
-//                $listone_hocvien=listone_hocvien($id);
-//
-//            }
-//
-//            include "../view/tuvan.php";
-
         case 'profile':
             if(isset($_SESSION['user']['id_hoc_vien'])){
                 $listone_hocvien = listone_hocvien($_SESSION['user']['id_hoc_vien']);
@@ -216,7 +217,6 @@ if (isset($_GET['act']) && ($_GET['act']) != ''){
             include '../view/profile_user.php';
             break;
         case 'edit_thong_tin':
-//            var_dump($_SESSION['user']['id_hoc_vien']); die();
             if(isset($_SESSION['user']['id_hoc_vien'])){
                 $listone_hocvien = listone_hocvien($_SESSION['user']['id_hoc_vien']);
             }
@@ -240,20 +240,6 @@ if (isset($_GET['act']) && ($_GET['act']) != ''){
             include '../view/profile_user.php';
             break;
         case 'list_khoa_hoc':
-            if(isset($_POST['add_hoadon']) && ($_POST['add_hoadon'])) {
-                $id = $_POST['id'];
-                if ( isset( $_FILES['image'] ) ) {
-                    $tagert_dir = "../Upfileanh/hoadon/";
-                    $name_image = $_FILES['image']['name'];
-                    $tagert_file = $tagert_dir . $name_image;
-                    $maxfilesize = 800000;
-                    $allowtypes = ['jpg' , 'png' , 'gif' , 'jpeg'];
-                    $imageFileType = pathinfo ( $tagert_file , PATHINFO_EXTENSION );
-                    move_uploaded_file ( $_FILES['image']['tmp_name'] , $tagert_file );
-                    }
-                insert_hoadon($name_image,$id);
-                $thongbao="gửi hóa đơn thành công";
-            }
             if(isset($_SESSION['user']['id_hoc_vien'])){
                 $listone_giohang = listone_giohang($_SESSION['user']['id_hoc_vien']);
             }

@@ -75,9 +75,12 @@
                                             <td><?php echo listone_giangvien(loadone_lop($value['id_lop'])[0]['magv'])[0]['ten_gv']; ?></td>
 
                                             <td class="">
-                                                <form action="index.php?act=update_idlop" method="post">
+                                                <form action="index.php?act=add_lop" method="post">
+                                                    <input type="hidden" name="id_hv" value="<?php echo $_SESSION['user']['id_hoc_vien'] ?>" >
                                                     <input type="hidden" name="id_lop" value="<?php echo $value['id_lop'] ?>" >
-                                                    <input type="hidden" name="id_hoc_vien" value="<?php echo $_SESSION['user']['id_hoc_vien']  ?>">
+                                                    <input type="hidden" name="gia" value="<?php echo listone_khoahoc($value['id_khoa_hoc'])[0]['gia']; ?>" >
+                                                    <input type="hidden" name="trang_thai" value="0" >
+
                                                     <input value="Đăng Kí" name="dangki" type="submit" class="btn btn-primary start-50"  ><br><br>
                                                 </form>
 
