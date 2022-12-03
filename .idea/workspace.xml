@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cc6cba04-603a-4918-b721-0684c76f7a58" name="Changes" comment="update lại giao diện trang khóa học">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/model/thongke.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/model/thongke.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/thongke.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/thongke.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/view/list_product_thong_ke.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/list_product_thong_ke.php" afterDir="false" />
-    </list>
+    <list default="true" id="cc6cba04-603a-4918-b721-0684c76f7a58" name="Changes" comment="thống kê theo doanh thu từng loại danh mục" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -155,7 +149,7 @@
       <workItem from="1670001094461" duration="14229000" />
       <workItem from="1670023117719" duration="605000" />
       <workItem from="1670067714576" duration="2019000" />
-      <workItem from="1670087446171" duration="3865000" />
+      <workItem from="1670087446171" duration="4174000" />
     </task>
     <task id="LOCAL-00001" summary="update files add">
       <created>1668688059236</created>
@@ -346,7 +340,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670071802002</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="thống kê theo doanh thu từng loại danh mục">
+      <created>1670091386473</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1670091386473</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -387,7 +388,8 @@
     <MESSAGE value="update lai ctkhoahoc.php, giohang.php, gui_bang_chung.php, header.php, thong_tin_user_kh.php" />
     <MESSAGE value="update form dang ki khoa hoc, chuc nang thanh toan" />
     <MESSAGE value="update lại giao diện trang khóa học" />
-    <option name="LAST_COMMIT_MESSAGE" value="update lại giao diện trang khóa học" />
+    <MESSAGE value="thống kê theo doanh thu từng loại danh mục" />
+    <option name="LAST_COMMIT_MESSAGE" value="thống kê theo doanh thu từng loại danh mục" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

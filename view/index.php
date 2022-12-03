@@ -117,7 +117,9 @@ if (isset($_GET['act']) && ($_GET['act']) != ''){
                     move_uploaded_file ( $_FILES['image']['tmp_name'] , $tagert_file );
                 }
                 insert_hoadon($name_image,$id);
-                $thongbao="gửi hóa đơn thành công";
+//                $thongbao="gửi hóa đơn thành công";
+                echo "<script>alert('Hệ thống đang xử lí ảnh bằng chứng! Vui lòng đợi máy 2-3 ngày !')</script>";
+
             }
             if(isset($_SESSION['user']['id_hoc_vien'])){
                 $listone_giohang = listone_giohang($_SESSION['user']['id_hoc_vien']);
