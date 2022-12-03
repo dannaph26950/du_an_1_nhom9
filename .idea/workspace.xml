@@ -4,18 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cc6cba04-603a-4918-b721-0684c76f7a58" name="Changes" comment="update lai ctkhoahoc.php, giohang.php, gui_bang_chung.php, header.php, thong_tin_user_kh.php">
-      <change afterPath="$PROJECT_DIR$/view/thanh_toan.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_24_11_2022_20_10_PM__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_25_11_2022_20_49_PM_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_25_11_2022_20_49_PM__Changes_.xml" beforeDir="false" />
+    <list default="true" id="cc6cba04-603a-4918-b721-0684c76f7a58" name="Changes" comment="update form dang ki khoa hoc, chuc nang thanh toan">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_26_11_2022_15_18_PM_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_26_11_2022_15_18_PM__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/model/giohang.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/model/giohang.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/model/gui_bang_chung.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/model/gui_bang_chung.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/taikhoan.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/taikhoan.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/ctkhoahoc.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/ctkhoahoc.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/model/lop.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/model/lop.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/view/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/thong_tin_user_kh.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/thong_tin_user_kh.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/thanh_toan.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/thanh_toan.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -158,7 +153,9 @@
       <workItem from="1669891510956" duration="985000" />
       <workItem from="1669894177587" duration="885000" />
       <workItem from="1669917010618" duration="6225000" />
-      <workItem from="1670001094461" duration="13942000" />
+      <workItem from="1670001094461" duration="14229000" />
+      <workItem from="1670023117719" duration="605000" />
+      <workItem from="1670067714576" duration="2019000" />
     </task>
     <task id="LOCAL-00001" summary="update files add">
       <created>1668688059236</created>
@@ -335,7 +332,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669931869704</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="update form dang ki khoa hoc, chuc nang thanh toan">
+      <created>1670022939424</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1670022939424</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -374,7 +378,8 @@
     <MESSAGE value="abc" />
     <MESSAGE value="fux gio hang" />
     <MESSAGE value="update lai ctkhoahoc.php, giohang.php, gui_bang_chung.php, header.php, thong_tin_user_kh.php" />
-    <option name="LAST_COMMIT_MESSAGE" value="update lai ctkhoahoc.php, giohang.php, gui_bang_chung.php, header.php, thong_tin_user_kh.php" />
+    <MESSAGE value="update form dang ki khoa hoc, chuc nang thanh toan" />
+    <option name="LAST_COMMIT_MESSAGE" value="update form dang ki khoa hoc, chuc nang thanh toan" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

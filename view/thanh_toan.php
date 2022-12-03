@@ -75,7 +75,7 @@
                     </tr>
                     </tbody>
                     <tfoot>
-                    <form action="index.php?act=list_khoa_hoc" method="post" enctype="multipart/form-data">
+                    <form action="index.php?act=update_thanh_toan" method="post" enctype="multipart/form-data">
                         <tr class="order-total">
                             <td><h6 >Gửi hóa đơn</h6></td>
                             <td data-title="Total"> <input type="file" value="" name="image" style="width: 370px; height: 45px" > </td>

@@ -119,6 +119,10 @@ if (isset($_GET['act']) && ($_GET['act']) != ''){
                 insert_hoadon($name_image,$id);
                 $thongbao="gửi hóa đơn thành công";
             }
+            if(isset($_SESSION['user']['id_hoc_vien'])){
+                $listone_giohang = listone_giohang($_SESSION['user']['id_hoc_vien']);
+            }
+            $listall_danhmuc=listall_danhmuc ();
             include '../view/thong_tin_user_kh.php';
             break;
 //      giang vien------------------------------------
