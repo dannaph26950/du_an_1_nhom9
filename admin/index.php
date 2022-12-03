@@ -515,6 +515,7 @@ session_start();
                 include '../admin/view/giohang/listgiohang.php';
                 break;
             case 'thongke':
+
                 $listthongke = load_allthongke();
                 include "../admin/thongke.php";
                 break;

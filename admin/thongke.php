@@ -16,21 +16,22 @@
 
     function drawChart() {
         var data = google.visualization.arrayToDataTable([
-            ['Danh Mục', 'Số Lượng Khóa học'],
+            ['Danh Mục', 'Doanh Thu ','Khóa học sản phẩm'],
             <?php
+
             $tongdm = count($listthongke);
-            $i = 1;
+            $i = 0;
             foreach ($listthongke as $thongke){
                 extract($thongke);
                 if ($i == $tongdm) $dauphay=""; else $dauphay=",";
-                echo "['".$thongke['ten_danh_muc']."',".$thongke['countsp']."]".$dauphay;
+                echo "['".$thongke['ten_danh_muc']."',".$thongke['gia_tien']. ",".$thongke['countsp']."]".$dauphay;
                 $i+=1;
             }
             ?>
         ]);
 
         var options = {
-            title:'Biểu Đồ Thống Kê Khóa học'
+            title:'Biểu Đồ Thống Kê Doanh Thu theo danh muc'
         };
 
         var chart = new google.visualization.BarChart(document.getElementById('myChart'));

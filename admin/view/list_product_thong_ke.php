@@ -26,7 +26,7 @@
 
     </style>
     <div class="container-fluid  " >
-        <h1 style="margin-left: 90px">Danh Sách Thống Kê Danh Mục</h1>
+        <h4 style="margin-left: 90px">Danh Sách Thống Kê Doanh Thu Theo Danh Mục</h4>
 
     </div>
     <div class="content container">
@@ -34,6 +34,7 @@
             <tr >
                 <th>Mã Danh Mục</th>
                 <th>Tên danh Mục</th>
+                <th>Giá tiền</th>
                 <th>Số Lượng</th>
                 <th>Giá Thấp Nhất</th>
                 <th>Giá Cao Nhất</th>
@@ -47,6 +48,7 @@
                 echo  '<tr>
                 <td>'.$id_danh_muc.'</td>
                 <td>'.$ten_danh_muc.'</td>
+                <td>'.$gia_tien.'</td>
                 <td>'.$countsp.'</td>
                 <td>'.$mingia.'</td>
                 <td>'.$maxgia.'</td>
