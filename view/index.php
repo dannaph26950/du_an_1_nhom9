@@ -252,6 +252,22 @@ if (isset($_GET['act']) && ($_GET['act']) != ''){
             $listall_danhmuc=listall_danhmuc ();
             include '../view/thong_tin_user_kh.php';
             break;
+        case 'quen_mk':
+            if (isset($_POST['quen_mk'])&&($_POST['quen_mk'])){
+                $email = $_POST['email'];
+                $tai_khoan = $_POST['tai_khoan'];
+                $check_taikhoan = check_taikhoan($tai_khoan);
+                $checkemail = checkemail($email);
+                if (is_array($checkemail) && is_array($check_taikhoan)){
+                    echo "<script>alert('Mật khẩu của bạn là: ".$checkemail['mat_khau']. "')</script>";
+                    echo "<script>window.location.href='index.php?act=dang_nhap';</script>";
+                }else{
+                    echo "<script>alert('Gmail này không tồn tại, vui lòng thử lại !!!')</script>";
+                }
+            }
+
+            include '../view/quen_mat_khau.php';
+            break;
         default:
             include '../view/home.php';
     }

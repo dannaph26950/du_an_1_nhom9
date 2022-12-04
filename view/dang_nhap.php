@@ -1,7 +1,7 @@
 <?php
 //var_dump($_SESSION['user']);
 ?>
-<center><h1>Đăng nhập</h1></center>
+<center><h1 style="margin-top: 30px">Đăng nhập</h1></center>
 <form method="post" action="index.php?act=dang_nhap" style="margin: 0px 400px;">
     <div class="mb-3">
         <label for="exampleInputEmail1" class="form-label">Tài khoản: </label>
@@ -16,7 +16,7 @@
 
     <div style="display: flex; align-items:center; margin-left: 300px ; ">
         <input type="submit" value="Đăng Nhập" name="dang_nhap" class="btn btn-primary" style="width: 200px; margin-right: 20px;" >
-        <a href="index.php?act=list_khoa_hoc" >Quên mật khẩu</a>
+        <a href="index.php?act=quen_mk" >Quên mật khẩu</a>
     </div>
     <div style="margin-top: 300px; background-color: white"></div>
 

@@ -12,4 +12,15 @@ function insert_dangki($id, $id_lop, $gia, $trang_thai,$times){
     $sql = "INSERT INTO dang_ky VALUES (null, '$id','$id_lop', '$gia',' $times',' ', '$trang_thai')";
     pdo_execute($sql);
 }
+//quen mat khau
+function checkemail($email){
+    $sql = "SELECT * FROM hoc_vien WHERE email='".$email."'";
+    $check = pdo_query_one($sql);
+    return $check;
+}
+function check_taikhoan($email){
+    $sql = "SELECT * FROM hoc_vien WHERE tai_khoan='".$email."'";
+    $check = pdo_query_one($sql);
+    return $check;
+}
 ?>

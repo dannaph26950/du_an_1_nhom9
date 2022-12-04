@@ -1,14 +1,38 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../view/assets/css/profile.css">
-</head>
-<body>
+
 <div class="khung">
+    <style>
+        .phai h2{
+            margin-left: 100px;
+        }
+        .khung{
+
+            display: flex;
+        }
+        .trai{
+            background-color:#0D5EF4;
+            width: 22.6%;
+            height:550px;
+            border-bottom-right-radius: 10px;
+        }
+        .phai{
+            padding: 20px 60px ;
+            width: 80%;
+
+        }
+        nav ul{
+            list-style-type: none;
+        }
+        .trai li{
+            margin: 90px 20px;
+        }
+        a{
+            text-decoration:none;
+            color:white
+        }
+        a:hover{
+            text-decoration:underline;
+        }
+    </style>
     <div class="trai">
         <nav>
             <ul>
@@ -55,5 +79,4 @@
     </div>
 </div>
 </div>
-</body>
-</html>
+
