@@ -10,6 +10,39 @@
 </head>
 <body>
 <div class="khung">
+    <style>
+
+        .khung{
+
+            display: flex;
+        }
+        .trai{
+            background-color:#0D5EF4;
+            width: 22.6%;
+            height:550px;
+
+
+        }
+        .phai{
+            padding: 20px 60px ;
+            width: 80%;
+
+        }
+        nav ul{
+            list-style-type: none;
+        }
+        .trai li{
+            margin: 90px 20px;
+        }
+        a{
+            text-decoration:none;
+            color:white
+        }
+        a:hover{
+            text-decoration:underline;
+        }
+    </style>
+
     <div class="trai">
         <nav>
             <ul>

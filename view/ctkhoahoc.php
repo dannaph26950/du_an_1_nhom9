@@ -2,7 +2,7 @@
     <div class="container z-index-common">
         <h1 class="breadcumb-title">Chi Tiết Khóa Học</h1>
         <ul class="breadcumb-menu">
-            <li><a href="index.php">Trang Chủ</a></li>
+            <li><a href="index.php" class="text-decoration-none">Trang Chủ</a></li>
             <li>Chi Tiết Khóa Học</li>
         </ul>
     </div>
@@ -19,12 +19,12 @@
                     <div class="course-single-top">
                         <div class="course-img"><img src="../Upfileanh/<?php echo $value['anh'] ?>" alt="Course Image">
                         </div>
-                        <h2 class="course-title"><?php echo $value['ten_khoa_hoc'];?></h2>
-                        <div class="course-single-meta"><a href="#"><img
+                        <h2 class="course-title" style="font-family:'Roboto', sans-serif"><?php echo $value['ten_khoa_hoc'];?></h2>
+                        <div class="course-single-meta"><a href="#" class="text-decoration-none"><img
                                         src="../Upfileanh/giangvien/<?php echo listone_giangvien(loadone_lop($value['id_lop'])[0]['magv'])[0]['hinh_gv']; ?>" style="width: 50px;height: 50px" alt="author"><span
-                                        class="text-theme">Giảng Viên: </span><?php echo listone_giangvien(loadone_lop($value['id_lop'])[0]['magv'])[0]['ten_gv']; ?></a> <a href="#"><i
+                                        class="text-theme">Giảng Viên: </span><?php echo listone_giangvien(loadone_lop($value['id_lop'])[0]['magv'])[0]['ten_gv']; ?></a> <a class="text-decoration-none" href="#"><i
                                         class="fas fa-tags"></i> Mã Khóa Học: <?php echo $value['id_danh_muc']; ?></a>
-                                        <a href="course.html"><i
+                                        <a class="text-decoration-none" href="course.html"><i
                                         class="far fa-clock"></i> Thời Gian Học: <?php echo $value['thoi_gian_hoc'] ?></a>
                             <div class="course-rating">
                             </div>
@@ -35,7 +35,7 @@
                     ?>
                     <div class="course-single-bottom">
                         <ul class="nav course-tab" id="courseTab" role="tablist">
-                            <li class="nav-item" role="presentation"><a class="nav-link active" id="description-tab"
+                            <li class="nav-item" role="presentation"><a  class="nav-link active" id="description-tab"
                                                                         data-bs-toggle="tab" href="#Coursedescription" role="tab"
                                                                         aria-controls="Coursedescription" aria-selected="true"><i
                                             class="fa-regular fa-bookmark"></i>Đăng Kí</a></li>
@@ -146,10 +146,10 @@
                                     <div class="course-author-box">
                                         <div class="auhtor-img"><img src="../Upfileanh/giangvien/<?php echo listone_giangvien(loadone_lop($value['id_lop'])[0]['magv'])[0]['hinh_gv']; ?>" alt="author" ></div>
                                         <div class="media-body">
-                                            <h3 class="author-name"><a class="text-inherit"
+                                            <h3 class="author-name"><a class="text-decoration-none" class="text-inherit"
                                                                        href="index.php?act_khoahoc"><?php echo listone_giangvien(loadone_lop($value['id_lop'])[0]['magv'])[0]['ten_gv']; ?></a></h3>
                                             <p class="author-text"><?php echo listone_giangvien(loadone_lop($value['id_lop'])[0]['magv'])[0]['thong_tin_gv']; ?></p>
-                                            <div class="author-meta"><a href="index.php?act=dang_ky"><i
+                                            <div class="author-meta"><a class="text-decoration-none" href="index.php?act=dang_ky"><i
                                                             class="fal fa-file-video"></i>Đăng Ký</a> <span><i
                                                             class="fal fa-users"></i></span></div>
                                             <div class="as-social"><a href="https://facebook.com/"
@@ -241,7 +241,7 @@
                         <div class="as-video"><img src="../Upfileanh/<?php echo $value['anh'] ?>" alt="video"> <a
                                     href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" class="play-btn popup-video"><i
                                         class="fas fa-play"></i></a></div><span class="h4 course-price"><?php echo $value['gia'] ?> <span
-                                    class="tag">25% Off</span></span> <a href="index.php?act=cart&id=<?php echo $value['id_khoa_hoc'] ?>" class="as-btn">Đăng ký</a>
+                                    class="tag">25% Off</span></span> <a  href="index.php?act=cart&id=<?php echo $value['id_khoa_hoc'] ?>" class="as-btn text-decoration-none">Đăng ký</a>
                         <h3 class="widget_title">Thông Tin Khóa Học</h3>
                         <div class="info-list">
                             <ul>

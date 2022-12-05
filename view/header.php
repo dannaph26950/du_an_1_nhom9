@@ -39,6 +39,9 @@
 </head>
 
 <body>
+<div class="preloader"><button class="as-btn style3 preloaderCls">Cancel Preloader</button>
+    <div class="preloader-inner"><span class="loader"></span></div>
+</div>
 <div class="as-menu-wrapper">
     <div class="as-menu-area text-center"><button class="as-menu-toggle"><i class="fal fa-times"></i></button>
         <div class="mobile-logo"><a href="index.html"><img src="../user/assets/img/logo.svg" alt="Acadu"></a></div>
@@ -185,11 +188,11 @@
                                     <?php if(isset($_SESSION['user'])){
 
                                     ?>
-                                        <a href="index.php?act=profile">Trang cá nhân, <?php echo $_SESSION['user']['ten_hv'] ?></a>
+                                        <a class="text-decoration-none" href="index.php?act=profile">Trang cá nhân, <?php echo $_SESSION['user']['ten_hv'] ?></a>
                                     <?php
                                      }else{
                                         ?>
-                                        <a href="../view/index.php?act=dang_nhap">Đăng nhập </a>
+                                        <a class="text-decoration-none" href="../view/index.php?act=dang_nhap">Đăng nhập </a>
                                     <?php
                                     }
                                     ?>
@@ -204,17 +207,17 @@
         <div class="menu-top">
             <div class="container">
                 <div class="row align-items-center justify-content-center justify-content-sm-between">
-                    <div class="col-auto d-none d-sm-block"><a class="header-link" href="tel:+256214203215"><i
+                    <div class="col-auto d-none d-sm-block"><a  class="header-link" href="tel:+256214203215"><i
                                     class="icon-btn fas fa-phone"></i>0812349078</a> <a
                                 class="header-link d-none d-lg-inline-block" href="mailto:info@acadu.com"><i
                                     class="icon-btn fas fa-envelope"></i>dannaph26950@fpt.edu.vn</a> <span
                                 class="header-link d-none d-xl-inline-block"><i class="icon-btn fas fa-clock"></i>T2 -
                                 T7: 8:00 - 15:00</span></div>
                     <div class="col-auto">
-                        <div class="as-social"><a target="_blank" href="https://facebook.com/"><i
+                        <div class="as-social"><a class="text-decoration-none" target="_blank" href="https://facebook.com/"><i
                                         class="fab fa-facebook-f"></i></a> <a target="_blank"
-                                                                              href="https://twitter.com/"><i class="fab fa-twitter"></i></a> <a target="_blank"
-                                                                                                                                                href="https://instagram.com/"><i class="fab fa-instagram"></i></a> <a
+                                                                              href="https://twitter.com/"><i class="fab fa-twitter"></i></a> <a class="text-decoration-none" target="_blank"
+                                                                                                                                                href="https://instagram.com/"><i class="fab fa-instagram"></i></a> <a class="text-decoration-none"
                                     target="_blank" href="https://pinterest.com/"><i class="fab fa-pinterest-p"></i></a>
                         </div>
                     </div>
@@ -236,22 +239,22 @@
                                 <div class="col-auto">
                                     <nav class="main-menu d-none d-lg-inline-block">
                                         <ul>
-                                            <li class=""><a href="index.php">Trang chủ</a>
+                                            <li class=""><a class="text-decoration-none" href="index.php">Trang chủ</a>
 
                                             </li>
-                                            <li class=""><a href="index.php?act=khoa_hoc">Khóa học</a>
+                                            <li class=""><a class="text-decoration-none" href="index.php?act=khoa_hoc">Khóa học</a>
                                                 <ul class="sub-menu">
                                                     <?php foreach ($listall_danhmuc as $index => $value){  ?>
-                                                    <li><a href="index.php?act=khoa_hoc&id=<?php echo $value['id_danh_muc']; ?>"><?php echo $value['ten_danh_muc'] ?></a></li>
+                                                    <li><a class="text-decoration-none" href="index.php?act=khoa_hoc&id=<?php echo $value['id_danh_muc']; ?>"><?php echo $value['ten_danh_muc'] ?></a></li>
                                                     <?php } ?>
                                                 </ul>
                                             </li>
-                                            <li class=" "><a href="index.php?act=giangvien">Giáo viên</a>
+                                            <li class=" "><a class="text-decoration-none" href="index.php?act=giangvien">Giáo viên</a>
 
                                             </li>
 
 
-                                            <li><a href="index.php?act=lienhe">Liên hệ</a></li>
+                                            <li><a class="text-decoration-none" href="index.php?act=lienhe">Liên hệ</a></li>
                                         </ul>
                                     </nav><button type="button" class="as-menu-toggle d-inline-block d-lg-none"><i
                                                 class="far fa-bars"></i></button>
@@ -259,7 +262,7 @@
                                 <div class="col-auto d-none d-xl-block">
                                     <div class="header-button">
 <!--                                        <a href="#" class="icon-btn style2 sideMenuToggler"><i class="far fa-cart-shopping"></i> <span class="badge bg-theme2">5</span></a>-->
-                                        <a href="#"
+                                        <a class="text-decoration-none" href="#"
                                            class="icon-btn style2"><i class="far fa-heart"></i></a>
 
 
@@ -272,8 +275,8 @@
                                         <?php
                                         }else{
                                         ?>
-                                        <a href="index.php?act=add_dangky" class="as-btn style6 d-none d-xxl-inline-block">Đăng ký ngay<i
-                                                        class="fas fa-arrow-right ms-2"></i>
+                                        <a  href="index.php?act=add_dangky" class="as-btn style6 d-none d-xxl-inline-block">Đăng ký ngay<i
+                                                    class="fas fa-arrow-right ms-2"></i>
                                             </a>
                                         <?php
                                         }

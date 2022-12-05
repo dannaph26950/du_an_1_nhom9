@@ -11,7 +11,7 @@ foreach($listone_giangvien as $index => $value){
             <div class="col-xl-7 align-self-center">
                 <div class="about-box">
                     <div class="about-info">
-                        <h2 class="title"><?php echo $value['ten_gv'] ?></h2><span class="desig">Giảng Viên chứng nhận từ ACADU</span>
+                        <h2 class="title" style="font-family:'Roboto', sans-serif"><?php echo $value['ten_gv'] ?></h2><span class="desig">Giảng Viên chứng nhận từ ACADU</span>
                     </div>
                     <div class="social-box"><span class="title">Theo dõi tôi:</span>
                         <div class="as-social"><a target="_blank" href="https://facebook.com/"><i
