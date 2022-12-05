@@ -69,7 +69,25 @@
                                     <?php  foreach ($list_lop as $key=>$value) {?>
                                         <tr>
                                             <td><?php echo $value['ten_lop'] ?></td>
-                                            <td><?php echo $value['thoi_gian_khai_giang'] ?></td>
+                                            <td>
+
+                                            <?php
+//
+                                                $date_lop_convert =  strtotime(listone_lop_tgkg($value['id_lop'])[0]['thoi_gian_khai_giang']);
+//
+                                                if( strtotime(date("Y-m-d")) > $date_lop_convert ){
+                                                    echo listone_lop_tgkg($value['id_lop'])[0]['thoi_gian_khai_giang'];
+
+                                                ?>
+                                                        <br>
+                                                <span style="color: red">Đã quá lịch</span>
+                                                <?php
+                                                }else{
+                                                    echo listone_lop_tgkg($value['id_lop'])[0]['thoi_gian_khai_giang'];
+                                                }
+                                                ?>
+
+                                            </td>
                                             <td><?php echo $value['dia_diem_hoc'] ?></td>
                                             <td><?php echo $value['so_luong'] ?>/40</td>
                                             <td><?php echo listone_giangvien(loadone_lop($value['id_lop'])[0]['magv'])[0]['ten_gv']; ?></td>
@@ -79,9 +97,25 @@
                                                     <input type="hidden" name="id_hv" value="<?php echo $_SESSION['user']['id_hoc_vien'] ?>" >
                                                     <input type="hidden" name="id_lop" value="<?php echo $value['id_lop'] ?>" >
                                                     <input type="hidden" name="gia" value="<?php echo listone_khoahoc($value['id_khoa_hoc'])[0]['gia']; ?>" >
+
                                                     <input type="hidden" name="trang_thai" value="0" >
 
-                                                    <input value="Đăng Kí" name="dangki" type="submit" class="btn btn-primary start-50"  ><br><br>
+<!--                                                    validate lịch học-->
+                                                    <?php
+                                                    //
+                                                    $date_lop_convert =  strtotime(listone_lop_tgkg($value['id_lop'])[0]['thoi_gian_khai_giang']);
+                                                    //
+                                                    if( strtotime(date("Y-m-d")) > $date_lop_convert ){
+                                                    ?>
+                                                    <input value="Đăng Kí" name="dangki" type="submit" class="btn btn-primary start-50" disabled ><br><br>
+                                                        <?php
+                                                    }else{
+                                                       ?>
+                                                        <input value="Đăng Kí" name="dangki" type="submit" class="btn btn-primary start-50"  ><br><br>
+
+                                                        <?php
+                                                    }
+                                                    ?>
                                                 </form>
 
                                             </td>

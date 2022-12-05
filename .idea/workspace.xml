@@ -4,16 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cc6cba04-603a-4918-b721-0684c76f7a58" name="Changes" comment="scipt alert update_thanh_toan">
-      <change afterPath="$PROJECT_DIR$/view/quen_mat_khau.php" afterDir="false" />
+    <list default="true" id="cc6cba04-603a-4918-b721-0684c76f7a58" name="Changes" comment="create phần quên mật khẩu, sửa nhiều file liên quan đến trang cá nhân">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/taikhoan.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/taikhoan.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/assets/css/profile.css" beforeDir="false" afterPath="$PROJECT_DIR$/view/assets/css/profile.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/dang_nhap.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/dang_nhap.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/khoahoc.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/khoahoc.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/lop.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/lop.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/ctkhoahoc.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/ctkhoahoc.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/view/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/profile_user.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/profile_user.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/thong_tin_user_kh.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/thong_tin_user_kh.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/thong_tin_user_update.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/thong_tin_user_update.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -160,7 +156,9 @@
       <workItem from="1670023117719" duration="605000" />
       <workItem from="1670067714576" duration="2019000" />
       <workItem from="1670087446171" duration="6358000" />
-      <workItem from="1670167570974" duration="2477000" />
+      <workItem from="1670167570974" duration="9164000" />
+      <workItem from="1670222055818" duration="1392000" />
+      <workItem from="1670264253642" duration="2148000" />
     </task>
     <task id="LOCAL-00001" summary="update files add">
       <created>1668688059236</created>
@@ -365,7 +363,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670091820395</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="create phần quên mật khẩu, sửa nhiều file liên quan đến trang cá nhân">
+      <created>1670170394770</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1670170394770</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -383,7 +388,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="update files add" />
     <MESSAGE value="update giao diện user" />
     <MESSAGE value="update files admin, model admin, view admin" />
     <MESSAGE value="up file view khoa hoc demo" />
@@ -408,7 +412,8 @@
     <MESSAGE value="update lại giao diện trang khóa học" />
     <MESSAGE value="thống kê theo doanh thu từng loại danh mục" />
     <MESSAGE value="scipt alert update_thanh_toan" />
-    <option name="LAST_COMMIT_MESSAGE" value="scipt alert update_thanh_toan" />
+    <MESSAGE value="create phần quên mật khẩu, sửa nhiều file liên quan đến trang cá nhân" />
+    <option name="LAST_COMMIT_MESSAGE" value="create phần quên mật khẩu, sửa nhiều file liên quan đến trang cá nhân" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

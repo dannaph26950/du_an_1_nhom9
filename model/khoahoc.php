@@ -32,5 +32,11 @@ function listone_khoahoc($id){
         $listcate_khoahoc = pdo_query($sql);
         return $listcate_khoahoc;
     }
-
+//list ra cột thời gian khai giảng riêng bằng khóa học
+function listone_thoigian_idkhoahoc($magv){
+    $sql = "select thoi_gian_khai_giang from lop where  id_lop = '$magv' ";
+    $listone_khoahoc = pdo_query($sql);
+    return $listone_khoahoc;
+}
 ?>
+

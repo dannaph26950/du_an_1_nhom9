@@ -42,11 +42,12 @@ if (isset($_GET['act']) && ($_GET['act']) != ''){
             include '../view/khoahoc.php';
             break;
         case 'ct_khoahoc':
+            $date_today_convert= strtotime(date("Y-m-d"));
             if(isset($_GET['id']) && ($_GET['id']>0)){
                 $id = $_GET['id'];
                 $listone_khoahoc=listone_khoahoc($id);
                 $list_danhmuc = listone_danhmuc($id);
-                $list_lop = list_lop($id);
+                $list_lop =list_lop($id) ;
             }
             $listall_khoahoc = listall_khoahoc();
             $listall_lop = listall_lop();
