@@ -497,6 +497,10 @@ session_start();
                 include '../admin/view/giohang/listgiohang.php';
                 break;
             case 'edit_giohang':
+                if(isset($_GET['id'])&&$_GET['id']>0);{
+                $id_dang_ky = $_GET['id'];
+                $listone_gio_hang= listone_gio_hang($id_dang_ky);
+                }
                 include '../admin/view/giohang/editgiohang.php';
                 break;
             case 'update_giohang':
@@ -504,13 +508,13 @@ session_start();
                     $trangthai1 = $_POST['t_t'];
                     $id = $_POST['id'];
                     $id_lop1 = $_POST['id_lop'];
-//                    if($trangthai1==2){
-//                        upd_soluong_lop($id_lop1);
-//                        $id_lop1 == 1;
-//                    }
+                    if($trangthai1==2){
+                        upd_soluong_lop($id_lop1);
+                    }
                     update_giohang($trangthai1,$id);
                 }
-
+//                echo $id_lop1;
+//                die();
                 if(isset($_POST['tinh_trang'])){
                     $tinh_trang = $_POST['tt'];
                     $listall_giohang = list_giohang($tinh_trang);
