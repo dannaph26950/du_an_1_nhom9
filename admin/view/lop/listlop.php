@@ -28,7 +28,7 @@ if(isset($_SESSION['taikhoan'])){
             ?>
             <tr>
                 <td><?php echo $value['id_lop'] ?></td>
-                <td><?php echo $value['ten_lop'] ?></td>
+                 <td><?php echo $value['ten_lop'] ?></td>
                 <?php $originalDate = $value['thoi_gian_khai_giang'] ; $newDate = date("d-m-Y", strtotime($value['thoi_gian_khai_giang']));  ?>
                 <td><?php echo $newDate ?></td>
                 <td><?php echo $value['dia_diem_hoc'] ?></td>
