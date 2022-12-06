@@ -50,7 +50,7 @@ $dsbl = listall_binhluan($idpro);
                 <div class="as-post-comment">
                     
                     <div class="comment-content">
-                        <h4 class="name"><?php echo listone_hocvien($value['id_hoc_vien'])[0]['ten_hv'] ?> - ID:<?php echo $value['id_hoc_vien'] ?></h4><span class="commented-on"><i class="fal fa-calendar-alt"></i> <?php echo $value['ngay_bl'] ?></span>
+                        <h4 class="name" style="font-family: 'Roboto', sans-serif;font-size: 20px;color: #0a53be"><?php echo listone_hocvien($value['id_hoc_vien'])[0]['ten_hv'] ?> - Mã học viên: <?php echo $value['id_hoc_vien'] ?></h4><span class="commented-on"><i class="fal fa-calendar-alt"></i> <?php echo $value['ngay_bl'] ?></span>
                         <div class="star-rating" role="img" aria-label="Rated 5.00 out of 5" style="display: none ;"><span style="width:100%">Rated <strong class="rating">5.00</strong> out of 5 based on
                                 <span class="rating">1</span> customer rating</span>
                         </div>

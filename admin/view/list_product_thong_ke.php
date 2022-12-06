@@ -1,4 +1,6 @@
-
+<?php
+    if(isset($_SESSION['taikhoan'])){
+?>
 <div class="title" style="margin: 20px 0px">
     <style>
         table tr th{
@@ -68,3 +70,7 @@
     </div>
 </div>
 <div style="margin-top: 300px"></div>
+<?php }else{
+        echo "<script>alert('Đăng Nhập admin có thể sử dụng được trang này!');</script>";
+        echo "<script>window.location.href='index.php?act=dang_nhap';</script>";
+    } ?>

@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cc6cba04-603a-4918-b721-0684c76f7a58" name="Changes" comment="css update">
+    <list default="true" id="cc6cba04-603a-4918-b721-0684c76f7a58" name="Changes" comment="validate thanh toán khi đã thanh toán thành công">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/thong_tin_user_kh.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/thong_tin_user_kh.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/view/list_product_thong_ke.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/list_product_thong_ke.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/binhluan.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/binhluan.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/thanh_toan.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/thanh_toan.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -156,7 +158,7 @@
       <workItem from="1670167570974" duration="9164000" />
       <workItem from="1670222055818" duration="1392000" />
       <workItem from="1670264253642" duration="4322000" />
-      <workItem from="1670302800964" duration="302000" />
+      <workItem from="1670302800964" duration="4026000" />
     </task>
     <task id="LOCAL-00001" summary="update files add">
       <created>1668688059236</created>
@@ -382,7 +384,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670268606579</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="validate thanh toán khi đã thanh toán thành công">
+      <created>1670303286236</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1670303286236</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -400,7 +409,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="up file view khoa hoc demo" />
     <MESSAGE value="update file khoahoc view" />
     <MESSAGE value="update trang home của view" />
     <MESSAGE value="update trang view" />
@@ -425,7 +433,8 @@
     <MESSAGE value="create phần quên mật khẩu, sửa nhiều file liên quan đến trang cá nhân" />
     <MESSAGE value="Validate phần thời gian khai giảng" />
     <MESSAGE value="css update" />
-    <option name="LAST_COMMIT_MESSAGE" value="css update" />
+    <MESSAGE value="validate thanh toán khi đã thanh toán thành công" />
+    <option name="LAST_COMMIT_MESSAGE" value="validate thanh toán khi đã thanh toán thành công" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

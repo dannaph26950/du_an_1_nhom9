@@ -92,8 +92,8 @@
                         <th style="text-align: left">
                             <p>Hướng dẫn chuyển khoản:</p>
                             <p>-Chuyển qua INTERNET BANKING (Hoặc Quét mã QRPAY)</p>
-                            <p>-Ghi rõ nội dung chuyển tiền:<h6>Họ và tên. Mã học viên. Tên Lớp. Số Điện Thoại</h6></p>
-                            <p>Ví dụ: <h6>(Hoàng Long Duy. 235. WE17315. 0396122241)</h6></p>
+                            <p>-Ghi rõ nội dung chuyển tiền:<h6  style="font-family: 'Roboto', sans-serif">Họ và tên. Mã học viên. Tên Lớp. Số Điện Thoại</h6></p>
+                            <p>Ví dụ: <h6 style="font-family: 'Roboto', sans-serif">(Hoàng Long Duy. 235. WE17315. 0396122241)</h6></p>
                             <p style="color: red">Thời hạn nộp học phí: Trong 7 ngày tính từ ngày đăng kí</p>
                             <p>Lưu ý: Nếu sau 7 ngày học viên không thanh toán hoặc chưa thanh toán thì đơn đăng kí sẽ bị hủy -> Đăng kí lớp không thành công</p>
                         </th>
