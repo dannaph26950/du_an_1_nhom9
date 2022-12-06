@@ -99,7 +99,7 @@
                         </th>
                         <td data-title="Shipping and Handling">
                             <ul class="woocommerce-shipping-methods list-unstyled">
-                                <img src="../mã%20qr.jpg" alt="Mã qr">
+                                <img src="../QR_PAY.jpg" alt="">
                             </ul>
                             <p class="woocommerce-shipping-destination">Số tài khoản : MB BANK <span style="color: red">0339580923</span>  </p>
                             <p class="woocommerce-shipping-destination">Chủ tài khoản: <span style="color: red">Đậu Phương Thảo</span>  </p>

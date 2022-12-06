@@ -29,9 +29,10 @@
                     </div>
 
 <!--                    email-->
-                    <div class="form-group col-md-6"><input type="email" class="form-control style3" name="email"
+                    <div class="form-group col-md-6"><input type="input" class="form-control style3" name="email"
                                                             id="email" placeholder="Email"> <i class="fal fa-envelope"></i>
                         <p style="color: red"><?php echo isset($error_dk["email"]) ? $error_dk["email"] : ""; ?></p>
+                        <p style="color: red"><?php if(!isset($error_dk["email"])) echo isset($error_dk["email1"]) ? $error_dk["email1"] : ""; ?></p>
                     </div>
 
 <!--                    nhập lại mật khẩu-->
@@ -46,7 +47,7 @@
                         <p style="color: red"><?php echo isset($error_dk["dia_chi"]) ? $error_dk["dia_chi"] : ""; ?></p>
                     </div>
 <!--                    số điện thoại-->
-                    <div class="form-group col-md-6"><input type="tel" class="form-control style3" name="sdt"
+                    <div class="form-group col-md-6"><input type="input" class="form-control style3" name="sdt"
                                                             id="number" placeholder="Số điện thoại"> <i class="fal fa-phone"></i>
                         <p style="color: red"><?php echo isset($error_dk["sdt"]) ? $error_dk["sdt"] : ""; ?></p>
                     </div>

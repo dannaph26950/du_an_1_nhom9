@@ -92,11 +92,6 @@ if (isset($_GET['act']) && ($_GET['act']) != ''){
             include '../view/khoahoc.php';
             break;
         case 'thanh_toan':
-//            echo '<pre>';
-//            print_r($_SESSION['user']);
-//            print_r(listone_gio_hang(11)) ;
-//            echo $_GET['id'];
-//            die();
 
             if(isset($_GET['id']) && ($_GET['id']>0)){
                 $id_dk = $_GET['id'];
@@ -167,11 +162,19 @@ if (isset($_GET['act']) && ($_GET['act']) != ''){
                 if(empty($email)){
                     $error_dk["email"] = "Vui lòng nhập email";
                 }
+                if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+                    $error_dk["email1"] = "Email không đúng đinh dạng";
+                }
                 if(empty($dia_chi)){
                     $error_dk["dia_chi"] = "Vui lòng nhập địa chỉ";
                 }
                 if(empty($sdt)){
                     $error_dk["sdt"] = "Vui lòng nhập số điện thoại";
+                }
+                if(preg_match('/^[0-9]{10}+$/', $sdt)) {
+                    echo "";
+                } else {
+                    $error_dk["sdt"] = "Số điện thoại không đúng định dạng";
                 }
                 if(!$error_dk){
                     add_taikhoan($ten_hv,$tai_khoan,$mat_khau,$email,$sdt,$dia_chi);

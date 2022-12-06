@@ -12,22 +12,6 @@
         <div class="woocommerce-notices-wrapper">
             <div class="woocommerce-message">Đăng ký khóa học phù hợp dành cho bạn</div>
         </div>
-
-<!--            <div class="tab-pane fade" id="instructor" role="tabpanel" aria-labelledby="instructor-tab">-->
-<!--                <div class="course-instructor">-->
-<!---->
-<!--                    <div class="course-author-box">-->
-<!--                        <div class="auhtor-img"><img src="../Upfileanh/giangvien/thaodau.jpg ?>" alt="author"></div>-->
-<!--                        <div class="media-body">-->
-<!--                            <h3 class="author-name"><a class="text-inherit" href="index.php?act_khoahoc">áddđ</a></h3>-->
-<!--                            <p class="author-text">ádasd</p>-->
-<!--                            <div class="author-meta"><a href="index.php?act=dang_ky"><i class="fal fa-file-video"></i>Đăng Ký</a> <span><i class="fal fa-users"></i></span></div>-->
-<!--                            <div class="as-social"><a href="https://facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a> <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a> <a href="https://linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a> <a href="https://instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a></div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!---->
-<!--                </div>-->
-<!--            </div>-->
             <table class="table table-bordered">
                 <thead>
                 <tr>
@@ -44,18 +28,6 @@
 
                 <tbody>
                 <?php  foreach ($list_lop as $key=>$value) {?>
-                    <!--                                        <tr>-->
-                    <!--                                            <td>--><?php //echo loadone_lop($value['id_lop'])[0]['ten_lop'] ?><!--</td>-->
-                    <!--                                            <td>--><?php //echo  loadone_lop($value['id_lop'])[0]['thoi_gian_khai_giang'] ?><!--</td>-->
-                    <!--                                            <td>--><?php //echo  loadone_lop($value['id_lop'])[0]['dia_diem_hoc'] ?><!--</td>-->
-                    <!--                                            <td>--><?php //echo listone_giangvien(loadone_lop($value['id_lop'])[0]['magv'])[0]['ten_gv']; ?><!--</td>-->
-                    <!---->
-                    <!--                                            <td class="">-->
-                    <!--                                                <input value="Đăng Kí" name="dangki" type="button" class="btn btn-primary start-50" onclick="location.href='index.php?act=giang_vien'" ><br><br>-->
-                    <!--                                            </td>-->
-                    <!---->
-                    <!--                                        </tr>-->
-
                     <tr class="thaodau">
                         <td><?php echo listone_khoahoc($value['id_khoa_hoc'])[0]['ten_khoa_hoc'] ?></td>
                         <td><img src="../Upfileanh/<?php echo listone_khoahoc($value['id_khoa_hoc'])[0]['anh'] ?>" style="width: 200px"></td>
