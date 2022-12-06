@@ -67,7 +67,13 @@
                                 <td><?php echo $value['gia_tien'] ?></td>
                                 <td><?php echo $value['ngay_dk'] ?></td>
                                 <td><?php if($value ['tinh_trang'] == 0) echo "Chưa thanh toán"; elseif($value ['tinh_trang'] == 1) echo "Đang xử lí"; elseif($value ['tinh_trang'] == 2) echo "Thanh Toán thành công"  ?></td>
-                                <td><button type="submit" class="btn btn-primary" onclick="location.href='index.php?act=thanh_toan&id=<?php echo $value['id_dang_ky'] ?>'">Thanh Toán</button></td>
+                                <td>
+                                    <?php if($value['tinh_trang'] == 2){ ?>
+                                    <span style="color: red">Đã thanh toán</span>
+                                    <?php }else{ ?>
+                                    <button type="submit" class="btn btn-primary" onclick="location.href='index.php?act=thanh_toan&id=<?php echo $value['id_dang_ky'] ?>'">Thanh Toán</button>
+                                    <?php } ?>
+                                </td>
                             </tr>
                         <?php } ?>
                     </tbody>
