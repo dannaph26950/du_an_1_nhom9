@@ -27,8 +27,8 @@ function delete_lop($id_lop){
     $sql = "delete from lop where id_lop=".$id_lop;
     pdo_execute($sql);
 }
-//function upd_soluong_lop($id_lop){
-//    $sql = "UPDATE lop SET ten_lop='$ten_lop' WHERE id_lop='$id_lop'";
-//    pdo_execute($sql);
-//}
+function upd_soluong_lop($id_lop){
+    $sql = "UPDATE `lop` SET `so_luong`=`so_luong`-1 WHERE `id_lop`=".$id_lop;
+    pdo_execute($sql);
+}
 ?>

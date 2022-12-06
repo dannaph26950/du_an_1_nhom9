@@ -24,6 +24,7 @@ if(isset($_SESSION['taikhoan'])){
                 <div style="text-align: center">
 
                     <input type="hidden" name="id" value="<?php echo $_GET['id']; ?>">
+                    <input type="hidden" name="id_lop" value="<?php echo listone_gio_hang(13)[0]["id_lop"]; ?>">
 
                     <input type="submit" value="Cập nhật" name="update_giohang" class="btn btn-primary" style="width: 200px; margin: 0px 20px" onclick="location.href='index.php?act=list_giohang'"  >
 
