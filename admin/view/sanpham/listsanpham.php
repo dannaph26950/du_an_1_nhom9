@@ -29,8 +29,9 @@ if(isset($_SESSION['taikhoan'])){
                 <td><?php echo $value['id_khoa_hoc'] ?></td>
                 <td><?php echo $value['ten_khoa_hoc'] ?></td>
                 <td><img src="../Upfileanh/<?php echo $value['anh'] ?>" alt="" style="width: 200px"></td>
-                <td><?php echo $value['gia'] ?></td>
-                <td><?php echo $value['thoi_gian_hoc'] ?></td>
+                <td><?php echo number_format($value['gia']) ?></td>
+                <?php $originalDate = $value['thoi_gian_hoc'] ; $newDate = date("d-m-Y", strtotime($value['thoi_gian_hoc']));  ?>
+                <td  ><?php echo $newDate; ?></td>
                 <td><?php echo $value['mo_ta'] ?></td>
                 <td><?php echo $value['id_danh_muc'] ?></td>
                 <td><?php echo $value['id_lop'] ?></td>

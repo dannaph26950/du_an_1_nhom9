@@ -1,3 +1,5 @@
+
+
 <div class="breadcumb-wrapper" data-bg-src="../user/../view/assets/img/breadcumb/breadcumb-bg.jpg">
     <div class="container z-index-common">
         <h1 class="breadcumb-title">KHÓA HỌC CỦA CHÚNG TÔI</h1>
@@ -34,8 +36,8 @@
                         ?>
                         <div class="col-md-6 col-lg-4 col-xxl-3">
                             <div class="course-box style4">
-                                <div class="course-img"><img src="../Upfileanh/<?php echo listone_khoahoc($value['id_khoa_hoc'])[0]['anh'] ?>" alt="course" style="width: 200px;height: 200px" > <span
-                                            class="tag"><?php echo $value['gia'] ?></span></div>
+                                <div class="course-img"><img src="../Upfileanh/<?php echo listone_khoahoc($value['id_khoa_hoc'])[0]['anh'] ?>" alt="course" > <span
+                                            class="tag"><?php echo number_format($value['gia']) ?></span></div>
                                 <div class="course-content">
                                     <div class="course-author">
                                         <div class="author-info"><img src="../Upfileanh/giangvien/<?php echo listone_giangvien(loadone_lop($value['id_lop'])[0]['magv'])[0]['hinh_gv']; ?>" alt="author" style="width: 50px;height: 50px">

@@ -1,3 +1,4 @@
+
 <div class="breadcumb-wrapper" data-bg-src="assets/img/breadcumb/breadcumb-bg.jpg">
     <div class="container z-index-common">
         <h1 class="breadcumb-title">Chi Tiết Khóa Học</h1>
@@ -25,7 +26,8 @@
                                         class="text-theme">Giảng Viên: </span><?php echo listone_giangvien(loadone_lop($value['id_lop'])[0]['magv'])[0]['ten_gv']; ?></a> <a class="text-decoration-none" href="#"><i
                                         class="fas fa-tags"></i> Mã Khóa Học: <?php echo $value['id_danh_muc']; ?></a>
                                         <a class="text-decoration-none" href="course.html"><i
-                                        class="far fa-clock"></i> Thời Gian Học: <?php echo $value['thoi_gian_hoc'] ?></a>
+                                        class="far fa-clock"></i> Thời Gian Học:<?php $originalDate = $value['thoi_gian_hoc'] ; $newDate = date(" d-m-Y", strtotime($value['thoi_gian_hoc'])); echo $newDate  ?>
+                                            </a>
                             <div class="course-rating">
                             </div>
                         </div>
@@ -72,18 +74,21 @@
                                             <td>
 
                                             <?php
-//
-                                                $date_lop_convert =  strtotime(listone_lop_tgkg($value['id_lop'])[0]['thoi_gian_khai_giang']);
+                                            $originalDate = $value['thoi_gian_khai_giang'];
+                                            $newDate = date(" d-m-Y", strtotime(listone_lop_tgkg($value['id_lop'])[0]['thoi_gian_khai_giang']));
+
+
+                                            $date_lop_convert =  strtotime($newDate);
 //
                                                 if( strtotime(date("Y-m-d")) > $date_lop_convert ){
-                                                    echo listone_lop_tgkg($value['id_lop'])[0]['thoi_gian_khai_giang'];
+                                                    echo $newDate;
 
                                                 ?>
                                                         <br>
                                                 <span style="color: red">Đã quá lịch</span>
                                                 <?php
                                                 }else{
-                                                    echo listone_lop_tgkg($value['id_lop'])[0]['thoi_gian_khai_giang'];
+                                                    echo $newDate;
                                                 }
                                                 ?>
 
@@ -103,6 +108,8 @@
 <!--                                                    validate lịch học-->
                                                     <?php
                                                     //
+//                                                    echo date('d/m/Y - H:i:s');
+//                                                    die();
                                                     $date_lop_convert =  strtotime(listone_lop_tgkg($value['id_lop'])[0]['thoi_gian_khai_giang']);
                                                     //
                                                     if( strtotime(date("Y-m-d")) > $date_lop_convert ){
@@ -150,7 +157,7 @@
                                                                        href="index.php?act_khoahoc"><?php echo listone_giangvien(loadone_lop($value['id_lop'])[0]['magv'])[0]['ten_gv']; ?></a></h3>
                                             <p class="author-text"><?php echo listone_giangvien(loadone_lop($value['id_lop'])[0]['magv'])[0]['thong_tin_gv']; ?></p>
                                             <div class="author-meta"><a class="text-decoration-none" href="index.php?act=dang_ky"><i
-                                                            class="fal fa-file-video"></i>Đăng Ký</a> <span><i
+                                                            class="fal fa-file-video"></i>Đăng Ký</a><span><i
                                                             class="fal fa-users"></i></span></div>
                                             <div class="as-social"><a href="https://facebook.com/"
                                                                       target="_blank"><i class="fab fa-facebook-f"></i></a> <a
@@ -240,14 +247,14 @@
                     <div class="widget widget_info">
                         <div class="as-video"><img src="../Upfileanh/<?php echo $value['anh'] ?>" alt="video"> <a
                                     href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" class="play-btn popup-video"><i
-                                        class="fas fa-play"></i></a></div><span class="h4 course-price"><?php echo $value['gia'] ?> <span
+                                        class="fas fa-play"></i></a></div><span class="h4 course-price"><?php echo number_format($value['gia']) ?> <span
                                     class="tag">25% Off</span></span> <a  href="index.php?act=cart&id=<?php echo $value['id_khoa_hoc'] ?>" class="as-btn text-decoration-none">Đăng ký</a>
                         <h3 class="widget_title">Thông Tin Khóa Học</h3>
                         <div class="info-list">
                             <ul>
                                 <li><i class="fa-light fa-user"></i> <strong>Giảng Viên: </strong><span><?php echo listone_giangvien(loadone_lop($value['id_lop'])[0]['magv'])[0]['ten_gv']; ?></span></li>
                                 <li><i class="fa-light fa-file"></i> <strong>Mã khóa học: </strong><span><?php echo $value['id_danh_muc']; ?></span></li>
-                                <li><i class="fa-light fa-clock"></i> <strong>Thời Gian: </strong><span> <?php echo $value['thoi_gian_hoc'] ?>
+                                <li><i class="fa-light fa-clock"></i> <strong>Thời Gian: </strong><span>  <?php $originalDate = $value['thoi_gian_hoc'] ; $newDate = date(" d-m-Y", strtotime($value['thoi_gian_hoc'])); echo $newDate  ?>
                                             </span></li>
                                 <li><i class="fa-light fa-tag"></i> <strong>Cấp Độ:
                                     </strong><span>Cơ Bản</span></li>

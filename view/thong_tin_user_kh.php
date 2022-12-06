@@ -64,8 +64,8 @@
                                 <td><?php echo $value['id_dang_ky'] ?></td>
                                 <td><?php echo listone_hocvien($value['id_hoc_vien'])[0]['ten_hv'] ?></td>
                                 <td><?php echo listone_lop_tenlop($value['id_lop'])[0]['ten_lop'] ?></td>
-                                <td><?php echo $value['gia_tien'] ?></td>
-                                <td><?php echo $value['ngay_dk'] ?></td>
+                                <td style="color: blue"><?php echo number_format($value['gia_tien']) ?></td>
+                                <td><?php $originalDate = $value['ngay_dk'] ; $newDate = date(" H:i:s d-m-Y", strtotime($value['ngay_dk'])); echo $newDate  ?></td>
                                 <td><?php if($value ['tinh_trang'] == 0) echo "Chưa thanh toán"; elseif($value ['tinh_trang'] == 1) echo "Đang xử lí"; elseif($value ['tinh_trang'] == 2) echo "Thanh Toán thành công"  ?></td>
                                 <td>
                                     <?php if($value['tinh_trang'] == 2){ ?>
