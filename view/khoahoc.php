@@ -36,8 +36,8 @@
                         ?>
                         <div class="col-md-6 col-lg-4 col-xxl-3">
                             <div class="course-box style4">
-                                <div class="course-img"><img src="../Upfileanh/<?php echo listone_khoahoc($value['id_khoa_hoc'])[0]['anh'] ?>" alt="course" > <span
-                                            class="tag"><?php echo number_format($value['gia']) ?></span></div>
+                                <div class="course-img"><a href="index.php?act=ct_khoahoc&id=<?php echo $value['id_khoa_hoc'] ?>"><img src="../Upfileanh/<?php echo listone_khoahoc($value['id_khoa_hoc'])[0]['anh'] ?>" alt="course" ></a> <span
+                                            class="tag"><?php echo number_format($value['gia']) ?> đ</span></div>
                                 <div class="course-content">
                                     <div class="course-author">
                                         <div class="author-info"><img src="../Upfileanh/giangvien/<?php echo listone_giangvien(loadone_lop($value['id_lop'])[0]['magv'])[0]['hinh_gv']; ?>" alt="author" style="width: 50px;height: 50px">
