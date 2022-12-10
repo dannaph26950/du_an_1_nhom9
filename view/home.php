@@ -163,7 +163,7 @@
                                         <div>
 
                                         </div>
-                                        <div class="course-meta"><span><i class="fal fa-file"></i><?php echo $value['thoi_gian_hoc'] ?></span> <span><i
+                                        <div class="course-meta"><span><i class="fal fa-file"></i><?php $originalDate = $value['thoi_gian_hoc'] ; $newDate = date(" d-m-Y", strtotime($value['thoi_gian_hoc'])); echo $newDate  ?></span> <span><i
                                                         class="fal fa-user"></i>Sinh viên <?php echo loadone_lop($value['id_lop'])[0]['so_luong'] ?></span></div>
 
 

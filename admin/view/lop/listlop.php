@@ -16,9 +16,8 @@ if(isset($_SESSION['taikhoan'])){
             <th>Thời gian khai giảng</th>
             <th>Địa điểm học</th>
             <th>Số Lượng Học Viên</th>
-            <th>Mã khóa học</th>
-            <th>Mã Giáo Viên</th>
-            <th>Trạng Thái</th>
+            <th>Tên khóa học</th>
+            <th>Giảng Viên</th>
             <th>Thao Tác</th>
         </tr>
         </thead>
@@ -33,9 +32,8 @@ if(isset($_SESSION['taikhoan'])){
                 <td><?php echo $newDate ?></td>
                 <td><?php echo $value['dia_diem_hoc'] ?></td>
                 <td><?php echo $value['so_luong'] ?></td>
-                <td><?php echo $value['id_khoa_hoc'] ?></td>
-                <td><?php echo $value['magv'] ?></td>
-                <td><?php echo $value['trang_thai'] ?></td>
+                <td><?php echo listone_khoahoc($value['id_khoa_hoc'])[0]['ten_khoa_hoc'] ?></td>
+                <td><?php echo listone_giangvien($value['magv'])[0]['ten_gv'] ?></td>
 
                 <td class="">
                     <input value="Sửa " type="button" class="btn btn-primary start-50" onclick="location.href='index.php?act=edit_lop&id=<?php echo $value['id_lop'] ?>'" ><br><br>

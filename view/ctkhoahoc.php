@@ -107,11 +107,7 @@
 
 <!--                                                    validate lịch học-->
                                                     <?php
-                                                    //
-//                                                    echo date('d/m/Y - H:i:s');
-//                                                    die();
                                                     $date_lop_convert =  strtotime(listone_lop_tgkg($value['id_lop'])[0]['thoi_gian_khai_giang']);
-                                                    //
                                                     if( strtotime(date("Y-m-d")) > $date_lop_convert ){
                                                     ?>
                                                     <input value="Đăng Kí" name="dangki" type="submit" class="btn btn-primary start-50" disabled ><br><br>
@@ -245,9 +241,7 @@
             <div class="col-xxl-3 col-lg-4">
                 <aside class="sidebar-area">
                     <div class="widget widget_info">
-                        <div class="as-video"><img src="../Upfileanh/<?php echo $value['anh'] ?>" alt="video"> <a
-                                    href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" class="play-btn popup-video"><i
-                                        class="fas fa-play"></i></a></div><span class="h4 course-price"><?php echo number_format($value['gia']) ?> <span
+                        <div class="as-video"><img src="../Upfileanh/<?php echo $value['anh'] ?>" alt="video"></div><span class="h4 course-price"><?php echo number_format($value['gia']) ?><u>đ</u><span
                                     class="tag">25% Off</span></span> <a  href="index.php?act=cart&id=<?php echo $value['id_khoa_hoc'] ?>" class="as-btn text-decoration-none">Đăng ký</a>
                         <h3 class="widget_title">Thông Tin Khóa Học</h3>
                         <div class="info-list">

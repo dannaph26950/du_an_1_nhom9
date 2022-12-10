@@ -5,7 +5,6 @@ if(isset($_SESSION['taikhoan'])){
 
 
 <div style="text-align: center; margin: 60px 0px">
-    <a href="index.php?act=add_binhluan"><input type="submit" value="THÊM MỚI" name="add_khoahoc" class="btn btn-primary" style="width: 200px" ></a>
 </div>
 <div class="container">
     <table class="table table-bordered">
@@ -15,7 +14,6 @@ if(isset($_SESSION['taikhoan'])){
             <th>NỘI DUNG BÌNH LUẬN</th>
             <th>Mã KHÓA HỌC </th>
             <th>Mã HỌC VIÊN</th>
-            <th>TRẠNG THÁI</th>
             <th></th>
 
         </tr>
@@ -30,24 +28,16 @@ if(isset($_SESSION['taikhoan'])){
             </td>
             <td>
                 <?php
-                    echo $value['id_khoa_hoc']
-
-
+                    echo listone_khoahoc($value['id_khoa_hoc'])[0]['ten_khoa_hoc']
                 ?>
             </td>
             <td>
                 <?php
-                    echo $value['id_hoc_vien'];
-
-
+                    echo listone_hocvien($value['id_hoc_vien'])[0]['ten_hv'];
                 ?>
 
             </td>
-            <td>
-                <?php echo $value['trang_thai'] ?>
-            </td>
             <td class="">
-                <input value="Sửa " type="button" class="btn btn-primary start-50" onclick="location.href='index.php?act=edit_binhluan&id=<?php echo $value['id_binh_luan'] ?>'" ><br><br>
                 <input type="submit" class="btn btn-primary start-50" onclick="confirm('Bạn có muốn xóa bình luận \( <?php echo $value['ten_bl']?> \) hay không!') == true ? location.href='index.php?act=xoa_binhluan&id=<?php echo $value['id_binh_luan']?>' : ''" value="Xóa"><br><br>
             </td>
 

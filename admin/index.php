@@ -177,6 +177,7 @@ session_start();
                 break;
             case 'list_khoahoc':
                 $listall_khoahoc = listall_khoahoc();
+
                 include '../admin/view/sanpham/listsanpham.php';
                 break;
             case 'delete_khoahoc':
@@ -438,6 +439,7 @@ session_start();
                         $_SESSION['taikhoan'] = $checkuser;
                         echo "<script>alert('Đăng Nhập Thành Công!');</script>";
                         echo "<script>window.location.href='index.php';</script>";
+//                        echo "<script>window.history.go(-2);</script>";
                     }else{
                         echo "<script>alert('Chưa đúng mật khẩu hoặc tài khoản!');</script>";
                     }

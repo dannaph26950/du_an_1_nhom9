@@ -36,6 +36,7 @@
     <link rel="stylesheet" href="../user/assets/css/app.min.css">
     <link rel="stylesheet" href="../user/assets/css/fontawesome.min.css">
     <link rel="stylesheet" href="../user/assets/css/style.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </head>
 
 <body>

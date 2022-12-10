@@ -1,7 +1,7 @@
 <?php
 if(isset($_SESSION['taikhoan'])){
     ?>
-<center><h1 style="margin: 60px 0px">DANH SÁCH ĐƠN HÀNG</h1></center>
+<center><h1 style="margin: 60px 0px">DANH SÁCH ĐĂNG KÝ</h1></center>
 <div style="text-align: center; margin: 60px 0px">
 
     <form action="index.php?act=list_giohang" method="post">
@@ -30,7 +30,7 @@ if(isset($_SESSION['taikhoan'])){
             <th>Tên Lớp</th>
             <th>Giá Tiền</th>
             <th>Ngày Đăng Kí</th>
-            <th>Tình Trạng</th>
+            <th>Trạng Thái</th>
             <th></th>
 
         </tr>

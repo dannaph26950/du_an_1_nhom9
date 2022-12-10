@@ -15,8 +15,6 @@ if(isset($_SESSION['taikhoan'])){
             <th>Tên giảng viên</th>
             <th>Hình ảnh </th>
             <th>Thông tin giảng viên</th>
-            <th>Trạng thái</th>
-
             <th>Thao tác</th>
         </tr>
         </thead>
@@ -27,7 +25,6 @@ if(isset($_SESSION['taikhoan'])){
                 <td><?php echo $value['ten_gv'] ?></td>
                 <td><img src="../Upfileanh/giangvien/<?php echo $value['hinh_gv'] ?>" alt="" style="width: 200px"></td>
                 <td><?php echo $value['thong_tin_gv'] ?></td>
-                <td><?php echo $value['trang_thai'] ?></td>
 
                 <td class=""><input value="Sửa " type="button" class="btn btn-primary start-50" onclick="location.href='index.php?act=edit_giangvien&id=<?php echo $value['magv'] ?>'" ><br><br>
                     <input type="submit" class="btn btn-primary start-50" onclick="confirm('Bạn có muốn xóa giảng viên \( <?php echo $value['ten_gv']?> \) hay không!') == true ? location.href='index.php?act=delete_giangvien&id=<?php echo $value['magv']?>' : ''" value="Xóa"><br><br>
