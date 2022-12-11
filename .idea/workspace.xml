@@ -4,16 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cc6cba04-603a-4918-b721-0684c76f7a58" name="Changes" comment="validate trang thống kê/admin,css file thanh toán, bình luận">
+    <list default="true" id="cc6cba04-603a-4918-b721-0684c76f7a58" name="Changes" comment="format number giá và format ngày tháng năm sang việt nam">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/view/giohang/listgiohang.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/giohang/listgiohang.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/view/lop/listlop.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/lop/listlop.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/view/sanpham/addsanpham.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/sanpham/addsanpham.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/view/sanpham/editsanpham.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/sanpham/editsanpham.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/view/sanpham/listsanpham.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/sanpham/listsanpham.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/binhluan.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/binhluan.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/view/ctkhoahoc.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/ctkhoahoc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/khoahoc.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/khoahoc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/thanh_toan.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/thanh_toan.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/thong_tin_user_kh.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/thong_tin_user_kh.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/dang_nhap.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/dang_nhap.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/home.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -167,7 +166,17 @@
       <workItem from="1670310419009" duration="2043000" />
       <workItem from="1670319914729" duration="190000" />
       <workItem from="1670328489798" duration="1605000" />
-      <workItem from="1670342440222" duration="5000000" />
+      <workItem from="1670342440222" duration="6110000" />
+      <workItem from="1670427026342" duration="2787000" />
+      <workItem from="1670500688919" duration="8483000" />
+      <workItem from="1670565899332" duration="1502000" />
+      <workItem from="1670631153020" duration="1781000" />
+      <workItem from="1670657615087" duration="3480000" />
+      <workItem from="1670661379768" duration="580000" />
+      <workItem from="1670669767394" duration="229000" />
+      <workItem from="1670674599370" duration="1899000" />
+      <workItem from="1670690249727" duration="9572000" />
+      <workItem from="1670762889183" duration="1765000" />
     </task>
     <task id="LOCAL-00001" summary="update files add">
       <created>1668688059236</created>
@@ -407,7 +416,21 @@
       <option name="project" value="LOCAL" />
       <updated>1670307096865</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="format number và format ngày tháng năm sang việt nam">
+      <created>1670348190600</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1670348190601</updated>
+    </task>
+    <task id="LOCAL-00036" summary="format number giá và format ngày tháng năm sang việt nam">
+      <created>1670348497312</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1670348497312</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -425,8 +448,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="update trang home của view" />
-    <MESSAGE value="update trang view" />
     <MESSAGE value="update trang view new" />
     <MESSAGE value="  user" />
     <MESSAGE value="update upfile ảnh" />
@@ -450,7 +471,9 @@
     <MESSAGE value="css update" />
     <MESSAGE value="validate thanh toán khi đã thanh toán thành công" />
     <MESSAGE value="validate trang thống kê/admin,css file thanh toán, bình luận" />
-    <option name="LAST_COMMIT_MESSAGE" value="validate trang thống kê/admin,css file thanh toán, bình luận" />
+    <MESSAGE value="format number và format ngày tháng năm sang việt nam" />
+    <MESSAGE value="format number giá và format ngày tháng năm sang việt nam" />
+    <option name="LAST_COMMIT_MESSAGE" value="format number giá và format ngày tháng năm sang việt nam" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

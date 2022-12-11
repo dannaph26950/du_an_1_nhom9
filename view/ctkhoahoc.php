@@ -133,7 +133,7 @@
                             <div class="tab-pane fade" id="curriculam" role="tabpanel"
                                  aria-labelledby="curriculam-tab">
 
-                                <p><?php
+                                <p style="padding: 10px 20px"><?php
                                     foreach ($listone_khoahoc as $key => $value) {
                                         echo $value['mo_ta'];
                                     }

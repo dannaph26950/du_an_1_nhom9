@@ -33,7 +33,7 @@ if(isset($_SESSION['taikhoan'])){
         </div>
         <div class="mb-3">
             <label for="exampleFormControlTextarea1"class="form-label" style="font-weight: bold" >MÔ TẢ</label>
-            <textarea  class="form-control kiemtra" id="exampleFormControlTextarea1" rows="3" name="mo_ta"></textarea>
+            <textarea  class="form-control kiemtra" id="exampleFormControlTextarea1" rows="3" name="mo_ta" style="padding: 20px 10px"></textarea>
         </div>
         <div class="mb-3">
             <label for="exampleInputEmail1"class="form-label" style="font-weight: bold" >GIÁ TIỀN</label>

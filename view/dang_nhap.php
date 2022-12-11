@@ -1,5 +1,12 @@
 <?php
 //var_dump($_SESSION['user']);
+//$link = $_SERVER['HTTP_REFERER'];
+//echo $link;
+//die();
+//if($link == "http://localhost/du_an_1_nhom9/view/index.php?act=add_lop") {
+//    echo "<script>function back_trang_truoc(){history.back();}</script>";
+//}
+
 ?>
 <center><h1 style="margin-top: 30px">Đăng nhập</h1></center>
 <form method="post" action="index.php?act=dang_nhap" style="margin: 0px 400px;">
@@ -15,16 +22,20 @@
     </div>
 
     <div style="display: flex; align-items:center; margin-left: 300px ; ">
-        <input type="submit" value="Đăng Nhập" name="dang_nhap" class="btn btn-primary" style="width: 200px; margin-right: 20px;" >
+            <input type="submit" value="Đăng Nhập " name="dang_nhap" class="btn btn-primary " style="width: 200px; margin-right: 20px;" onclick="back_trang_truoc()" id="submit-form"   >
         <a href="index.php?act=quen_mk" >Quên mật khẩu</a>
     </div>
     <div style="margin-top: 300px; background-color: white"></div>
-
-
-
 </form>
+<!--<label for="submit-form" tabindex="0">Submit</label>-->
 <?php
-if (isset($thongbao) && ($thongbao != '')){
-    echo $thongbao;
-}
-?>
+////if(isset($_SESSION['user'])){
+////    if($link == "http://localhost/du_an_1_nhom9/view/index.php?act=add_lop"){
+////        ?>
+<!--        <input onclick="back_trang_truoc()" type="submit" value="test" >-->
+<?php
+//    }
+//}
+//    ?>
+
+

@@ -40,7 +40,7 @@ if(isset($_SESSION['taikhoan'])){
                 </div>
                 <div class="mb-3">
                     <label for="exampleFormControlTextarea1" class="form-label">Mô Tả</label>
-                    <textarea class="form-control" name="mota_KH"  id="exampleFormControlTextarea1" rows="3"><?php if(isset($value['mo_ta'])&&($value['mo_ta']!="")) echo $value['mo_ta']; ?></textarea>
+                    <textarea class="form-control" name="mota_KH"  id="exampleFormControlTextarea1" rows="3" style="padding: 20px 10px" ><?php if(isset($value['mo_ta'])&&($value['mo_ta']!="")) echo $value['mo_ta']; ?></textarea>
                     <p style="color: red"><?php echo isset($error_update_khoahoc["mota"]) ? $error_update_khoahoc["mota"] : ""; ?></p>
                 </div>
                 <div class="mb-3">

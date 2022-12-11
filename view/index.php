@@ -81,12 +81,12 @@ if (isset($_GET['act']) && ($_GET['act']) != ''){
                     $times = strftime('%Y-%m-%d %H:%M:%S');
                     insert_dangki($id, $id_lop, $gia, $trang_thai,$times);
                 }
-                echo "<script>alert('Đã thêm khóa học thành công. Vui lòng thanh toán!!!')</script>";
+                echo "<script>swal('Đã thêm khóa học thành công. Vui lòng thanh toán!!!')</script>";
                 echo "<script>window.location.href='index.php?act=list_khoa_hoc';</script>";
 
             }else{
-                echo "<script>alert('Đăng ký hoặc đăng nhập thì mới được mua khóa học này')</script>";
-                echo "<script>window.location.href='index.php?act=add_dangky';</script>";
+                echo "<script>swal('Đăng ký hoặc đăng nhập thì mới được mua khóa học này')</script>";
+                echo "<script>window.location.href='index.php?act=dang_nhap';</script>";
             }
             // hết
             include '../view/khoahoc.php';
@@ -114,7 +114,7 @@ if (isset($_GET['act']) && ($_GET['act']) != ''){
                 }
                 insert_hoadon($name_image,$id);
 //                $thongbao="gửi hóa đơn thành công";
-                echo "<script>alert('Hệ thống đang xử lí ảnh bằng chứng! Vui lòng đợi máy 2-3 ngày !')</script>";
+                echo "<script>swal('Hệ thống đang xử lí ảnh bằng chứng! Vui lòng đợi máy 2-3 ngày !')</script>";
 
             }
             if(isset($_SESSION['user']['id_hoc_vien'])){
@@ -187,24 +187,33 @@ if (isset($_GET['act']) && ($_GET['act']) != ''){
             include "../view/lienhe.php";
             break;
         case 'dang_nhap':
-            if (isset($_POST['dang_nhap'])){
+            $link = $_SERVER['HTTP_REFERER'];
 
-                $user = $_POST['tai_khoan'];
-                $pass = $_POST['mat_khau'];
-                $check_user = check_user($user,$pass);
-                if (is_array($check_user)){
-                    $_SESSION['user'] = $check_user;
-                    $thongbao = 'Đã đăng nhập thành công';
-                    echo "<script>window.location.href='index.php';</script>";
-                }elseif(!is_array($check_user)){
-                    $thongbao = 'Tài khoản không tồn tại';
-                    echo "<script>alert('Tên đăng nhập hoặc mật khẩu không đúng!!!')</script>";
+                if (isset($_POST['dang_nhap'])){
+
+                    $user = $_POST['tai_khoan'];
+                    $pass = $_POST['mat_khau'];
+                    $check_user = check_user($user,$pass);
+                    if (is_array($check_user)){
+                        $_SESSION['user'] = $check_user;
+                        $thongbao = 'Đã đăng nhập thành công';
+
+                        echo "<script>alert('Đăng nhập thành công')</script>";
+                        echo "<script>window.location.href='index.php?act=khoa_hoc';</script>";
+                    }elseif(!is_array($check_user)){
+                        $thongbao = 'Tài khoản không tồn tại';
+                        echo "<script>swal('Tên đăng nhập hoặc mật khẩu không đúng!!!')</script>";
+                    }
+
                 }
-            }
+
+
+
             include "../view/dang_nhap.php";
             break;
         case 'dang_xuat':
             session_unset();
+            echo "<script>Bạn muốn đăng xuất? </script>";
             echo "<script>window.location.href='index.php';</script>";
             break;
 //      GIỎ HÀNG-----------------------------
@@ -266,7 +275,7 @@ if (isset($_GET['act']) && ($_GET['act']) != ''){
                     echo "<script>alert('Mật khẩu của bạn là: ".$checkemail['mat_khau']."')</script>";
                     echo "<script>window.location.href='index.php?act=dang_nhap';</script>";
                 }else{
-                    echo "<script>alert('Gmail này không tồn tại, vui lòng thử lại !!!')</script>";
+                    echo "<script>swal('Gmail này không tồn tại, vui lòng thử lại !!!')</script>";
                 }
             }
 

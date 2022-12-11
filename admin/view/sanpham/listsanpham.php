@@ -33,7 +33,7 @@ if(isset($_SESSION['taikhoan'])){
                 <td><?php echo number_format($value['gia']) ?></td>
                  <?php $originalDate = $value['thoi_gian_hoc'] ; $newDate = date("d-m-Y", strtotime($value['thoi_gian_hoc']));  ?>
                 <td  ><?php echo $newDate; ?></td>
-                <td><?php echo $value['mo_ta'] ?></td>
+                <td style="padding: 20px 10px"><?php echo $value['mo_ta'] ?></td>
                 <td><?php echo listone_danhmuc($value['id_danh_muc'])[0]['ten_danh_muc']; ?></td>
                 <td><?php echo loadone_lop($value['id_lop'])[0]['ten_lop'] ?></td>
                 <td class="">
