@@ -364,7 +364,7 @@ session_start();
                     $so_luong = $_POST['so_luong'];
                     $id_gv = $_POST['id_gv'];
                     $id_khoa_hoc = $_POST['id_khoa_hoc'];
-                    $trang_thai = $_POST['trang_thai'];
+
                     if(empty($ten_lop)){
                         $error_add_lop["name"] = "Không được để trống!!!";
                     }
@@ -383,11 +383,9 @@ session_start();
                     if(empty($id_khoa_hoc)){
                         $error_add_lop["id_kh"] = "Không được để trống!!!";
                     }
-                    if(empty($trang_thai)){
-                        $error_add_lop["trang_thai"] = "Không được để trống!!!";
-                    }
+
                     if (!$error_add_lop) {
-                        insert_lop($ten_lop,$thoi_gian_khai_giang,$dia_diem_hoc,$so_luong,$id_gv,$id_khoa_hoc,$trang_thai);
+                        insert_lop($ten_lop,$thoi_gian_khai_giang,$dia_diem_hoc,$so_luong,$id_gv,$id_khoa_hoc);
                         $thongbao = 'Đã thêm vào danh mục';
                     }
                 }
@@ -414,9 +412,9 @@ session_start();
                     $so_luong = $_POST['so_luong'];
                     $id_gv = $_POST['magv'];
                     $id_khoa_hoc = $_POST['id_khoa_hoc'];
-                    $trang_thai = $_POST['trang_thai'];
 
-                    update_lop($ten_lop,$thoi_gian_khai_giang,$dia_diem_hoc,$so_luong,$id_gv,$id_khoa_hoc,$trang_thai,$id_lop);
+
+                    update_lop($ten_lop,$thoi_gian_khai_giang,$dia_diem_hoc,$so_luong,$id_gv,$id_khoa_hoc,$id_lop);
                     $thongbao = 'Đã thêm vào danh mục';
                 }
                 $list_lop = listall_lop();

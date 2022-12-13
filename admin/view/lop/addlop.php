@@ -56,11 +56,7 @@ if(isset($_SESSION['taikhoan'])){
 <!--            <input type="number"  class="form-control kiemtra" id="exampleInputEmail1" aria-describedby="emailHelp" name="id_khoa_hoc">-->
             <p style="color: red"><?php echo isset($error_add_lop["id_kh"]) ? $error_add_lop["id_kh"] : ""; ?></p>
         </div>
-        <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label  ">Trạng Thái</label>
-            <input type="number"  class="form-control kiemtra" id="exampleInputEmail1" aria-describedby="emailHelp" name="trang_thai">
-            <p style="color: red"><?php echo isset($error_add_lop["trang_thai"]) ? $error_add_lop["trang_thai"] : ""; ?></p>
-        </div>
+
         <center>
             <div style="text-align: center">
                 <a href="index.php?act=list_lop"><input type="submit" value="THÊM MỚI" name="add_lop" class="btn btn-primary" style="width: 200px; margin: 0px 20px" onclick="return  kiemTraDuLieu()" ></a>
