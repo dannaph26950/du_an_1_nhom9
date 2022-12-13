@@ -32,3 +32,4 @@ function upd_soluong_lop($id_lop1){
     pdo_execute($sql);
 }
 ?>
+

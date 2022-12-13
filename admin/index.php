@@ -460,7 +460,6 @@ session_start();
                 $listall_binhluan = listall_binhluan();
                 include '../admin/view/binhluan/listbinhluan.php';
                 break;
-
             case 'edit_binhluan':
                 if(isset($_GET['id'])&&$_GET['id']>0);{
                 $id_binhluan = $_GET['id'];
@@ -527,6 +526,7 @@ session_start();
 //                die();
                 include '../admin/view/giohang/listgiohang.php';
                 break;
+//                thống kê---------------------------------------
             case 'thongke':
 
                 $listthongke = load_allthongke();
@@ -548,3 +548,4 @@ session_start();
 
 
 ?>
+

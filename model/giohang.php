@@ -1,6 +1,6 @@
 <?php
 
-    function insert_donhang( $ten_kh,$gia  , $so_luong )
+    function insert_donhang( $ten_kh,$gia  ,$so_luong )
     {
         $sql = "insert into don_hangct  values(null,'$ten_kh','$gia ','$so_luong')";
         return pdo_execute ($sql);
@@ -16,3 +16,4 @@
     }
 
     ?>
+

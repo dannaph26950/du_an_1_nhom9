@@ -1,7 +1,7 @@
 <?php 
 //load all lop
 function listall_lop(){
-    $sql = "SELECT * FROM `lop` ";
+    $sql = "SELECT * FROM `lop` ORDER BY id_lop  DESC";
     $list_lop = pdo_query($sql);
     return $list_lop;
 }
@@ -65,3 +65,4 @@ function listone_lop_tgkg($id){
     return $listone_lop_tenlop;
 }
 ?>
+

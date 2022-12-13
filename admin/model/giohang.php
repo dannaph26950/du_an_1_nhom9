@@ -15,7 +15,7 @@ function update_giohang($trangthai,$id){
         pdo_execute($sql);
 }
 function listone_giohang($id){
-    $sql = "select * from dang_ky where id_hoc_vien=".$id;
+    $sql = "select * from dang_ky where id_hoc_vien=".$id ." ORDER BY id_dang_ky  DESC";
     $listone_giohang = pdo_query($sql);
     return $listone_giohang ;
 }
@@ -25,3 +25,4 @@ function listone_gio_hang($id){
     return $listone_giohang ;
 }
 ?>
+

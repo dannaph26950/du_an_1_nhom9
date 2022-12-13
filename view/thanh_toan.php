@@ -113,6 +113,7 @@
                         <tr class="order-total">
                             <td><h6 >Gửi hóa đơn</h6></td>
                             <td data-title="Total"> <input type="file" value="" name="image" style="width: 370px; height: 45px" > </td>
+                            <p style="color: red"><?php echo isset($error_thanh_toan["image"]) ? $error_thanh_toan["image"] : ""; ?></p>
                         </tr>
                     </tfoot>
                 </table>
@@ -136,3 +137,4 @@
 </body>
 
 </html>
+

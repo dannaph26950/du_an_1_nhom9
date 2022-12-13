@@ -38,7 +38,7 @@ if(isset($_SESSION['taikhoan'])){
 
             </td>
             <td class="">
-                <input type="submit" class="btn btn-primary start-50" onclick="confirm('Bạn có muốn xóa bình luận \( <?php echo $value['ten_bl']?> \) hay không!') == true ? location.href='index.php?act=xoa_binhluan&id=<?php echo $value['id_binh_luan']?>' : ''" value="Xóa"><br><br>
+                <input type="submit" class="btn btn-primary start-50" onclick="confirm('Bạn có muốn xóa bình luận \( <?php echo $value['ten_bl']?> \) hay không!') == true ? location.href='index.php?act=xoa_binhluan&id=<?php echo $value['id_binhluan']?>' : ''" value="Xóa"><br><br>
             </td>
 
         </tr>
@@ -53,3 +53,4 @@ if(isset($_SESSION['taikhoan'])){
     echo "<script>window.location.href='index.php?act=dang_nhap';</script>";
 }
     ?>
+

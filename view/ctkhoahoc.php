@@ -62,7 +62,7 @@
                                         <th>Tên Lớp</th>
                                         <th>Thời Gian Khai Giảng</th>
                                         <th>Địa Điểm Học</th>
-                                        <th>Số lượng</th>
+                                        <th>Số chỗ (còn)</th>
                                         <th>Tên Giáo Viên</th>
                                         <th>Trạng Thái</th>
                                     </tr>
@@ -150,9 +150,9 @@
                                         <div class="auhtor-img"><img src="../Upfileanh/giangvien/<?php echo listone_giangvien(loadone_lop($value['id_lop'])[0]['magv'])[0]['hinh_gv']; ?>" alt="author" ></div>
                                         <div class="media-body">
                                             <h3 class="author-name"><a class="text-decoration-none" class="text-inherit"
-                                                                       href="index.php?act_khoahoc"><?php echo listone_giangvien(loadone_lop($value['id_lop'])[0]['magv'])[0]['ten_gv']; ?></a></h3>
+                                                                       href="index.php?act=ct_giangvien&id=<?php echo listone_giangvien(loadone_lop($value['id_lop'])[0]['magv'])[0]['magv']; ?>"><?php echo listone_giangvien(loadone_lop($value['id_lop'])[0]['magv'])[0]['ten_gv']; ?></a></h3>
                                             <p class="author-text"><?php echo listone_giangvien(loadone_lop($value['id_lop'])[0]['magv'])[0]['thong_tin_gv']; ?></p>
-                                            <div class="author-meta"><a class="text-decoration-none" href="index.php?act=dang_ky"><i
+                                            <div class="author-meta"><a class="text-decoration-none" href="index.php?act=add_dangky"><i
                                                             class="fal fa-file-video"></i>Đăng Ký</a><span><i
                                                             class="fal fa-users"></i></span></div>
                                             <div class="as-social"><a href="https://facebook.com/"
@@ -262,5 +262,6 @@
             </div>
             <?php } ?>
         </div>
+
     </div>
 </section>

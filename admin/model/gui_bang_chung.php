@@ -5,3 +5,4 @@ function insert_hoadon($name_image,$id){
         pdo_execute($sql);
 }
 ?>
+

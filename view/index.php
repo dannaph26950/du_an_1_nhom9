@@ -81,7 +81,7 @@ if (isset($_GET['act']) && ($_GET['act']) != ''){
                     $times = strftime('%Y-%m-%d %H:%M:%S');
                     insert_dangki($id, $id_lop, $gia, $trang_thai,$times);
                 }
-                echo "<script>swal('Đã thêm khóa học thành công. Vui lòng thanh toán!!!')</script>";
+                echo "<script>alert('Đã thêm khóa học thành công. Vui lòng thanh toán!!!')</script>";
                 echo "<script>window.location.href='index.php?act=list_khoa_hoc';</script>";
 
             }else{
@@ -92,7 +92,6 @@ if (isset($_GET['act']) && ($_GET['act']) != ''){
             include '../view/khoahoc.php';
             break;
         case 'thanh_toan':
-
             if(isset($_GET['id']) && ($_GET['id']>0)){
                 $id_dk = $_GET['id'];
                 $listone_giohang = listone_gio_hang($id_dk);
@@ -101,6 +100,7 @@ if (isset($_GET['act']) && ($_GET['act']) != ''){
             include '../view/thanh_toan.php';
             break;
         case 'update_thanh_toan':
+            $error_thanh_toan = [];
             if(isset($_POST['update_hoadon']) && ($_POST['update_hoadon'])) {
                 $id = $_POST['id'];
                 if ( isset( $_FILES['image'] ) ) {
@@ -112,9 +112,12 @@ if (isset($_GET['act']) && ($_GET['act']) != ''){
                     $imageFileType = pathinfo ( $tagert_file , PATHINFO_EXTENSION );
                     move_uploaded_file ( $_FILES['image']['tmp_name'] , $tagert_file );
                 }
-                insert_hoadon($name_image,$id);
-//                $thongbao="gửi hóa đơn thành công";
-                echo "<script>swal('Hệ thống đang xử lí ảnh bằng chứng! Vui lòng đợi máy 2-3 ngày !')</script>";
+                if(empty($name_image)){
+                    $error_thanh_toan["image"] = "Vui lòng gửi hóa đơn";
+                }
+                    insert_hoadon($name_image,$id);
+                    echo "<script>swal('Hệ thống đang xử lí ảnh bằng chứng! Vui lòng đợi máy 2-3 ngày !')</script>";
+
 
             }
             if(isset($_SESSION['user']['id_hoc_vien'])){
@@ -292,3 +295,4 @@ if (isset($_GET['act']) && ($_GET['act']) != ''){
 
 include 'footer.php';
 ?>
+
