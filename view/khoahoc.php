@@ -71,8 +71,8 @@
                     </div>
                     <div class="col-lg-6 align-self-center">
                         <div class="cta-content">
-                            <h2 class="fs-40 fw-light text-theme mb-10">Học hỏi từ nền tảng của chúng tôi</h2>
-                            <h2 class="mb-25">Điều đó đưa bạn lên cấp độ tiếp theo</h2><a href="contact.html"
+                            <h2 class="fs-40 fw-light text-theme mb-10" style="font-family:Arial">Học hỏi từ nền tảng của chúng tôi</h2>
+                            <h2 class="mb-25" style="font-family:Arial">Điều đó đưa bạn lên cấp độ tiếp theo</h2><a href="contact.html"
                                                                                           class="as-btn">ĐĂNG KÝ NGAY<i class="fas fa-arrow-right ms-2"></i></a>
                         </div>
                     </div>

@@ -89,10 +89,10 @@
                 <div class="text-center text-xl-start"><img src="assets/img/normal/vector_3.png" alt="vector"></div>
             </div>
             <div class="col-xl-6 text-center text-xl-start">
-                <div class="title-area mb-30"><span class="sub-title">Bạn có thể biết ? </span>
-                    <h2 class="sec-title fw-semibold">Hãy bắt đầu sự nghiệp của bạn với Acadu Education</h2>
+                <div class="title-area mb-30"><span class="sub-title" style="font-family:Arial">Bạn có thể biết ? </span>
+                    <h2 class="sec-title fw-semibold" style="font-family:Arial">Hãy bắt đầu sự nghiệp của bạn với Acadu Education</h2>
                 </div>
-                <p class="mb-30">Với đội ngũ giảng viên chất lượng và có kinh nghiệm hẳn 10 năm trong lĩnh vực giảng dạy tiếng anh. Chúng tôi cam kết sẽ đưa cho bạn những tài liệu học bám sát với các đề thi.</p><a href="index.php?act=khoa_hoc"
+                <p class="mb-30" style="font-family:Arial">Với đội ngũ giảng viên chất lượng và có kinh nghiệm hẳn 10 năm trong lĩnh vực giảng dạy tiếng anh. Chúng tôi cam kết sẽ đưa cho bạn những tài liệu học bám sát với các đề thi.</p><a href="index.php?act=khoa_hoc"
                                                                                                                                                                                                                       class="as-btn style4">Hãy bắt đầu với lớp học<i class="far fa-play ms-2"></i></a>
             </div>
         </div>
@@ -112,8 +112,8 @@ if(isset($_SESSION['user'])){
                     </div>
                     <div class="col-lg-6 align-self-center">
                         <div class="cta-content">
-                            <h2 class="fs-40 fw-light text-theme mb-10">Học hỏi từ nền tảng của chúng tôi</h2>
-                            <h2 class="mb-25">Điều đó đưa bạn lên cấp độ tiếp theo</h2><a href="index.php?act=add_dangky"
+                            <h2 class="fs-40 fw-light text-theme mb-10" style="font-family:Arial">Học hỏi từ nền tảng của chúng tôi</h2>
+                            <h2 class="mb-25" style="font-family:Arial">Điều đó đưa bạn lên cấp độ tiếp theo</h2><a href="index.php?act=add_dangky"
                                                                                           class="as-btn">Đăng Ký ngay<i class="fas fa-arrow-right ms-2"></i></a>
                         </div>
                     </div>
