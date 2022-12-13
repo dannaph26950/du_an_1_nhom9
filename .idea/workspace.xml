@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cc6cba04-603a-4918-b721-0684c76f7a58" name="Changes" comment="bỏ phần hỗ trợ" />
+    <list default="true" id="cc6cba04-603a-4918-b721-0684c76f7a58" name="Changes" comment="ắp đết trang hôm">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/footer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/home.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -456,7 +460,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670952021240</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="update css giá khóa học trang chi tiết khóa học">
+      <created>1670952494369</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1670952494369</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -474,8 +485,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="update đổ ra dữ liệu" />
-    <MESSAGE value="create chức năng bình luận, thêm bình luận" />
     <MESSAGE value="create profile user , update id lớp dựa theo id học viên" />
     <MESSAGE value="fix lại file lọc danh mục của đan với cả update lại khi click vào đăng kí nó ra trang ctkhoahoc" />
     <MESSAGE value="sửa lại file đăng kí bên trái trong file ctkhoahoc list ra các lớp để đăng kí" />
@@ -499,7 +508,9 @@
     <MESSAGE value="bỏ trạng thái của lớp" />
     <MESSAGE value="update ảnh giảng viên" />
     <MESSAGE value="bỏ phần hỗ trợ" />
-    <option name="LAST_COMMIT_MESSAGE" value="bỏ phần hỗ trợ" />
+    <MESSAGE value="update css giá khóa học trang chi tiết khóa học" />
+    <MESSAGE value="ắp đết trang hôm" />
+    <option name="LAST_COMMIT_MESSAGE" value="ắp đết trang hôm" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

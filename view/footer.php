@@ -21,7 +21,7 @@
                 </div>
                 <div class="col-md-6 col-xl-auto">
                     <div class="widget widget_nav_menu footer-widget">
-                        <h3 class="widget_title">Địa Chỉ</h3>
+                        <h3 class="widget_title" style="font-family:Arial">Địa Chỉ</h3>
                         <div class="menu-all-pages-container">
                             <ul class="menu">
                                 <li><a href="team.html">Trịnh Văn Bô, Nam Từ Liêm, Hà Nội</a></li>
@@ -34,7 +34,7 @@
                 </div>
                 <div class="col-md-6 col-xl-auto">
                     <div class="widget widget_nav_menu footer-widget">
-                        <h3 class="widget_title">Hotline:</h3>
+                        <h3 class="widget_title" style="font-family:Arial">Hotline:</h3>
                         <div class="menu-all-pages-container">
                             <ul class="menu">
                                 <li><a href="team.html">0393xxxxxx</a></li>
@@ -45,7 +45,7 @@
                 </div>
                 <div class="col-md-6 col-xl-3">
                     <div class="widget footer-widget">
-                        <h3 class="widget_title">Kết nối!</h3>
+                        <h3 class="widget_title" style="font-family:Arial">Kết nối!</h3>
                         <form class="newsletter-widget">
                             <p class="footer-text">Liên hệ trực tiếp với chúng tôi: </p>
                             <div class="form-group"><input class="form-control" type="email"

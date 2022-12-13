@@ -1,14 +1,15 @@
+
 <div class="as-hero-wrapper hero-5">
     <div class="hero-slider-5 as-carousel" data-fade="true" data-slide-show="1" data-md-slide-show="1">
         <div class="as-hero-slide">
             <div class="as-hero-bg" data-bg-src="../user/assets/img/hero/hero_bg_5_1.jpg"><img
                     src="../user/assets/img/hero/hero_overlay_5.png" alt="Hero Image"></div>
-            <div class="container">
+            <div class="container" style="font-family:Arial">
                 <div class="hero-style5"><span class="hero-subtitle" data-ani="slideinleft"
-                                               data-ani-delay="0.1s">Tận hưởng nền tảng học tập tốt nhất Acadu</span>
-                    <h1 class="hero-title" data-ani="slideinleft" data-ani-delay="0.3s">Tìm sự nghiệp tốt nhất của bạn và đạt được
+                                               data-ani-delay="0.1s"style="font-family:Arial" >Tận hưởng nền tảng học tập tốt nhất Acadu</span>
+                    <h1 class="hero-title" data-ani="slideinleft" data-ani-delay="0.3s" style="font-family:Arial">Tìm sự nghiệp tốt nhất của bạn và đạt được
                     </h1>
-                    <h1 class="hero-title" data-ani="slideinleft" data-ani-delay="0.5s">cơ hội cho tương lai của bạn.
+                    <h1 class="hero-title" data-ani="slideinleft" data-ani-delay="0.5s" style="font-family:Arial">cơ hội cho tương lai của bạn.
                     </h1>
                     <p class="hero-text" data-ani="slideinleft" data-ani-delay="0.6s">Học tập đẳng cấp thế giới cho
                         bất cứ ai, bất cứ nơi nào để tăng kiến ​​thức. Hãy để sự sáng tạo của bạn tỏa sáng và bắt đầu đánh giá cao
@@ -24,12 +25,12 @@
         <div class="as-hero-slide">
             <div class="as-hero-bg" data-bg-src="../user/assets/img/hero/hero_bg_5_1.jpg"><img
                     src="../user/assets/img/hero/hero_overlay_5.png" alt="Hero Image"></div>
-            <div class="container">
+            <div class="container" style="font-family: 'Roboto', sans-serif">
                 <div class="hero-style5"><span class="hero-subtitle" data-ani="slideinleft"
-                                               data-ani-delay="0.1s">Tận hưởng nền tảng học tập tốt nhất Acadu</span>
-                    <h1 class="hero-title" data-ani="slideinleft" data-ani-delay="0.3s">Tìm sự nghiệp tốt nhất của bạn và đạt được
+                                               data-ani-delay="0.1s" style="font-family:Arial">Tận hưởng nền tảng học tập tốt nhất Acadu</span>
+                    <h1 class="hero-title" data-ani="slideinleft" data-ani-delay="0.3s" style="font-family:Arial">Tìm sự nghiệp tốt nhất của bạn và đạt được
                     </h1>
-                    <h1 class="hero-title" data-ani="slideinleft" data-ani-delay="0.5s">cơ hội cho tương lai của bạn.
+                    <h1 class="hero-title" data-ani="slideinleft" data-ani-delay="0.5s" style="font-family:Arial">cơ hội cho tương lai của bạn.
                     </h1>
                     <p class="hero-text" data-ani="slideinleft" data-ani-delay="0.6s">Học tập đẳng cấp thế giới cho
                         bất cứ ai, bất cứ nơi nào để tăng kiến ​​thức. Hãy để sự sáng tạo của bạn tỏa sáng và bắt đầu đánh giá cao
@@ -46,12 +47,12 @@
         <div class="as-hero-slide">
             <div class="as-hero-bg" data-bg-src="../user/assets/img/hero/hero_bg_5_3.jpg"><img
                     src="../user/assets/img/hero/hero_overlay_5.png" alt="Hero Image"></div>
-            <div class="container">
+            <div class="container" style="font-family: 'Roboto', sans-serif">
                 <div class="hero-style5"><span class="hero-subtitle" data-ani="slideinleft"
-                                               data-ani-delay="0.1s">Học với Acadu, học viện học tập tốt nhất</span>
-                    <h1 class="hero-title" data-ani="slideinleft" data-ani-delay="0.3s">Bắt đầu với một khóa học tốt nhất
+                                               data-ani-delay="0.1s" style="font-family:Arial">Học với Acadu, học viện học tập tốt nhất</span>
+                    <h1 class="hero-title" data-ani="slideinleft" data-ani-delay="0.3s" style="font-family:Arial">Bắt đầu với một khóa học tốt nhất
                     </h1>
-                    <h1 class="hero-title" data-ani="slideinleft" data-ani-delay="0.5s">và có được công việc tương lai tươi sáng.
+                    <h1 class="hero-title" data-ani="slideinleft" data-ani-delay="0.5s" style="font-family:Arial">và có được công việc tương lai tươi sáng.
                     </h1>
                     <p class="hero-text" data-ani="slideinleft" data-ani-delay="0.6s">Học tập đẳng cấp thế giới cho
                         bất cứ ai, bất cứ nơi nào để tăng kiến ​​thức. Hãy để sự sáng tạo của bạn tỏa sáng và bắt đầu đánh giá cao
@@ -80,16 +81,16 @@
             </div>
             <div class="col-xl-6">
                 <div class="mb-35 mb-xl-5">
-                    <h2 class="fs-40 text-theme fw-light mb-0">Chào mừng bạn đến với</h2>
-                    <h3 class="h1">Đại học Acadu.</h3>
+                    <h2 class="fs-40 text-theme fw-light mb-0" style="font-family:Arial">Chào mừng bạn đến với</h2>
+                    <h1 style="font-family:Arial">Đại học Acadu.</h1>
                 </div>
                 <p class="mt-n2 mb-35">Hợp tác đơn giản hóa các mạng thân thiện với người dùng sau khi lấy nguyên tắc làm trung tâm phối hợp các phương pháp hiệu quả để trao quyền cho các thị trường ngách phân tán theo đuổi định vị thị trường về sự sẵn sàng của web sau các ứng dụng hút tài nguyên.</p>
                 <div class="feature-box-wrap mb-45">
                     <div class="feature-box">
                         <div class="feature-box_icon"><img src="../user/assets/img/icon/about_1_1.png" alt="icon"></div>
                         <div class="feature-box_content">
-                            <h3 class="feature-box_title">Giáo dục đại học</h3>
-                            <p class="feature-box_text">Với các khóa học linh hoạt
+                            <h3 class="feature-box_title" style="font-family:Arial">Giáo dục đại học</h3>
+                            <p class="feature-box_text" style="font-family:Arial">Với các khóa học linh hoạt
 
                             </p>
                         </div>
@@ -97,9 +98,9 @@
                     <div class="feature-box">
                         <div class="feature-box_icon"><img src="../user/assets/img/icon/about_1_2.png" alt="icon"></div>
                         <div class="feature-box_content">
-                            <h3 class="feature-box_title">
+                            <h3 class="feature-box_title" style="font-family:Arial" >
                                 Giáo dục sau đại học</h3>
-                            <p class="feature-box_text">Học trực tuyến linh hoạt</p>
+                            <p class="feature-box_text" style="font-family:Arial">Học trực tuyến linh hoạt</p>
                         </div>
                     </div>
                 </div>
@@ -124,15 +125,15 @@
     <div class="notification-box">
         <div class="notification-icon"><img src="../user/assets/img/icon/notification.png" alt="icon"></div>
         <div class="notification-content">
-            <h4 class="notification-title">Nhận các khóa học trực tuyến</h4>
+            <h4 class="notification-title" style="font-family:Arial">Nhận các khóa học trực tuyến</h4>
             <p class="notification-text">Met sẽ theo đuổi công việc huấn luyện nhưng đồng thời với nỗi đau</p>
-        </div><a href="index.php?act=add_dangky" class="as-btn">THAM GIA VỚI CHÚNG TÔI<i class="fas fa-arrow-right ms-2"></i></a>
+        </div><a href="index.php?act=add_dangky" class="as-btn">THAM GIA<i class="fas fa-arrow-right ms-2"></i></a>
     </div>
 </div>
 <section class="space" id="course-sec" data-bg-src="../user/assets/img/bg/course_bg_1.jpg">
     <div class="container">
-        <div class="title-area text-center"><span class="sub-title"><i class="fal fa-book me-2"></i>CÁC KHÓA HỌC PHỔ BIẾN</span>
-            <h2 class="sec-title">Các khóa học <span class="text-theme fw-light">hàng đầu của chúng tôi</span></h2>
+        <div class="title-area text-center"><span class="sub-title" style="font-family:Arial"><i class="fal fa-book me-2"></i>CÁC KHÓA HỌC PHỔ BIẾN</span>
+            <h2 class="sec-title" style="font-family:Arial">Các khóa học <span class="text-theme fw-light">hàng đầu của chúng tôi</span></h2>
         </div>
         <div class="row slider-shadow as-carousel" data-slide-show="4" data-ml-slide-show="3" data-lg-slide-show="3"
              data-md-slide-show="2">
@@ -207,18 +208,18 @@
             </div>
             <div class="col-xl-6">
                 <div class="mb-35 mb-xl-5">
-                    <h2 class="fs-40 text-theme fw-light mb-0">Giảng Viên Hàng Đầu</h2>
+                    <h2 class="fs-40 text-theme fw-light mb-0" style="font-family:Arial">Giảng Viên Hàng Đầu</h2>
                     <h3 class="h2">Của Công Ty Acadu</h3>
                 </div>
                 <p class="mt-n2 mb-25">Hơn 10 năm kinh nghiệm giảng dạy trong các trường đại học. Tôi đã đúc kết được nhiều kinh nghiệm khi dạy các lứa tuổi, đặc biệt là các bạn sinh viên. 3 năm học khóa nắm bắt tâm lí sinh viên, tôi cảm thấy mình nên cống hiến kiến thức của mình cho các bạn</p>
                 <div class="checklist style2 mb-35">
                     <ul>
                         <li>
-                            <h5 class="check-title">Tỷ giá cạnh tranh</h5>
+                            <h5 class="check-title" style="font-family:Arial">Tỷ giá cạnh tranh</h5>
                             <p class="check-text">Dữ liệu chiến thuật của người xem liền mạch thông qua các dịch vụ.</p>
                         </li>
                         <li>
-                            <h5 class="check-title">Chứng chỉ trực tuyến</h5>
+                            <h5 class="check-title" style="font-family:Arial">Chứng chỉ trực tuyến</h5>
                             <p class="check-text">Dữ liệu chiến thuật của người xem liền mạch thông qua các dịch vụ.</p>
                         </li>
                     </ul>
@@ -266,7 +267,7 @@
         <div class="notification-box">
             <div class="notification-icon"><img src="../user/assets/img/icon/notification.png" alt="icon"></div>
             <div class="notification-content">
-                <h4 class="notification-title">Nhận các khóa học trực tuyến</h4>
+                <h4 class="notification-title" style="font-family:Arial">Nhận các khóa học trực tuyến</h4>
                 <p class="notification-text">Met sẽ theo đuổi công việc huấn luyện nhưng đồng thời với nỗi đau</p>
             </div><a href="index.php?act=add_dangky" class="as-btn">THAM GIA VỚI CHÚNG TÔI<i class="fas fa-arrow-right ms-2"></i></a>
         </div>
@@ -279,8 +280,8 @@
         <div class="row">
             <div class="col-xl-6 col-lg-5 text-center text-lg-start">
                 <div class="mb-30 mb-xl-5"><span class="sub-title"><i class="fal fa-book me-2"></i>HỌC SINH HẠNH PHÚC</span>
-                    <h2 class="fs-40 text-white fw-light mb-0 mt-n3">Học viên của chúng tôi nói</h2>
-                    <h3 class="h2 text-white">Giới thiệu về trường đại học của chúng tôi</h3>
+                    <h2 class="fs-40 text-white fw-light mb-0 mt-n3" style="font-family:Arial">Học viên của chúng tôi nói</h2>
+                    <h3 class="h2 text-white" style="font-family:Arial">Giới thiệu về trường đại học của chúng tôi</h3>
                 </div><a href="index.php?act=lienhe" class="as-btn style2">ĐƯA RA PHẢN HỒI<i
                         class="fas fa-arrow-right ms-2"></i></a>
             </div>
