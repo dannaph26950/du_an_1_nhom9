@@ -84,7 +84,7 @@
 </footer>
 <!--<a href="index.php?act=tuvan&id=--><?php //echo $value['id_hoc_vien'] ?><!--" class="scrollToTop scroll-btn"><i class="fa-solid fa-messages"></i></a>-->
 
-<script src="https://uhchat.net/code.php?f=151c17"></script>
+
 <script src="../user/assets/js/vendor/jquery-3.6.0.min.js"></script>
 <script src="../user/assets/js/app.min.js"></script>
 <script src="../user/assets/js/main.js"></script>

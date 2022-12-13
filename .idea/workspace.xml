@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cc6cba04-603a-4918-b721-0684c76f7a58" name="Changes" comment="bỏ trạng thái của lớp">
-      <change beforePath="$PROJECT_DIR$/admin/model/giangvien.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/model/giangvien.php" afterDir="false" />
+    <list default="true" id="cc6cba04-603a-4918-b721-0684c76f7a58" name="Changes" comment="update ảnh giảng viên">
+      <change beforePath="$PROJECT_DIR$/view/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/footer.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -444,7 +444,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670951218426</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="update ảnh giảng viên">
+      <created>1670951782498</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1670951782498</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -462,7 +469,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="thêm 1 khóa học vào giỏ hàng" />
     <MESSAGE value="update admin" />
     <MESSAGE value="update đổ ra dữ liệu" />
     <MESSAGE value="create chức năng bình luận, thêm bình luận" />
@@ -487,7 +493,8 @@
     <MESSAGE value="update file ảnh khóa học" />
     <MESSAGE value="update css tên khóa học" />
     <MESSAGE value="bỏ trạng thái của lớp" />
-    <option name="LAST_COMMIT_MESSAGE" value="bỏ trạng thái của lớp" />
+    <MESSAGE value="update ảnh giảng viên" />
+    <option name="LAST_COMMIT_MESSAGE" value="update ảnh giảng viên" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
