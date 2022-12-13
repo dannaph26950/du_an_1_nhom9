@@ -4,18 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cc6cba04-603a-4918-b721-0684c76f7a58" name="Changes" comment="load danh mục">
-      <change afterPath="$PROJECT_DIR$/view/locdanhmuc.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/tuvan.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_18_11_2022_21_59_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_18_11_2022_21_59_PM__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/home.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/model/khoahoc.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/model/khoahoc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/input.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/democart.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/footer.php" afterDir="false" />
+    <list default="true" id="cc6cba04-603a-4918-b721-0684c76f7a58" name="Changes" comment="update file ảnh khóa học">
+      <change beforePath="$PROJECT_DIR$/view/khoahoc.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/khoahoc.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -433,7 +423,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670348497312</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="update file ảnh khóa học">
+      <created>1670950364478</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1670950364478</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -451,7 +448,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="update trang view new" />
     <MESSAGE value="  user" />
     <MESSAGE value="update upfile ảnh" />
     <MESSAGE value="thêm 1 khóa học vào giỏ hàng" />
@@ -476,7 +472,8 @@
     <MESSAGE value="validate trang thống kê/admin,css file thanh toán, bình luận" />
     <MESSAGE value="format number và format ngày tháng năm sang việt nam" />
     <MESSAGE value="format number giá và format ngày tháng năm sang việt nam" />
-    <option name="LAST_COMMIT_MESSAGE" value="format number giá và format ngày tháng năm sang việt nam" />
+    <MESSAGE value="update file ảnh khóa học" />
+    <option name="LAST_COMMIT_MESSAGE" value="update file ảnh khóa học" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
