@@ -84,8 +84,8 @@
                     <div class="event-card_img"><img src="../user/assets/img/event/event_1_6.jpg" alt="event"></div>
                     <div class="event-card_content">
                         
-                        <h3 class="event-card_title"><a href="index.php?act=list_donhang">Đơn hàng</a></h3>
-                        <div class="event-card_bottom"><a href="index.php?act=list_donhang" class="as-btn">Truy Cập</a>
+                        <h3 class="event-card_title"><a href="index.php?act=list_giohang">Đơn hàng</a></h3>
+                        <div class="event-card_bottom"><a href="index.php?act=list_giohang" class="as-btn">Truy Cập</a>
                             <div class="event-author">
                                 <div class="avater"><img src="../user/assets/img/event/avater.jpg" alt="avater"></div><span
                                         class="author-name">Nhóm 9</span>

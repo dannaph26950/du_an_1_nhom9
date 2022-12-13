@@ -1,3 +1,4 @@
+
 <footer class="footer-wrapper footer-layout1">
     <div class="widget-area">
         <div class="container">
@@ -80,7 +81,10 @@
             src="../user/assets/img/shape/footer_shape_2.png" alt="shapes"></div>
     <div class="shape-mockup" data-top="0" data-right="0"><img src="../user/assets/img/shape/footer_shape_3.png"
                                                                alt="shapes"></div>
-</footer><a href="#" class="scrollToTop scroll-btn"><i class="far fa-arrow-up"></i></a>
+</footer>
+<!--<a href="index.php?act=tuvan&id=--><?php //echo $value['id_hoc_vien'] ?><!--" class="scrollToTop scroll-btn"><i class="fa-solid fa-messages"></i></a>-->
+
+<script src="https://uhchat.net/code.php?f=151c17"></script>
 <script src="../user/assets/js/vendor/jquery-3.6.0.min.js"></script>
 <script src="../user/assets/js/app.min.js"></script>
 <script src="../user/assets/js/main.js"></script>

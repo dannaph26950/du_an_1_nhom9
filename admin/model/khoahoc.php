@@ -21,12 +21,18 @@ function listone_khoahoc($id){
         return $listone_khoahoc;
 }
 //update
-function update_khoahoc($ten_khoa_hoc,$name_image, $gia, $thoi_gian_hoc, $mo_ta, $id_danh_muc,$id_lop,$id)
-{
-    $sql = "UPDATE `khoa_hoc` SET `ten_khoa_hoc`='$ten_khoa_hoc',`anh`='$name_image',`gia`='$gia',`thoi_gian_hoc`='$thoi_gian_hoc',`mo_ta`='$mo_ta',`id_danh_muc`='$id_danh_muc',`id_lop`='$id_lop' WHERE id_khoa_hoc = '$id'";
+    function update_khoahoc($ten_khoa_hoc,$name_image, $gia, $thoi_gian_hoc, $mo_ta, $id_danh_muc,$id_lop,$id)
 
-    pdo_execute($sql);
-}
+    {
+        if($name_image != ""){
+            $sql = "UPDATE `khoa_hoc` SET `ten_khoa_hoc`='$ten_khoa_hoc',`anh`='$name_image',`gia`='$gia',`thoi_gian_hoc`='$thoi_gian_hoc',`mo_ta`='$mo_ta',`id_danh_muc`='$id_danh_muc',`id_lop`='$id_lop' WHERE id_khoa_hoc = '$id'";
+
+        }else{
+            $sql = "UPDATE `khoa_hoc` SET `ten_khoa_hoc`='$ten_khoa_hoc',`gia`='$gia',`thoi_gian_hoc`='$thoi_gian_hoc',`mo_ta`='$mo_ta',`id_danh_muc`='$id_danh_muc',`id_lop`='$id_lop' WHERE id_khoa_hoc = '$id'";
+        }
+        pdo_execute($sql);
+    }
+
 
 
 ?>

@@ -118,30 +118,7 @@ session_start();
                     $id = $_POST['id'];
 
                     $ten_khoa_hoc = $_POST['ten_KH'];
-                    if (isset($_FILES['anh'])){
-                        $tagert_dir = "../Upfileanh/";
-                        $name_image = $_FILES['anh']['name'];
-                        $tagert_file = $tagert_dir.$name_image;
-                        $maxfilesize = 800000;
-                        $allowtypes = ['jpg', 'png', 'gif', 'jpeg'];
-                        $allowupload = true;
-                        $imageFileType = pathinfo($tagert_file,PATHINFO_EXTENSION);
-                        if ($_FILES['anh']['size'] > $maxfilesize){
-                            $error_update_khoahoc['imgSize'] = " Không được upload ảnh lớn hơn ".$maxfilesize."Byte";
-                            $allowupload = false;
-                        }
 
-                        if (!in_array($imageFileType,$allowtypes)){
-                            $error_update_khoahoc['imgType'] = "Chỉ được upload các định dạng JPG , PNG , GIF , JPEG<br>";
-                            $allowupload = false;
-                        }
-                        if ($allowupload == true){
-                            if (move_uploaded_file($_FILES['anh']['tmp_name'],$tagert_file)){
-                            }else{
-                                echo "Lỗi khi đang thực hiện upload<br>";
-                            }
-                        }
-                    }
                     $gia = $_POST['gia_KH'];
                     $thoi_gian_hoc = $_POST['thoiGian_KH'];
                     $mo_ta = $_POST['mota_KH'];
@@ -165,12 +142,37 @@ session_start();
                     if(empty($thoi_gian_hoc)){
                         $error_update_khoahoc["time"] = "Vui lòng nhập thời gian học";
                     }
-                    if (!$error_update_khoahoc) {
-                        update_khoahoc($ten_khoa_hoc,$name_image, $gia, $thoi_gian_hoc, $mo_ta, $id_danh_muc,$id_lop,$id);
-                        $thongbao= 'Cập nhật thành công';
+//                    if (!$error_update_khoahoc) {
+//
+//
+//                    }
+                    if (isset($_FILES['anh'])){
+                        $tagert_dir = "../Upfileanh/";
+                        $name_image = $_FILES['anh']['name'];
+                        $tagert_file = $tagert_dir.$name_image;
+                        $maxfilesize = 800000;
+                        $allowtypes = ['jpg', 'png', 'gif', 'jpeg'];
+                        $allowupload = true;
+                        $imageFileType = pathinfo($tagert_file,PATHINFO_EXTENSION);
+                        if ($_FILES['anh']['size'] > $maxfilesize){
+                            $error_update_khoahoc['imgSize'] = " Không được upload ảnh lớn hơn ".$maxfilesize."Byte";
+                            $allowupload = false;
+                        }
 
+                        if (!in_array($imageFileType,$allowtypes)){
+                            $error_update_khoahoc['imgType'] = "Chỉ được upload các định dạng JPG , PNG , GIF , JPEG<br>";
+                            $allowupload = false;
+                        }
+                        if ($allowupload == true){
+                            if (move_uploaded_file($_FILES['anh']['tmp_name'],$tagert_file)){
+
+                            }else{
+                                echo "Lỗi khi đang thực hiện upload<br>";
+                            }
+                        }
                     }
-
+                    update_khoahoc($ten_khoa_hoc,$name_image, $gia, $thoi_gian_hoc, $mo_ta, $id_danh_muc,$id_lop,$id);
+                    $thongbao= 'Cập nhật thành công';
                 }
                 $listall_khoahoc = listall_khoahoc();
                 include '../admin/view/sanpham/listsanpham.php';
