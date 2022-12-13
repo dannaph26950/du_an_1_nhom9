@@ -224,9 +224,9 @@ session_start();
                         }
                     }
                     $thong_tin_gv = $_POST['thong_tin_gv'];
-                    $trang_thai = $_POST['trang_thai'];
+
                     $listall_giangvien=listall_giangvien ();
-                    insert_giangvien ($ten_gv,$name_image,$thong_tin_gv,$trang_thai);
+                    insert_giangvien ($ten_gv,$name_image,$thong_tin_gv);
                     $thongbao="Thêm giảng viên thành công";
 
 
@@ -275,12 +275,9 @@ session_start();
                         }
                     }
                     $thong_tin_gv = $_POST['thong_tin_gv'];
-                    $trang_thai = $_POST['trang_thai'];
-                    if (!$error_update_giangvien) {
-                        update_giangvien($ten_gv,$name_image, $thong_tin_gv, $trang_thai,$id);
-                        $thongbao= 'Cập nhật thành công';
+                    update_giangvien($ten_gv,$name_image, $thong_tin_gv,$id);
+                    $thongbao= 'Cập nhật thành công';
 
-                    }
 
                 }
                 $listall_giangvien = listall_giangvien();

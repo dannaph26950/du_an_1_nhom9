@@ -1,8 +1,8 @@
 <?php
 // chưa chạy đc
 
-    function insert_giangvien($ten_gv,$hinh_gv,$thong_tin_gv,$trang_thai){
-        $sql = "INSERT INTO giang_vien VALUES (null,'$ten_gv','$hinh_gv','$thong_tin_gv','$trang_thai' )";
+    function insert_giangvien($ten_gv,$hinh_gv,$thong_tin_gv){
+        $sql = "INSERT INTO giang_vien VALUES (null,'$ten_gv','$hinh_gv','$thong_tin_gv' )";
         pdo_execute($sql);
     }
 //List khóa học
@@ -24,8 +24,14 @@
         return $sql;
     }
 
-    function update_giangvien($ten_gv,$name_image,$thong_tin_gv,$trang_thai,$id){
-        $sql = "UPDATE `giang_vien` SET `ten_gv`='$ten_gv',hinh_gv='$name_image',thong_tin_gv='$thong_tin_gv',trang_thai='$trang_thai' WHERE magv = '$id'";
+    function update_giangvien($ten_gv,$name_image,$thong_tin_gv,$id){
+        if($name_image !=""){
+            $sql = "UPDATE `giang_vien` SET `ten_gv`='$ten_gv',hinh_gv='$name_image',thong_tin_gv='$thong_tin_gv' WHERE magv = '$id'";
+
+        }else{
+            $sql = "UPDATE `giang_vien` SET `ten_gv`='$ten_gv',thong_tin_gv='$thong_tin_gv', WHERE magv = '$id'";
+
+        }
         pdo_execute($sql);
     }
 ?>

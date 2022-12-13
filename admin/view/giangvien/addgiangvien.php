@@ -21,10 +21,7 @@ if(isset($_SESSION['taikhoan'])){
             <label for="exampleInputEmail1" class="form-label" style="font-weight: bold">THÔNG TIN GIẢNG VIÊN</label>
             <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="thong_tin_gv">
         </div>
-        <div class="mb-3">
-            <label for="exampleFormControlTextarea1" class="form-label" style="font-weight: bold">TRẠNG THÁI</label>
-            <input type="text" class="form-control" id="exampleFormControlTextarea1" name="trang_thai" >
-        </div>
+
         <center>
             <div style="text-align: center">
                 <a href="index.php?act=add_giangvien"><input type="submit" value="THÊM MỚI" name="add_giangvien" class="btn btn-primary" style="width: 200px; margin: 0px 20px" ></a>

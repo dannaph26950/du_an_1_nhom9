@@ -30,11 +30,7 @@ foreach ($listone_giangvien as $key=>$value){
                 <input class="form-control" name="thong_tin_gv"  value="<?php if(isset($value['thong_tin_gv'])&&($value['thong_tin_gv']!="")) echo $value['thong_tin_gv']; ?>">
                 <p style="color: red"> </p>
             </div>
-            <div class="mb-3">
-                <label for="exampleFormControlTextarea1" class="form-label">Trạng thái</label>
-                <input class="form-control" name="trang_thai"  value="<?php if(isset($value['trang_thai'])&&($value['trang_thai']!="")) echo $value['trang_thai']; ?>">
-                <p style="color: red"> </p>
-            </div>
+
 
 
             <center>
