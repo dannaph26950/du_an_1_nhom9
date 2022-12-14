@@ -37,10 +37,28 @@
                         <td><?php echo listone_giangvien(loadone_lop($value['id_lop'])[0]['magv'])[0]['ten_gv']; ?></td>
 
                         <td class="">
-                            <form action="index.php?act=thanh_toan" method="post">
+
+                            <form action="index.php?act=add_lop" method="post">
+                                <input type="hidden" name="id_hv" value="<?php echo $_SESSION['user']['id_hoc_vien'] ?>" >
                                 <input type="hidden" name="id_lop" value="<?php echo $value['id_lop'] ?>" >
-                                <input type="hidden" name="id_hoc_vien" value="<?php echo $_SESSION['user']['id_hoc_vien']  ?>">
-                                <input value="Đăng Kí" name="dangki" type="submit" class="btn btn-primary start-50"  ><br><br>
+                                <input type="hidden" name="gia" value="<?php echo listone_khoahoc($value['id_khoa_hoc'])[0]['gia']; ?>" >
+
+                                <input type="hidden" name="trang_thai" value="0" >
+
+                                <!--                                                    validate lịch học-->
+                                <?php
+                                $date_lop_convert =  strtotime(listone_lop_tgkg($value['id_lop'])[0]['thoi_gian_khai_giang']);
+                                if( strtotime(date("Y-m-d")) > $date_lop_convert ){
+                                    ?>
+                                    <input value="Đăng Kí" name="dangki" type="submit" class="btn btn-primary start-50" disabled ><br><br>
+                                    <?php
+                                }else{
+                                    ?>
+                                    <input value="Đăng Kí" name="dangki" type="submit" class="btn btn-primary start-50"  ><br><br>
+
+                                    <?php
+                                }
+                                ?>
                             </form>
 
                         </td>

@@ -109,8 +109,15 @@ if (isset($_GET['act']) && ($_GET['act']) != ''){
                     $tagert_file = $tagert_dir . $name_image;
                     $maxfilesize = 800000;
                     $allowtypes = ['jpg' , 'png' , 'gif' , 'jpeg'];
+                    $allowupload = true;
                     $imageFileType = pathinfo ( $tagert_file , PATHINFO_EXTENSION );
-                    move_uploaded_file ( $_FILES['image']['tmp_name'] , $tagert_file );
+                    if ($allowupload == true){
+                        if (move_uploaded_file ( $_FILES['image']['tmp_name'] , $tagert_file )){
+                        }else{
+                            echo "Lỗi khi đang thực hiện upload<br>";
+                        }
+                    }
+
                 }
                 if(empty($name_image)){
                     $error_thanh_toan["image"] = "Vui lòng gửi hóa đơn";
@@ -190,7 +197,7 @@ if (isset($_GET['act']) && ($_GET['act']) != ''){
             include "../view/lienhe.php";
             break;
         case 'dang_nhap':
-            $link = $_SERVER['HTTP_REFERER'];
+//            $link = $_SERVER['HTTP_REFERER'];
 
                 if (isset($_POST['dang_nhap'])){
 
@@ -216,7 +223,7 @@ if (isset($_GET['act']) && ($_GET['act']) != ''){
             break;
         case 'dang_xuat':
             session_unset();
-            echo "<script>Bạn muốn đăng xuất? </script>";
+            echo "<script>alert('Bạn muốn đăng xuất?'); </script>";
             echo "<script>window.location.href='index.php';</script>";
             break;
 //      GIỎ HÀNG-----------------------------

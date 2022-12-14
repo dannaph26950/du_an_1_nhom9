@@ -5,9 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cc6cba04-603a-4918-b721-0684c76f7a58" name="Changes" comment="update font trang home và footer giảng viên">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_18_11_2022_21_59_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_18_11_2022_21_59_PM__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/dang_nhap.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/dang_nhap.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/ctkhoahoc.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/ctkhoahoc.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/view/dangky_kh.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/dangky_kh.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/lienhe.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/lienhe.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
