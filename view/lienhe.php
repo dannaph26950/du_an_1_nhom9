@@ -9,13 +9,13 @@
             <div class="contact-info">
                 <div class="contact-info_icon"><i class="fal fa-location-dot"></i></div>
                 <div class="media-body">
-                    <h4 class="contact-info_title">Địa chỉ</h4><span class="contact-info_text">Trịnh Văn Bô, Nam Từ Liêm, Hà Nội</span>
+                    <h4 class="contact-info_title" style="font-family:Arial">Địa chỉ</h4><span class="contact-info_text">Trịnh Văn Bô, Nam Từ Liêm, Hà Nội</span>
                 </div>
             </div>
             <div class="contact-info">
                 <div class="contact-info_icon"><i class="fal fa-phone"></i></div>
                 <div class="media-body">
-                    <h4 class="contact-info_title">Số điện thoại</h4><span class="contact-info_text"><span>Mobile: <a
+                    <h4 class="contact-info_title" style="font-family:Arial">Số điện thoại</h4><span class="contact-info_text"><span>Mobile: <a
                                 href="tel:+65485965789">0123-456-789</a></span> <span>Mobile: <a
                                 href="tel:+65485965789">0258-369-147</a></span></span>
                 </div>
@@ -23,7 +23,7 @@
             <div class="contact-info">
                 <div class="contact-info_icon"><i class="fal fa-clock"></i></div>
                 <div class="media-body">
-                    <h4 class="contact-info_title">Thời gian mở cửa</h4><span
+                    <h4 class="contact-info_title" style="font-family:Arial">Thời gian mở cửa</h4><span
                         class="contact-info_text"><span>Monday - Friday: 09:00 - 20:00</span> <span>Thứ 2 &
                                 Thứ 7: 10:30 - 22:00</span></span>
                 </div>
@@ -44,8 +44,8 @@ if(isset($_SESSION['user'])){
                     </div>
                     <div class="contact-form-wrap" data-bg-src="assets/img/bg/contact_bg_1.png"><span class="sub-title">Contact
                     With Us!</span>
-                        <h2 class="border-title">Muốn đặt câu hỏi? </h2>
-                        <p class="mt-n1 mb-25 sec-text">ACADU luôn cố gắng không ngừng phát triển để trở thành một người bạn học tiếng anh với bạn. Đăng Kí ngay ở đây</p>
+                        <h2 class="border-title" style="font-family:Arial">Muốn đặt câu hỏi? </h2>
+                        <p class="mt-n1 mb-25 sec-text" style="font-family:Arial">ACADU luôn cố gắng không ngừng phát triển để trở thành một người bạn học tiếng anh với bạn. Đăng Kí ngay ở đây</p>
                         <form action="https://angfuzsoft.com/html/acadu/demo/mail.php" method="POST"
                               class="contact-form ajax-contact">
                             <div class="row">
@@ -82,8 +82,8 @@ if(isset($_SESSION['user'])){
                             </div>
                             <div class="col-lg-6 align-self-center">
                                 <div class="cta-content">
-                                    <h2 class="fs-40 fw-light text-theme mb-10">Học hỏi từ nền tảng của chúng tôi</h2>
-                                    <h2 class="mb-25">Điều đó đưa bạn lên cấp độ tiếp theo</h2><a href="contact.html"
+                                    <h2 class="fs-40 fw-light text-theme mb-10" style="font-family:Arial">Học hỏi từ nền tảng của chúng tôi</h2>
+                                    <h2 class="mb-25" style="font-family:Arial">Điều đó đưa bạn lên cấp độ tiếp theo</h2><a href="contact.html"
                                                                                                   class="as-btn">Đăng Ký ngay<i class="fas fa-arrow-right ms-2"></i></a>
                                 </div>
                             </div>
@@ -106,35 +106,7 @@ if(isset($_SESSION['user'])){
                     <div class="title-area text-center"></div>
                 </div>
             </div>
-            <div class="contact-form-wrap" data-bg-src="assets/img/bg/contact_bg_1.png"><span class="sub-title">Contact
-                    With Us!</span>
-                <h2 class="border-title">Muốn đặt câu hỏi? </h2>
-                <p class="mt-n1 mb-25 sec-text">ACADU luôn cố gắng không ngừng phát triển để trở thành một người bạn học tiếng anh với bạn. Đăng Kí ngay ở đây</p>
-                <form action="https://angfuzsoft.com/html/acadu/demo/mail.php" method="POST"
-                      class="contact-form ajax-contact">
-                    <div class="row">
-                        <div class="form-group col-md-6"><input type="text" class="form-control style3" name="name"
-                                                                id="name" placeholder="Tên bạn"> <i class="fal fa-user"></i></div>
-                        <div class="form-group col-md-6"><input type="email" class="form-control style3" name="email"
-                                                                id="email" placeholder="Email"> <i class="fal fa-envelope"></i></div>
-                        <div class="form-group col-md-6"><select name="subject" id="subject" class="form-select style3">
-                                <option value="" disabled="disabled" selected="selected" hidden>Chọn môn học</option>
-                                <option value="Web Design">Môn 1</option>
-                                <option value="Web Development">Môn 1</option>
-                                <option value="Engine Diagnostics">Môn 1</option>
-                                <option value="Digital Marketing">Môn 1</option>
-                            </select> <i class="fal fa-chevron-down"></i></div>
-                        <div class="form-group col-md-6"><input type="tel" class="form-control style3" name="number"
-                                                                id="number" placeholder="Số điện thoại"> <i class="fal fa-phone"></i></div>
-                        <div class="form-group col-12"><textarea name="message" id="message" cols="30" rows="3"
-                                                                 class="form-control style3" placeholder="Thắc mắc của bạn"></textarea> <i
-                                    class="fal fa-comment"></i></div>
-                        <div class="form-btn col-12 mt-10"><button class="as-btn">Gửi tin nhắn<i
-                                        class="fas fa-long-arrow-right ms-2"></i></button></div>
-                    </div>
-                    <p class="form-messages mb-0 mt-3"></p>
-                </form>
-            </div>
+
         </div>
     </section>
     <section class="" data-pos-for=".footer-wrapper" data-sec-pos="bottom-half">

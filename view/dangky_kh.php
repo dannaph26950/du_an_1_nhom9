@@ -37,7 +37,7 @@
                         <td><?php echo listone_giangvien(loadone_lop($value['id_lop'])[0]['magv'])[0]['ten_gv']; ?></td>
 
                         <td class="">
-                            <form action="index.php?act=update_idlop" method="post">
+                            <form action="index.php?act=thanh_toan" method="post">
                                 <input type="hidden" name="id_lop" value="<?php echo $value['id_lop'] ?>" >
                                 <input type="hidden" name="id_hoc_vien" value="<?php echo $_SESSION['user']['id_hoc_vien']  ?>">
                                 <input value="Đăng Kí" name="dangki" type="submit" class="btn btn-primary start-50"  ><br><br>
