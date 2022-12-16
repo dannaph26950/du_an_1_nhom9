@@ -38,7 +38,14 @@
     <link rel="stylesheet" href="../user/assets/css/style.css">
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 </head>
+<style>
 
+    .xoa:hover{
+        background-color: red;
+        color: white;
+        border: none;
+    }
+</style>
 <body>
 
 <div class="as-menu-wrapper">

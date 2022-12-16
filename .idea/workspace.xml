@@ -4,13 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cc6cba04-603a-4918-b721-0684c76f7a58" name="Changes" comment="update font trang home và footer giảng viên">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_18_11_2022_21_59_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_18_11_2022_21_59_PM__Changes_.xml" afterDir="false" />
+    <list default="true" id="cc6cba04-603a-4918-b721-0684c76f7a58" name="Changes" comment="fix row right ctkhoahoc">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/dang_nhap.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/dang_nhap.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/ctkhoahoc.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/ctkhoahoc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/dangky_kh.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/dangky_kh.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/model/giohang.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/model/giohang.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/view/giohang/editgiohang.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/giohang/editgiohang.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/view/giohang/listgiohang.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/giohang/listgiohang.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -175,6 +175,9 @@
       <workItem from="1670674599370" duration="1899000" />
       <workItem from="1670690249727" duration="9572000" />
       <workItem from="1670762889183" duration="1765000" />
+      <workItem from="1671107125400" duration="2853000" />
+      <workItem from="1671171720412" duration="2220000" />
+      <workItem from="1671176622381" duration="999000" />
     </task>
     <task id="LOCAL-00001" summary="update files add">
       <created>1668688059236</created>
@@ -484,7 +487,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670953893094</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="fix row right ctkhoahoc">
+      <created>1671041479790</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1671041479792</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -502,7 +512,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="sửa lại file đăng kí bên trái trong file ctkhoahoc list ra các lớp để đăng kí" />
     <MESSAGE value="biểu đồ thống kê danh mục và sửa css" />
     <MESSAGE value="abc" />
     <MESSAGE value="fux gio hang" />
@@ -527,7 +536,8 @@
     <MESSAGE value="ắp đết trang hôm" />
     <MESSAGE value="update font trang home và footer" />
     <MESSAGE value="update font trang home và footer giảng viên" />
-    <option name="LAST_COMMIT_MESSAGE" value="update font trang home và footer giảng viên" />
+    <MESSAGE value="fix row right ctkhoahoc" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix row right ctkhoahoc" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

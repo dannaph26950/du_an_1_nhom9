@@ -38,7 +38,7 @@ if(isset($_SESSION['taikhoan'])){
                 <td><?php echo loadone_lop($value['id_lop'])[0]['ten_lop'] ?></td>
                 <td class="">
                     <input value="Sửa" type="submit" class="btn btn-primary start-50" onclick="location.href='index.php?act=edit_khoahoc&id=<?php echo $value['id_khoa_hoc'] ?>'" ><br><br>
-                    <input type="submit" class="btn btn-primary start-50" onclick="confirm('Bạn có muốn xóa khóa học \( <?php echo $value['ten_khoa_hoc']?> \) hay không!') == true ? location.href='index.php?act=delete_khoahoc&id=<?php echo $value['id_khoa_hoc']?>' : ''" value="Xóa"><br><br>
+                    <input type="submit" class="btn btn-primary start-50 xoa" onclick="confirm('Bạn có muốn xóa khóa học \( <?php echo $value['ten_khoa_hoc']?> \) hay không!') == true ? location.href='index.php?act=delete_khoahoc&id=<?php echo $value['id_khoa_hoc']?>' : ''" value="Xóa"><br><br>
                 </td>
 
             </tr>

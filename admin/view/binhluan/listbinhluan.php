@@ -12,8 +12,8 @@ if(isset($_SESSION['taikhoan'])){
         <tr>
             <th>MÃ BÌNH LUẬN</th>
             <th>NỘI DUNG BÌNH LUẬN</th>
-            <th>Mã KHÓA HỌC </th>
-            <th>Mã HỌC VIÊN</th>
+            <th>MÃ KHÓA HỌC </th>
+            <th>MÃ HỌC VIÊN</th>
             <th></th>
 
         </tr>
@@ -38,7 +38,7 @@ if(isset($_SESSION['taikhoan'])){
 
             </td>
             <td class="">
-                <input type="submit" class="btn btn-primary start-50" onclick="confirm('Bạn có muốn xóa bình luận \( <?php echo $value['ten_bl']?> \) hay không!') == true ? location.href='index.php?act=xoa_binhluan&id=<?php echo $value['id_binhluan']?>' : ''" value="Xóa"><br><br>
+                <input type="submit" class="btn btn-primary start-50 xoa" onclick="confirm('Bạn có muốn xóa bình luận \( <?php echo $value['ten_bl']?> \) hay không!') == true ? location.href='index.php?act=xoa_binhluan&id=<?php echo $value['id_binhluan']?>' : ''" value="Xóa"><br><br>
             </td>
 
         </tr>

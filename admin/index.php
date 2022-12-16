@@ -526,6 +526,14 @@ session_start();
 //                die();
                 include '../admin/view/giohang/listgiohang.php';
                 break;
+            case 'delete_giohang':
+                if(isset($_GET['id'])&&$_GET['id']>0);{
+                $id_dang_ky = $_GET['id'];
+                delete_dangky($id_dang_ky);
+            }
+                $listall_giohang= listall_giohang();
+                include '../admin/view/giohang/listgiohang.php';
+                break;
 //                thống kê---------------------------------------
             case 'thongke':
 

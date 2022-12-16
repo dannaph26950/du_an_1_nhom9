@@ -43,7 +43,7 @@ if(isset($_SESSION['taikhoan'])){
 
 
 
-    <div style="margin-top: 100px; background-color: white"></div>
+    <div style="margin-top: 350px; background-color: white"></div>
     <?php
 } else{
     echo "<script>alert('Đăng Nhập admin có thể sử dụng được trang này!');</script>";

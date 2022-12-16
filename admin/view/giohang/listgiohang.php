@@ -30,6 +30,7 @@ if(isset($_SESSION['taikhoan'])){
             <th>Tên Lớp</th>
             <th>Giá Tiền</th>
             <th>Ngày Đăng Kí</th>
+            <th>Ảnh Minh Chứng</th>
             <th>Trạng Thái</th>
             <th></th>
 
@@ -48,12 +49,16 @@ if(isset($_SESSION['taikhoan'])){
             <?php $originalDate = $value['ngay_dk'] ; $newDate = date(" H:i:s d-m-Y", strtotime($value['ngay_dk']));  ?>
 
             <td><?php echo $newDate ?></td>
+            <td><img src="../Upfileanh/hoadon/<?php echo $value['image'] ?>" alt="Ảnh bằng chứng" style="width:200px; height:200px"></td>
             <td style="color: blue"><?php if($value ['tinh_trang'] == 0) echo "Chưa thanh toán"; elseif($value ['tinh_trang'] == 1) echo "Đang xử lí"; elseif($value ['tinh_trang'] == 2) echo "Thanh Toán thành công" ?></td>
 
 <!--            DẤU-->
             <td class="">
                 <input value="Cập Nhật" type="submit" class="btn btn-primary start-50" onclick="location.href='index.php?act=edit_giohang&id=<?php echo $value['id_dang_ky'] ?>'" >
+                <div style="margin: 10px 0px"></div>
+                <input value="Xóa" type="submit" class="btn btn-primary start-50 xoa"  onclick="confirm('Bạn có muốn xóa đăng ký \( <?php echo $value['id_dang_ky']?> \) hay không!') == true ? location.href='index.php?act=delete_giohang&id=<?php echo $value['id_dang_ky'] ?>' : ''" >
             </td>
+
 <!--DẤU-->
         </tr>
         <?php

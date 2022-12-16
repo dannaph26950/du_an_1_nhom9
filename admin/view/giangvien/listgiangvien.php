@@ -27,7 +27,7 @@ if(isset($_SESSION['taikhoan'])){
                 <td><?php echo $value['thong_tin_gv'] ?></td>
 
                 <td class=""><input value="Sửa " type="button" class="btn btn-primary start-50" onclick="location.href='index.php?act=edit_giangvien&id=<?php echo $value['magv'] ?>'" ><br><br>
-                    <input type="submit" class="btn btn-primary start-50" onclick="confirm('Bạn có muốn xóa giảng viên \( <?php echo $value['ten_gv']?> \) hay không!') == true ? location.href='index.php?act=delete_giangvien&id=<?php echo $value['magv']?>' : ''" value="Xóa"><br><br>
+                    <input type="submit" class="btn btn-primary start-50 xoa" onclick="confirm('Bạn có muốn xóa giảng viên \( <?php echo $value['ten_gv']?> \) hay không!') == true ? location.href='index.php?act=delete_giangvien&id=<?php echo $value['magv']?>' : ''" value="Xóa"><br><br>
                 </td>
 
             </tr>

@@ -24,5 +24,10 @@ function listone_gio_hang($id){
     $listone_giohang = pdo_query($sql);
     return $listone_giohang ;
 }
+function delete_dangky($id){
+    $sql = "delete from dang_ky where id_dang_ky='$id'";
+    pdo_execute($sql);
+    return $sql;
+}
 ?>
 
