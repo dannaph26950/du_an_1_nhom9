@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cc6cba04-603a-4918-b721-0684c76f7a58" name="Changes" comment="css and list image cart">
+    <list default="true" id="cc6cba04-603a-4918-b721-0684c76f7a58" name="Changes" comment="thêm trạng thái xóa thanh toán khi chưa thanh tonas">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/model/giohang.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/model/giohang.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/view/danhmuc/listdanhmuc.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/danhmuc/listdanhmuc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/model/gui_bang_chung.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/model/gui_bang_chung.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/view/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/view/thong_tin_user_kh.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/thong_tin_user_kh.php" afterDir="false" />
     </list>
@@ -177,7 +175,7 @@
       <workItem from="1670762889183" duration="1765000" />
       <workItem from="1671107125400" duration="2853000" />
       <workItem from="1671171720412" duration="2220000" />
-      <workItem from="1671176622381" duration="2318000" />
+      <workItem from="1671176622381" duration="3661000" />
     </task>
     <task id="LOCAL-00001" summary="update files add">
       <created>1668688059236</created>
@@ -501,7 +499,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671180881156</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="thêm trạng thái xóa thanh toán khi chưa thanh tonas">
+      <created>1671182165023</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1671182165023</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -519,7 +524,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="abc" />
     <MESSAGE value="fux gio hang" />
     <MESSAGE value="update lai ctkhoahoc.php, giohang.php, gui_bang_chung.php, header.php, thong_tin_user_kh.php" />
     <MESSAGE value="update form dang ki khoa hoc, chuc nang thanh toan" />
@@ -544,7 +548,8 @@
     <MESSAGE value="update font trang home và footer giảng viên" />
     <MESSAGE value="fix row right ctkhoahoc" />
     <MESSAGE value="css and list image cart" />
-    <option name="LAST_COMMIT_MESSAGE" value="css and list image cart" />
+    <MESSAGE value="thêm trạng thái xóa thanh toán khi chưa thanh tonas" />
+    <option name="LAST_COMMIT_MESSAGE" value="thêm trạng thái xóa thanh toán khi chưa thanh tonas" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

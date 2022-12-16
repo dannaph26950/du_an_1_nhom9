@@ -106,24 +106,39 @@ if (isset($_GET['act']) && ($_GET['act']) != ''){
                 if ( isset( $_FILES['image'] ) ) {
                     $tagert_dir = "../Upfileanh/hoadon/";
                     $name_image = $_FILES['image']['name'];
-                    $tagert_file = $tagert_dir . $name_image;
-                    $maxfilesize = 800000;
-                    $allowtypes = ['jpg' , 'png' , 'gif' , 'jpeg'];
-                    $allowupload = true;
-                    $imageFileType = pathinfo ( $tagert_file , PATHINFO_EXTENSION );
-                    if ($allowupload == true){
-                        if (move_uploaded_file ( $_FILES['image']['tmp_name'] , $tagert_file )){
-                        }else{
-                            echo "Lỗi khi đang thực hiện upload<br>";
+                        $tagert_file = $tagert_dir.$name_image;
+                        $maxfilesize = 800000;
+                        $allowtypes = ['jpg', 'png', 'gif', 'jpeg'];
+                        $allowupload = true;
+                        $imageFileType = pathinfo($tagert_file,PATHINFO_EXTENSION);
+                        if ($_FILES['image']['size'] > $maxfilesize){
+                            echo " Không được upload ảnh lớn hơn ".$maxfilesize."Byte";
+                            $allowupload = false;
                         }
-                    }
+
+                        if (!in_array($imageFileType,$allowtypes)){
+//                            echo "Chỉ được upload các định dạng JPG , PNG , GIF , JPEG<br>";
+                            $allowupload = false;
+                        }
+                        if ($allowupload == true){
+                            if (move_uploaded_file($_FILES['image']['tmp_name'],$tagert_file)){
+                            }else{
+                                echo "Lỗi khi đang thực hiện upload<br>";
+                            }
+                        }
 
                 }
                 if(empty($name_image)){
                     $error_thanh_toan["image"] = "Vui lòng gửi hóa đơn";
                 }
+
                     insert_hoadon($name_image,$id);
+                if($name_image == ""){
+                        echo "<script>swal('Vui lòng cấp ảnh bằng chứng')</script>";
+                }else{
                     echo "<script>swal('Hệ thống đang xử lí ảnh bằng chứng! Vui lòng đợi máy 2-3 ngày !')</script>";
+                }
+
 
 
             }
