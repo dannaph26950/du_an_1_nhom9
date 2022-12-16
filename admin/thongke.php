@@ -18,7 +18,9 @@
         var data = google.visualization.arrayToDataTable([
             ['Danh Mục', 'Doanh Thu ','Khóa học sản phẩm'],
             <?php
+            $timestamp = strtotime(load_allthongke()[0]['ngay']);
 
+            $day = date('jS ', $timestamp);
             $tongdm = count($listthongke);
             $i = 0;
             foreach ($listthongke as $thongke){
@@ -38,5 +40,7 @@
         chart.draw(data, options);
     }
 </script>
+<div style="margin-top: 300px"></div>
 </body>
+
 </html>

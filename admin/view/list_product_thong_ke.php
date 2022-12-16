@@ -28,7 +28,7 @@
 
     </style>
     <div class="container-fluid  " >
-        <h4 style="margin-left: 90px">Danh Sách Thống Kê Doanh Thu Theo Danh Mục</h4>
+        <h4 style="margin-left: 180px">Danh Sách Thống Kê Doanh Thu Theo Danh Mục</h4>
 
     </div>
     <div class="content container">
@@ -41,10 +41,18 @@
                 <th>Giá Thấp Nhất</th>
                 <th>Giá Cao Nhất</th>
                 <th>Giá Trung Bình</th>
+                <th>Ngày đăng ký</th>
             </tr>
             <?php
-//            var_dump($listthongke);
+//            var_dump(load_allthongke()[0]['ngay']);
 //            die();
+            $timestamp = strtotime(load_allthongke()[0]['ngay']);
+
+            $day = date('jS F Y', $timestamp);
+//            var_dump($day);
+//            $ngay = load_allthongke()[0]['ngay'];
+//            $date = getdate(load_allthongke()[0]['ngay']);
+//            echo $date['mon'];
             foreach ($listthongke as $thongke){
                 extract($thongke);
                 echo  '<tr>
@@ -55,6 +63,7 @@
                 <td>'.$mingia.'</td>
                 <td>'.$maxgia.'</td>
                 <td>'.$avggia.'</td>
+                <td>'.$day.'</td>
             </tr>';
             }
             ?>
@@ -69,7 +78,7 @@
         </form>
     </div>
 </div>
-<div style="margin-top: 300px"></div>
+<div style="margin-top: 500px"></div>
 <?php }else{
         echo "<script>alert('Đăng Nhập admin có thể sử dụng được trang này!');</script>";
         echo "<script>window.location.href='index.php?act=dang_nhap';</script>";
