@@ -16,7 +16,7 @@ if(isset($_SESSION['taikhoan'])){
                 <table class="tinvwl-table-manage-list">
                     <thead>
                     <tr>
-                        <th class=""><input type="checkbox" class="global-cb" title="Select all for bulk action"></th>
+                        <th class=""></th>
                         <th class="">MÃ Danh Mục</th>
                         <th class="">Tên Danh Mục</th>
                         <th class="">&nbsp;</th>
@@ -26,7 +26,7 @@ if(isset($_SESSION['taikhoan'])){
                     <?php foreach($listall_danhmuc as $key => $value){?>
                     <tbody>
                     <tr class="wishlist_item">
-                        <td class=""><input type="checkbox" name="wishlist_pr[]" value="58" title="Select for bulk action"></td>
+                        <td class=""></td>
                         <td class="" ><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol"></span> <?php echo $value['id_danh_muc'] ?> </bdi></span></td>
                         <td class=""> <?php echo $value['ten_danh_muc'] ?> </td>
 

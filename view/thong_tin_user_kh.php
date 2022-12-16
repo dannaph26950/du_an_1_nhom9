@@ -70,8 +70,12 @@
                                 <td>
                                     <?php if($value['tinh_trang'] == 2){ ?>
                                     <span style="color: red">Đã thanh toán</span>
+                                    <?php }elseif($value['tinh_trang'] == 1){ ?>
+                                        <span style="color: red">Đang xử lí</span>
                                     <?php }else{ ?>
                                     <button type="submit" class="btn btn-primary" onclick="location.href='index.php?act=thanh_toan&id=<?php echo $value['id_dang_ky'] ?>'">Thanh Toán</button>
+                                            <input value="Xóa" type="submit" class="btn btn-primary start-50 xoa" style="width: 109px; height: 37.68px"  onclick="confirm('Bạn có muốn xóa đăng ký \( <?php echo $value['id_dang_ky']?> \) hay không!') == true ? location.href='index.php?act=del_khoa_hoc&id=<?php echo $value['id_dang_ky'] ?>' : ''" >
+
                                     <?php } ?>
                                 </td>
                             </tr>

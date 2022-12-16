@@ -29,5 +29,10 @@ function delete_dangky($id){
     pdo_execute($sql);
     return $sql;
 }
+function del_dangky($id){
+    $sql = "delete from dang_ky where id_dang_ky='$id'";
+    pdo_execute($sql);
+    return $sql;
+}
 ?>
 

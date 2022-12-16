@@ -275,6 +275,17 @@ if (isset($_GET['act']) && ($_GET['act']) != ''){
             $listall_danhmuc=listall_danhmuc ();
             include '../view/thong_tin_user_kh.php';
             break;
+        case 'del_khoa_hoc':
+            if(isset($_GET['id']) && ($_GET['id']>0)){
+                $id = $_GET['id'];
+                del_dangky($id);
+            }
+            if(isset($_SESSION['user']['id_hoc_vien'])){
+                $listone_giohang = listone_giohang($_SESSION['user']['id_hoc_vien']);
+            }
+            $listall_danhmuc=listall_danhmuc ();
+            include '../view/thong_tin_user_kh.php';
+            break;
         case 'quen_mk':
             if (isset($_POST['quen_mk'])&&($_POST['quen_mk'])){
                 $email = $_POST['email'];

@@ -4,13 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cc6cba04-603a-4918-b721-0684c76f7a58" name="Changes" comment="fix row right ctkhoahoc">
+    <list default="true" id="cc6cba04-603a-4918-b721-0684c76f7a58" name="Changes" comment="css and list image cart">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/model/giohang.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/model/giohang.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/view/giohang/editgiohang.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/giohang/editgiohang.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/view/giohang/listgiohang.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/giohang/listgiohang.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/view/danhmuc/listdanhmuc.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/danhmuc/listdanhmuc.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/thong_tin_user_kh.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/thong_tin_user_kh.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -177,7 +177,7 @@
       <workItem from="1670762889183" duration="1765000" />
       <workItem from="1671107125400" duration="2853000" />
       <workItem from="1671171720412" duration="2220000" />
-      <workItem from="1671176622381" duration="999000" />
+      <workItem from="1671176622381" duration="2318000" />
     </task>
     <task id="LOCAL-00001" summary="update files add">
       <created>1668688059236</created>
@@ -494,7 +494,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671041479792</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="css and list image cart">
+      <created>1671180881156</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1671180881156</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -512,7 +519,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="biểu đồ thống kê danh mục và sửa css" />
     <MESSAGE value="abc" />
     <MESSAGE value="fux gio hang" />
     <MESSAGE value="update lai ctkhoahoc.php, giohang.php, gui_bang_chung.php, header.php, thong_tin_user_kh.php" />
@@ -537,7 +543,8 @@
     <MESSAGE value="update font trang home và footer" />
     <MESSAGE value="update font trang home và footer giảng viên" />
     <MESSAGE value="fix row right ctkhoahoc" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix row right ctkhoahoc" />
+    <MESSAGE value="css and list image cart" />
+    <option name="LAST_COMMIT_MESSAGE" value="css and list image cart" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
