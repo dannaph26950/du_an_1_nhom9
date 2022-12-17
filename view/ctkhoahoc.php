@@ -94,7 +94,7 @@
 
                                             </td>
                                             <td><?php echo $value['dia_diem_hoc'] ?></td>
-                                            <td><?php echo $value['so_luong'] ?>/40</td>
+                                            <td><?php echo $value['so_luong'] ?></td>
                                             <td><?php echo listone_giangvien(loadone_lop($value['id_lop'])[0]['magv'])[0]['ten_gv']; ?></td>
 
                                             <td class="">

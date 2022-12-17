@@ -3653,22 +3653,22 @@ ol.wp-block-rss {
   padding-left: 23px;
   text-transform: capitalize;
 }
-.main-menu ul.sub-menu li a:before {
-  content: "\f02d";
-  position: absolute;
-  top: 8px;
-  left: 0;
-  font-family: var(--icon-font);
-  width: 11px;
-  height: 11px;
-  text-align: center;
-  border-radius: 50%;
-  display: inline-block;
-  font-size: 0.9em;
-  line-height: 1;
-  color: var(--theme-color);
-  font-weight: 700;
-}
+/*.main-menu ul.sub-menu li a:before {*/
+/*  content: "\f02d";*/
+/*  position: absolute;*/
+/*  top: 8px;*/
+/*  left: 0;*/
+/*  font-family: var(--icon-font);*/
+/*  width: 11px;*/
+/*  height: 11px;*/
+/*  text-align: center;*/
+/*  border-radius: 50%;*/
+/*  display: inline-block;*/
+/*  font-size: 0.9em;*/
+/*  line-height: 1;*/
+/*  color: var(--theme-color);*/
+/*  font-weight: 700;*/
+/*}*/
 .main-menu ul.sub-menu li ul.sub-menu {
   left: 100%;
   right: auto;

@@ -4,7 +4,7 @@
     <div class="container z-index-common">
         <h1 class="breadcumb-title">KHÓA HỌC CỦA CHÚNG TÔI</h1>
         <ul class="breadcumb-menu">
-            <li><a href="../../index.php">Trang chủ</a></li>
+            <li><a href="../../index.php">Trang chủ</a></li> <i style="color: white; width: 20px" class='bx bx-right-arrow-alt'></i>
             <li>Khóa học của chúng tôi</li>
         </ul>
     </div>

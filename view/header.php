@@ -37,6 +37,8 @@
     <link rel="stylesheet" href="../user/assets/css/fontawesome.min.css">
     <link rel="stylesheet" href="../user/assets/css/style.css">
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
 </head>
 <style>
     .xoa:hover{
@@ -257,7 +259,8 @@
                                             <li class=""><a class="text-decoration-none" href="index.php?act=khoa_hoc">Khóa học</a>
                                                 <ul class="sub-menu">
                                                     <?php foreach ($listall_danhmuc as $index => $value){  ?>
-                                                    <li><a class="text-decoration-none" href="index.php?act=khoa_hoc&id=<?php echo $value['id_danh_muc']; ?>"><?php echo $value['ten_danh_muc'] ?></a></li>
+
+                                                        <li style="display: flex; align-items: center"> <i style="color: blue" class='bx bxs-copy-alt'></i><a  href="index.php?act=khoa_hoc&id=<?php echo $value['id_danh_muc']; ?>"><?php echo $value['ten_danh_muc'] ?></a></li>
                                                     <?php } ?>
                                                 </ul>
                                             </li>

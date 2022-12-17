@@ -52,7 +52,7 @@
     <div class="container z-index-common">
         <h1 class="breadcumb-title">Giảng viên</h1>
         <ul class="breadcumb-menu">
-            <li><a href="index.html">Trang Chủ</a></li>
+            <li><a href="index.html">Trang Chủ</a></li> <i style="color: white; width: 20px" class='bx bx-right-arrow-alt'></i>
             <li>Giảng Viên</li>
         </ul>
     </div>
