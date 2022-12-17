@@ -144,7 +144,7 @@
 
                         <div class="course-box " style="background-color: #C6E2FF">
                             <div style="">
-                                <div class="course-img"><img src="../Upfileanh/<?php echo listone_khoahoc($value['id_khoa_hoc'])[0]['anh'] ?>" alt="course" style="width: 200px;height: 200px" > <span
+                                <div class="course-img"><img src="../Upfileanh/<?php echo listone_khoahoc($value['id_khoa_hoc'])[0]['anh'] ?>" alt="course"  > <span
                                             class="tag"><?php echo number_format($value['gia']) ?></span></div>
                                 <div class="course-content">
                                     <div class="course-author">
@@ -160,7 +160,7 @@
 
                                     <div>
 
-                                        <h3 class="course-title"><a href="index.php?act=ct_khoahoc&id=<?php echo $value['id_khoa_hoc'] ?>"><?php echo $value['ten_khoa_hoc'] ?></a></h3>
+                                        <h3 class="course-title" style="height: 50px;" ><a href="index.php?act=ct_khoahoc&id=<?php echo $value['id_khoa_hoc'] ?>"><?php echo $value['ten_khoa_hoc'] ?></a></h3>
                                         <div>
 
                                         </div>
