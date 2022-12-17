@@ -134,7 +134,9 @@ if (isset($_GET['act']) && ($_GET['act']) != ''){
 
                     insert_hoadon($name_image,$id);
                 if($name_image == ""){
-                        echo "<script>swal('Vui lòng cấp ảnh bằng chứng')</script>";
+                        echo "<script>alert('Vui lòng cấp ảnh bằng chứng')</script>";
+                        echo "<script>history.back()</script>";
+
                 }else{
                     echo "<script>swal('Hệ thống đang xử lí ảnh bằng chứng! Vui lòng đợi máy 2-3 ngày !')</script>";
                 }

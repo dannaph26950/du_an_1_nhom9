@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cc6cba04-603a-4918-b721-0684c76f7a58" name="Changes" comment="update validate ảnh trong thanh toán/view">
-      <change afterPath="$PROJECT_DIR$/admin/src/style.css" afterDir="false" />
+    <list default="true" id="cc6cba04-603a-4918-b721-0684c76f7a58" name="Changes" comment="update css">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/model/thongke.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/model/thongke.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/thongke.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/thongke.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/view/list_product_thong_ke.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/list_product_thong_ke.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/thanh_toan.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/thanh_toan.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -177,7 +176,7 @@
       <workItem from="1671107125400" duration="2853000" />
       <workItem from="1671171720412" duration="2220000" />
       <workItem from="1671176622381" duration="7267000" />
-      <workItem from="1671203841667" duration="289000" />
+      <workItem from="1671203841667" duration="2700000" />
     </task>
     <task id="LOCAL-00001" summary="update files add">
       <created>1668688059236</created>
@@ -515,7 +514,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671185306121</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="update css">
+      <created>1671206065784</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1671206065784</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -533,7 +539,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="update lai ctkhoahoc.php, giohang.php, gui_bang_chung.php, header.php, thong_tin_user_kh.php" />
     <MESSAGE value="update form dang ki khoa hoc, chuc nang thanh toan" />
     <MESSAGE value="update lại giao diện trang khóa học" />
     <MESSAGE value="thống kê theo doanh thu từng loại danh mục" />
@@ -558,7 +563,8 @@
     <MESSAGE value="css and list image cart" />
     <MESSAGE value="thêm trạng thái xóa thanh toán khi chưa thanh tonas" />
     <MESSAGE value="update validate ảnh trong thanh toán/view" />
-    <option name="LAST_COMMIT_MESSAGE" value="update validate ảnh trong thanh toán/view" />
+    <MESSAGE value="update css" />
+    <option name="LAST_COMMIT_MESSAGE" value="update css" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

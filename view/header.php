@@ -44,6 +44,11 @@
         color: white;
         border: none;
     }
+    .xoa{
+        background-color: red;
+        color: white;
+        border: none;
+    }
 </style>
 <body>
 <!--<div class="preloader"><button class="as-btn style3 preloaderCls">Cancel Preloader</button>-->
@@ -211,26 +216,26 @@
                 </div>
             </div>
         </div>
-        <div class="menu-top">
-            <div class="container">
-                <div class="row align-items-center justify-content-center justify-content-sm-between">
-                    <div class="col-auto d-none d-sm-block"><a  class="header-link" href="tel:+256214203215"><i
-                                    class="icon-btn fas fa-phone"></i>0812349078</a> <a
-                                class="header-link d-none d-lg-inline-block" href="mailto:info@acadu.com"><i
-                                    class="icon-btn fas fa-envelope"></i>dannaph26950@fpt.edu.vn</a> <span
-                                class="header-link d-none d-xl-inline-block"><i class="icon-btn fas fa-clock"></i>T2 -
-                                T7: 8:00 - 15:00</span></div>
-                    <div class="col-auto">
-                        <div class="as-social"><a class="text-decoration-none" target="_blank" href="https://facebook.com/"><i
-                                        class="fab fa-facebook-f"></i></a> <a target="_blank"
-                                                                              href="https://twitter.com/"><i class="fab fa-twitter"></i></a> <a class="text-decoration-none" target="_blank"
-                                                                                                                                                href="https://instagram.com/"><i class="fab fa-instagram"></i></a> <a class="text-decoration-none"
-                                    target="_blank" href="https://pinterest.com/"><i class="fab fa-pinterest-p"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+<!--        <div class="menu-top">-->
+<!--            <div class="container">-->
+<!--                <div class="row align-items-center justify-content-center justify-content-sm-between">-->
+<!--                    <div class="col-auto d-none d-sm-block"><a  class="header-link" href="tel:+256214203215"><i-->
+<!--                                    class="icon-btn fas fa-phone"></i>0812349078</a> <a-->
+<!--                                class="header-link d-none d-lg-inline-block" href="mailto:info@acadu.com"><i-->
+<!--                                    class="icon-btn fas fa-envelope"></i>dannaph26950@fpt.edu.vn</a> <span-->
+<!--                                class="header-link d-none d-xl-inline-block"><i class="icon-btn fas fa-clock"></i>T2 --->
+<!--                                T7: 8:00 - 15:00</span></div>-->
+<!--                    <div class="col-auto">-->
+<!--                        <div class="as-social"><a class="text-decoration-none" target="_blank" href="https://facebook.com/"><i-->
+<!--                                        class="fab fa-facebook-f"></i></a> <a target="_blank"-->
+<!--                                                                              href="https://twitter.com/"><i class="fab fa-twitter"></i></a> <a class="text-decoration-none" target="_blank"-->
+<!--                                                                                                                                                href="https://instagram.com/"><i class="fab fa-instagram"></i></a> <a class="text-decoration-none"-->
+<!--                                    target="_blank" href="https://pinterest.com/"><i class="fab fa-pinterest-p"></i></a>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
     </div>
     <div class="sticky-wrapper">
         <div class="sticky-active">
